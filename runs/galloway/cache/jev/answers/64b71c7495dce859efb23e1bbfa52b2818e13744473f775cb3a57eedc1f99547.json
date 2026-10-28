@@ -1,0 +1,131 @@
+{
+ "hash": "64b71c7495dce859efb23e1bbfa52b2818e13744473f775cb3a57eedc1f99547",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Scott Galloway",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "AI Stocks Correct",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "context": "Heading of prediction 1. The body argues Chinese model price pressure hits Mag 7 margins: 'taking down a frighteningly concentrated S&P'. An AI-stock correction in 2026."
+  },
+  "bar": "strict",
+  "criterion": "AI stocks had a real correction in 2026: a drawdown of at least 20% in the AI leaders, with the S&P 500's concentration in them falling.",
+  "measure": "Nasdaq-100 or a Magnificent Seven index down at least 20% peak to trough during 2026 per index data or major-outlet reporting, and the top-10 weight of the S&P 500 lower at the latest reading than at the start of the year; provisional until December 31.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-05-04",
+    "source": "Marquette Associates",
+    "direction": "neutral",
+    "quote": "Baseline (end of 2025): From 1985-2015, top 10 weight ranged from 17.6% to 21.1%, but 2025's weight was 40.6%.",
+    "url": "https://www.marquetteassociates.com/this-too-shall-reconstitute/"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-10-07",
+    "source": "KuCoin blog citing S&P Dow Jones Indices",
+    "direction": "supports",
+    "quote": "S&P Dow Jones Indices data as of September 30, 2026, place the top 10 at 39.1% and the single largest name at 8.4%.",
+    "url": "https://www.kucoin.com/blog/ae-nvidia-apple-and-microsoft-sp500-concentration"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-10-23",
+    "source": "ChartRow (Nasdaq-100 drawdown data)",
+    "direction": "contradicts",
+    "quote": "7.3% below its all-time high ... set Oct 6, 2026 (as of market close, Oct 23, 2026); the table of declines of 15% or more has no 2026 entries",
+    "url": "https://chartrow.com/nasdaq-100/drawdown"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-10-23",
+    "source": "TotalRealReturns (Roundhill Magnificent Seven ETF, MAGS)",
+    "direction": "neutral",
+    "quote": "This Year's Performance, through 2026-10-23: YTD +6.23% ... -5.69% on 2026-10-23 from 2026-10-13 peak",
+    "url": "https://totalrealreturns.com/n/MAGS"
+   },
+   {
+    "tier": 4,
+    "tier_meaning": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+    "date": "2026-06-25",
+    "source": "Prof G Media (Scott Galloway)",
+    "direction": "neutral",
+    "quote": "If you know me, you know I make predictions (and then hold myself accountable). ... Prof G+ paid subscribers only - register (or upgrade) below. [No verdicts on any prediction are visible outside the paywall.]",
+    "url": "https://www.profgmedia.com/p/predictions-2026-mid-year-check-in"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.12
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.97
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.88,
+   "confidence": 0.83,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.11,
+    "2": 0.89
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1811,
+  "output_tokens": 52
+ },
+ "at": "2026-10-25T02:56:57Z"
+}

@@ -1,0 +1,104 @@
+{
+ "hash": "855e2e74121fc1c5c71e3766603fd3b72c91a012d590733149b5db1ea93149f5",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Mike Ippolito",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Solana will have a mini crisis around non-meme price discovery not happening on their chain, which will resolve by EOY",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "context": "Post 20, second paragraph. A visible debate or crisis about Solana's role in non-memecoin price discovery during 2026."
+  },
+  "bar": "lenient",
+  "criterion": "The concern that non-meme price discovery is not happening on Solana was raised publicly in 2026 by a prominent figure or outlet.",
+  "measure": "At least one major crypto outlet or prominent Solana figure, dated 2026.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-02-03",
+    "source": "The Block (Standard Chartered note)",
+    "direction": "neutral",
+    "quote": "Kendrick lowered his end-2026 price forecast for Solana from $310 to $250 [...] Solana is evolving from memecoins to micropayments [...] the mix of flows on DEXs has shifted from memecoin trading towards SOL-stablecoin pairs [...] no longer a one-trick pony",
+    "url": "https://www.theblock.co/news/markets/2026-02-03-standard-chartered-cuts-solana-2026-target-shift-memecoins-micropayments-388248"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-07-29",
+    "source": "CoinDesk opinion, Brian Smith, president of the Jito Foundation",
+    "direction": "supports",
+    "quote": "[Onchain perps venues] contributed to price discovery [for the Cerebras Systems and SpaceX IPOs; SpaceX's perps-implied price of $171 matched its $171 launch price]. Solana and Hyperliquid are where SpaceX tokenized stocks and perps trade most actively [Hyperliquid described as the early leader in perps]. Whoever wins the battle for Sunday volume might just win the whole war. [24-hour spot volume for tokenized stocks on Solana passed $100 million after the IPO; the author says this isn't enough and the gap is execution and focus.]",
+    "url": "https://www.coindesk.com/opinion/2026/07/29/spacex-is-a-battleground-solana-must-win"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.46
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.25
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.65,
+   "confidence": 0.46,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.07,
+    "1": 0.22,
+    "2": 0.71
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1418,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:05:57Z"
+}

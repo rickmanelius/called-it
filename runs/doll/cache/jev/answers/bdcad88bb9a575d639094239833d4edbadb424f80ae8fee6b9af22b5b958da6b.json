@@ -1,0 +1,113 @@
+{
+ "hash": "bdcad88bb9a575d639094239833d4edbadb424f80ae8fee6b9af22b5b958da6b",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Bob Doll",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "International stocks outperform the U.S. for the second year in a row (first time in 20 years).",
+   "author": "Bob Doll",
+   "date": "2025-12-31",
+   "context": "Prediction 7 of 10. A broad international index (MSCI ACWI ex-US or EAFE) beats the S&P 500 over calendar 2026."
+  },
+  "bar": "standard",
+  "criterion": "International stocks outperform US stocks in 2026.",
+  "measure": "MSCI ACWI ex USA or MSCI EAFE (USD, total return) 2026 YTD return above the S&P 500 total return; ETF proxies ACWX or EFA versus SPY acceptable; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-10-22",
+    "source": "iShares (ACWX, MSCI ACWI ex U.S. ETF fund page)",
+    "direction": "contradicts",
+    "quote": "NAV Total Return, YTD: Increase 10.86%, as of Oct 22, 2026 [SPY total return YTD on the same date: 12.68% per Yahoo Finance trailing returns]",
+    "url": "https://www.ishares.com/us/products/239594/ishares-msci-acwi-ex-us-etf"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-10-22",
+    "source": "iShares (EFA, MSCI EAFE ETF fund page)",
+    "direction": "contradicts",
+    "quote": "NAV Total Return, YTD: Increase 9.23%, as of Oct 22, 2026",
+    "url": "https://www.ishares.com/us/products/239623/ishares-msci-eafe-etf"
+   },
+   {
+    "tier": 4,
+    "tier_meaning": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+    "date": "2026-10-05",
+    "source": "Bob Doll, Crossmark (4Q26 commentary)",
+    "direction": "supports",
+    "quote": "International stocks are ahead of U.S. stocks by about 150 bps, but the lead has changed several times. Certainly, EM stocks have helped the international averages. Oil price increases are more damaging to international than the U.S. This one could be a photo finish.",
+    "url": "https://www.crossmarkglobal.com/quarterly-investment-commentary-4q26/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.05
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.94
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.9,
+   "confidence": 0.86,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.09,
+    "2": 0.91
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1468,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T20:16:44Z"
+}

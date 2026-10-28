@@ -1,0 +1,104 @@
+{
+ "hash": "987f6b5fc4890becc7bbc7ad58a441559b4ea547056c0d582c04b926c45882b2",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Every",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "I would guess that they will find it valuable this year. Um specifically because coding agents are good enough that once they make their way into Excel in a widely distributed way",
+   "author": "Dan Shipper",
+   "date": "2025-12-23",
+   "context": "Non-technical knowledge workers (the example is a deal-desk analyst living in Excel) will find AI genuinely valuable at work in 2026 once coding-agent capability is widely distributed inside Excel."
+  },
+  "bar": "lenient",
+  "criterion": "In 2026 Microsoft shipped agent or coding capability in Excel to general availability.",
+  "measure": "Microsoft release notes or major-outlet reporting dated 2026.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-01-27",
+    "source": "Microsoft Tech Community (Excel Blog)",
+    "direction": "supports",
+    "quote": "Agent Mode in Excel is now generally available in Excel on Windows and is rolling out to Excel on Mac",
+    "url": "https://techcommunity.microsoft.com/t5/excel/bg-p/ExcelBlog"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-04-22",
+    "source": "Microsoft 365 Blog",
+    "direction": "supports",
+    "quote": "the default experience for customers with Microsoft 365 Copilot and Microsoft 365 Premium subscriptions. ... Over the last month, our data already shows increased engagement, retention, and satisfaction. (table: Excel engagement +67%, new user retention +50%, satisfaction +65%)",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/04/22/copilots-agentic-capabilities-in-word-excel-and-powerpoint-are-generally-available/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.98
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.01
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.98,
+   "confidence": 0.97,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.02,
+    "2": 0.98
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1269,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:09:38Z"
+}

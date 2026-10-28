@@ -1,0 +1,113 @@
+{
+ "hash": "edf5e809fff0bb81054f8f3c2ccfb56a303b37611638bbcba780faaf08db56fe",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Every",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Kate expects most companies to have at least one dedicated role focused on building and maintaining internal AI systems by 2026—“someone whose job is to continuously optimize how the organization uses AI.”",
+   "author": "Kate Lee",
+   "date": "2025-12-23",
+   "context": "Prediction 2 of 3. Editor's paraphrase plus a direct quote. 'Most companies' is the checkable element; the bars will need a survey or job-posting measure."
+  },
+  "bar": "lenient",
+  "criterion": "Dedicated internal-AI roles grew substantially in 2026 and are common at large companies.",
+  "measure": "Reputable 2026 data showing dedicated AI-role postings up at least 50% year over year, or at least a third of large companies with the role.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-04-13",
+    "source": "Lightcast (Stanford AI Index 2026 data)",
+    "direction": "supports",
+    "quote": "That's a more than 280% increase in a single year, representing nearly 90,000 job postings in the US alone. (agentic AI skills in postings, 2024 to 2025)",
+    "url": "https://lightcast.io/resources/blog/stanford-ai-2026"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-05-04",
+    "source": "IBM Newsroom",
+    "direction": "supports",
+    "quote": "76% of surveyed organizations have a Chief AI Officer (CAIO) in 2026, up from just 26% in 2025.",
+    "url": "https://newsroom.ibm.com/2026-05-04-ibm-study-ceos-are-reshaping-c-suite-roles-for-the-ai-era"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-07-20",
+    "source": "Gallup",
+    "direction": "neutral",
+    "quote": "Forty-seven percent of U.S. employees now say their organization has integrated AI tools ... up from 41%",
+    "url": "https://www.gallup.com/workplace/712736/organizational-ai-adoption-jumps-six-points.aspx"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.48
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.07
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.89,
+   "confidence": 0.85,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.1,
+    "2": 0.9
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1435,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:09:37Z"
+}

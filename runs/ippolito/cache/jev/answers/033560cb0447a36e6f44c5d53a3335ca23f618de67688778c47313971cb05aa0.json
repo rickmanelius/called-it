@@ -1,0 +1,113 @@
+{
+ "hash": "033560cb0447a36e6f44c5d53a3335ca23f618de67688778c47313971cb05aa0",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Mike Ippolito",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "despite that volume will continue to climb. Expect 2X from this year’s levels.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "context": "Post 8, second part, split from c12. Prediction-market volume (Polymarket plus Kalshi) in 2026 is about double 2025's."
+  },
+  "bar": "standard",
+  "criterion": "Prediction-market volume in 2026 grew strongly, at least 1.5x 2025's.",
+  "measure": "Same data, ratio at or above 1.5x; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-07-01",
+    "source": "The Block",
+    "direction": "supports",
+    "quote": "$44.8 billion in combined monthly trading volume in June [2026, across Kalshi, Polymarket and Polymarket US; May 2026 was $25.66 billion]. Kalshi: growing 87.4% to $31.5 billion from $16.81 billion. Polymarket's main, non-U.S. platform attracted $10.26 billion worth of volume last month. Polymarket US reported $3.04 billion in monthly volume last month, up from $1.77 billion in May.",
+    "url": "https://www.theblock.co/post/406983/kalshi-polymarket-volume-45-billion"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-07-23",
+    "source": "KuCoin News (citing Odaily Planet Daily)",
+    "direction": "supports",
+    "quote": "2025 baseline: Kalshi and Polymarket processed a combined trading volume of over $44 billion in 2025. [...] Kalshi generated $263.5 million in fee revenue last year, with annualized revenue now exceeding $1.5 billion.",
+    "url": "https://www.kucoin.com/news/flash/kalshi-and-polymarket-combined-2025-trading-volume-surpasses-44-billion"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-09-02",
+    "source": "The Block",
+    "direction": "supports",
+    "quote": "the combined monthly volume at Kalshi, Polymarket and Polymarket US fell 14.5% in August to $45.33 billion [...] the first decline since August 2025. Kalshi recorded $37.17 billion in volume in August, down 7.3% from $40.1 billion in July. Polymarket and its U.S. platform saw a combined $8.16 billion, down 36.7% from $12.89 billion in July. [June-August 2026 alone, $140.7B, exceeds 2.0x the $44B full-year 2025 figure.]",
+    "url": "https://www.theblock.co/news/business/2026-09-02-kalshi-polymarkets-volume-falls-august-413309"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.76
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.03
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.85,
+   "confidence": 0.78,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.15,
+    "2": 0.85
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1635,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:05:57Z"
+}

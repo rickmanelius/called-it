@@ -1,0 +1,122 @@
+{
+ "hash": "8eacfbe0205154e07fbca890815d27b42ec666847598052e91b53cdff572f604",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Every",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Natalia thinks the most advanced companies will have agentic workflows embedded in daily operations by year’s end",
+   "author": "Natalia Quintero",
+   "date": "2025-12-23",
+   "context": "Prediction 1 of 3. Editor's paraphrase of Quintero (Every's head of consulting). Leading companies run agentic workflows in day-to-day operations by end of 2026, with finance named as the example industry."
+  },
+  "bar": "lenient",
+  "criterion": "In 2026 at least one large company publicly moved an agentic workflow from pilot into daily operations.",
+  "measure": "Company statement or reputable reporting dated 2026.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-02-05",
+    "source": "Anthropic",
+    "direction": "supports",
+    "quote": "autonomously closed 13 issues and assigned 12 issues to the right team members in a single day (Rakuten customer quote)",
+    "url": "https://www.anthropic.com/news/claude-opus-4-6"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-02-09",
+    "source": "InvestmentNews",
+    "direction": "supports",
+    "quote": "At BNY, 134 software-based \"digital employees\" now work alongside the bank's roughly 48,100 human staff",
+    "url": "https://www.investmentnews.com/wirehouses/bny-goldman-double-down-on-tech-with-digital-employees-and-ai-agents/265198"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-02-09",
+    "source": "InvestmentNews",
+    "direction": "supports",
+    "quote": "Goldman has already rolled out an autonomous AI coder called Devin to its engineering teams.",
+    "url": "https://www.investmentnews.com/wirehouses/bny-goldman-double-down-on-tech-with-digital-employees-and-ai-agents/265198"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-09-01",
+    "source": "FM Magazine (reporting McKinsey State of AI 2026)",
+    "direction": "supports",
+    "quote": "The share of large companies scaling AI agents in one or more functions increased from 27% to 40% ... while similar adoption among smaller organisations remained flat (22%).",
+    "url": "https://www.fm-magazine.com/news/2026/sep/companies-financial-value-from-ai-holds-firm-in-2026/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.8
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.02
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.92,
+   "confidence": 0.9,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.07,
+    "2": 0.93
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1532,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:09:37Z"
+}

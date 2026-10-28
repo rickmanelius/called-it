@@ -1,0 +1,104 @@
+{
+ "hash": "68e712999b8708074f5b78a06c4b02bee5111edf5640ff00fca4c026c04dc318",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Mike Ippolito",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "No new startups will be successful, but some sports betting apps will.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "context": "Post 9, third sentence. No new prediction-market startup reaches meaningful volume in 2026, while sportsbooks (DraftKings, FanDuel) launch and gain traction."
+  },
+  "bar": "lenient",
+  "criterion": "No new prediction-market startup rivalled Kalshi or Polymarket in 2026, and at least one major sportsbook entered prediction markets.",
+  "measure": "No new venue above 10% of US prediction-market volume per data or reporting; sportsbook entry per announcement or reporting.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-06-09",
+    "source": "InGame",
+    "direction": "neutral",
+    "quote": "FanDuel does not publish exact volume numbers from its exchange [...] CME has averaged around $4 million worth of contracts traded per day [...] DraftKings reported annualized May volume of $3.1 billion [about $8.5 million per day; consumer volume $1.3 billion] [...] Kalshi has averaged more than $650 million in volume per day over the past week",
+    "url": "https://www.ingame.com/fanduel-crypto-com-contracts/"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-06-19",
+    "source": "Bettors Insider (reporting DraftKings figures)",
+    "direction": "supports",
+    "quote": "$1.3 billion in annualized consumer volume during May [...] a 24 percent increase from April [...] December 2025 launch [in 38 states]. DraftKings still trails Kalshi and Polymarket in total volume.",
+    "url": "https://bettorsinsider.com/news/2026/06/19/draftkings-predictions-platform-hits-1-3-billion-in-annualized-volume-as-world-cup-fuels-rapid-growth/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.47
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.11
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.86,
+   "confidence": 0.79,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.14,
+    "2": 0.86
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1323,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:05:57Z"
+}

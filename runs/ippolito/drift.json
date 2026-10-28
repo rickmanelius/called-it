@@ -1,0 +1,491 @@
+{
+ "model": "jev-1.14.0",
+ "requests": 20,
+ "answers": 60,
+ "mean_pts": 1.35,
+ "max_pts": 17.0,
+ "within_5": 0.95,
+ "threshold_crossings": 1,
+ "rows": [
+  [
+   "4-5 new chains will get announced, Blackrock is on",
+   "lenient",
+   "met",
+   0.22,
+   0.2,
+   0.01999999999999999
+  ],
+  [
+   "4-5 new chains will get announced, Blackrock is on",
+   "lenient",
+   "contradicted",
+   0.05,
+   0.05,
+   0.0
+  ],
+  [
+   "4-5 new chains will get announced, Blackrock is on",
+   "lenient",
+   "strength",
+   1.79,
+   1.79,
+   0.0
+  ],
+  [
+   "Saylor\u2019s reputation will take a hit, and Bitcoin\u2019s",
+   "strict",
+   "met",
+   0.38,
+   0.38,
+   0.0
+  ],
+  [
+   "Saylor\u2019s reputation will take a hit, and Bitcoin\u2019s",
+   "strict",
+   "contradicted",
+   0.94,
+   0.93,
+   0.009999999999999898
+  ],
+  [
+   "Saylor\u2019s reputation will take a hit, and Bitcoin\u2019s",
+   "strict",
+   "strength",
+   1.71,
+   1.72,
+   0.0050000000000000044
+  ],
+  [
+   "Infrastructure will go through massive consolidati",
+   "lenient",
+   "met",
+   0.86,
+   0.87,
+   0.010000000000000009
+  ],
+  [
+   "Infrastructure will go through massive consolidati",
+   "lenient",
+   "contradicted",
+   0.03,
+   0.04,
+   0.010000000000000002
+  ],
+  [
+   "Infrastructure will go through massive consolidati",
+   "lenient",
+   "strength",
+   1.72,
+   1.67,
+   0.025000000000000022
+  ],
+  [
+   "VCs will launch credit funds (which largely won't ",
+   "lenient",
+   "met",
+   0.72,
+   0.73,
+   0.010000000000000009
+  ],
+  [
+   "VCs will launch credit funds (which largely won't ",
+   "lenient",
+   "contradicted",
+   0.06,
+   0.07,
+   0.010000000000000009
+  ],
+  [
+   "VCs will launch credit funds (which largely won't ",
+   "lenient",
+   "strength",
+   1.95,
+   1.95,
+   0.0
+  ],
+  [
+   "Passive liquidity provision in AMMs largely dies i",
+   "lenient",
+   "met",
+   0.4,
+   0.48,
+   0.07999999999999996
+  ],
+  [
+   "Passive liquidity provision in AMMs largely dies i",
+   "lenient",
+   "contradicted",
+   0.12,
+   0.12,
+   0.0
+  ],
+  [
+   "Passive liquidity provision in AMMs largely dies i",
+   "lenient",
+   "strength",
+   1.08,
+   1.08,
+   0.0
+  ],
+  [
+   "despite that volume will continue to climb. Expect",
+   "lenient",
+   "met",
+   0.86,
+   0.84,
+   0.020000000000000018
+  ],
+  [
+   "despite that volume will continue to climb. Expect",
+   "lenient",
+   "contradicted",
+   0.02,
+   0.02,
+   0.0
+  ],
+  [
+   "despite that volume will continue to climb. Expect",
+   "lenient",
+   "strength",
+   1.85,
+   1.86,
+   0.0050000000000000044
+  ],
+  [
+   "Vault AUM will grow but not an explosive amount fr",
+   "standard",
+   "met",
+   0.38,
+   0.55,
+   0.17000000000000004
+  ],
+  [
+   "Vault AUM will grow but not an explosive amount fr",
+   "standard",
+   "contradicted",
+   0.4,
+   0.4,
+   0.0
+  ],
+  [
+   "Vault AUM will grow but not an explosive amount fr",
+   "standard",
+   "strength",
+   1.81,
+   1.84,
+   0.015000000000000013
+  ],
+  [
+   "Solana will have a mini crisis around non-meme pri",
+   "standard",
+   "met",
+   0.15,
+   0.16,
+   0.010000000000000009
+  ],
+  [
+   "Solana will have a mini crisis around non-meme pri",
+   "standard",
+   "contradicted",
+   0.29,
+   0.24,
+   0.04999999999999999
+  ],
+  [
+   "Solana will have a mini crisis around non-meme pri",
+   "standard",
+   "strength",
+   1.58,
+   1.6,
+   0.010000000000000009
+  ],
+  [
+   "No new startups will be successful, but some sport",
+   "lenient",
+   "met",
+   0.47,
+   0.53,
+   0.06000000000000005
+  ],
+  [
+   "No new startups will be successful, but some sport",
+   "lenient",
+   "contradicted",
+   0.11,
+   0.12,
+   0.009999999999999995
+  ],
+  [
+   "No new startups will be successful, but some sport",
+   "lenient",
+   "strength",
+   1.86,
+   1.87,
+   0.0050000000000000044
+  ],
+  [
+   "It\u2019s another bad year for onchain infrastructure. ",
+   "standard",
+   "met",
+   0.97,
+   0.97,
+   0.0
+  ],
+  [
+   "It\u2019s another bad year for onchain infrastructure. ",
+   "standard",
+   "contradicted",
+   0.01,
+   0.01,
+   0.0
+  ],
+  [
+   "It\u2019s another bad year for onchain infrastructure. ",
+   "standard",
+   "strength",
+   1.98,
+   1.98,
+   0.0
+  ],
+  [
+   "Saylor\u2019s reputation will take a hit, and Bitcoin\u2019s",
+   "lenient",
+   "met",
+   0.68,
+   0.73,
+   0.04999999999999993
+  ],
+  [
+   "Saylor\u2019s reputation will take a hit, and Bitcoin\u2019s",
+   "lenient",
+   "contradicted",
+   0.19,
+   0.21,
+   0.01999999999999999
+  ],
+  [
+   "Saylor\u2019s reputation will take a hit, and Bitcoin\u2019s",
+   "lenient",
+   "strength",
+   1.84,
+   1.85,
+   0.0050000000000000044
+  ],
+  [
+   "It will be a bad year for Bitcoin sentiment, drive",
+   "lenient",
+   "met",
+   0.98,
+   0.98,
+   0.0
+  ],
+  [
+   "It will be a bad year for Bitcoin sentiment, drive",
+   "lenient",
+   "contradicted",
+   0.02,
+   0.03,
+   0.009999999999999998
+  ],
+  [
+   "It will be a bad year for Bitcoin sentiment, drive",
+   "lenient",
+   "strength",
+   1.96,
+   1.96,
+   0.0
+  ],
+  [
+   "REV will bottom around mid 2026, and start recover",
+   "lenient",
+   "met",
+   0.98,
+   0.98,
+   0.0
+  ],
+  [
+   "REV will bottom around mid 2026, and start recover",
+   "lenient",
+   "contradicted",
+   0.02,
+   0.02,
+   0.0
+  ],
+  [
+   "REV will bottom around mid 2026, and start recover",
+   "lenient",
+   "strength",
+   1.87,
+   1.9,
+   0.014999999999999902
+  ],
+  [
+   "Ethereum will completely reverse sentiment and hav",
+   "strict",
+   "met",
+   0.01,
+   0.01,
+   0.0
+  ],
+  [
+   "Ethereum will completely reverse sentiment and hav",
+   "strict",
+   "contradicted",
+   0.99,
+   0.99,
+   0.0
+  ],
+  [
+   "Ethereum will completely reverse sentiment and hav",
+   "strict",
+   "strength",
+   1.94,
+   1.94,
+   0.0
+  ],
+  [
+   "Saylor\u2019s reputation will take a hit, and Bitcoin\u2019s",
+   "standard",
+   "met",
+   0.79,
+   0.8,
+   0.010000000000000009
+  ],
+  [
+   "Saylor\u2019s reputation will take a hit, and Bitcoin\u2019s",
+   "standard",
+   "contradicted",
+   0.07,
+   0.08,
+   0.009999999999999995
+  ],
+  [
+   "Saylor\u2019s reputation will take a hit, and Bitcoin\u2019s",
+   "standard",
+   "strength",
+   1.86,
+   1.86,
+   0.0
+  ],
+  [
+   "VC investment will be anemic. Expect a slightly di",
+   "strict",
+   "met",
+   0.03,
+   0.02,
+   0.009999999999999998
+  ],
+  [
+   "VC investment will be anemic. Expect a slightly di",
+   "strict",
+   "contradicted",
+   0.51,
+   0.55,
+   0.040000000000000036
+  ],
+  [
+   "VC investment will be anemic. Expect a slightly di",
+   "strict",
+   "strength",
+   1.03,
+   1.04,
+   0.0050000000000000044
+  ],
+  [
+   "Base will begin to come under some amount of scrut",
+   "standard",
+   "met",
+   0.9,
+   0.88,
+   0.020000000000000018
+  ],
+  [
+   "Base will begin to come under some amount of scrut",
+   "standard",
+   "contradicted",
+   0.04,
+   0.04,
+   0.0
+  ],
+  [
+   "Base will begin to come under some amount of scrut",
+   "standard",
+   "strength",
+   1.63,
+   1.61,
+   0.009999999999999898
+  ],
+  [
+   "It\u2019s another bad year for onchain infrastructure. ",
+   "lenient",
+   "met",
+   0.98,
+   0.96,
+   0.020000000000000018
+  ],
+  [
+   "It\u2019s another bad year for onchain infrastructure. ",
+   "lenient",
+   "contradicted",
+   0.01,
+   0.01,
+   0.0
+  ],
+  [
+   "It\u2019s another bad year for onchain infrastructure. ",
+   "lenient",
+   "strength",
+   1.98,
+   1.98,
+   0.0
+  ],
+  [
+   "REV will bottom around mid 2026, and start recover",
+   "strict",
+   "met",
+   0.7,
+   0.71,
+   0.010000000000000009
+  ],
+  [
+   "REV will bottom around mid 2026, and start recover",
+   "strict",
+   "contradicted",
+   0.07,
+   0.05,
+   0.020000000000000004
+  ],
+  [
+   "REV will bottom around mid 2026, and start recover",
+   "strict",
+   "strength",
+   1.89,
+   1.9,
+   0.0050000000000000044
+  ],
+  [
+   "We'll see real pain in venture capital. Unflatteri",
+   "standard",
+   "met",
+   0.05,
+   0.05,
+   0.0
+  ],
+  [
+   "We'll see real pain in venture capital. Unflatteri",
+   "standard",
+   "contradicted",
+   0.17,
+   0.16,
+   0.010000000000000009
+  ],
+  [
+   "We'll see real pain in venture capital. Unflatteri",
+   "standard",
+   "strength",
+   1.0,
+   1.01,
+   0.0050000000000000044
+  ]
+ ]
+}

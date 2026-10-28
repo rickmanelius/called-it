@@ -1,0 +1,113 @@
+{
+ "hash": "6073422e72665037e570f746c90a3e726ca588a59559f118fd97bb7c99a8f097",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Mike Ippolito",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "REV will bottom around mid 2026, and start recovering into year end.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "context": "Post 19, third paragraph. Solana's real economic value (fees plus tips) troughs around mid-2026 and rises in H2."
+  },
+  "bar": "standard",
+  "criterion": "Solana REV reached its 2026 low around the middle of the year and has risen since.",
+  "measure": "Monthly REV low in April to September with the latest full month above it; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-06-30",
+    "source": "Blockworks Advisory, Solana Token Holder Report Q2 2026 (PDF, data through June 2026)",
+    "direction": "supports",
+    "quote": "Solana's Real Economic Value (REV) totaled $51.0M in Q2 2026, down 43% from Q1's $89.8M. [...] monthly REV declined from $18.6M in April to $18.1M in May and $14.3M in June.",
+    "url": "https://blockworks.com/api/investor-report/solana-token-holder-report-q2-2026/pdf"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-10-15",
+    "source": "Blockworks Advisory, Solana Token Holder Report Q3 2026 (PDF)",
+    "direction": "supports",
+    "quote": "Solana's Real Economic Value (REV) totaled $75.7M in Q3 2026, up 48% from Q2's $51.0M and the first quarterly increase since Q4 2024. The recovery strengthened every month, with REV rising from $19.1M in July to $26.5M in August and $30.1M in September, the highest monthly figure since January. [September is 2.1x the June low of $14.3M.]",
+    "url": "https://blockworks.com/api/investor-report/solana-token-holder-report-q3-2026/pdf"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-10-16",
+    "source": "KuCoin (coverage of the Blockworks Q3 2026 report published October 15, 2026)",
+    "direction": "supports",
+    "quote": "Solana's real economic value (REV) increased 48% quarter over quarter to $75.7 million [...] monthly application revenue reached $117.1 million and REV reached $30.1 million [September 2026]. Solana's DEX volume rose 23% to $197.2 billion.",
+    "url": "https://www.kucoin.com/blog/solana-q3-2026-report-revenue-jumps-48-percent"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.86
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.07
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.86,
+   "confidence": 0.8,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.13,
+    "2": 0.87
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1585,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:05:57Z"
+}

@@ -1,0 +1,122 @@
+{
+ "hash": "4d5ed48c32991557c08f983969920f38a61dac2ca963760ca5031fb7b144fb9b",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Bob Doll",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "The 10-year Treasury yield trades primarily between high 3%s and mid 4%s",
+   "author": "Bob Doll",
+   "date": "2025-12-31",
+   "context": "Prediction 3 of 10, first half. The 10-year yield spends most of 2026 in roughly a 3.75% to 4.5% band. Some outlets paraphrase the band as 3.5% to 4.5%; the Crossmark deck (s2) wording governs."
+  },
+  "bar": "standard",
+  "criterion": "The 10-year Treasury yield traded primarily between the high 3%s and the mid 4%s in 2026, read as at least 80% of trading days.",
+  "measure": "FRED DGS10 daily closes through the run date, band 3.70% to 4.60%; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-10-22",
+    "source": "FRED (Treasury H.15), 10-Year Treasury constant maturity, daily",
+    "direction": "contradicts",
+    "quote": "2025-12-31,4.18; 2026-02-27,3.97; 2026-05-18,4.61; 2026-09-16,5.01; 2026-09-30,5.29; 2026-10-05,5.31; 2026-10-22,4.96 [computed from the daily series: 134 of 203 closes in 2026 through 2026-10-22, or 66.0%, lie between 3.70 and 4.60; 69 closes are above 4.60 and 22 are above 5.00; none is below 3.70; the first close above 4.60 was 2026-05-18, the first above 5.00 was 2026-09-16; year low 3.97 on 2026-02-27, year high 5.31 on 2026-10-05]",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10&cosd=2025-12-01&coed=2026-10-24"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-10-06",
+    "source": "Trading Economics",
+    "direction": "contradicts",
+    "quote": "The yield on the 10-year US Treasury note was at 5.26% on Tuesday ... pausing a surge that peaked at a 24-year high of 5.33% touched yesterday",
+    "url": "https://tradingeconomics.com/united-states/government-bond-yield/news/589866"
+   },
+   {
+    "tier": 4,
+    "tier_meaning": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+    "date": "2026-07-06",
+    "source": "Bob Doll, Crossmark (3Q26 commentary)",
+    "direction": "neutral",
+    "quote": "While price action for the 10-year Treasury has been confined to the high 3%s and mid 4%s, the threat on the upside still exists, especially with significant debt issuance to come, and the inflation problem mentioned in #2 above.",
+    "url": "https://www.crossmarkglobal.com/wp-content/uploads/10-Predictions-3Q26-Quarterly-Commentary_FINAL.pdf"
+   },
+   {
+    "tier": 4,
+    "tier_meaning": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+    "date": "2026-10-05",
+    "source": "Bob Doll, Crossmark (4Q26 commentary)",
+    "direction": "contradicts",
+    "quote": "Treasurys were weak (the 10-year yield rose from 4.38% at 6/30/26 to 5.26% at 9/30/26, reaching the highest level since 2002.) ... Treasury rates have improved topside in accelerating fashion toward the end of Q3. Some credit spreads (especially low quality) have begun to widen. Suspect this prediction will be half correct.",
+    "url": "https://www.crossmarkglobal.com/quarterly-investment-commentary-4q26/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.1
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.98
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.99,
+   "confidence": 0.98,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.01,
+    "2": 0.99
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1991,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T20:16:43Z"
+}

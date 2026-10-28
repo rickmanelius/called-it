@@ -1,0 +1,2910 @@
+{
+ "tool": {
+  "name": "called-it",
+  "version": "1.0.0"
+ },
+ "run": {
+  "name": "galloway",
+  "subject": {
+   "name": "Scott Galloway",
+   "kind": "person",
+   "website": "https://www.profgmedia.com",
+   "x_handles": [
+    "profgalloway"
+   ],
+   "domains": [
+    "AI",
+    "markets",
+    "media",
+    "tech companies",
+    "politics",
+    "consumer",
+    "sports"
+   ]
+  },
+  "target_year": 2026,
+  "season_window": {
+   "start": "2025-10-01",
+   "end": "2026-01-31"
+  },
+  "evidence_window": {
+   "start": "2026-01-01",
+   "end": "2026-10-24"
+  },
+  "thresholds": {
+   "yes": 0.7,
+   "no": 0.3,
+   "min_strength": 1.0
+  }
+ },
+ "grader_models": {
+  "jev-1.14.0": 104
+ },
+ "aggregate": {
+  "per_bar": {
+   "strict": {
+    "met": 0,
+    "not_met": 7,
+    "unresolved": 8,
+    "resolved": 7,
+    "hit_rate": 0.0,
+    "hit_rate_all": 0.0
+   },
+   "standard": {
+    "met": 4,
+    "not_met": 5,
+    "unresolved": 6,
+    "resolved": 9,
+    "hit_rate": 0.444,
+    "hit_rate_all": 0.267
+   },
+   "lenient": {
+    "met": 7,
+    "not_met": 3,
+    "unresolved": 5,
+    "resolved": 10,
+    "hit_rate": 0.7,
+    "hit_rate_all": 0.467
+   }
+  },
+  "generosity_gap": 0.467,
+  "ladder": {
+   "c1": "not_met",
+   "c2": "not_met",
+   "c3": "met:standard",
+   "c4": "met:lenient",
+   "c5": "not_met",
+   "c6": "met:lenient",
+   "c7": "not_met",
+   "c8": "met:lenient",
+   "c9": "unresolved",
+   "c10": "unresolved",
+   "c11": "not_met",
+   "c12": "met:standard",
+   "c13": "met:standard",
+   "c14": "met:standard",
+   "c15": "not_met"
+  },
+  "ladder_counts": {
+   "met_strict": 0,
+   "met_standard": 4,
+   "met_lenient": 3,
+   "not_met": 6,
+   "unresolved": 2
+  },
+  "n_claims": 15
+ },
+ "claims": [
+  {
+   "id": "c1",
+   "quote": "AI Stocks Correct",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "markets",
+   "rank": 11,
+   "scores": {
+    "is_prediction": 0.96,
+    "specificity": 2.01,
+    "specificity_conf": 0.95,
+    "boldness": 1.24,
+    "kind_p": {
+     "binary": 0.29,
+     "spectrum": 0.71
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c2",
+   "quote": "likely sending the U.S., possibly the globe, into recession.",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "attribution": "subject",
+   "kind": "binary",
+   "domain": "markets",
+   "rank": 10,
+   "scores": {
+    "is_prediction": 0.93,
+    "specificity": 2.12,
+    "specificity_conf": 0.81,
+    "boldness": 1.29,
+    "kind_p": {
+     "binary": 0.73,
+     "spectrum": 0.27
+    }
+   },
+   "split_of": "c1",
+   "source_id": "s1"
+  },
+  {
+   "id": "c3",
+   "quote": "The Data Center Bubble Bursts",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "tech companies",
+   "rank": 3,
+   "scores": {
+    "is_prediction": 0.98,
+    "specificity": 2.44,
+    "specificity_conf": 0.56,
+    "boldness": 1.76,
+    "kind_p": {
+     "binary": 0.08,
+     "spectrum": 0.92
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c4",
+   "quote": "Nvidia & OpenAI Duopoly Comes Under Siege",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "tech companies",
+   "rank": 13,
+   "scores": {
+    "is_prediction": 0.8,
+    "specificity": 2.12,
+    "specificity_conf": 0.74,
+    "boldness": 1.53,
+    "kind_p": {
+     "binary": 0.02,
+     "spectrum": 0.98
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c5",
+   "quote": "Big Tech Pick: Amazon",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "attribution": "subject",
+   "kind": "binary",
+   "domain": "markets",
+   "rank": 8,
+   "scores": {
+    "is_prediction": 0.91,
+    "specificity": 2.43,
+    "specificity_conf": 0.55,
+    "boldness": 1.34,
+    "kind_p": {
+     "binary": 0.54,
+     "spectrum": 0.46
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c6",
+   "quote": "Space: The Next Big ‘Thing’",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "tech companies",
+   "rank": 15,
+   "scores": {
+    "is_prediction": 0.95,
+    "specificity": 2.23,
+    "specificity_conf": 0.23,
+    "boldness": 0.71,
+    "kind_p": {
+     "binary": 0.13,
+     "spectrum": 0.87
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c7",
+   "quote": "Best Investment (You Don’t Have Access to): TikTok U.S.",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "tech companies",
+   "rank": 2,
+   "scores": {
+    "is_prediction": 0.95,
+    "specificity": 2.76,
+    "specificity_conf": 0.75,
+    "boldness": 1.71,
+    "kind_p": {
+     "binary": 0.07,
+     "spectrum": 0.93
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c8",
+   "quote": "Short-Form Video and AI Meteors Strike Hollywood",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "media",
+   "rank": 5,
+   "scores": {
+    "is_prediction": 0.97,
+    "specificity": 2.87,
+    "specificity_conf": 0.88,
+    "boldness": 1.42,
+    "kind_p": {
+     "binary": 0.03,
+     "spectrum": 0.97
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c9",
+   "quote": "When Colbert shifts to podcasting, he’ll take eight people with him and make just $20 million, but it’ll only cost $5 million to produce.",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "media",
+   "rank": 9,
+   "scores": {
+    "is_prediction": 0.81,
+    "specificity": 2.85,
+    "specificity_conf": 0.86,
+    "boldness": 1.43,
+    "kind_p": {
+     "binary": 0.04,
+     "spectrum": 0.96
+    }
+   },
+   "split_of": "c8",
+   "source_id": "s1"
+  },
+  {
+   "id": "c10",
+   "quote": "Waymo Dominates",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "tech companies",
+   "rank": 4,
+   "scores": {
+    "is_prediction": 0.98,
+    "specificity": 2.99,
+    "specificity_conf": 0.99,
+    "boldness": 1.39,
+    "kind_p": {
+     "binary": 0.02,
+     "spectrum": 0.98
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c11",
+   "quote": "Humanoid Robots = Self-Driving Cars of 2015",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "attribution": "subject",
+   "kind": "binary",
+   "domain": "tech companies",
+   "rank": 6,
+   "scores": {
+    "is_prediction": 0.97,
+    "specificity": 2.8,
+    "specificity_conf": 0.8,
+    "boldness": 1.03,
+    "kind_p": {
+     "binary": 0.57,
+     "spectrum": 0.43
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c12",
+   "quote": "Vice of the Year: Prediction Markets",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "attribution": "subject",
+   "kind": "binary",
+   "domain": "consumer",
+   "rank": 7,
+   "scores": {
+    "is_prediction": 0.97,
+    "specificity": 2.11,
+    "specificity_conf": 0.72,
+    "boldness": 1.34,
+    "kind_p": {
+     "binary": 0.89,
+     "spectrum": 0.11
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c13",
+   "quote": "Synthetic Relationships Take Center Stage",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "AI",
+   "rank": 12,
+   "scores": {
+    "is_prediction": 0.97,
+    "specificity": 2.05,
+    "specificity_conf": 0.92,
+    "boldness": 1.14,
+    "kind_p": {
+     "binary": 0.31,
+     "spectrum": 0.69
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c14",
+   "quote": "The ‘College Is Dead’ Narrative Collapses",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "attribution": "subject",
+   "kind": "binary",
+   "domain": "consumer",
+   "rank": 14,
+   "scores": {
+    "is_prediction": 0.97,
+    "specificity": 1.95,
+    "specificity_conf": 0.85,
+    "boldness": 1.01,
+    "kind_p": {
+     "binary": 0.55,
+     "spectrum": 0.45
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c15",
+   "quote": "Team Scotland will reach the semifinals of the World Cup on the back of a Pele-like performance from Scott McTominay.",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "attribution": "subject",
+   "kind": "binary",
+   "domain": "sports",
+   "rank": 1,
+   "scores": {
+    "is_prediction": 0.98,
+    "specificity": 2.52,
+    "specificity_conf": 0.51,
+    "boldness": 1.91,
+    "kind_p": {
+     "binary": 0.96,
+     "spectrum": 0.04
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  }
+ ],
+ "rubrics": [
+  {
+   "claim_id": "c1",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "AI stocks had a real correction in 2026: a drawdown of at least 20% in the AI leaders, with the S&P 500's concentration in them falling.",
+     "measure": "Nasdaq-100 or a Magnificent Seven index down at least 20% peak to trough during 2026 per index data or major-outlet reporting, and the top-10 weight of the S&P 500 lower at the latest reading than at the start of the year; provisional until December 31.",
+     "check": {
+      "critic_accepts": 0.63,
+      "checkable": 0.85
+     }
+    },
+    "standard": {
+     "criterion": "AI stocks corrected in 2026: a drawdown of at least 10% in the AI leaders and underperformance of the broad market for the year.",
+     "measure": "Magnificent Seven or Nasdaq-100 down at least 10% peak to trough in 2026 and trailing the S&P 500 year to date at the latest reading; provisional.",
+     "check": {
+      "critic_accepts": 0.59,
+      "checkable": 0.82
+     }
+    },
+    "lenient": {
+     "criterion": "AI stocks had at least one widely reported correction of 10% or more in 2026.",
+     "measure": "Nasdaq-100 or a Magnificent Seven index down at least 10% from a 2026 high at some point in the year, per index data or major-outlet reporting.",
+     "check": {
+      "critic_accepts": 0.7,
+      "checkable": 0.86
+     }
+    }
+   },
+   "notes": "A heading, so the bars supply the size: 20% is a conventional correction-to-bear threshold, 10% a correction. The China catalyst he names is not graded.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c2",
+   "kind": "binary",
+   "bars": {
+    "strict": {
+     "criterion": "The US entered a recession in 2026.",
+     "measure": "An NBER-dated recession beginning in 2026, or two consecutive quarters of negative real GDP in 2026 per the BEA; provisional until the data exists.",
+     "check": {
+      "critic_accepts": 0.55,
+      "checkable": 0.9
+     }
+    },
+    "standard": {
+     "criterion": "The US economy contracted in 2026: at least one quarter of negative real GDP.",
+     "measure": "BEA advance or later estimate for any 2026 quarter below zero; provisional.",
+     "check": {
+      "critic_accepts": 0.75,
+      "checkable": 0.95
+     }
+    },
+    "lenient": {
+     "criterion": "The US economy stalled in 2026: a quarter near zero with rising unemployment, or a recession indicator that triggered.",
+     "measure": "A 2026 quarter of real GDP growth below 0.5% annualised with the unemployment rate up at least 0.5 points from its 2026 low, or the Sahm rule triggering in 2026, per BEA and BLS data; provisional.",
+     "check": {
+      "critic_accepts": 0.67,
+      "checkable": 0.89
+     }
+    }
+   },
+   "notes": "Split from c1. He hedged with 'likely'; the bars grade the outcome.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c3",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "The data-center bubble burst in 2026: large announced build-outs were cancelled or written down and a leading AI-infrastructure company's stock collapsed.",
+     "measure": "Cancellations, withdrawals or write-downs of announced data-center projects totalling at least $100 billion in 2026 per major-outlet reporting, and at least one leading AI-infrastructure company (Oracle, CoreWeave, Nebius or peers) down 50% or more from its 2025-26 peak at the latest reading; provisional.",
+     "check": {
+      "critic_accepts": 0.58,
+      "checkable": 0.75
+     }
+    },
+    "standard": {
+     "criterion": "The data-center boom cracked in 2026: multiple large projects were cancelled or delayed and at least one major AI-infrastructure stock fell sharply.",
+     "measure": "Two or more major-outlet reports of large data-center projects cancelled or delayed in 2026, and at least one AI-infrastructure stock down 30% or more from its peak at the latest reading; provisional.",
+     "check": {
+      "critic_accepts": 0.69,
+      "checkable": 0.82
+     }
+    },
+    "lenient": {
+     "criterion": "At least one hyperscaler or major financier pulled back on data-center plans in 2026.",
+     "measure": "Major-outlet reporting dated 2026 of a cut, pause or cancellation of data-center capex plans by Microsoft, Amazon, Alphabet, Meta, Oracle, OpenAI or a major lender.",
+     "check": {
+      "critic_accepts": 0.59,
+      "checkable": 0.85
+     }
+    }
+   },
+   "notes": "'Bursts' is given a size at strict; lenient asks only for a visible pullback.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c4",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "Both Nvidia and OpenAI lost material share in 2026.",
+     "measure": "Reputable 2026 reporting or market data showing Nvidia's AI accelerator share down at least 10 points (to AMD, custom silicon or Chinese chips) and OpenAI losing its lead in enterprise or consumer AI usage to Anthropic or Google; provisional.",
+     "check": {
+      "critic_accepts": 0.58,
+      "checkable": 0.39
+     }
+    },
+    "standard": {
+     "criterion": "Both Nvidia and OpenAI came under visible competitive siege in 2026, with reputable reporting of share loss for each.",
+     "measure": "Major-outlet reporting dated 2026 of share loss or pricing pressure at Nvidia and of share loss at OpenAI (enterprise or consumer), one or more reports each.",
+     "check": {
+      "critic_accepts": 0.61,
+      "checkable": 0.65
+     }
+    },
+    "lenient": {
+     "criterion": "Either Nvidia or OpenAI faced widely reported competitive pressure in 2026.",
+     "measure": "Major-outlet reporting dated 2026.",
+     "check": {
+      "critic_accepts": 0.59,
+      "checkable": 0.73
+     }
+    }
+   },
+   "notes": "'Under siege' is read as share loss at strict and standard, pressure at lenient.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c5",
+   "kind": "binary",
+   "bars": {
+    "strict": {
+     "criterion": "Amazon was the best-performing Magnificent Seven stock of 2026.",
+     "measure": "AMZN 2026 year-to-date total return above each of AAPL, MSFT, GOOGL, META, NVDA and TSLA at the latest close; provisional until December 31.",
+     "check": {
+      "critic_accepts": 0.64,
+      "checkable": 0.91
+     }
+    },
+    "standard": {
+     "criterion": "Amazon beat the Magnificent Seven as a group and the S&P 500 in 2026.",
+     "measure": "AMZN 2026 YTD return above the equal-weighted Mag 7 average and above the S&P 500; provisional.",
+     "check": {
+      "critic_accepts": 0.65,
+      "checkable": 0.89
+     }
+    },
+    "lenient": {
+     "criterion": "Amazon beat the S&P 500 in 2026.",
+     "measure": "AMZN 2026 YTD total return above the S&P 500's; provisional.",
+     "check": {
+      "critic_accepts": 0.53,
+      "checkable": 0.94
+     }
+    }
+   },
+   "notes": "'Big Tech pick' is read as relative performance against the group at strict and standard.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c6",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "Space became the next big thing in 2026: a landmark SpaceX capital event and record private space investment.",
+     "measure": "A SpaceX IPO filing or a transaction valuing it at $1 trillion or more in 2026, and private space investment at a record for the year per Space Capital or a peer tracker; provisional.",
+     "check": {
+      "critic_accepts": 0.29,
+      "checkable": 0.74
+     }
+    },
+    "standard": {
+     "criterion": "Private space investment set a record in 2026, or SpaceX filed to go public.",
+     "measure": "Space Capital or peer tracker annual or year-to-date record, or an S-1 filing, dated 2026; provisional.",
+     "check": {
+      "critic_accepts": 0.33,
+      "checkable": 0.88
+     }
+    },
+    "lenient": {
+     "criterion": "Space investment grew in 2026 or a major space company went public.",
+     "measure": "Tracker data showing year-over-year growth, or a space IPO raising $1 billion or more, dated 2026.",
+     "check": {
+      "critic_accepts": 0.47,
+      "checkable": 0.82
+     }
+    }
+   },
+   "notes": "The heading names no event; the bars anchor on investment flows and SpaceX, which he singles out.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c7",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "The US TikTok stake proved the best investment of 2026: worth more than double the $28 billion deal value within the year.",
+     "measure": "A transaction, funding round or credible reporting in 2026 valuing the US TikTok joint venture at $60 billion or more; provisional.",
+     "check": {
+      "critic_accepts": 0.63,
+      "checkable": 0.34
+     }
+    },
+    "standard": {
+     "criterion": "The US TikTok joint venture was valued above the $28 billion deal value in 2026.",
+     "measure": "A later transaction or credible valuation report in 2026 above $28 billion; provisional.",
+     "check": {
+      "critic_accepts": 0.34,
+      "checkable": 0.58
+     }
+    },
+    "lenient": {
+     "criterion": "The TikTok US deal closed in 2026 and reporting described the $28 billion price as a bargain for the buyers.",
+     "measure": "Deal closing per major outlets, plus at least one major-outlet analysis dated 2026 describing the valuation as below fair value.",
+     "check": {
+      "critic_accepts": 0.37,
+      "checkable": 0.73
+     }
+    }
+   },
+   "notes": "'Best investment' read as the asset's value rising well above the deal price; he gave $28 billion as the deal value, so the bars use it.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c8",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "Hollywood took visible damage from short-form video and AI in 2026: a major studio or network made deep cuts citing them, and YouTube's share of TV time passed all subscription streamers combined.",
+     "measure": "A major studio or network announcing cuts of 20% or more, a shutdown, or a flagship cancellation in 2026 explicitly citing short-form video or AI economics, per major outlets, and Nielsen's Gauge showing YouTube above the combined share of Netflix, Disney+, Prime Video and Max in a 2026 month; provisional.",
+     "check": {
+      "critic_accepts": 0.49,
+      "checkable": 0.75
+     }
+    },
+    "standard": {
+     "criterion": "At least one major studio or network made cuts or cancelled a flagship show in 2026, citing short-form video or AI economics.",
+     "measure": "Major-outlet reporting dated 2026 with the attribution in the company's statement or the reporting.",
+     "check": {
+      "critic_accepts": 0.66,
+      "checkable": 0.9
+     }
+    },
+    "lenient": {
+     "criterion": "In 2026 YouTube or TikTok viewing overtook traditional TV among young audiences, or AI tools were credited with cutting production costs at a major studio.",
+     "measure": "Nielsen or a reputable survey dated 2026, or major-outlet reporting of AI-driven cost cuts at a studio.",
+     "check": {
+      "critic_accepts": 0.6,
+      "checkable": 0.86
+     }
+    }
+   },
+   "notes": "'Meteors strike' is read as cuts and share shift. The Colbert example is c9.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c9",
+   "kind": "binary",
+   "bars": {
+    "strict": {
+     "criterion": "Stephen Colbert launched a podcast or independent digital show in 2026 with a small team.",
+     "measure": "Launch per major-outlet reporting dated 2026, with a reported team of fewer than 10 people; provisional.",
+     "check": {
+      "critic_accepts": 0.19,
+      "checkable": 0.81
+     }
+    },
+    "standard": {
+     "criterion": "Stephen Colbert announced or launched a podcast or digital show in 2026.",
+     "measure": "Announcement or launch per major-outlet reporting dated 2026; provisional.",
+     "check": {
+      "critic_accepts": 0.37,
+      "checkable": 0.94
+     }
+    },
+    "lenient": {
+     "criterion": "Stephen Colbert signed with a podcast or digital platform, or publicly committed to one, in 2026.",
+     "measure": "Major-outlet reporting dated 2026; provisional.",
+     "check": {
+      "critic_accepts": 0.41,
+      "checkable": 0.93
+     }
+    }
+   },
+   "notes": "Split from c8. The Late Show ends in May 2026; the dollar figures he gives are illustrative and not graded.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c10",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "Waymo dominated in 2026: paid rides at least doubled, it expanded to many more cities, and no rival came close.",
+     "measure": "Waymo at 2 million or more paid rides a month (from 1 million at the end of 2025) per company statements, operating in at least 10 US metro areas, and at least 5x the paid rides of any other US robotaxi operator at the latest 2026 reading; provisional.",
+     "check": {
+      "critic_accepts": 0.64,
+      "checkable": 0.56
+     }
+    },
+    "standard": {
+     "criterion": "Waymo's paid rides at least doubled in 2026 and it remained the largest US robotaxi operator.",
+     "measure": "Company statements or reputable reporting dated 2026; provisional.",
+     "check": {
+      "critic_accepts": 0.41,
+      "checkable": 0.62
+     }
+    },
+    "lenient": {
+     "criterion": "Waymo remained the largest US robotaxi operator by paid rides in 2026.",
+     "measure": "Reputable reporting or company data at the latest 2026 reading; provisional.",
+     "check": {
+      "critic_accepts": 0.63,
+      "checkable": 0.59
+     }
+    }
+   },
+   "notes": "'Dominates' is given a growth and lead definition; he supplied the 1 million rides a month baseline.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c11",
+   "kind": "binary",
+   "bars": {
+    "strict": {
+     "criterion": "Humanoid robots stayed a demo in 2026: none shipped to paying external customers in volume.",
+     "measure": "No humanoid robot maker (Tesla, Figure, Agility, Unitree, 1X or peers) reported 1,000 or more units delivered to external paying customers in 2026, per company statements or major outlets; provisional.",
+     "check": {
+      "critic_accepts": 0.55,
+      "checkable": 0.67
+     }
+    },
+    "standard": {
+     "criterion": "Tesla's Optimus was not sold to external customers in 2026.",
+     "measure": "No external Optimus sales reported by Tesla or major outlets in 2026; provisional.",
+     "check": {
+      "critic_accepts": 0.32,
+      "checkable": 0.87
+     }
+    },
+    "lenient": {
+     "criterion": "Tesla missed its own stated 2026 Optimus production or sales targets.",
+     "measure": "Tesla's stated 2026 targets versus reported output, per company statements or major-outlet reporting dated 2026; provisional.",
+     "check": {
+      "critic_accepts": 0.37,
+      "checkable": 0.65
+     }
+    }
+   },
+   "notes": "The analogy to 2015 self-driving is read as 'hype ahead of product'. Industrial robots are out of scope.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c12",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "Prediction markets were the vice of 2026: volume at least doubled, the gaming stocks he named trailed the market, and the gambling and addiction framing was widespread.",
+     "measure": "Combined Kalshi and Polymarket 2026 volume at least 2x 2025 (annualised); the six named gaming stocks (Aristocrat, Caesars, DraftKings, Evolution, Flutter, MGM) on average underperforming the S&P 500 in 2026; and two or more major outlets framing prediction markets as gambling or addiction in 2026; provisional.",
+     "check": {
+      "critic_accepts": 0.24,
+      "checkable": 0.33
+     }
+    },
+    "standard": {
+     "criterion": "Prediction markets grew strongly in 2026 and were widely framed as gambling, with legal or regulatory challenges.",
+     "measure": "Volume up at least 50% on 2025 (annualised) per Dune or The Block, plus major-outlet framing and at least one state or federal legal action dated 2026.",
+     "check": {
+      "critic_accepts": 0.5,
+      "checkable": 0.58
+     }
+    },
+    "lenient": {
+     "criterion": "Prediction markets were a widely covered backlash or addiction topic in 2026.",
+     "measure": "Two or more major outlets dated 2026.",
+     "check": {
+      "critic_accepts": 0.36,
+      "checkable": 0.45
+     }
+    }
+   },
+   "notes": "'Vice of the year' is read as growth plus backlash; the gaming-stock clause is required only at strict.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c13",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "Synthetic relationships took center stage in 2026: AI companions became a national policy issue with binding rules, while usage kept growing.",
+     "measure": "A federal law or FTC rule on AI companions enacted or finalised in 2026, or companion-chatbot laws enacted in at least three states in 2026, plus reported growth in companion usage (Character.ai, Replika, ChatGPT companion features); provisional.",
+     "check": {
+      "critic_accepts": 0.55,
+      "checkable": 0.55
+     }
+    },
+    "standard": {
+     "criterion": "AI companions became a major public and policy issue in 2026.",
+     "measure": "State laws, lawsuits, congressional hearings or an FTC action on AI companions dated 2026, per major-outlet reporting, two or more such events.",
+     "check": {
+      "critic_accepts": 0.59,
+      "checkable": 0.51
+     }
+    },
+    "lenient": {
+     "criterion": "AI companion harms to young people were a widely covered topic in 2026.",
+     "measure": "Two or more major outlets dated 2026.",
+     "check": {
+      "critic_accepts": 0.34,
+      "checkable": 0.58
+     }
+    }
+   },
+   "notes": "'Center stage' is read as policy action at strict and standard, coverage at lenient. The 'next opioid crisis' line is rhetoric and not graded.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c14",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "The 'college is dead' narrative collapsed in 2026: enrollment rose again and the reversal was widely reported.",
+     "measure": "National Student Clearinghouse fall 2026 (or latest 2026) undergraduate enrollment up year over year, plus major-outlet reporting dated 2026 describing the narrative as wrong or reversing; provisional.",
+     "check": {
+      "critic_accepts": 0.54,
+      "checkable": 0.7
+     }
+    },
+    "standard": {
+     "criterion": "US undergraduate enrollment rose in 2026.",
+     "measure": "National Student Clearinghouse spring or fall 2026 report showing year-over-year growth; provisional.",
+     "check": {
+      "critic_accepts": 0.33,
+      "checkable": 0.9
+     }
+    },
+    "lenient": {
+     "criterion": "US undergraduate enrollment held steady or rose in 2026.",
+     "measure": "National Student Clearinghouse 2026 report, flat or up year over year; provisional.",
+     "check": {
+      "critic_accepts": 0.42,
+      "checkable": 0.77
+     }
+    }
+   },
+   "notes": "The degree-premium argument is background; the bars grade enrollment, which is the measurable claim he made.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c15",
+   "kind": "binary",
+   "bars": {
+    "strict": {
+     "criterion": "Scotland reached the semifinals of the 2026 World Cup.",
+     "measure": "FIFA results; the tournament ended 2026-07-19.",
+     "check": {
+      "critic_accepts": 0.77,
+      "checkable": 0.97
+     }
+    },
+    "standard": {
+     "criterion": "Scotland reached the semifinals of the 2026 World Cup.",
+     "measure": "FIFA results.",
+     "check": {
+      "critic_accepts": 0.84,
+      "checkable": 0.97
+     }
+    },
+    "lenient": {
+     "criterion": "Scotland reached the semifinals of the 2026 World Cup.",
+     "measure": "FIFA results.",
+     "check": {
+      "critic_accepts": 0.7,
+      "checkable": 0.96
+     }
+    }
+   },
+   "notes": "Binary; identical bars. He flagged it as a dream. The McTominay clause is not graded.",
+   "revisions": []
+  }
+ ],
+ "grades": [
+  {
+   "claim_id": "c14",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "no evidence gathered",
+   "met_p": null,
+   "contradicted_p": null,
+   "strength": null,
+   "evidence_ids": [],
+   "grader": {
+    "provider": "none"
+   },
+   "provisional": true
+  },
+  {
+   "claim_id": "c1",
+   "bar": "strict",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.12,
+   "contradicted_p": 0.97,
+   "strength": 1.88,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.11,
+    "2": 0.89
+   },
+   "strength_conf": 0.83,
+   "evidence_ids": [
+    "e11",
+    "e12",
+    "e8",
+    "e9",
+    "e13"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "64b71c7495dce859efb23e1bbfa52b2818e13744473f775cb3a57eedc1f99547",
+   "provisional": true
+  },
+  {
+   "claim_id": "c1",
+   "bar": "standard",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.24,
+   "contradicted_p": 0.9,
+   "strength": 1.9,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.1,
+    "2": 0.9
+   },
+   "strength_conf": 0.85,
+   "evidence_ids": [
+    "e10",
+    "e6",
+    "e7",
+    "e9",
+    "e13"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "edcf39aa9eca9abf45b417eb207fb4cd9199d19d09623c6338ef752ad1fb12c1",
+   "provisional": true
+  },
+  {
+   "claim_id": "c1",
+   "bar": "lenient",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.67,
+   "contradicted_p": 0.02,
+   "strength": 1.04,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.96,
+    "2": 0.04
+   },
+   "strength_conf": 0.94,
+   "evidence_ids": [
+    "e6",
+    "e13"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "beed2e5781a537fd94e371206e3bbfde7c5887cb51aae26aa02388dbc32f3f7a",
+   "provisional": true
+  },
+  {
+   "claim_id": "c2",
+   "bar": "strict",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.03,
+   "contradicted_p": 0.76,
+   "strength": 1.65,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.35,
+    "2": 0.65
+   },
+   "strength_conf": 0.47,
+   "evidence_ids": [
+    "e3"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "cb60d042134cb117e2d4c6c272fd801ecb9e8a7a15beea8cbff3003e0045cd79",
+   "provisional": true
+  },
+  {
+   "claim_id": "c2",
+   "bar": "standard",
+   "verdict": "not_met",
+   "reason": "implied: the lenient bar is not met",
+   "met_p": 0.04,
+   "contradicted_p": 0.47,
+   "strength": 1.67,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.33,
+    "2": 0.67
+   },
+   "strength_conf": 0.5,
+   "evidence_ids": [
+    "e3"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "1b879c4e19372c14224711c29d499d1fc18d372257f51e3116186d8f92389b50",
+   "provisional": true,
+   "implied_from": "lenient"
+  },
+  {
+   "claim_id": "c2",
+   "bar": "lenient",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.03,
+   "contradicted_p": 0.96,
+   "strength": 1.99,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.01,
+    "2": 0.99
+   },
+   "strength_conf": 0.98,
+   "evidence_ids": [
+    "e3",
+    "e4",
+    "e5"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "be8357a67573eb60ade0234ee5280756b405c4456825685e26eef23cd37eeaff",
+   "provisional": true
+  },
+  {
+   "claim_id": "c3",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.08,
+   "contradicted_p": 0.54,
+   "strength": 1.51,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.48,
+    "2": 0.51
+   },
+   "strength_conf": 0.25,
+   "evidence_ids": [
+    "e20",
+    "e15",
+    "e16"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "5146a88ab9ead195cb88a54e9dc58163029d0b2b9be8fb3e1e2895d0917ecafb",
+   "provisional": true
+  },
+  {
+   "claim_id": "c3",
+   "bar": "standard",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.84,
+   "contradicted_p": 0.37,
+   "strength": 1.95,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.05,
+    "2": 0.95
+   },
+   "strength_conf": 0.93,
+   "evidence_ids": [
+    "e14",
+    "e18",
+    "e16",
+    "e19",
+    "e17"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "419f4940be2dc4a53b9c555cdd7de6b3adf6552febd8360430bb2c4134bc7c7a",
+   "provisional": true
+  },
+  {
+   "claim_id": "c3",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.9,
+   "contradicted_p": 0.02,
+   "strength": 1.04,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.96,
+    "2": 0.04
+   },
+   "strength_conf": 0.94,
+   "evidence_ids": [
+    "e17"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "39cdb45bc7b82e220364490d62d366e0bbebb69f2fc0662ee22c1d1fd59fbf46",
+   "provisional": true
+  },
+  {
+   "claim_id": "c4",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.29,
+   "contradicted_p": 0.27,
+   "strength": 1.61,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.38,
+    "2": 0.61
+   },
+   "strength_conf": 0.4,
+   "evidence_ids": [
+    "e21",
+    "e22",
+    "e23"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "c9b3d116fb4cf59b1e4447a4e766ad6e66f76bd857dcdaab0f0deb382b03cfdc",
+   "provisional": true
+  },
+  {
+   "claim_id": "c4",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.53,
+   "contradicted_p": 0.12,
+   "strength": 1.86,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.13,
+    "2": 0.87
+   },
+   "strength_conf": 0.8,
+   "evidence_ids": [
+    "e24",
+    "e21",
+    "e22",
+    "e23"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "783fc70b9b275222713179e29f9c6a29b4c7864b33a79688e0e9e65f87f5fbf6",
+   "provisional": true
+  },
+  {
+   "claim_id": "c4",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.94,
+   "contradicted_p": 0.01,
+   "strength": 1.97,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.03,
+    "2": 0.97
+   },
+   "strength_conf": 0.95,
+   "evidence_ids": [
+    "e24",
+    "e21",
+    "e22",
+    "e25"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "97aba75dd22f143da8d93c011211e5efcefd37379fa4b6a74907c8ba9d2ba391",
+   "provisional": true
+  },
+  {
+   "claim_id": "c5",
+   "bar": "strict",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.02,
+   "contradicted_p": 0.98,
+   "strength": 1.88,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.12,
+    "2": 0.88
+   },
+   "strength_conf": 0.82,
+   "evidence_ids": [
+    "e29",
+    "e26"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "72032a69d99670879e480f9b08b55169577d422cfab6c548048904aba639cc33",
+   "provisional": true
+  },
+  {
+   "claim_id": "c5",
+   "bar": "standard",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.01,
+   "contradicted_p": 0.98,
+   "strength": 1.9,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.1,
+    "2": 0.9
+   },
+   "strength_conf": 0.85,
+   "evidence_ids": [
+    "e28",
+    "e26",
+    "e27"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "3cde5f6c47f3f59abc197289edee62047a4060a32fad0afd3ddf9f60fdc9ec99",
+   "provisional": true
+  },
+  {
+   "claim_id": "c5",
+   "bar": "lenient",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.03,
+   "contradicted_p": 0.98,
+   "strength": 1.86,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.14,
+    "2": 0.86
+   },
+   "strength_conf": 0.79,
+   "evidence_ids": [
+    "e28",
+    "e26",
+    "e27"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "f4d24073e30ad6df07a4ad30f88737506b316ac31f07a5564c0312935392b0e6",
+   "provisional": true
+  },
+  {
+   "claim_id": "c6",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.62,
+   "contradicted_p": 0.03,
+   "strength": 1.93,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.07,
+    "2": 0.93
+   },
+   "strength_conf": 0.9,
+   "evidence_ids": [
+    "e30",
+    "e31",
+    "e33"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "8aba4e025475c368db5289ea70e99c39363ec9e5ec15faa81a98ee0115b6f6cc",
+   "provisional": true
+  },
+  {
+   "claim_id": "c6",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.67,
+   "contradicted_p": 0.01,
+   "strength": 1.82,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.17,
+    "2": 0.83
+   },
+   "strength_conf": 0.74,
+   "evidence_ids": [
+    "e30",
+    "e31",
+    "e33"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "eb1f0a576826570f7aee06842005575c4b9f04c4db943f766cdcd67617e42843",
+   "provisional": true
+  },
+  {
+   "claim_id": "c6",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.98,
+   "contradicted_p": 0.01,
+   "strength": 1.96,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.04,
+    "2": 0.96
+   },
+   "strength_conf": 0.94,
+   "evidence_ids": [
+    "e30",
+    "e31",
+    "e32"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "c356bae5c3015df9af3b68459f517a6dfbb99730291cbe1c185c86e6f824afad",
+   "provisional": true
+  },
+  {
+   "claim_id": "c7",
+   "bar": "strict",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.01,
+   "contradicted_p": 0.95,
+   "strength": 1.86,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.14,
+    "2": 0.86
+   },
+   "strength_conf": 0.79,
+   "evidence_ids": [
+    "e35",
+    "e36"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "24cade6c51ca65898d21538d04bcba50aa773f6e8afe2589d3ad67bb554cebaf",
+   "provisional": true
+  },
+  {
+   "claim_id": "c7",
+   "bar": "standard",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.02,
+   "contradicted_p": 0.95,
+   "strength": 1.85,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.14,
+    "2": 0.86
+   },
+   "strength_conf": 0.79,
+   "evidence_ids": [
+    "e35",
+    "e36"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "62b4d7d1ba222dc760d5dacd56b107a6df2f3c20d27af5f33bdc406e4e7623f9",
+   "provisional": true
+  },
+  {
+   "claim_id": "c7",
+   "bar": "lenient",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.06,
+   "contradicted_p": 0.12,
+   "strength": 1.05,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.95,
+    "2": 0.05
+   },
+   "strength_conf": 0.93,
+   "evidence_ids": [
+    "e34"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "c1755bdd0941044d13416e4d47f1ff0a4152075452905d6123d551cf4be62952",
+   "provisional": true
+  },
+  {
+   "claim_id": "c8",
+   "bar": "strict",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.02,
+   "contradicted_p": 0.95,
+   "strength": 1.94,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.06,
+    "2": 0.94
+   },
+   "strength_conf": 0.91,
+   "evidence_ids": [
+    "e37",
+    "e40",
+    "e38"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "650b615a9384c493c2f0811d5401c84b1db42f3e235fe9a662e2a9a7b3928696",
+   "provisional": true
+  },
+  {
+   "claim_id": "c8",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.02,
+   "contradicted_p": 0.22,
+   "strength": 1.0,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.98,
+    "2": 0.01
+   },
+   "strength_conf": 0.97,
+   "evidence_ids": [
+    "e40"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "7968216e1b756537d260e6d7b6e4929facd14da60796b51aa9a5289501bcfa4f",
+   "provisional": true
+  },
+  {
+   "claim_id": "c8",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.96,
+   "contradicted_p": 0.02,
+   "strength": 1.03,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.97,
+    "2": 0.03
+   },
+   "strength_conf": 0.95,
+   "evidence_ids": [
+    "e39"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "4bd738f9d9b62a4735ff582ff9b39608cc96707eacfbf2c976b29b408ca74165",
+   "provisional": true
+  },
+  {
+   "claim_id": "c9",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.02,
+   "contradicted_p": 0.28,
+   "strength": 1.19,
+   "strength_probs": {
+    "0": 0.02,
+    "1": 0.77,
+    "2": 0.21
+   },
+   "strength_conf": 0.66,
+   "evidence_ids": [
+    "e42",
+    "e41"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "90d5af79c76ad76aee54fe79918baeb3da56ca7e9b5e1569b831e8d000d89561",
+   "provisional": true
+  },
+  {
+   "claim_id": "c9",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.02,
+   "contradicted_p": 0.28,
+   "strength": 1.23,
+   "strength_probs": {
+    "0": 0.02,
+    "1": 0.74,
+    "2": 0.24
+   },
+   "strength_conf": 0.61,
+   "evidence_ids": [
+    "e42",
+    "e41"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "5d5c7b2409507a8ea031d1f19b24fcff90877fe48dcf1b36df629bbc1f8b5e11",
+   "provisional": true
+  },
+  {
+   "claim_id": "c9",
+   "bar": "lenient",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.02,
+   "contradicted_p": 0.29,
+   "strength": 1.24,
+   "strength_probs": {
+    "0": 0.02,
+    "1": 0.72,
+    "2": 0.26
+   },
+   "strength_conf": 0.58,
+   "evidence_ids": [
+    "e42",
+    "e41"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "2f128894875228370ed35aa9d429d5e9536cb6c8004185a5be92339c3370101a",
+   "provisional": true
+  },
+  {
+   "claim_id": "c10",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.21,
+   "contradicted_p": 0.28,
+   "strength": 1.78,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.22,
+    "2": 0.78
+   },
+   "strength_conf": 0.67,
+   "evidence_ids": [
+    "e43",
+    "e46",
+    "e45"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "5ed6db8ca516eaa19a9271de032ebb136bd9e6d80d1b018a6759388b29e7d659",
+   "provisional": true
+  },
+  {
+   "claim_id": "c10",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.11,
+   "contradicted_p": 0.09,
+   "strength": 1.78,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.22,
+    "2": 0.78
+   },
+   "strength_conf": 0.67,
+   "evidence_ids": [
+    "e43",
+    "e45"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "0274334e4e6aa20611c875aa218ee29f167968b3db87915c43fb5e36672b4f24",
+   "provisional": true
+  },
+  {
+   "claim_id": "c10",
+   "bar": "lenient",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.24,
+   "contradicted_p": 0.03,
+   "strength": 1.75,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.25,
+    "2": 0.75
+   },
+   "strength_conf": 0.62,
+   "evidence_ids": [
+    "e44",
+    "e46"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "f8c4242b31910fa7021cf19b13e5ea4d73ead4f004b36ec0d2e778dfac28b91f",
+   "provisional": true
+  },
+  {
+   "claim_id": "c11",
+   "bar": "strict",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.05,
+   "contradicted_p": 0.95,
+   "strength": 1.03,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.95,
+    "2": 0.04
+   },
+   "strength_conf": 0.93,
+   "evidence_ids": [
+    "e48"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "bc949df9920aacde0f17c87f907ffac14fe11c510e583e8af31d79faf41a3117",
+   "provisional": true
+  },
+  {
+   "claim_id": "c11",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.51,
+   "contradicted_p": 0.39,
+   "strength": 1.02,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.98,
+    "2": 0.02
+   },
+   "strength_conf": 0.97,
+   "evidence_ids": [
+    "e47"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "83eb1d34436a5f7b529a40394d64101e339ea9300e1cb7f6aaeaae4604cef2ce",
+   "provisional": true
+  },
+  {
+   "claim_id": "c11",
+   "bar": "lenient",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.21,
+   "contradicted_p": 0.3,
+   "strength": 1.02,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.98,
+    "2": 0.02
+   },
+   "strength_conf": 0.97,
+   "evidence_ids": [
+    "e47"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "c219ad92426e541ce57ee675a2d44d2228adcc678c85a8a6e326304807d96506",
+   "provisional": true
+  },
+  {
+   "claim_id": "c12",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.35,
+   "contradicted_p": 0.32,
+   "strength": 1.94,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.05,
+    "2": 0.95
+   },
+   "strength_conf": 0.93,
+   "evidence_ids": [
+    "e50",
+    "e49",
+    "e54",
+    "e52",
+    "e53"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "a45a1668afabeedf2249faaad634c9448244cc8df3f3d422365ea5d868a8cdd2",
+   "provisional": true
+  },
+  {
+   "claim_id": "c12",
+   "bar": "standard",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.91,
+   "contradicted_p": 0.02,
+   "strength": 1.92,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.08,
+    "2": 0.92
+   },
+   "strength_conf": 0.88,
+   "evidence_ids": [
+    "e50",
+    "e49",
+    "e51",
+    "e52"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "18f146eca449d5e314a486d8705dd5361b8c54345d249d5c17567ab80df0f8de",
+   "provisional": true
+  },
+  {
+   "claim_id": "c12",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.71,
+   "contradicted_p": 0.04,
+   "strength": 1.94,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.06,
+    "2": 0.94
+   },
+   "strength_conf": 0.91,
+   "evidence_ids": [
+    "e49",
+    "e51",
+    "e52"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "aea9923cc5f4918a85bb5f38637a4f08ed553554661103ed001ca4f79f4546da",
+   "provisional": true
+  },
+  {
+   "claim_id": "c13",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.27,
+   "contradicted_p": 0.1,
+   "strength": 1.63,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.37,
+    "2": 0.63
+   },
+   "strength_conf": 0.44,
+   "evidence_ids": [
+    "e55",
+    "e57"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "d143ca2a1b5046275db1fe441d7242ac2b68f24b68aa93cfa16fb15babf3cba7",
+   "provisional": true
+  },
+  {
+   "claim_id": "c13",
+   "bar": "standard",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.95,
+   "contradicted_p": 0.01,
+   "strength": 1.96,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.04,
+    "2": 0.96
+   },
+   "strength_conf": 0.94,
+   "evidence_ids": [
+    "e56",
+    "e55"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "03862b4cac33d6ba5a912f43b800eebc9437f9b5058829c37f0c4521bd0fbd6f",
+   "provisional": true
+  },
+  {
+   "claim_id": "c13",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "implied: the standard bar is met",
+   "met_p": 0.18,
+   "contradicted_p": 0.1,
+   "strength": 1.04,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.96,
+    "2": 0.04
+   },
+   "strength_conf": 0.94,
+   "evidence_ids": [
+    "e56"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "5959085ef0242b5b6ce137470e0e9c8613e04e2d850bd92d90527e1ba328e939",
+   "provisional": true,
+   "implied_from": "standard"
+  },
+  {
+   "claim_id": "c14",
+   "bar": "standard",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.98,
+   "contradicted_p": 0.01,
+   "strength": 1.99,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.01,
+    "2": 0.99
+   },
+   "strength_conf": 0.98,
+   "evidence_ids": [
+    "e58",
+    "e59"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "d6130671620e7be7559927e4b4704f28d9e52e4f0828f9262b9875fa08b27e9f",
+   "provisional": true
+  },
+  {
+   "claim_id": "c14",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.98,
+   "contradicted_p": 0.01,
+   "strength": 1.99,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.01,
+    "2": 0.99
+   },
+   "strength_conf": 0.98,
+   "evidence_ids": [
+    "e58",
+    "e59"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "54edd7e8656b102e737c2a1400a14e0df637b2750199dd839bbd8631a349a228",
+   "provisional": true
+  },
+  {
+   "claim_id": "c15",
+   "bar": "strict",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.02,
+   "contradicted_p": 0.99,
+   "strength": 1.96,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.04,
+    "2": 0.96
+   },
+   "strength_conf": 0.94,
+   "evidence_ids": [
+    "e1",
+    "e2"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "e525aef1911e576f42ba5b5249c46b6737d1c0d0d596eb7f93aebe5d69cf3281",
+   "provisional": false
+  },
+  {
+   "claim_id": "c15",
+   "bar": "standard",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.02,
+   "contradicted_p": 0.99,
+   "strength": 1.96,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.04,
+    "2": 0.96
+   },
+   "strength_conf": 0.94,
+   "evidence_ids": [
+    "e1",
+    "e2"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "2f5ed686b1a71e8cec7745275734d23e80b9114ad6d923eb1d8252dff730b680",
+   "provisional": false
+  },
+  {
+   "claim_id": "c15",
+   "bar": "lenient",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.01,
+   "contradicted_p": 0.99,
+   "strength": 1.95,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.04,
+    "2": 0.96
+   },
+   "strength_conf": 0.94,
+   "evidence_ids": [
+    "e1",
+    "e2"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "e91e99b34f1ef3953596b39d005e8dfa5da5a45d2723342dc39afb03cf236c16",
+   "provisional": false
+  }
+ ],
+ "evidence": [
+  {
+   "id": "e1",
+   "claim_id": "c15",
+   "url": "https://www.thestar.com.my/sport/football/2026/06/28/soccer-scotland-eliminated-from-world-cup",
+   "date": "2026-06-27",
+   "source": "Reuters (via The Star)",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "Scotland and South Korea were eliminated from the World Cup on Saturday ... after failing to make it into the top eight of the third-placed teams ... Scotland beat Haiti 1-0 in their opener ... lost 1-0 to Morocco and 3-0 to Brazil",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e2",
+   "claim_id": "c15",
+   "url": "https://www.flashscore.co.uk/news/football-world-championship-scotland-eliminated-from-2026-world-cup-after-croatia-defeat-ghana/CCayxigR/",
+   "date": "2026-06-27",
+   "source": "Flashscore",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "Scotland have been eliminated from the 2026 FIFA World Cup ... failing to finish as one of the eight best third-placed teams in the group stage ... Their fate was confirmed after Croatia beat Ghana 2-1 in Group L",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e3",
+   "claim_id": "c2",
+   "url": "https://bea.gov/news/2026/gdp-advance-estimate-2nd-quarter-2026",
+   "date": "2026-07-30",
+   "source": "BEA",
+   "tier": 1,
+   "direction": "contradicts",
+   "quote": "Real gross domestic product (GDP) increased at an annual rate of 1.5 percent in the second quarter of 2026 ... In the first quarter, real GDP increased 2.1 percent.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e4",
+   "claim_id": "c2",
+   "bars": [
+    "lenient"
+   ],
+   "url": "https://www.bls.gov/news.release/archives/empsit_10022026.htm",
+   "date": "2026-10-02",
+   "source": "BLS Employment Situation, September 2026",
+   "tier": 1,
+   "direction": "contradicts",
+   "quote": "Both nonfarm payroll employment (+29,000) and the unemployment rate (4.2 percent) changed little in September ... The unemployment rate has remained in a narrow range of 4.1 percent to 4.3 percent since March.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e5",
+   "claim_id": "c2",
+   "bars": [
+    "lenient"
+   ],
+   "url": "https://fred.stlouisfed.org/series/SAHMREALTIME",
+   "date": "2026-10-02",
+   "source": "FRED (Sahm Rule Recession Indicator, real-time)",
+   "tier": 1,
+   "direction": "contradicts",
+   "quote": "September 2026 observation: 0.00 percentage points. Series note: signals a recession when the three-month moving average of the national unemployment rate rises by 0.50 percentage points or more relative to the minimum of the three-month averages from the previous 12 months",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e6",
+   "claim_id": "c1",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://www.fool.com/investing/2026/08/03/nasdaq-hit-correction-heres-history-says-next/",
+   "date": "2026-08-03",
+   "source": "Motley Fool",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "On July 29, it closed just over 11% below its all-time high reached in early June.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e7",
+   "claim_id": "c1",
+   "bars": [
+    "standard"
+   ],
+   "url": "https://www.chase.com/personal/investments/learning-and-insights/article/nasdaq-performance-september-2026",
+   "date": "2026-10-09",
+   "source": "J.P. Morgan / Chase insights",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "The Nasdaq Composite Index is up 15.6% year to date in 2026 (as of close on September 30) ... outpacing both the S&P 500's 11.8% gain and the Dow Jones Industrial Average's 5.9% rise",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e8",
+   "claim_id": "c1",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://chartrow.com/nasdaq-100/drawdown",
+   "date": "2026-10-23",
+   "source": "ChartRow (Nasdaq-100 drawdown data)",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "7.3% below its all-time high ... set Oct 6, 2026 (as of market close, Oct 23, 2026); the table of declines of 15% or more has no 2026 entries",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e9",
+   "claim_id": "c1",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://totalrealreturns.com/n/MAGS",
+   "date": "2026-10-23",
+   "source": "TotalRealReturns (Roundhill Magnificent Seven ETF, MAGS)",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "This Year's Performance, through 2026-10-23: YTD +6.23% ... -5.69% on 2026-10-23 from 2026-10-13 peak",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e10",
+   "claim_id": "c1",
+   "bars": [
+    "standard"
+   ],
+   "url": "https://www.morningstar.com.au/markets/4-charts-not-so-magnificent-seven",
+   "date": "2026-07-17",
+   "source": "Morningstar",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "Apple (up 16.9% through July 13) and Alphabet (up 12.7%) have done the best. ... Microsoft has been this year's worst performer among the Magnificent Seven, down 20.4% through July 13. ... the broader market, which is up 10.6% over the same period as measured by the Morningstar US Large-Mid Cap Index",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e11",
+   "claim_id": "c1",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://www.marquetteassociates.com/this-too-shall-reconstitute/",
+   "date": "2026-05-04",
+   "source": "Marquette Associates",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "Baseline (end of 2025): From 1985-2015, top 10 weight ranged from 17.6% to 21.1%, but 2025's weight was 40.6%.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e12",
+   "claim_id": "c1",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://www.kucoin.com/blog/ae-nvidia-apple-and-microsoft-sp500-concentration",
+   "date": "2026-10-07",
+   "source": "KuCoin blog citing S&P Dow Jones Indices",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "S&P Dow Jones Indices data as of September 30, 2026, place the top 10 at 39.1% and the single largest name at 8.4%.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e13",
+   "claim_id": "c1",
+   "url": "https://www.profgmedia.com/p/predictions-2026-mid-year-check-in",
+   "date": "2026-06-25",
+   "source": "Prof G Media (Scott Galloway)",
+   "tier": 4,
+   "direction": "neutral",
+   "quote": "If you know me, you know I make predictions (and then hold myself accountable). ... Prof G+ paid subscribers only - register (or upgrade) below. [No verdicts on any prediction are visible outside the paywall.]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e14",
+   "claim_id": "c3",
+   "bars": [
+    "standard"
+   ],
+   "url": "https://datacenterwatch.org/q1-2026",
+   "date": "2026-06-12",
+   "source": "Data Center Watch (10a Labs), Q1 2026 report",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "At least 75 data center projects worth approximately $130 billion were blocked or delayed in a single quarter ... roughly matching the scale of all of 2025 in just three months",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e15",
+   "claim_id": "c3",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://thenextweb.com/news/data-center-opposition-75-projects-blocked-q1-2026",
+   "date": "2026-06-14",
+   "source": "The Next Web (citing Data Center Watch)",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "found that activists blocked or delayed at least 75 projects worth a combined $130 billion [blocked or delayed, not cancelled or written down]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e16",
+   "claim_id": "c3",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://newsletter.semianalysis.com/p/stop-saying-half-of-2026-us-datacenter",
+   "date": "2026-06-18",
+   "source": "SemiAnalysis",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "our YE2026 NA Hyperscaler Self-build forecast only moved by ~1% ... Sightline's dataset clearly doesn't track every datacenter under development.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e17",
+   "claim_id": "c3",
+   "bars": [
+    "lenient",
+    "standard"
+   ],
+   "url": "https://www.thegardenisland.com/syndicated/tech-companies-need-more-data-centers-so-why-are-nearly-half-of-all-planned-projects-delayed-or-canceled",
+   "date": "2026-10-19",
+   "source": "Stacker / ProLift (syndicated)",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Oracle Corporation and OpenAI terminated plans to expand a flagship AI data center campus in Abilene, Texas. ... between 30% and 50% [of 16 GW of scheduled U.S. data center capacity faces severe delays or cancellation]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e18",
+   "claim_id": "c3",
+   "bars": [
+    "standard"
+   ],
+   "url": "https://news.bgov.com/mergers-and-acquisitions/wall-street-is-bullish-on-oracle-but-investors-arent-buying-it",
+   "date": "2026-05-01",
+   "source": "Bloomberg Law / Bloomberg Government",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Despite an April rally, the stock is down nearly 50% since hitting a high in September. [Oracle]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e19",
+   "claim_id": "c3",
+   "bars": [
+    "standard"
+   ],
+   "url": "https://siliconangle.com/2026/10/14/shares-of-oracle-neoclouds-drop-on-coreweave-debt-concerns/",
+   "date": "2026-10-14",
+   "source": "SiliconANGLE",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "CoreWeave's shareholders took note of the discussion: Its stock plummeted more than 15.5% today. ... Oracle Corp., which isn't a neocloud but has borrowed heavily to finance its data center builtout, closed 8.8% lower. [CoreWeave outstanding obligations put at $50 billion, citing Business Insider]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e20",
+   "claim_id": "c3",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://finance.yahoo.com/news/coreweave-collapse-sparks-fears-cracks-153437175.html",
+   "date": "2025-12-16",
+   "source": "CoinDesk via Yahoo Finance (citing WSJ)",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "Baseline (December 2025): CoreWeave's share price has fallen more than 60% from its June record",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e21",
+   "claim_id": "c4",
+   "url": "https://techcrunch.com/2026/01/22/openai-is-coming-for-those-sweet-enterprise-dollars-in-2026",
+   "date": "2026-01-22",
+   "source": "TechCrunch (citing Menlo Ventures)",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "The AI research lab holds a 40% market share, according to a December report from VC firm Menlo Ventures ... OpenAI on the other hand has seen its usage market share drop from 50% in 2023 to 27% at the end of 2025",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e22",
+   "claim_id": "c4",
+   "url": "https://techcrunch.com/2026/05/13/anthropic-now-has-more-business-customers-than-openai-according-to-ramp-data/",
+   "date": "2026-05-13",
+   "source": "TechCrunch (citing Ramp AI Index)",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "shows 34.4% of participating businesses are paying for Anthropic services ... while only 32.3% pay for OpenAI",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e23",
+   "claim_id": "c4",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/",
+   "date": "2026-08-20",
+   "source": "TechCrunch (citing Ramp AI Index)",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "That's when Anthropic hit 41% market share to OpenAI's 39%. [May] ... As of July, Anthropic has nearly 44% to OpenAI's nearly 40%. ... OpenAI is currently growing faster among this segment in Q3 to date than Anthropic.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e24",
+   "claim_id": "c4",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000045/pressreleasedatedfebruary2.htm",
+   "date": "2026-02-24",
+   "source": "AMD press release (SEC Form 8-K exhibit)",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "AMD and Meta today announced a 6-gigawatt agreement ... across multiple generations of AMD Instinct GPUs ... Shipments supporting the first gigawatt deployment are scheduled to begin in the second half of 2026 ... AMD has issued Meta a performance-based warrant for up to 160 million shares of AMD common stock",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e25",
+   "claim_id": "c4",
+   "bars": [
+    "lenient"
+   ],
+   "url": "https://fool.com/investing/2026/06/07/amazon-alphabet-and-microsoft-are-all-racing-to-de",
+   "date": "2026-06-07",
+   "source": "Motley Fool",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Amazon, Alphabet, and Microsoft are all scaling up custom AI chips to run more of their own workloads. ... Custom silicon is real and growing, and it could erode Nvidia's pricing power over time.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e26",
+   "claim_id": "c5",
+   "url": "https://chartrow.com/lists/magnificent-7",
+   "date": "2026-10-23",
+   "source": "ChartRow (market data, as of market close Oct 23, 2026)",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "YTD total: NVDA +13.4%; AAPL +28.3%; GOOGL +2.5%; MSFT +9.1%; AMZN +7.4%; META -2.4%; TSLA -17.2%",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e27",
+   "claim_id": "c5",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://chartrow.com/quote/spy",
+   "date": "2026-10-23",
+   "source": "ChartRow (SPY, as of close Oct 23, 2026)",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "YTD total return +12.32% ... YTD price return +11.45%",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e28",
+   "claim_id": "c5",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://www.trefis.com/articles/617445/the-dates-that-matter-most-for-amazon-stock/2026-10-02",
+   "date": "2026-10-02",
+   "source": "Trefis",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "AMZN YTD+7.4% ... SPY YTD+12.0% ... The stock has returned 13.1% over the past twelve months, less than the S&P 500's 16.0%.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e29",
+   "claim_id": "c5",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://www.morningstar.com.au/markets/4-charts-not-so-magnificent-seven",
+   "date": "2026-07-17",
+   "source": "Morningstar",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "Apple (up 16.9% through July 13) and Alphabet (up 12.7%) have done the best.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e30",
+   "claim_id": "c6",
+   "url": "https://www.hawaiitribune-herald.com/?p=369740",
+   "date": "2026-06-04",
+   "source": "Reuters (via Hawaii Tribune-Herald)",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "SpaceX publicly set a $135 price for shares in its initial public offering on Wednesday ... The company is aiming to raise $75 billion, the most ever for an IPO ... in a deal that would value it at $1.75 trillion ... with pricing expected on June 11; trading in shares will begin on the Nasdaq the next day.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e31",
+   "claim_id": "c6",
+   "url": "https://techcrunch.com/2026/06/12/spacex-ipo-closes-up-19-and-delivers-the-worlds-first-trillionaire/",
+   "date": "2026-06-12",
+   "source": "TechCrunch",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "before ultimately settling 19% higher at $160.95 as markets closed. ... reached as high as $176 in midday trading, pushing the company's market capitalization to nearly $2.3 trillion.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e32",
+   "claim_id": "c6",
+   "bars": [
+    "lenient"
+   ],
+   "url": "https://newspaceeconomy.ca/2026/10/14/space-capital-reported-92-5-billion-in-space-investment-3q-2026/",
+   "date": "2026-10-14",
+   "source": "New Space Economy (reporting Space Capital Q3 2026 report of Oct 13)",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Space Capital reported $92.5 billion in tracked space investment through the third quarter of 2026. ... Its infrastructure category attracted $11.5 billion across 84 rounds during the quarter. ... The firm forecast that the annual total would exceed $100 billion.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e33",
+   "claim_id": "c6",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://newspaceeconomy.ca/2026/10/14/space-capital-reported-92-5-billion-in-space-investment-3q-2026/",
+   "date": "2026-10-14",
+   "source": "New Space Economy (reporting Space Capital Q3 2026 report of Oct 13)",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "Space Capital reported $92.5 billion in tracked space investment through the third quarter of 2026. [The article makes no comparison to 2025 or to any prior annual record.]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e34",
+   "claim_id": "c7",
+   "bars": [
+    "lenient"
+   ],
+   "url": "https://www.techspot.com/news/111036-tiktok-long-running-us-saga-ends-deal-averts.html",
+   "date": "2026-01-23",
+   "source": "TechSpot",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "The company has officially formed a US-based joint venture. ... gives Oracle, Silver Lake, and MGX 15 percent ownership each ... existing US-based TikTok investors hold 30.1 percent ... ByteDance retains a minority 19.9 percent stake.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e35",
+   "claim_id": "c7",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://www.techspot.com/news/111036-tiktok-long-running-us-saga-ends-deal-averts.html",
+   "date": "2026-01-23",
+   "source": "TechSpot",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "the new US venture is valued at about $14 billion [per Vice President JD Vance; the deal value Galloway gave was $28 billion]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e36",
+   "claim_id": "c7",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://www.storyboard18.com/brand-makers/oracle-discloses-roughly-2-billion-investment-in-tiktok-us-venture-91979.htm",
+   "date": "2026-03-12",
+   "source": "Storyboard18 (reporting Oracle quarterly filing)",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "In its quarterly filing for the period ended February 28, ... Oracle's investment in TikTok U.S. business is worth about $2 billion ... Oracle holds a 15% stake and a board seat in TikTok USDS Joint Venture LLC. ... Vice President JD Vance had earlier said the TikTok U.S. business was valued at $14 billion.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e37",
+   "claim_id": "c8",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://www.nielsen.com/news-center/2026/streaming-embarks-on-annual-summer-ascent-in-nielsens-may-2026-gauge-reports/",
+   "date": "2026-07-28",
+   "source": "Nielsen (The Gauge, May 2026)",
+   "tier": 1,
+   "direction": "contradicts",
+   "quote": "YouTube recorded a platform-best 13.8% of TV watch-time in May. ... representing 8.0% of TV usage in May (+0.2 pts.) [Netflix] ... Disney maintained the second largest share of TV in May with 10.0% of total watch-time. ... captured its best share of TV to date with 4.5% of television usage (+0.3 pts.) [Prime Video] ... increased to 48.6% of total TV watch-time (+1.0 pt.) [streaming] ... finishing at 19.2% and 20.4% of TV watch-time, respectively [broadcast, cable]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e38",
+   "claim_id": "c8",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://thewrap.com/media-platforms/streaming/youtube-viewership-july-2026",
+   "date": "2026-09-10",
+   "source": "TheWrap (reporting Nielsen Gauge, July 2026)",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "a record 14.2% share of TV viewership in July ... it finished the month as the fourth largest distributor with a share of 7.8% [Netflix] ... Disney fell to the third place spot with 8.9% of TV viewership ... rose to 4.7% [Disney streaming] ... Amazon with a 4.3% share ... the streaming category's overall share climbed to 49% of TV viewership ... broadcast and cable finished the month with shares of 19.5% and 18.7%",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e39",
+   "claim_id": "c8",
+   "bars": [
+    "lenient"
+   ],
+   "url": "https://fortune.com/2026/07/16/netflix-made-17-minutes-of-a-documentary-twice-as-fast-and-at-half-the-cost-amid-a-20-billion-projected-cost-for-content/",
+   "date": "2026-07-16",
+   "source": "Fortune",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "It also included 17 minutes of AI-enhanced footage that was produced \"twice as fast and at half the cost,\" ... So far this year, Netflix said, its creative partners have used GenAI workflows in 300 of its titles ... what could be up to $20 billion this year on content creation",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e40",
+   "claim_id": "c8",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://www.clickondetroit.com/business/2026/04/14/the-walt-disney-co-begins-laying-off-1000-employees/",
+   "date": "2026-04-14",
+   "source": "Associated Press (via ClickOnDetroit)",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "The Walt Disney Co. on Tuesday began layoffs expected to lead to 1,000 job cuts across the company. ... traditional television businesses, including ESPN, as well as its movie studio ... a more agile and technologically-enabled workforce to meet tomorrow's needs. [No mention of AI, YouTube or short-form video as a reason]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e41",
+   "claim_id": "c9",
+   "url": "https://krdo.com/news/2026/05/20/whats-next-for-stephen-colbert-after-the-late-show/",
+   "date": "2026-05-20",
+   "source": "CNN (via KRDO)",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "Stephen Colbert's final \"Late Show\" broadcast on Thursday will close out his run. ... Colbert has confirmed that he is co-writing a new \"Lord of the Rings\" movie for Warner Bros. [No podcast or digital show mentioned]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e42",
+   "claim_id": "c9",
+   "url": "https://www.foxnews.com/media/stephen-colbert-addresses-rumors-about-running-office-after-show-ends-says-he-consider-options.amp",
+   "date": "2026-01-28",
+   "source": "Fox News",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "neither going to confirm nor deny the rumors ... if there is some way for me to serve the American people ... I would consider that ... [Meyers mentioned a $13.5 million Netflix deal, which Colbert called] not enough money",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e43",
+   "claim_id": "c10",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://amp.claimsjournal.com/news/national/2026/02/12/335668.htm",
+   "date": "2026-02-12",
+   "source": "Bloomberg (via Claims Journal)",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "The company currently provides about 400,000 paid rides per week across the six cities. ... will hit more than 1 million paid weekly robotaxi rides in the US by the end of this year [co-CEO Tekedra Mawakana]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e44",
+   "claim_id": "c10",
+   "bars": [
+    "lenient"
+   ],
+   "url": "https://techcrunch.com/2026/03/27/waymo-skyrocketing-ridership-in-one-chart/",
+   "date": "2026-03-27",
+   "source": "TechCrunch",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "providing 500,000 paid robotaxi rides every week across 10 U.S. cities ... tenfold, from 50,000 per week in May 2024 to 500,000 per week today ... Tesla began operating a paid robotaxi service in Austin in January",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e45",
+   "claim_id": "c10",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://cryptobriefing.com/waymo-paid-robotaxi-denver-san-diego-tampa/",
+   "date": "2026-09-01",
+   "source": "Crypto Briefing",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "the company is currently delivering more than 500,000 paid rides every week ... Waymo's fleet now exceeds 4,000 vehicles nationwide ... launched paid public robotaxi service in Denver, San Diego, and Tampa ... bringing its total footprint to 14 US markets",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e46",
+   "claim_id": "c10",
+   "bars": [
+    "strict",
+    "lenient"
+   ],
+   "url": "https://www.electrive.com/2026/06/02/tesla-robotaxi-fleet-in-texas-reaches-only-42-vehicles/",
+   "date": "2026-06-02",
+   "source": "electrive",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Tesla has registered 42 autonomous robotaxis in Texas ... At the time, Musk said the robotaxi operation could reach around 1,000 vehicles within a month of launch.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e47",
+   "claim_id": "c11",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://fool.com/investing/2026/07/28/elon-musk-says-optimus-could-be-the-biggest-produc",
+   "date": "2026-07-28",
+   "source": "Motley Fool",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "So, while possibly hundreds of Optimus prototypes have been built, the count on the official production line remains zero. ... the first robots off the Fremont line are not destined for customers. [first units go to an internal program called Optimus Academy; Musk said first Fremont robots come later this year]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e48",
+   "claim_id": "c11",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://www.kucoin.com/news/flash/unitree-robotics-announces-18-000-humanoid-robots-produced",
+   "date": "2026-08-12",
+   "source": "KuCoin News / TechFlow (reporting Unitree announcement)",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "total cumulative production of biomimetic bipedal humanoid robots has reached approximately 18,000 units ... In the first half of 2026, Unitree shipped approximately 5,900 units, accounting for 31% of the global market share",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e49",
+   "claim_id": "c12",
+   "url": "https://www.theblock.co/post/406983/kalshi-polymarket-volume-45-billion",
+   "date": "2026-07-01",
+   "source": "The Block",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Kalshi, Polymarket, and Polymarket US recorded $44.8 billion in combined monthly trading volume in June ... growing 87.4% to $31.5 billion from $16.81 billion [Kalshi] ... from May's $25.66 billion monthly volume ... More than a dozen state-level authorities have taken legal action against Kalshi and Polymarket",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e50",
+   "claim_id": "c12",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://www.theblock.co/post/383733/prediction-markets-kalshi-polymarket-duopoly-2025",
+   "date": "2025-12-31",
+   "source": "The Block",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Baseline (full year 2025): generated more than $44 billion in trading volume this year ... monthly volumes topping $10 billion in November",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e51",
+   "claim_id": "c12",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://www.theblock.co/post/410247/new-york-sues-kalshi",
+   "date": "2026-07-31",
+   "source": "The Block",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "New York State has sued Kalshi for allegedly running an illegal gambling operation in the state ... No matter what they call themselves, prediction markets like Kalshi are gambling platforms, plain and simple. ... the requested compensatory damages could total at least $36 billion, pending a full accounting.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e52",
+   "claim_id": "c12",
+   "url": "https://www.aljazeera.com/economy/2026/9/24/new-york-sues-polymarket-over-allegations-of-illegal-gambling-operations",
+   "date": "2026-09-24",
+   "source": "Al Jazeera",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Our gambling laws exist to protect New Yorkers, prevent the potential harms of problem gambling [AG Letitia James] ... especially those underage who are most vulnerable to problem gaming. [Gov. Kathy Hochul]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e53",
+   "claim_id": "c12",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://247wallst.com/investing/2026/10/15/draftkings-is-down-44-in-2026-is-dkng-stock-dead-money-or-due-for-a-bounce/",
+   "date": "2026-10-15",
+   "source": "24/7 Wall St.",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "still down 44% year to date (YTD) to $19.14 [DraftKings] ... stock is down 65% YTD to $75.83 [Flutter Entertainment] ... is up 13% YTD to $771.55 [SPY] ... prediction markets are taking share of U.S. sports gambling and pressuring the licensed operators",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e54",
+   "claim_id": "c12",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://frontofficesports.com/draftkings-fanduel-downplay-prediction-market-cannibalization/",
+   "date": "2026-08-07",
+   "source": "Front Office Sports",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "DraftKings says it is seeing \"no discernible impact\" from prediction markets on its traditional sportsbook business ... Flutter says FanDuel has seen a \"low single-digit\" impact. ... while Flutter cut its full-year profit guidance by 22%",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e55",
+   "claim_id": "c13",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://www.multistate.ai/updates/vol-105-state-ai-companion-chatbot-laws",
+   "date": "2026-06-26",
+   "source": "MultiState",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Through the first half of 2026, twelve states have enacted companion chatbot laws. ... require disclosure reminders that users are interacting with AI rather than a human ... implement protocols to recognize expressions of suicidal ideation or self-harm",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e56",
+   "claim_id": "c13",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://news.bloombergtax.com/esg/character-ai-google-agree-to-settle-teen-chatbot-harm-lawsuits",
+   "date": "2026-01-08",
+   "source": "Bloomberg Law",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Character Technologies Inc., maker of a customizable chatbot app called Character.AI, and Google LLC agreed to settle multiple lawsuits ... Families in Florida, Texas, Colorado, and New York have agreed to negotiate settlements ... OpenAI has also been sued for alleged psychological damage caused by interactions with ChatGPT.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e57",
+   "claim_id": "c13",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://hoodline.com/2026/07/senators-kim-and-husted-roll-out-ai-guardrails-for-kids/",
+   "date": "2026-07-31",
+   "source": "Hoodline",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "Children Harmed by AI Technology Act 2.0 [Sens. Andy Kim and Jon Husted] ... For minors, the proposal would require age-verification measures, parental controls, usage limits and break reminders. ... the bill still faces the usual congressional gauntlet",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e58",
+   "claim_id": "c14",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://www.studentclearinghouse.org/news/spring-enrollment-undergraduate-growth-continues-while-graduate-enrollment-holds-steady/",
+   "date": "2026-06-04",
+   "source": "National Student Clearinghouse",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "Total postsecondary enrollment rose to 18.6 million in spring 2026, up 1.0 percent (+192,000) from spring 2025 ... undergraduate enrollment increased to 15.5 million (+1.3%).",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e59",
+   "claim_id": "c14",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://www.highereddive.com/news/spring-enrollment-ticks-up-1-but-graduate-headcounts-take-a-hit/821957/",
+   "date": "2026-06-04",
+   "source": "Higher Ed Dive",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "College enrollment ticked up 1% year over year in spring 2026 ... Undergraduate enrollment reached 15.5 million students in the spring term, up 1.3% from the year before.",
+   "found_by": "websearch"
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.profgmedia.com/p/2026-predictions",
+   "title": "2026 Predictions (No Mercy / No Malice)",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "format": "newsletter",
+   "access": "free",
+   "role": "canonical",
+   "note": "Twelve headed predictions plus a closing World Cup line. The post also contains his 2025 report card as an image, which text extraction cannot read.",
+   "chars": 14300,
+   "text_sha256": "d53b762132af0aaaa872106b013f7a5e7996120bf3cf1e2f98ea86b39d2338b6"
+  },
+  {
+   "id": "s2",
+   "url": "https://www.profgmedia.com/p/predictions-2026-mid-year-check-in",
+   "title": "Predictions 2026: Mid-Year Check-In",
+   "author": "Scott Galloway",
+   "date": "2026-06-25",
+   "format": "newsletter",
+   "access": "paywalled",
+   "role": "self_grade",
+   "note": "Prof G+ subscribers only. Tier 4 evidence if the text can be obtained; the preview may show headings.",
+   "chars": 1007,
+   "text_sha256": "f65af227ccac559781a8b8ace0e41f35384f0d45c99d2e34be29c20b94c04ff1"
+  },
+  {
+   "id": "s3",
+   "url": "https://neofeed.com.br/negocios/scott-galloway-ve-de-tudo-em-2026-mas-a-nvidia-vai-cair-o-tiktok-vale-ouro-e-voce-nao-vai-investir/en/",
+   "title": "Scott Galloway sees everything in 2026 (NeoFeed, English)",
+   "author": "NeoFeed",
+   "date": "2025-12-19",
+   "format": "article",
+   "access": "free",
+   "role": "context",
+   "note": "Third-party summary; reports his 2025 scorecard as 10 of 11 with Shein's IPO the miss. Context only.",
+   "chars": 12087,
+   "text_sha256": "a1fb2023e5f4bd9b3d61e82efea16d6db9cc24e4198f3896675ecbd53ed8df47"
+  }
+ ],
+ "extras": {
+  "jev_tokens": 96897,
+  "input_sha256": {
+   "sources": "3cd6597673064126ecf7802b4eeea8d4a73e2e767ee9b56bd9283241c63583b6",
+   "claims": "6fda4f151cf4265967da8ed46aa2d849c0c6991c3bf9687ff27d5d382f72a2e4",
+   "rubrics": "b1e35a38be0895cf6670b41762aadb153b445a3fc6e39407eed2fc4183139862",
+   "evidence": "62eb260907eb6c3db63007661a9894f1c7ba3313891caf1c05461457425c2fc4",
+   "grades": "3a08149c7f4c9691916c5f80b4f43d1ab420b11853fe207fe1a7172399816c76"
+  }
+ }
+}

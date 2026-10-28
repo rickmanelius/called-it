@@ -1,0 +1,47 @@
+{
+ "hash": "05adad85bfd73f65f0b4f422a063122179c84f48a49be75a551dbf1dee62dd65",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "claim": "Synthetic Relationships Take Center Stage",
+  "author": "Scott Galloway",
+  "target_year": 2026,
+  "bar": "strict",
+  "bar_meaning": "what a hostile critic would require before conceding",
+  "criterion": "Synthetic relationships took center stage in 2026: AI companions became a national policy issue with binding rules, while usage kept growing."
+ },
+ "questions": {
+  "critic_accepts": {
+   "type": "noul",
+   "instructions": "Would a skeptical critic of the author agree that `criterion` is a fair test of `claim` at the stated `bar`?",
+   "criteria": {
+    "true": "The criterion tests what the claim actually asserted; it does not move the goalposts in the author's favour or against them beyond what the bar name implies.",
+    "false": "The criterion tests something the claim did not assert, or is so loose that almost anything would satisfy it, or so tight that no reasonable reading of the claim could."
+   }
+  },
+  "checkable": {
+   "type": "noul",
+   "instructions": "Can `criterion` be settled by public evidence available by the end of `target_year`?",
+   "criteria": {
+    "true": "A specific public fact, number, release, ranking or event would settle it.",
+    "false": "It depends on private information, taste, or a judgement nobody can verify."
+   }
+  }
+ },
+ "answers": {
+  "critic_accepts": {
+   "type": "noul",
+   "noul": 0.55
+  },
+  "checkable": {
+   "type": "noul",
+   "noul": 0.55
+  }
+ },
+ "usage": {
+  "input_tokens": 552,
+  "output_tokens": 41
+ },
+ "at": "2026-10-25T02:30:57Z"
+}

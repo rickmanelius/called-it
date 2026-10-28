@@ -1,0 +1,104 @@
+{
+ "hash": "bbc170ee21cf9f1d65687814a2d68ce6bd04f4f8188d5de615aeaa822504a62a",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Every",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "2026 is when agents go mainstream.",
+   "author": "Kieran Klaassen",
+   "date": "2025-12-23",
+   "context": "Prediction 1 of 3. Editor's one-line rendering of Klaassen's view ('Kieran puts it simply'), not a direct quote. 'Mainstream' is undefined; the bars will need an adoption measure."
+  },
+  "bar": "strict",
+  "criterion": "2026 is the year agents went mainstream: a majority of US adults or US workers used an AI agent during the year.",
+  "measure": "A reputable 2026 survey (Pew, Gallup, McKinsey, Microsoft Work Trend Index or peers) with a majority reporting use of an AI that takes multi-step actions on their behalf; provisional until December 31.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-05-27",
+    "source": "Stack Overflow",
+    "direction": "neutral",
+    "quote": "This new survey shows 59% use agents at work at any frequency, compared to 31% in the 2025 Developer Survey. (technologists, n=1,100)",
+    "url": "https://stackoverflow.blog/2026/05/27/agents-on-a-leash-agentic-ai-remains-mostly-monitored-at-work"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-07-20",
+    "source": "Gallup",
+    "direction": "neutral",
+    "quote": "More than half of U.S. workers (52%) now use AI in their role, with 30% using it frequently ... Fifteen percent use it daily. (AI use generally, not agents)",
+    "url": "https://www.gallup.com/workplace/712736/organizational-ai-adoption-jumps-six-points.aspx"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.09
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.21
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.47,
+   "confidence": 0.27,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.01,
+    "1": 0.51,
+    "2": 0.48
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1290,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:09:38Z"
+}

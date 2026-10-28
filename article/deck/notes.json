@@ -1,0 +1,66 @@
+[
+ {
+  "slide": 1,
+  "notes": "Title. Three or four public prediction lists for 2026, graded at three bars by a calibrated classifier over committed evidence. Everything in this deck traces to a run folder anyone can replay."
+ },
+ {
+  "slide": 2,
+  "notes": "The problem is not dishonesty. It is that grading your own work at an unwritten bar produces a generous number every time. Ippolito's 78 versus 48 for the same list is the gap this project measures."
+ },
+ {
+  "slide": 3,
+  "notes": "Every argument about whether a prediction came true is an argument about the bar. Writing three bars before looking at evidence turns that argument into a measurement. The critic floor keeps lenient from meaning gullible."
+ },
+ {
+  "slide": 4,
+  "notes": "Judgement goes to the reasoning model; the repeated yes/no goes to a decision classifier. Drift concentrates where sources disagree, which is where you would want it. The run folder is the unit of publication."
+ },
+ {
+  "slide": 5,
+  "notes": "The subjects were chosen for a spread from vague to numeric and from company to person. They are not targets."
+ },
+ {
+  "slide": 6,
+  "notes": "Bob Doll: hit rates at the three bars, the gap, and the claims where the bars disagree most. Every cell links to its evidence in the run folder."
+ },
+ {
+  "slide": 7,
+  "notes": "Every: hit rates at the three bars, the gap, and the claims where the bars disagree most. Every cell links to its evidence in the run folder."
+ },
+ {
+  "slide": 8,
+  "notes": "Scott Galloway: hit rates at the three bars, the gap, and the claims where the bars disagree most. Every cell links to its evidence in the run folder."
+ },
+ {
+  "slide": 9,
+  "notes": "Mike Ippolito: hit rates at the three bars, the gap, and the claims where the bars disagree most. Every cell links to its evidence in the run folder."
+ },
+ {
+  "slide": 10,
+  "notes": "Lenient minus strict: Doll 14, Ippolito 35, Every 50. Nobody publishes this because nobody grades at more than one bar."
+ },
+ {
+  "slide": 11,
+  "notes": "Every at lenient, resolved only: 12 of 12. At strict: 1 of 6. Count open claims against the author and lenient is 55%. A scorecard that does not say its convention is not a number."
+ },
+ {
+  "slide": 12,
+  "notes": "Claims with a number have a smaller gap (25 vs 40) and lower hit rates at standard and lenient (19 and 38 vs 38 and 50). A number is a bar written in advance; it makes a miss undeniable."
+ },
+ {
+  "slide": 13,
+  "notes": "Doll's own tally has no 'wrong' column; ours has five at the standard bar. The 'too soon' and 'unresolved' columns nearly agree."
+ },
+ {
+  "slide": 14,
+  "notes": "The best single pair in the set. Host and guest predicted opposite things and the outcome fit neither. Writing bars in advance teaches you to write one for the exit."
+ },
+ {
+  "slide": 15,
+  "notes": "The caveats are structural, not apologetic. Provisional grades are labelled; the bars are the thing to argue with."
+ },
+ {
+  "slide": 16,
+  "notes": "The season opens in a week. Pre-register your bars, or grade your last list. Runs come in by pull request and join the gallery."
+ }
+]

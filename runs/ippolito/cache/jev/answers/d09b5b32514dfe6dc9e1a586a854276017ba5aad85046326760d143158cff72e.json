@@ -1,0 +1,47 @@
+{
+ "hash": "d09b5b32514dfe6dc9e1a586a854276017ba5aad85046326760d143158cff72e",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "claim": "Other CEXes will make inroads, Robinhood will continue to succed, Coinbase will fail.",
+  "author": "Mike Ippolito",
+  "target_year": 2026,
+  "bar": "lenient",
+  "bar_meaning": "the weakest reading a critic would still concede counts",
+  "criterion": "Coinbase's prediction-market effort did not become a meaningful competitor to Kalshi or Polymarket in 2026."
+ },
+ "questions": {
+  "critic_accepts": {
+   "type": "noul",
+   "instructions": "Would a skeptical critic of the author agree that `criterion` is a fair test of `claim` at the stated `bar`?",
+   "criteria": {
+    "true": "The criterion tests what the claim actually asserted; it does not move the goalposts in the author's favour or against them beyond what the bar name implies.",
+    "false": "The criterion tests something the claim did not assert, or is so loose that almost anything would satisfy it, or so tight that no reasonable reading of the claim could."
+   }
+  },
+  "checkable": {
+   "type": "noul",
+   "instructions": "Can `criterion` be settled by public evidence available by the end of `target_year`?",
+   "criteria": {
+    "true": "A specific public fact, number, release, ranking or event would settle it.",
+    "false": "It depends on private information, taste, or a judgement nobody can verify."
+   }
+  }
+ },
+ "answers": {
+  "critic_accepts": {
+   "type": "noul",
+   "noul": 0.36
+  },
+  "checkable": {
+   "type": "noul",
+   "noul": 0.49
+  }
+ },
+ "usage": {
+  "input_tokens": 567,
+  "output_tokens": 41
+ },
+ "at": "2026-10-24T20:00:27Z"
+}

@@ -1,0 +1,491 @@
+{
+ "model": "jev-1.14.0",
+ "requests": 20,
+ "answers": 60,
+ "mean_pts": 1.11,
+ "max_pts": 4.0,
+ "within_5": 1.0,
+ "threshold_crossings": 1,
+ "rows": [
+  [
+   "as credit spreads widen (i.e., a \u201ccoupon-ish\u201d year",
+   "standard",
+   "met",
+   0.94,
+   0.96,
+   0.020000000000000018
+  ],
+  [
+   "as credit spreads widen (i.e., a \u201ccoupon-ish\u201d year",
+   "standard",
+   "contradicted",
+   0.02,
+   0.02,
+   0.0
+  ],
+  [
+   "as credit spreads widen (i.e., a \u201ccoupon-ish\u201d year",
+   "standard",
+   "strength",
+   1.97,
+   1.97,
+   0.0
+  ],
+  [
+   "as credit spreads widen (i.e., a \u201ccoupon-ish\u201d year",
+   "lenient",
+   "met",
+   0.99,
+   0.99,
+   0.0
+  ],
+  [
+   "as credit spreads widen (i.e., a \u201ccoupon-ish\u201d year",
+   "lenient",
+   "contradicted",
+   0.01,
+   0.01,
+   0.0
+  ],
+  [
+   "as credit spreads widen (i.e., a \u201ccoupon-ish\u201d year",
+   "lenient",
+   "strength",
+   1.99,
+   1.99,
+   0.0
+  ],
+  [
+   "Earnings growth falls short of consensus +14%",
+   "standard",
+   "met",
+   0.04,
+   0.04,
+   0.0
+  ],
+  [
+   "Earnings growth falls short of consensus +14%",
+   "standard",
+   "contradicted",
+   0.98,
+   0.98,
+   0.0
+  ],
+  [
+   "Earnings growth falls short of consensus +14%",
+   "standard",
+   "strength",
+   1.72,
+   1.74,
+   0.010000000000000009
+  ],
+  [
+   "but surrender the House",
+   "standard",
+   "met",
+   0.01,
+   0.01,
+   0.0
+  ],
+  [
+   "but surrender the House",
+   "standard",
+   "contradicted",
+   0.2,
+   0.19,
+   0.010000000000000009
+  ],
+  [
+   "but surrender the House",
+   "standard",
+   "strength",
+   1.01,
+   1.01,
+   0.0
+  ],
+  [
+   "Technology, communication services, and financials",
+   "standard",
+   "met",
+   0.68,
+   0.71,
+   0.029999999999999916
+  ],
+  [
+   "Technology, communication services, and financials",
+   "standard",
+   "contradicted",
+   0.68,
+   0.64,
+   0.040000000000000036
+  ],
+  [
+   "Technology, communication services, and financials",
+   "standard",
+   "strength",
+   1.97,
+   1.97,
+   0.0
+  ],
+  [
+   "Stocks fail to advance by a double-digit percentag",
+   "strict",
+   "met",
+   0.04,
+   0.04,
+   0.0
+  ],
+  [
+   "Stocks fail to advance by a double-digit percentag",
+   "strict",
+   "contradicted",
+   0.97,
+   0.95,
+   0.020000000000000018
+  ],
+  [
+   "Stocks fail to advance by a double-digit percentag",
+   "strict",
+   "strength",
+   1.97,
+   1.97,
+   0.0
+  ],
+  [
+   "Stocks fail to advance by a double-digit percentag",
+   "standard",
+   "met",
+   0.04,
+   0.06,
+   0.019999999999999997
+  ],
+  [
+   "Stocks fail to advance by a double-digit percentag",
+   "standard",
+   "contradicted",
+   0.91,
+   0.92,
+   0.010000000000000009
+  ],
+  [
+   "Stocks fail to advance by a double-digit percentag",
+   "standard",
+   "strength",
+   1.26,
+   1.31,
+   0.025000000000000022
+  ],
+  [
+   "Economic growth in the U.S. improves from approxim",
+   "standard",
+   "met",
+   0.19,
+   0.23,
+   0.04000000000000001
+  ],
+  [
+   "Economic growth in the U.S. improves from approxim",
+   "standard",
+   "contradicted",
+   0.7,
+   0.73,
+   0.030000000000000027
+  ],
+  [
+   "Economic growth in the U.S. improves from approxim",
+   "standard",
+   "strength",
+   1.83,
+   1.85,
+   0.010000000000000009
+  ],
+  [
+   "AI continues to be volatile/erratic creating anoth",
+   "lenient",
+   "met",
+   0.89,
+   0.89,
+   0.0
+  ],
+  [
+   "AI continues to be volatile/erratic creating anoth",
+   "lenient",
+   "contradicted",
+   0.02,
+   0.03,
+   0.009999999999999998
+  ],
+  [
+   "AI continues to be volatile/erratic creating anoth",
+   "lenient",
+   "strength",
+   1.95,
+   1.93,
+   0.010000000000000009
+  ],
+  [
+   "Economic growth in the U.S. improves from approxim",
+   "strict",
+   "met",
+   0.04,
+   0.05,
+   0.010000000000000002
+  ],
+  [
+   "Economic growth in the U.S. improves from approxim",
+   "strict",
+   "contradicted",
+   0.73,
+   0.72,
+   0.010000000000000009
+  ],
+  [
+   "Economic growth in the U.S. improves from approxim",
+   "strict",
+   "strength",
+   1.83,
+   1.84,
+   0.0050000000000000044
+  ],
+  [
+   "AI continues to be volatile/erratic creating anoth",
+   "strict",
+   "met",
+   0.1,
+   0.1,
+   0.0
+  ],
+  [
+   "AI continues to be volatile/erratic creating anoth",
+   "strict",
+   "contradicted",
+   0.44,
+   0.43,
+   0.010000000000000009
+  ],
+  [
+   "AI continues to be volatile/erratic creating anoth",
+   "strict",
+   "strength",
+   1.86,
+   1.85,
+   0.0050000000000000044
+  ],
+  [
+   "AI continues to be volatile/erratic creating anoth",
+   "standard",
+   "met",
+   0.98,
+   0.97,
+   0.010000000000000009
+  ],
+  [
+   "AI continues to be volatile/erratic creating anoth",
+   "standard",
+   "contradicted",
+   0.01,
+   0.01,
+   0.0
+  ],
+  [
+   "AI continues to be volatile/erratic creating anoth",
+   "standard",
+   "strength",
+   1.94,
+   1.95,
+   0.0050000000000000044
+  ],
+  [
+   "Technology, communication services, and financials",
+   "lenient",
+   "met",
+   0.8,
+   0.84,
+   0.039999999999999925
+  ],
+  [
+   "Technology, communication services, and financials",
+   "lenient",
+   "contradicted",
+   0.2,
+   0.16,
+   0.04000000000000001
+  ],
+  [
+   "Technology, communication services, and financials",
+   "lenient",
+   "strength",
+   1.97,
+   1.96,
+   0.0050000000000000044
+  ],
+  [
+   "The 10-year Treasury yield trades primarily betwee",
+   "strict",
+   "met",
+   0.04,
+   0.03,
+   0.010000000000000002
+  ],
+  [
+   "The 10-year Treasury yield trades primarily betwee",
+   "strict",
+   "contradicted",
+   0.99,
+   0.99,
+   0.0
+  ],
+  [
+   "The 10-year Treasury yield trades primarily betwee",
+   "strict",
+   "strength",
+   1.99,
+   1.98,
+   0.0050000000000000044
+  ],
+  [
+   "losing at least 20-25 seats.",
+   "standard",
+   "met",
+   0.01,
+   0.01,
+   0.0
+  ],
+  [
+   "losing at least 20-25 seats.",
+   "standard",
+   "contradicted",
+   0.02,
+   0.02,
+   0.0
+  ],
+  [
+   "losing at least 20-25 seats.",
+   "standard",
+   "strength",
+   1.0,
+   0.99,
+   0.0050000000000000044
+  ],
+  [
+   "P/Es decline modestly, making it a tougher year to",
+   "standard",
+   "met",
+   0.94,
+   0.91,
+   0.029999999999999916
+  ],
+  [
+   "P/Es decline modestly, making it a tougher year to",
+   "standard",
+   "contradicted",
+   0.02,
+   0.02,
+   0.0
+  ],
+  [
+   "P/Es decline modestly, making it a tougher year to",
+   "standard",
+   "strength",
+   1.9,
+   1.89,
+   0.0050000000000000044
+  ],
+  [
+   "Stocks fail to advance by a double-digit percentag",
+   "lenient",
+   "met",
+   0.16,
+   0.14,
+   0.01999999999999999
+  ],
+  [
+   "Stocks fail to advance by a double-digit percentag",
+   "lenient",
+   "contradicted",
+   0.92,
+   0.93,
+   0.010000000000000009
+  ],
+  [
+   "Stocks fail to advance by a double-digit percentag",
+   "lenient",
+   "strength",
+   1.98,
+   1.98,
+   0.0
+  ],
+  [
+   "but surrender the House",
+   "lenient",
+   "met",
+   0.01,
+   0.01,
+   0.0
+  ],
+  [
+   "but surrender the House",
+   "lenient",
+   "contradicted",
+   0.18,
+   0.14,
+   0.03999999999999998
+  ],
+  [
+   "but surrender the House",
+   "lenient",
+   "strength",
+   1.01,
+   1.01,
+   0.0
+  ],
+  [
+   "Technology, communication services, and financials",
+   "strict",
+   "met",
+   0.04,
+   0.07,
+   0.030000000000000006
+  ],
+  [
+   "Technology, communication services, and financials",
+   "strict",
+   "contradicted",
+   0.96,
+   0.93,
+   0.029999999999999916
+  ],
+  [
+   "Technology, communication services, and financials",
+   "strict",
+   "strength",
+   1.89,
+   1.92,
+   0.015000000000000013
+  ],
+  [
+   "International stocks outperform the U.S. for the s",
+   "strict",
+   "met",
+   0.04,
+   0.05,
+   0.010000000000000002
+  ],
+  [
+   "International stocks outperform the U.S. for the s",
+   "strict",
+   "contradicted",
+   0.92,
+   0.9,
+   0.020000000000000018
+  ],
+  [
+   "International stocks outperform the U.S. for the s",
+   "strict",
+   "strength",
+   1.7,
+   1.68,
+   0.010000000000000009
+  ]
+ ]
+}

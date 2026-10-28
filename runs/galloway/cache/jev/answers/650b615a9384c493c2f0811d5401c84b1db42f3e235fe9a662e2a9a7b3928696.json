@@ -1,0 +1,113 @@
+{
+ "hash": "650b615a9384c493c2f0811d5401c84b1db42f3e235fe9a662e2a9a7b3928696",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Scott Galloway",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Short-Form Video and AI Meteors Strike Hollywood",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "context": "Heading of prediction 7. Body: YouTube and TikTok take young viewers (78% of 10 to 24 year olds), AI cuts production costs; 'Hollywood is the new Detroit'. Visible damage to studios and networks in 2026."
+  },
+  "bar": "strict",
+  "criterion": "Hollywood took visible damage from short-form video and AI in 2026: a major studio or network made deep cuts citing them, and YouTube's share of TV time passed all subscription streamers combined.",
+  "measure": "A major studio or network announcing cuts of 20% or more, a shutdown, or a flagship cancellation in 2026 explicitly citing short-form video or AI economics, per major outlets, and Nielsen's Gauge showing YouTube above the combined share of Netflix, Disney+, Prime Video and Max in a 2026 month; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-07-28",
+    "source": "Nielsen (The Gauge, May 2026)",
+    "direction": "contradicts",
+    "quote": "YouTube recorded a platform-best 13.8% of TV watch-time in May. ... representing 8.0% of TV usage in May (+0.2 pts.) [Netflix] ... Disney maintained the second largest share of TV in May with 10.0% of total watch-time. ... captured its best share of TV to date with 4.5% of television usage (+0.3 pts.) [Prime Video] ... increased to 48.6% of total TV watch-time (+1.0 pt.) [streaming] ... finishing at 19.2% and 20.4% of TV watch-time, respectively [broadcast, cable]",
+    "url": "https://www.nielsen.com/news-center/2026/streaming-embarks-on-annual-summer-ascent-in-nielsens-may-2026-gauge-reports/"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-04-14",
+    "source": "Associated Press (via ClickOnDetroit)",
+    "direction": "neutral",
+    "quote": "The Walt Disney Co. on Tuesday began layoffs expected to lead to 1,000 job cuts across the company. ... traditional television businesses, including ESPN, as well as its movie studio ... a more agile and technologically-enabled workforce to meet tomorrow's needs. [No mention of AI, YouTube or short-form video as a reason]",
+    "url": "https://www.clickondetroit.com/business/2026/04/14/the-walt-disney-co-begins-laying-off-1000-employees/"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-09-10",
+    "source": "TheWrap (reporting Nielsen Gauge, July 2026)",
+    "direction": "contradicts",
+    "quote": "a record 14.2% share of TV viewership in July ... it finished the month as the fourth largest distributor with a share of 7.8% [Netflix] ... Disney fell to the third place spot with 8.9% of TV viewership ... rose to 4.7% [Disney streaming] ... Amazon with a 4.3% share ... the streaming category's overall share climbed to 49% of TV viewership ... broadcast and cable finished the month with shares of 19.5% and 18.7%",
+    "url": "https://thewrap.com/media-platforms/streaming/youtube-viewership-july-2026"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.02
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.95
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.94,
+   "confidence": 0.91,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.06,
+    "2": 0.94
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1757,
+  "output_tokens": 52
+ },
+ "at": "2026-10-25T02:56:58Z"
+}

@@ -1,0 +1,113 @@
+{
+ "hash": "5a36fd47382748ab5abb9a33ab0fc8dd210d6a3906aeb583feea953163df93d0",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Every",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "I think we'll hire next year, but I don't think we're going to hire a ton. Like the whole thing is like keep it small.",
+   "author": "Dan Shipper",
+   "date": "2025-12-23",
+   "context": "Every will add staff in 2026 but not many, staying a small company; 'a ton' is undefined (they were at about 20 people)."
+  },
+  "bar": "standard",
+  "criterion": "Every added staff in 2026 and remained a small company.",
+  "measure": "Headcount at the latest 2026 reading above end-2025 and below 35; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 4,
+    "tier_meaning": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+    "date": "2025-09-26",
+    "source": "Every",
+    "direction": "neutral",
+    "quote": "Baseline (2025, consulting arm only): 15 full-time employees",
+    "url": "https://every.to/on-every/every-s-master-plan-part-ii"
+   },
+   {
+    "tier": 4,
+    "tier_meaning": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+    "date": "2026-05-24",
+    "source": "Lenny's Podcast (Dan Shipper), via Podscripts",
+    "direction": "supports",
+    "quote": "We're almost 30 people now.",
+    "url": "https://podscripts.co/podcasts/lennys-podcast-product-career-growth/the-ai-paradox-more-automation-more-humans-more-work-dan-shipper"
+   },
+   {
+    "tier": 4,
+    "tier_meaning": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+    "date": "2026-05-27",
+    "source": "Every",
+    "direction": "supports",
+    "quote": "In fact, since the GPT-3 days, we've grown from four people to around 30 people, and we're hiring more now.",
+    "url": "https://every.to/podcast/transcript-we-automated-everything-with-ai-and-tripled-our-headcount"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.67
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.04
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.08,
+   "confidence": 0.88,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.92,
+    "2": 0.08
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1351,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:09:39Z"
+}

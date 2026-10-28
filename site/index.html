@@ -1,0 +1,103 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Called It! Using AI Classifiers to Score a Person&#x27;s Annual Predictions</title>
+<meta name="description" content="Using AI classifiers to score a person&#x27;s annual predictions. Four 2026 lists graded at three bars (strict, standard, lenient) with every receipt attached. The gap between the bars is the finding.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Called It!">
+<meta property="og:url" content="https://rickmanelius.github.io/called-it/">
+<meta property="og:title" content="Called It!">
+<meta property="og:description" content="Using AI classifiers to score a person&#x27;s annual predictions. Four 2026 lists graded at three bars (strict, standard, lenient) with every receipt attached. The gap between the bars is the finding.">
+<meta property="og:image" content="https://rickmanelius.github.io/called-it/assets/social/index.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Called It! Using AI Classifiers to Score Annual Predictions. Generosity gap by subject: Bob Doll 14, Mike Ippolito 35, Scott Galloway 47, Every 50">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@rickmanelius">
+<meta name="twitter:creator" content="@rickmanelius">
+<meta name="twitter:title" content="Called It!">
+<meta name="twitter:description" content="Using AI classifiers to score a person&#x27;s annual predictions. Four 2026 lists graded at three bars (strict, standard, lenient) with every receipt attached. The gap between the bars is the finding.">
+<meta name="twitter:image" content="https://rickmanelius.github.io/called-it/assets/social/index.png">
+<meta name="twitter:image:alt" content="Called It! Using AI Classifiers to Score Annual Predictions. Generosity gap by subject: Bob Doll 14, Mike Ippolito 35, Scott Galloway 47, Every 50">
+<style>@font-face { font-family: 'Space Grotesk'; font-style: normal; font-weight: 300 700; font-display: block; src: url('assets/fonts/space-grotesk.woff2') format('woff2'); }
+@font-face { font-family: 'IBM Plex Mono'; font-style: normal; font-weight: 500; font-display: block; src: url('assets/fonts/ibm-plex-mono-500.woff2') format('woff2'); }
+@font-face { font-family: 'IBM Plex Mono'; font-style: normal; font-weight: 600; font-display: block; src: url('assets/fonts/ibm-plex-mono-600.woff2') format('woff2'); }
+:root { color-scheme: dark; --page:#0F1218; --surface:#171C25; --surface-2:#1E2430; --border:#2A313D; --ink:#F2F4F7; --ink-2:#C9D0DA; --muted:#A3ABB8; --grid:#2A313D; --axis:#2A313D; --ring:#2A313D; --accent:#FFB020; --accent-hover:#FFD36B; --on-accent:#0F1218; --on-accent-small:#3D2A00; --bar-strict:#8B93A1; --bar-standard:#D7DCE3; --bar-lenient:#FFB020; --good:#4FD1A1; --critical:#FF5C5C; --open:#A3ABB8; --font-text:'Space Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif; --font-mono:'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--page); color: var(--ink); font-family: var(--font-text); }
+.mono, code, pre, .num, .badge, .chip { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+a { color: inherit; text-decoration: underline; text-decoration-color: var(--border); text-underline-offset: 2px; }
+a:hover { color: var(--accent-hover); }
+
+body { font-size: 16px; line-height: 1.5; }
+main { max-width: 1040px; margin: 0 auto; padding: 32px 16px 64px; }
+.badge { color: var(--muted); font-size: 13px; letter-spacing: .04em; text-transform: uppercase; }
+h1 { font-size: 44px; font-weight: 700; margin: 10px 0 4px; letter-spacing: -.025em; line-height: 1.05; }
+h1 .bang { color: var(--accent); }
+h2 { font-size: 22px; font-weight: 700; margin: 36px 0 12px; letter-spacing: -.01em; }
+.subtitle { font-size: 20px; color: var(--muted); margin: 0 0 16px; }
+.lede { color: var(--ink-2); }
+ul.lede { padding-left: 22px; margin: 10px 0 18px; } ul.lede li { margin: 5px 0; }
+.btn { display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 20px; border-radius: 10px; border: 1.5px solid var(--border); background: var(--surface); color: var(--ink); font-weight: 700; font-size: 15px; text-decoration: none; cursor: pointer; font-family: var(--font-text); }
+.btn:hover { border-color: var(--accent); color: var(--ink); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.btn.primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); color: var(--on-accent); }
+.banner { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 14px 0 10px; padding: 14px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; }
+.banner .note { color: var(--muted); font-size: 13px; }
+.game { color: var(--muted); font-size: 14px; margin: 0 0 24px; }
+.cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 20px 0 8px; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 18px 20px; display: block; text-decoration: none; min-width: 0; }
+.card:hover { border-color: var(--accent); color: var(--ink); }
+.card h3 { margin: 0 0 2px; font-size: 20px; font-weight: 700; } .card .k { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .06em; }
+.rates { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; margin: 12px 0 6px; }
+.rates > div { background: var(--page); border: 1px solid var(--border); border-radius: 8px; padding: 8px 6px; text-align: center; min-width: 0; }
+.rates .v { font-family: var(--font-mono); font-size: 20px; font-weight: 600; font-variant-numeric: tabular-nums; } .rates .l { color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: .04em; white-space: nowrap; }
+.rates > div.gap { background: var(--accent); border-color: var(--accent); } .rates > div.gap .v { color: var(--on-accent); } .rates > div.gap .l { color: var(--on-accent-small); }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 20px 0; }
+.tile { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; } .tile .k { color: var(--muted); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+.tile .v { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-size: 32px; font-weight: 600; line-height: 1.1; margin-top: 2px; } .tile .s { color: var(--muted); font-size: 12px; margin-top: 4px; }
+.tile.gap { background: var(--accent); border-color: var(--accent); color: var(--on-accent); } .tile.gap .k, .tile.gap .s { color: var(--on-accent-small); }
+.share { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 16px 18px; margin: 12px 0 8px; }
+.share .row { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 12px; }
+.share textarea { width: 100%; min-height: 96px; resize: vertical; background: var(--page); color: var(--ink); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; font: 14px/1.5 var(--font-text); }
+.share .copyrow { display: flex; gap: 12px; align-items: center; margin-top: 8px; } .share .copied { color: var(--good); font-size: 13px; }
+.links { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0; } .links a { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 8px 12px; font-size: 14px; text-decoration: none; }
+.links a:hover { border-color: var(--accent); color: var(--ink); }
+.links a.primary { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+h2.dl { margin-top: 30px } .links.roomy { gap: 14px; margin: 14px 0 26px } .links.roomy a { display: flex; flex-direction: column; gap: 3px; padding: 12px 16px; min-width: 170px }
+.links.roomy a b { font-weight: 700 } .links.roomy a small { color: var(--muted); font-size: 12px } .links.roomy a.primary small { color: var(--on-accent-small) }
+figure { margin: 18px 0 } figure img { width: 100%; height: auto; border: 1px solid var(--border); border-radius: 12px; background: var(--page); display: block; }
+figcaption { color: var(--muted); font-size: 13px; margin-top: 6px }
+pre { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px; overflow-x: auto; font-family: var(--font-mono); font-size: 14px; line-height: 1.6; color: var(--ink); }
+pre code { font-family: inherit; } pre .c { color: var(--muted); }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px }
+@media (max-width: 640px) { h1 { font-size: 34px; } .tile .v { font-size: 26px; } .cards { grid-template-columns: 1fr; } }
+</style></head><body><main>
+<h1>Called It<span class="bang">!</span></h1>
+<p class="subtitle">Using AI Classifiers to Score a Person&#x27;s Annual Predictions</p>
+<p class="lede">Every holiday season, people make predictions about what will happen in the next year. The problem? Few people go back and evaluate how they did with objectivity. The "Called It!" skill uses best-in-class AI evaluation models to make this trivial.</p>
+<!-- Placeholder link until the post is live. -->
+<p><a class="btn primary" href="https://www.rickmanelius.com/p/called-it">Read the article on rickmanelius.com</a></p>
+<h2>How it works</h2>
+<figure><img src="assets/process.png" alt="How Called It! works: seven stages from discovering the predictions to a replayable scorecard"><figcaption>Seven stages. The three bars are written and reviewed before any evidence is fetched.</figcaption></figure>
+<h2>Already Evaluated Annual Predictions</h2>
+<div class="cards"><a class="card" href="every/index.html"><div class="k">company · 2026</div><h3>Every</h3>
+<div class="rates"><div><div class="v">4%</div><div class="l">strict</div></div><div><div class="v">32%</div><div class="l">standard</div></div><div><div class="v">55%</div><div class="l">lenient</div></div><div class="gap"><div class="v">50</div><div class="l">gap, pts</div></div></div>
+<div class="k">22 claims · 16 open at strict · as of 2026-10-24</div></a><a class="card" href="galloway/index.html"><div class="k">person · 2026</div><h3>Scott Galloway</h3>
+<div class="rates"><div><div class="v">0%</div><div class="l">strict</div></div><div><div class="v">27%</div><div class="l">standard</div></div><div><div class="v">47%</div><div class="l">lenient</div></div><div class="gap"><div class="v">47</div><div class="l">gap, pts</div></div></div>
+<div class="k">15 claims · 8 open at strict · as of 2026-10-24</div></a><a class="card" href="ippolito/index.html"><div class="k">person · 2026</div><h3>Mike Ippolito</h3>
+<div class="rates"><div><div class="v">10%</div><div class="l">strict</div></div><div><div class="v">35%</div><div class="l">standard</div></div><div><div class="v">45%</div><div class="l">lenient</div></div><div class="gap"><div class="v">35</div><div class="l">gap, pts</div></div></div>
+<div class="k">20 claims · 7 open at strict · as of 2026-10-24</div></a><a class="card" href="doll/index.html"><div class="k">person · 2026</div><h3>Bob Doll</h3>
+<div class="rates"><div><div class="v">21%</div><div class="l">strict</div></div><div><div class="v">29%</div><div class="l">standard</div></div><div><div class="v">36%</div><div class="l">lenient</div></div><div class="gap"><div class="v">14</div><div class="l">gap, pts</div></div></div>
+<div class="k">14 claims · 5 open at strict · as of 2026-10-24</div></a></div>
+<figure><img src="assets/hit-rates.png" alt="Hit rate at each bar, by subject"><figcaption>Hit rate at each bar. Unresolved claims count against the rate.</figcaption></figure>
+<figure><img src="assets/generosity-gap.png" alt="The generosity gap by subject"><figcaption>The generosity gap: lenient minus strict, in points.</figcaption></figure>
+<div class="links"><a href="data/called-it-2026.xlsx">All subjects, one workbook (.xlsx)</a><a href="https://github.com/rickmanelius/called-it">The skill and every run folder on GitHub</a></div>
+<h2>Grade someone</h2>
+<p class="lede">Install the skill, point it at a prediction post, and a run folder comes out. Open a pull request with the folder and it joins this gallery.</p>
+<pre><code><span class="c"># Claude Code</span>
+/plugin marketplace add rickmanelius/called-it
+/plugin install called-it@called-it
+/called-it "Name" 2026 https://link-to-their-predictions
+
+<span class="c"># Codex and other Agent Skills hosts</span>
+npx skills add rickmanelius/called-it -g -y
+/called-it "Name" 2026 https://link-to-their-predictions</code></pre>
+<footer>called-it v1.0.0. Every number on this site traces to a bar and an evidence row in a committed run folder; <code>called-it replay</code> reproduces it offline.</footer></main></body></html>

@@ -1,0 +1,113 @@
+{
+ "hash": "5ed6db8ca516eaa19a9271de032ebb136bd9e6d80d1b018a6759388b29e7d659",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Scott Galloway",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Waymo Dominates",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "context": "Heading of prediction 8. Body: 1 million paid rides a month, 100 million autonomous miles vs Tesla's 1.25 million with monitors; 'lapping the competition'. Waymo extends its lead in 2026."
+  },
+  "bar": "strict",
+  "criterion": "Waymo dominated in 2026: paid rides at least doubled, it expanded to many more cities, and no rival came close.",
+  "measure": "Waymo at 2 million or more paid rides a month (from 1 million at the end of 2025) per company statements, operating in at least 10 US metro areas, and at least 5x the paid rides of any other US robotaxi operator at the latest 2026 reading; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-02-12",
+    "source": "Bloomberg (via Claims Journal)",
+    "direction": "neutral",
+    "quote": "The company currently provides about 400,000 paid rides per week across the six cities. ... will hit more than 1 million paid weekly robotaxi rides in the US by the end of this year [co-CEO Tekedra Mawakana]",
+    "url": "https://amp.claimsjournal.com/news/national/2026/02/12/335668.htm"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-06-02",
+    "source": "electrive",
+    "direction": "supports",
+    "quote": "Tesla has registered 42 autonomous robotaxis in Texas ... At the time, Musk said the robotaxi operation could reach around 1,000 vehicles within a month of launch.",
+    "url": "https://www.electrive.com/2026/06/02/tesla-robotaxi-fleet-in-texas-reaches-only-42-vehicles/"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-09-01",
+    "source": "Crypto Briefing",
+    "direction": "neutral",
+    "quote": "the company is currently delivering more than 500,000 paid rides every week ... Waymo's fleet now exceeds 4,000 vehicles nationwide ... launched paid public robotaxi service in Denver, San Diego, and Tampa ... bringing its total footprint to 14 US markets",
+    "url": "https://cryptobriefing.com/waymo-paid-robotaxi-denver-san-diego-tampa/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.21
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.28
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.78,
+   "confidence": 0.67,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.22,
+    "2": 0.78
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1491,
+  "output_tokens": 52
+ },
+ "at": "2026-10-25T02:56:59Z"
+}

@@ -1,0 +1,113 @@
+{
+ "hash": "2c37b85a019fe24a1fa67fc5dcd614e19953f7bea54ebc8d75c28a44a188fc6d",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Mike Ippolito",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Ethereum will completely reverse sentiment and have its best year since 2021.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "context": "Post 14, first sentence. ETH's 2026 performance (price and sentiment) is its best since 2021."
+  },
+  "bar": "strict",
+  "criterion": "2026 is Ethereum's best year since 2021: ETH's return beats each of 2022, 2023, 2024 and 2025, and sentiment flipped positive.",
+  "measure": "ETH/USD calendar-2026 return through the run date (CoinGecko or CoinMarketCap) compared with each prior calendar-year return, plus major-outlet coverage describing a sentiment turn; provisional until December 31.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2025-12-31",
+    "source": "DQYDJ (CoinMarketCap data), ETH 2025 baseline",
+    "direction": "neutral",
+    "quote": "Ethereum returned -10.96% in 2025 [in US Dollar terms]. January 1, 2025 opening: $3,332.41; December 31, 2025 closing: $2,967.04",
+    "url": "https://dqydj.com/2025-ethereum-return/"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-10-24",
+    "source": "CoinGecko API",
+    "direction": "contradicts",
+    "quote": "Ethereum (ETH): $2,342.89 (-2.09% in 24h). [Versus $2,967.04 at end-2025 that is about -21% year to date, worse than 2025's -10.96% and worse than bitcoin's roughly -8%.]",
+    "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,zcash,solana&vs_currencies=usd&include_24hr_change=true"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-06-16",
+    "source": "IG",
+    "direction": "contradicts",
+    "quote": "[ETH] down 32% year-to-date [vs] Bitcoin's 11% decline [...] approximately 0.027, a 10-month low [ETH/BTC] [...] Bankless co-founder David Hoffman publicly sold his entire ETH holdings in June 2026 [...] a high-profile signal of the narrative problem",
+    "url": "https://www.ig.com/uk/trading-strategies/why-is-ethereum-falling-faster-than-bitcoin-2026-260616"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.01
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.99
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.94,
+   "confidence": 0.91,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.06,
+    "2": 0.94
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1581,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:05:56Z"
+}

@@ -1,0 +1,122 @@
+{
+ "hash": "8807d49d46deaad488bc7ac16ea4d3dbaea9399d0fe8185156626661693924a2",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Bob Doll",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "AI continues to be volatile/erratic creating another year of elevated volatility.",
+   "author": "Bob Doll",
+   "date": "2025-12-31",
+   "context": "Prediction 8 of 10. Equity volatility in 2026 stays elevated relative to a calm year, with AI-related names the driver. 'Elevated' is undefined in the source."
+  },
+  "bar": "standard",
+  "criterion": "2026 saw elevated equity volatility and at least one notable selloff attributed to AI stocks.",
+  "measure": "Cboe VIX 2026 average at least 17 or at least three S&P 500 daily moves of 2% or more, plus a major outlet attributing a notable selloff to AI-related stocks; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-10-21",
+    "source": "FRED (S&P Dow Jones Indices), S&P 500 daily close",
+    "direction": "supports",
+    "quote": "2026-01-20,6796.86; 2026-03-31,6528.52; 2026-04-08,6782.81; 2026-06-05,7383.74 [computed from the daily series: four S&P 500 sessions in 2026 through 2026-10-21 moved 2% or more from the prior close: -2.06%, +2.91%, +2.51%, -2.64%]",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=SP500&cosd=2024-01-01&coed=2026-10-24"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-10-22",
+    "source": "FRED (Cboe), VIX daily close",
+    "direction": "supports",
+    "quote": "2025-12-31,14.95; 2026-03-27,31.05; 2026-03-30,30.61; 2026-09-22,14.21; 2026-10-22,19.03 [computed from the daily series: the VIX averaged 18.09 over its 209 closes in 2026 through 2026-10-22; highest close 31.05 on 2026-03-27; two closes above 30; 14 closes at or above 25]",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=VIXCLS&cosd=2025-12-01&coed=2026-10-24"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-06-10",
+    "source": "AP (Stan Choe), via Iron Mountain Daily News",
+    "direction": "supports",
+    "quote": "Another sell-off for artificial-intelligence stocks helped drag the U.S. market sharply lower Wednesday ... The S&P 500 dropped 1.6% for its first back-to-back drop in three weeks ... Among the worries is that their prices have simply shot too high, too fast because of AI mania.",
+    "url": "https://www.ironmountaindailynews.com/news/business/2026/06/sell-off-for-ai-stocks-knocks-wall-street-back/"
+   },
+   {
+    "tier": 4,
+    "tier_meaning": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+    "date": "2026-10-05",
+    "source": "Bob Doll, Crossmark (4Q26 commentary)",
+    "direction": "supports",
+    "quote": "The AI complex witnessed noticeable volatility with the SOX falling 11.4%. ... Our expectation remains that AI will be controversial, create confusion and volatility, and result in some amazing positive stories and some noticeable losses.",
+    "url": "https://www.crossmarkglobal.com/quarterly-investment-commentary-4q26/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.98
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.01
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.94,
+   "confidence": 0.91,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.06,
+    "2": 0.94
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1920,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T20:16:44Z"
+}

@@ -1,0 +1,95 @@
+{
+ "hash": "c1755bdd0941044d13416e4d47f1ff0a4152075452905d6123d551cf4be62952",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Scott Galloway",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Best Investment (You Don’t Have Access to): TikTok U.S.",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "context": "Heading of prediction 6. Body: 'Trump's deal values U.S. TikTok at $28 billion' against an implied $120 billion. The US TikTok stake is the best investment of 2026, i.e. it proves to be worth far more than $28 billion."
+  },
+  "bar": "lenient",
+  "criterion": "The TikTok US deal closed in 2026 and reporting described the $28 billion price as a bargain for the buyers.",
+  "measure": "Deal closing per major outlets, plus at least one major-outlet analysis dated 2026 describing the valuation as below fair value.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-01-23",
+    "source": "TechSpot",
+    "direction": "supports",
+    "quote": "The company has officially formed a US-based joint venture. ... gives Oracle, Silver Lake, and MGX 15 percent ownership each ... existing US-based TikTok investors hold 30.1 percent ... ByteDance retains a minority 19.9 percent stake.",
+    "url": "https://www.techspot.com/news/111036-tiktok-long-running-us-saga-ends-deal-averts.html"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.06
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.12
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.05,
+   "confidence": 0.93,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.95,
+    "2": 0.05
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1139,
+  "output_tokens": 52
+ },
+ "at": "2026-10-25T02:56:58Z"
+}

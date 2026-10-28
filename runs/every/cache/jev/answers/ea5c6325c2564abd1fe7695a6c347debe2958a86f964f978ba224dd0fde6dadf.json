@@ -1,0 +1,104 @@
+{
+ "hash": "ea5c6325c2564abd1fe7695a6c347debe2958a86f964f978ba224dd0fde6dadf",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Every",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Kate expects most companies to have at least one dedicated role focused on building and maintaining internal AI systems by 2026—“someone whose job is to continuously optimize how the organization uses AI.”",
+   "author": "Kate Lee",
+   "date": "2025-12-23",
+   "context": "Prediction 2 of 3. Editor's paraphrase plus a direct quote. 'Most companies' is the checkable element; the bars will need a survey or job-posting measure."
+  },
+  "bar": "strict",
+  "criterion": "By 2026 most companies have at least one dedicated role for building and maintaining internal AI systems.",
+  "measure": "A reputable 2026 survey (McKinsey, Gartner, Deloitte, LinkedIn Economic Graph or peers) finding more than 50% of surveyed companies have such a role.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-05-04",
+    "source": "IBM Newsroom",
+    "direction": "supports",
+    "quote": "76% of surveyed organizations have a Chief AI Officer (CAIO) in 2026, up from just 26% in 2025.",
+    "url": "https://newsroom.ibm.com/2026-05-04-ibm-study-ceos-are-reshaping-c-suite-roles-for-the-ai-era"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-05-04",
+    "source": "IBM Newsroom",
+    "direction": "neutral",
+    "quote": "a survey of 2,000 CEOs and equivalent senior leaders across 33 geographies and 21 industries (sample skews to large organizations; fieldwork February to April 2026)",
+    "url": "https://newsroom.ibm.com/2026-05-04-ibm-study-ceos-are-reshaping-c-suite-roles-for-the-ai-era"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.17
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.06
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.07,
+   "confidence": 0.9,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.93,
+    "2": 0.07
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1307,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:09:37Z"
+}

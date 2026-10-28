@@ -1,0 +1,49 @@
+{
+  "name": "ippolito",
+  "tool": {
+    "name": "called-it",
+    "version": "0.1.0"
+  },
+  "subject": {
+    "name": "Mike Ippolito",
+    "kind": "person",
+    "website": "https://blockworks.co",
+    "x_handles": [
+      "MikeIppolito_"
+    ],
+    "domains": [
+      "crypto markets",
+      "DeFi",
+      "stablecoins",
+      "chains",
+      "venture",
+      "regulation",
+      "prediction markets",
+      "corporate chains"
+    ]
+  },
+  "target_year": 2026,
+  "season_window": {
+    "start": "2025-10-01",
+    "end": "2026-01-31"
+  },
+  "evidence_window": {
+    "start": "2026-01-01",
+    "end": "2026-10-24"
+  },
+  "canonical_urls": [
+    "https://x.com/MikeIppolito_/status/2006813164768571857"
+  ],
+  "top_n": 20,
+  "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+  },
+  "thresholds": {
+    "yes": 0.7,
+    "no": 0.3,
+    "min_strength": 1.0
+  },
+  "created": "2026-10-24",
+  "notes": "Blockworks co-founder; annual 27-prediction X thread, three years running"
+}

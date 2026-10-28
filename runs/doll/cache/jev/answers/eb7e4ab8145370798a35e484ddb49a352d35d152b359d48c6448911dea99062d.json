@@ -1,0 +1,104 @@
+{
+ "hash": "eb7e4ab8145370798a35e484ddb49a352d35d152b359d48c6448911dea99062d",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Bob Doll",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "International stocks outperform the U.S. for the second year in a row (first time in 20 years).",
+   "author": "Bob Doll",
+   "date": "2025-12-31",
+   "context": "Prediction 7 of 10. A broad international index (MSCI ACWI ex-US or EAFE) beats the S&P 500 over calendar 2026."
+  },
+  "bar": "lenient",
+  "criterion": "International stocks, by at least one broad measure, outperform US stocks in 2026.",
+  "measure": "MSCI EAFE, MSCI ACWI ex USA or MSCI Emerging Markets (USD) 2026 YTD return above the S&P 500; ETF proxies acceptable; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-10-22",
+    "source": "iShares (EEM, MSCI Emerging Markets ETF fund page)",
+    "direction": "supports",
+    "quote": "NAV Total Return, YTD: Increase 13.22%, as of Oct 22, 2026 [against SPY 12.68% on the same date; Yahoo Finance's EEM page shows 13.38% in its overview and 22.77% in its trailing-returns table, so the EM figure is disputed between sources]",
+    "url": "https://www.ishares.com/us/products/239637/ishares-msci-emerging-markets-etf"
+   },
+   {
+    "tier": 4,
+    "tier_meaning": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+    "date": "2026-10-05",
+    "source": "Bob Doll, Crossmark (4Q26 commentary)",
+    "direction": "supports",
+    "quote": "International stocks are ahead of U.S. stocks by about 150 bps, but the lead has changed several times. Certainly, EM stocks have helped the international averages. Oil price increases are more damaging to international than the U.S. This one could be a photo finish.",
+    "url": "https://www.crossmarkglobal.com/quarterly-investment-commentary-4q26/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.67
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.05
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.74,
+   "confidence": 0.61,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.26,
+    "2": 0.74
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1349,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T20:16:44Z"
+}

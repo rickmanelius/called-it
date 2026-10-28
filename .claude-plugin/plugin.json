@@ -1,0 +1,13 @@
+{
+  "name": "called-it",
+  "version": "1.0.0",
+  "description": "Did they actually call it? Grade any pundit's annual predictions at three bars (strict, standard, lenient) against the year's public evidence, with every receipt committed so anyone can replay the scorecard.",
+  "author": {
+    "name": "Rick Manelius",
+    "url": "https://github.com/rickmanelius"
+  },
+  "homepage": "https://github.com/rickmanelius/called-it",
+  "repository": "https://github.com/rickmanelius/called-it",
+  "license": "MIT",
+  "keywords": ["predictions", "forecasting", "accountability", "research", "evidence", "typesafe", "jev", "polymarket", "kalshi", "scorecard"]
+}

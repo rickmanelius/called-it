@@ -1,0 +1,104 @@
+{
+ "hash": "8a566e5a0f287094e3e3e930bcec4fd5735cffeb4ae52ef006910b934fb20b66",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Mike Ippolito",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "VC investment will be anemic. Expect a slightly diminished figure from 2025’s $25B, $12-$18B.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "context": "Post 7. Total 2026 crypto venture investment lands between $12B and $18B, down from about $25B in 2025. Numeric; trackers differ (Galaxy, PitchBook, The Block, DefiLlama)."
+  },
+  "bar": "standard",
+  "criterion": "2026 crypto venture investment is a diminished year: on pace for a total below 2025's roughly $25B but above $10B.",
+  "measure": "Same trackers, annualised; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-05-28",
+    "source": "Galaxy Research",
+    "direction": "supports",
+    "quote": "In total, VCs deployed $4 billion into private crypto and blockchain-related companies across 355 deals. [...] the Q1 2026 run-rate is below 2025's nearly $20 billion annual total",
+    "url": "https://www.galaxy.com/insights/research/crypto-blockchain-vc-venture-capital-startups-fundraising-q1-2026"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-09-17",
+    "source": "crypto.news (reporting Galaxy Research)",
+    "direction": "neutral",
+    "quote": "2025 total cited: $20.3 billion for crypto venture investment (Galaxy's 2025 baseline; Ippolito's thread used $25B). 2026 projection roughly $20.037 billion, i.e. roughly flat to slightly below Galaxy's own 2025 total.",
+    "url": "https://crypto.news/crypto-vc-funding-hits-5-68b-in-q2-galaxy-says/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.18
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.35
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.31,
+   "confidence": 0.49,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.01,
+    "1": 0.66,
+    "2": 0.33
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1337,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:05:57Z"
+}

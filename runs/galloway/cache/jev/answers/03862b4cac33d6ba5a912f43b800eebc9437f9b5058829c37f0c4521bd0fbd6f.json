@@ -1,0 +1,104 @@
+{
+ "hash": "03862b4cac33d6ba5a912f43b800eebc9437f9b5058829c37f0c4521bd0fbd6f",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Scott Galloway",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Synthetic Relationships Take Center Stage",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "context": "Heading of prediction 11. Body: AI companions help isolated elderly, harm young people; 'the next opioid crisis for young people'. AI companions become a central public and policy issue in 2026."
+  },
+  "bar": "standard",
+  "criterion": "AI companions became a major public and policy issue in 2026.",
+  "measure": "State laws, lawsuits, congressional hearings or an FTC action on AI companions dated 2026, per major-outlet reporting, two or more such events.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-01-08",
+    "source": "Bloomberg Law",
+    "direction": "supports",
+    "quote": "Character Technologies Inc., maker of a customizable chatbot app called Character.AI, and Google LLC agreed to settle multiple lawsuits ... Families in Florida, Texas, Colorado, and New York have agreed to negotiate settlements ... OpenAI has also been sued for alleged psychological damage caused by interactions with ChatGPT.",
+    "url": "https://news.bloombergtax.com/esg/character-ai-google-agree-to-settle-teen-chatbot-harm-lawsuits"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-06-26",
+    "source": "MultiState",
+    "direction": "supports",
+    "quote": "Through the first half of 2026, twelve states have enacted companion chatbot laws. ... require disclosure reminders that users are interacting with AI rather than a human ... implement protocols to recognize expressions of suicidal ideation or self-harm",
+    "url": "https://www.multistate.ai/updates/vol-105-state-ai-companion-chatbot-laws"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.95
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.01
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.96,
+   "confidence": 0.94,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.04,
+    "2": 0.96
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1258,
+  "output_tokens": 52
+ },
+ "at": "2026-10-25T02:56:59Z"
+}

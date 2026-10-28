@@ -1,0 +1,131 @@
+{
+ "hash": "e023b7ebe4f22f41e552d383aee82ceb5967e31cd1f5423ade0c86070ebc4e3d",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Every",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "I think we will definitely see um layoffs that companies blame on AI um in 2026",
+   "author": "Dan Shipper",
+   "date": "2025-12-23",
+   "context": "In 2026 companies will announce layoffs and publicly attribute them to AI."
+  },
+  "bar": "strict",
+  "criterion": "In 2026 several large companies announced layoffs and blamed them on AI.",
+  "measure": "At least five companies with 1,000 or more employees announcing layoffs in 2026 and explicitly attributing them to AI, per company statements or major outlets.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-07-01",
+    "source": "Challenger, Gray & Christmas",
+    "direction": "supports",
+    "quote": "In June, Artificial Intelligence led all reasons for job cuts, with 14,029 announced during the month, or 31%. ... So far this year, AI has been cited in 101,743 job cut announcements, approximately 23% of all cuts.",
+    "url": "https://www.challengergray.com/?p=28455"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-02-27",
+    "source": "Fortune",
+    "direction": "supports",
+    "quote": "laying off nearly half its workforce, cutting 4,000 employees, down to just under 6,000 workers from over 10,000. ... We're already seeing that the intelligence tools we're creating and using, paired with smaller and flatter teams,",
+    "url": "https://fortune.com/2026/02/27/block-jack-dorsey-ceo-xyz-stock-square-4000-ai-layoffs/"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-03-10",
+    "source": "Cape Argus (IOL)",
+    "direction": "neutral",
+    "quote": "about 9,238 of the 45,363 tech layoffs recorded worldwide in 2026 so far (RationalFX tally; lists Pinterest 675 and eBay 800 without stating how each tied cuts to AI)",
+    "url": "https://capeargus.co.za/technology/big-tech/2026-03-10-ai-blamed-for-one-in-five-tech-layoffs-so-far-in-2026/"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-03-11",
+    "source": "Bloomberg",
+    "direction": "supports",
+    "quote": "Atlassian to Reduce 1,600 Jobs in the Latest AI-Linked Cuts (headline; body paywalled)",
+    "url": "https://www.bloomberg.com/news/articles/2026-03-11/atlassian-team-ceo-announces-layoffs-of-1-600-citing-ai-shift"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-04-15",
+    "source": "TheWrap",
+    "direction": "supports",
+    "quote": "laying off 16% of its global workforce, or about 1,000 employees. ... rapid advancements in artificial intelligence enable our teams to reduce repetitive work",
+    "url": "https://www.thewrap.com/industry-news/tech/snap-layoffs-snapchat-ceo-evan-spiegel-artificial-intelligence/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.49
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.05
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.95,
+   "confidence": 0.93,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.05,
+    "2": 0.95
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1759,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:09:39Z"
+}

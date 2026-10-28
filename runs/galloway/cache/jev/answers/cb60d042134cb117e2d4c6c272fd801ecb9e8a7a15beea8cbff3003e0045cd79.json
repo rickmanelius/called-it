@@ -1,0 +1,95 @@
+{
+ "hash": "cb60d042134cb117e2d4c6c272fd801ecb9e8a7a15beea8cbff3003e0045cd79",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Scott Galloway",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "likely sending the U.S., possibly the globe, into recession.",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "context": "Prediction 1, consequence clause, split from c1. A US recession in 2026 following the AI correction. Hedged with 'likely'."
+  },
+  "bar": "strict",
+  "criterion": "The US entered a recession in 2026.",
+  "measure": "An NBER-dated recession beginning in 2026, or two consecutive quarters of negative real GDP in 2026 per the BEA; provisional until the data exists.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-07-30",
+    "source": "BEA",
+    "direction": "contradicts",
+    "quote": "Real gross domestic product (GDP) increased at an annual rate of 1.5 percent in the second quarter of 2026 ... In the first quarter, real GDP increased 2.1 percent.",
+    "url": "https://bea.gov/news/2026/gdp-advance-estimate-2nd-quarter-2026"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.03
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.76
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.65,
+   "confidence": 0.47,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.35,
+    "2": 0.65
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1085,
+  "output_tokens": 52
+ },
+ "at": "2026-10-25T02:56:57Z"
+}

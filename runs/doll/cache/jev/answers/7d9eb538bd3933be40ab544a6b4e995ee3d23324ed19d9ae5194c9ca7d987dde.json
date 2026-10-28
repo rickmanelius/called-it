@@ -1,0 +1,158 @@
+{
+ "hash": "7d9eb538bd3933be40ab544a6b4e995ee3d23324ed19d9ae5194c9ca7d987dde",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Bob Doll",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Technology, communication services, and financials outperform materials, utilities, and consumer discretionary.",
+   "author": "Bob Doll",
+   "date": "2025-12-31",
+   "context": "Prediction 6 of 10. Three favoured S&P 500 sectors beat three disfavoured ones over calendar 2026."
+  },
+  "bar": "strict",
+  "criterion": "Technology, communication services and financials each outperform each of materials, utilities and consumer discretionary in 2026.",
+  "measure": "2026 year-to-date total returns of the S&P 500 sector indices or the SPDR ETFs XLK, XLC, XLF versus XLB, XLU, XLY; all nine pairwise comparisons; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-09-30",
+    "source": "State Street (XLK fund page)",
+    "direction": "supports",
+    "quote": "YTD as of Sep 30 2026: Fund NAV 39.47%, Fund Market Value 39.53%, Technology Select Sector Index 39.57%",
+    "url": "https://www.ssga.com/us/en/intermediary/etfs/the-technology-select-sector-spdr-fund-xlk"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-09-30",
+    "source": "State Street (XLC fund page)",
+    "direction": "contradicts",
+    "quote": "YTD as of Sep 30 2026: NAV -4.87%, Market Value -4.84%, Communication Services Select Sector Index -4.83% [below Materials (XLB 8.75%) but above Utilities (XLU -5.71%) and Consumer Discretionary (XLY -8.27%)]",
+    "url": "https://www.ssga.com/us/en/intermediary/etfs/the-communication-services-select-sector-spdr-fund-xlc"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-09-30",
+    "source": "State Street (XLF fund page)",
+    "direction": "neutral",
+    "quote": "YTD as of Sep 30 2026: NAV -1.35%, Market Value -1.34%, Financial Select Sector Index -1.30% [below Materials (XLB 8.75%) but above Utilities (XLU -5.71%) and Consumer Discretionary (XLY -8.27%)]",
+    "url": "https://www.ssga.com/us/en/intermediary/etfs/the-financial-select-sector-spdr-fund-xlf"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-09-30",
+    "source": "State Street (XLB fund page)",
+    "direction": "neutral",
+    "quote": "YTD as of Sep 30 2026: NAV 8.75%, Market Value 8.76%, Materials Select Sector Index 8.84%",
+    "url": "https://www.ssga.com/us/en/intermediary/etfs/the-materials-select-sector-spdr-fund-xlb"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-09-30",
+    "source": "State Street (XLU fund page)",
+    "direction": "supports",
+    "quote": "YTD as of Sep 30 2026: Fund NAV -5.71%, Fund Market Value -5.73%, Utilities Select Sector Index -5.65%",
+    "url": "https://www.ssga.com/us/en/intermediary/etfs/the-utilities-select-sector-spdr-fund-xlu"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-09-30",
+    "source": "State Street (XLY fund page)",
+    "direction": "supports",
+    "quote": "YTD as of Sep 30 2026: NAV -8.27%, Market Value -8.26%, Consumer Discretionary Select Sector Index -8.25% [equal-weighted average of XLK, XLC, XLF at Sep 30: 11.08%; of XLB, XLU, XLY: -1.74%]",
+    "url": "https://www.ssga.com/us/en/intermediary/etfs/the-consumer-discretionary-select-sector-spdr-fund-xly"
+   },
+   {
+    "tier": 4,
+    "tier_meaning": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+    "date": "2026-04-06",
+    "source": "Bob Doll, Crossmark (2Q26 commentary)",
+    "direction": "contradicts",
+    "quote": "Well, in the category of 'You can't win 'em all,' this prediction is headed in a very bad direction. ... financials have been the worst sector performer so far this year. Meanwhile, materials has been a stellar performer.",
+    "url": "https://www.crossmarkglobal.com/wp-content/uploads/10-Predictions-2Q26-Quarterly-Commentary_FINAL.pdf"
+   },
+   {
+    "tier": 4,
+    "tier_meaning": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+    "date": "2026-10-05",
+    "source": "Bob Doll, Crossmark (4Q26 commentary)",
+    "direction": "supports",
+    "quote": "This prediction looked hopeless on March 31. But, as of Sept. 30, our projected outperformers are leading our projected underperformers by approximately 1000 bps, thanks to strong performance from technology and a much-improved financial sector, as well as relative weakness in utilities and consumer discretionary.",
+    "url": "https://www.crossmarkglobal.com/quarterly-investment-commentary-4q26/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.04
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.96
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.89,
+   "confidence": 0.83,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.11,
+    "2": 0.89
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 2414,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T20:16:43Z"
+}

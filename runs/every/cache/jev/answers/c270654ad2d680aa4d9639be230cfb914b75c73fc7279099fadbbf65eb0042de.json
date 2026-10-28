@@ -1,0 +1,113 @@
+{
+ "hash": "c270654ad2d680aa4d9639be230cfb914b75c73fc7279099fadbbf65eb0042de",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Every",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "But I think next year is going to be much more negative on AI than this year, in general popular discourse.",
+   "author": "Reid Hoffman",
+   "date": "2026-01-05",
+   "context": "Popular discourse about AI in 2026 will be much more negative than in 2025. Hoffman: 2026 discourse much more negative on AI. Pinned as a guest claim for contrast with the hosts' optimism."
+  },
+  "bar": "standard",
+  "criterion": "Popular discourse on AI was more negative in 2026 than in 2025.",
+  "measure": "Reputable 2026 polling showing any decline in favourability versus 2025, or a media-sentiment analysis showing more negative coverage; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-07-28",
+    "source": "Gallup",
+    "direction": "supports",
+    "quote": "has increased from 31% in 2025 to 39% in 2026. (share saying AI does more harm than good; survey May 4-11, 2026)",
+    "url": "https://news.gallup.com/poll/712751/americans-cool-toward.aspx"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-07-28",
+    "source": "Gallup",
+    "direction": "supports",
+    "quote": "down slightly from 31% in 2025 (trust in businesses to use AI responsibly, now 27%) ... up from 73% in 2025 and 75% before that (79% expect fewer U.S. jobs)",
+    "url": "https://news.gallup.com/poll/712751/americans-cool-toward.aspx"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-08-18",
+    "source": "Pew Research Center",
+    "direction": "supports",
+    "quote": "52% of Americans say they are more concerned than excited about the increased use of AI in daily life (trend table: 2025 50%, 2026 52%; survey June 22-28, 2026)",
+    "url": "https://www.pewresearch.org/short-reads/2026/08/18/young-adults-in-the-us-are-increasingly-wary-of-ai/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.95
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.03
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.94,
+   "confidence": 0.93,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.05,
+    "2": 0.95
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1474,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:09:38Z"
+}

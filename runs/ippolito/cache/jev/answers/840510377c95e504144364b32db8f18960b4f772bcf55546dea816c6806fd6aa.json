@@ -1,0 +1,103 @@
+{
+ "hash": "840510377c95e504144364b32db8f18960b4f772bcf55546dea816c6806fd6aa",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Mike Ippolito",
+  "target_year": 2026,
+  "published": "2026-01-01",
+  "author": "Mike Ippolito",
+  "passage": "Despite the loud fanfare, equity perps will have a slow start in 2026 but will do better on CEX venues than DEXes. Expect <5% of perp volume by EOY.",
+  "context": "Post 11. Tokenized-equity perpetuals are under 5% of total perp volume at end of 2026, with CEXes ahead of DEXes."
+ },
+ "questions": {
+  "is_prediction": {
+   "type": "noul",
+   "instructions": "Does `passage` make a forward-looking claim about what will happen or be true during `target_year` that could later be checked against public evidence?",
+   "criteria": {
+    "true": "It states or clearly implies an outcome, trend, number, event or ranking for the target year.",
+    "false": "It describes the past or present, gives advice, asks a question, or is too vague to ever check."
+   }
+  },
+  "specificity": {
+   "type": "score",
+   "instructions": "How specific and checkable is the prediction in `passage`?",
+   "criteria": [
+    "A mood, theme or direction with no checkable outcome (for example: 'AI will matter more')",
+    "A named outcome with no number, date or threshold (for example: 'agents will reshape company operations')",
+    "A named outcome with one checkable element: a number, a date, a named party or a threshold",
+    "A named outcome with a number or threshold and a time by which it happens"
+   ]
+  },
+  "kind": {
+   "type": "choice",
+   "instructions": "Is the predicted outcome in `passage` binary or a matter of degree?",
+   "criteria": {
+    "binary": "It either happens or it does not (a launch, an approval, a ranking, a named event).",
+    "spectrum": "It can be partly right depending on magnitude, share, price, count or definition."
+   }
+  },
+  "boldness": {
+   "type": "score",
+   "instructions": "How bold is the prediction in `passage` relative to what most informed observers expected when it was made?",
+   "criteria": [
+    "Consensus or near-certain at the time",
+    "Plausible but contested",
+    "Contrarian or surprising to most informed observers"
+   ]
+  }
+ },
+ "answers": {
+  "is_prediction": {
+   "type": "noul",
+   "noul": 0.98
+  },
+  "specificity": {
+   "type": "score",
+   "score": 2.99,
+   "confidence": 0.99,
+   "legend": {
+    "0": "A mood, theme or direction with no checkable outcome (for example: 'AI will matter more')",
+    "1": "A named outcome with no number, date or threshold (for example: 'agents will reshape company operations')",
+    "2": "A named outcome with one checkable element: a number, a date, a named party or a threshold",
+    "3": "A named outcome with a number or threshold and a time by which it happens"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": 0.01,
+    "3": 0.99
+   }
+  },
+  "kind": {
+   "type": "choice",
+   "choice": "spectrum",
+   "confidence": 1.0,
+   "probabilities": {
+    "binary": 0.0,
+    "spectrum": 1.0
+   }
+  },
+  "boldness": {
+   "type": "score",
+   "score": 0.82,
+   "confidence": 0.5,
+   "legend": {
+    "0": "Consensus or near-certain at the time",
+    "1": "Plausible but contested",
+    "2": "Contrarian or surprising to most informed observers"
+   },
+   "probabilities": {
+    "0": 0.25,
+    "1": 0.67,
+    "2": 0.08
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 803,
+  "output_tokens": 80
+ },
+ "at": "2026-10-24T19:45:16Z"
+}

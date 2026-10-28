@@ -1,0 +1,149 @@
+{
+ "hash": "f1be913eba67822221715fdb6bd181111b5b4e53c53989270e5dba57eb85762b",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Mike Ippolito",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "It will be a bad year for Bitcoin sentiment, driven by outperformance in gold, quantum fears, and an overhang from DATs.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "context": "Post 12, first sentence. Bitcoin sentiment is poor in 2026; gold outperforms bitcoin over the year."
+  },
+  "bar": "strict",
+  "criterion": "2026 was a bad year for Bitcoin sentiment: gold outperformed bitcoin, bitcoin is down for the year, and sentiment measures were predominantly negative.",
+  "measure": "Gold and BTC/USD 2026 returns through the run date; BTC/USD below its 2025 year-end price; Alternative.me Fear and Greed index averaging below 50 for the year or major-outlet coverage describing persistent negative sentiment; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2025-12-31",
+    "source": "DQYDJ (CoinMarketCap data), BTC end-2025 baseline",
+    "direction": "neutral",
+    "quote": "In 2025, bitcoin returned -6.33% in US dollar terms [...] opening trade $93,425.10 [...] closing trade $87,508.83 [...] October 6, 2025, bitcoin set a new all-time high with a trade of $126,198.07.",
+    "url": "https://dqydj.com/2025-bitcoin-return/"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-10-23",
+    "source": "Trading Economics gold price page",
+    "direction": "supports",
+    "quote": "3,993.96 USD/t.oz [October 23, 2026]; down 2.87% compared to the same time last year; all-time high of 5608.35 (January 2026). [Versus the $4,318.65 end-2025 close this is about -7.5% year to date.]",
+    "url": "https://tradingeconomics.com/commodity/gold"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-10-24",
+    "source": "CoinGecko API",
+    "direction": "supports",
+    "quote": "Bitcoin (BTC): $80,480 (-0.94% in 24h). [Versus the $87,508.83 close on December 31, 2025 that is about -8.0% year to date, below the end-2025 price; gold's -7.5% is marginally better, so the gold-vs-bitcoin margin is about one percentage point.]",
+    "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,zcash,solana&vs_currencies=usd&include_24hr_change=true"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2025-12-31",
+    "source": "Odaily (BullionVault data), gold end-2025 baseline",
+    "direction": "neutral",
+    "quote": "Spot gold closing price, December 31, 2025: $4,318.65 per ounce; closed down 0.46%; 2025 annual gain approximately 65%.",
+    "url": "https://www.odaily.news/en/newsflash/462739"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-02-12",
+    "source": "Yahoo Finance (CCN)",
+    "direction": "supports",
+    "quote": "On Feb. 6, 2026, the Crypto Fear and Greed index hit an all-time low of 5, reflecting the deepest level of fear in its recorded history. [BTC] plummeted to a low of $60,062 on Feb. 6, 2026",
+    "url": "https://finance.yahoo.com/news/crypto-fear-greed-index-plummets-104215900.html"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-07-20",
+    "source": "Stocktwits News",
+    "direction": "supports",
+    "quote": "Bitcoin down nearly 27% [year to date]; gold down more than 7% [year to date]. Charlie Bilello of Creative Planning: This is something we haven't seen before in any calendar year.",
+    "url": "https://stocktwits.com/news-articles/markets/equity/gold-and-bitcoin-are-2026-s-worst-assets-despite-active-war-market-strategist-says-it-s-something-we-haven-t-seen-before/cZZLtqwR7Mt"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-08-25",
+    "source": "Decrypt",
+    "direction": "neutral",
+    "quote": "Fear and Greed Index reading: 81, classified as extreme greed (CoinMarketCap index); a month earlier 36, firmly in the fear zone. Bitcoin broke $70,000 during a short squeeze.",
+    "url": "https://decrypt.co/376503/Alternative.me"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.6
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.69
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.97,
+   "confidence": 0.95,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.03,
+    "2": 0.97
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 2284,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:05:58Z"
+}

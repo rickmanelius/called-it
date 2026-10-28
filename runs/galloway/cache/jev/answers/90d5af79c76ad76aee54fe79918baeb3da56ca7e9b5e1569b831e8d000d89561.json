@@ -1,0 +1,104 @@
+{
+ "hash": "90d5af79c76ad76aee54fe79918baeb3da56ca7e9b5e1569b831e8d000d89561",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Scott Galloway",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "When Colbert shifts to podcasting, he’ll take eight people with him and make just $20 million, but it’ll only cost $5 million to produce.",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "context": "Prediction 7, specific example, split from c8. Stephen Colbert moves to podcasting after The Late Show ends."
+  },
+  "bar": "strict",
+  "criterion": "Stephen Colbert launched a podcast or independent digital show in 2026 with a small team.",
+  "measure": "Launch per major-outlet reporting dated 2026, with a reported team of fewer than 10 people; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-01-28",
+    "source": "Fox News",
+    "direction": "neutral",
+    "quote": "neither going to confirm nor deny the rumors ... if there is some way for me to serve the American people ... I would consider that ... [Meyers mentioned a $13.5 million Netflix deal, which Colbert called] not enough money",
+    "url": "https://www.foxnews.com/media/stephen-colbert-addresses-rumors-about-running-office-after-show-ends-says-he-consider-options.amp"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-05-20",
+    "source": "CNN (via KRDO)",
+    "direction": "neutral",
+    "quote": "Stephen Colbert's final \"Late Show\" broadcast on Thursday will close out his run. ... Colbert has confirmed that he is co-writing a new \"Lord of the Rings\" movie for Warner Bros. [No podcast or digital show mentioned]",
+    "url": "https://krdo.com/news/2026/05/20/whats-next-for-stephen-colbert-after-the-late-show/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.02
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.28
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.19,
+   "confidence": 0.66,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.02,
+    "1": 0.77,
+    "2": 0.21
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1273,
+  "output_tokens": 52
+ },
+ "at": "2026-10-25T02:56:59Z"
+}

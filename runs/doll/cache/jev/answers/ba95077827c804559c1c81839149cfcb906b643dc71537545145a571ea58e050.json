@@ -1,0 +1,113 @@
+{
+ "hash": "ba95077827c804559c1c81839149cfcb906b643dc71537545145a571ea58e050",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Bob Doll",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "AI continues to be volatile/erratic creating another year of elevated volatility.",
+   "author": "Bob Doll",
+   "date": "2025-12-31",
+   "context": "Prediction 8 of 10. Equity volatility in 2026 stays elevated relative to a calm year, with AI-related names the driver. 'Elevated' is undefined in the source."
+  },
+  "bar": "strict",
+  "criterion": "2026 was a year of elevated equity volatility with AI as the driver: volatility ran above normal all year, spiked at least once, and a major market drawdown was laid at AI's door.",
+  "measure": "Cboe VIX 2026 average at least 18 (about its long-run mean) and at least one close above 30; at least one major outlet attributing an S&P 500 drawdown of 5% or more primarily to AI-related stocks; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-06-10",
+    "source": "FRED (S&P Dow Jones Indices), S&P 500 daily close",
+    "direction": "neutral",
+    "quote": "2026-06-02,7609.78; 2026-06-10,7266.99 [the S&P 500 fell 4.50% from its June 2 close to its June 10 close over the AI-stock sell-off the AP reported, short of a 5% drawdown; the year's largest drawdown was 9.10%, from the 2026-02-02 close to the 2026-03-30 close]",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=SP500&cosd=2024-01-01&coed=2026-10-24"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-10-22",
+    "source": "FRED (Cboe), VIX daily close",
+    "direction": "supports",
+    "quote": "2025-12-31,14.95; 2026-03-27,31.05; 2026-03-30,30.61; 2026-09-22,14.21; 2026-10-22,19.03 [computed from the daily series: the VIX averaged 18.09 over its 209 closes in 2026 through 2026-10-22; highest close 31.05 on 2026-03-27; two closes above 30; 14 closes at or above 25]",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=VIXCLS&cosd=2025-12-01&coed=2026-10-24"
+   },
+   {
+    "tier": 4,
+    "tier_meaning": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+    "date": "2026-10-05",
+    "source": "Bob Doll, Crossmark (4Q26 commentary)",
+    "direction": "supports",
+    "quote": "The AI complex witnessed noticeable volatility with the SOX falling 11.4%. ... Our expectation remains that AI will be controversial, create confusion and volatility, and result in some amazing positive stories and some noticeable losses.",
+    "url": "https://www.crossmarkglobal.com/quarterly-investment-commentary-4q26/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.1
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.44
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.86,
+   "confidence": 0.79,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.14,
+    "2": 0.86
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1749,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T20:16:44Z"
+}

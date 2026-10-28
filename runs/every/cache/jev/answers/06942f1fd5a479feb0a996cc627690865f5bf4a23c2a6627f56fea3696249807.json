@@ -1,0 +1,95 @@
+{
+ "hash": "06942f1fd5a479feb0a996cc627690865f5bf4a23c2a6627f56fea3696249807",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Every",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "and I think mostly they will not be actually AI related they will be about the underlying business but they'll use AI as a good excuse.",
+   "author": "Dan Shipper",
+   "date": "2025-12-23",
+   "context": "Most 2026 layoffs blamed on AI will really be driven by underlying business problems, with AI used as cover; judging the true cause is inherently contestable."
+  },
+  "bar": "strict",
+  "criterion": "Most 2026 layoffs blamed on AI were really driven by the underlying business, with AI used as the excuse.",
+  "measure": "A reputable 2026 analysis (Challenger, an academic or Fed study, or a major-outlet investigation) concluding that most AI-attributed layoffs of 2026 were primarily driven by other factors.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-07-01",
+    "source": "Challenger, Gray & Christmas",
+    "direction": "neutral",
+    "quote": "artificial intelligence continues to reshape how companies think about headcount (Andy Challenger; Challenger reports the stated reason and does not audit it)",
+    "url": "https://www.challengergray.com/?p=28455"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.02
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.07
+  },
+  "strength": {
+   "type": "score",
+   "score": 0.97,
+   "confidence": 0.95,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.03,
+    "1": 0.97,
+    "2": 0.0
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1100,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:09:39Z"
+}

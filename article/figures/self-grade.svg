@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 528" width="1200" height="528" font-family='Space Grotesk, system-ui, -apple-system, Segoe UI, sans-serif'>
+<rect width="1200" height="528" fill="#0F1218"/>
+<text x="190" y="34" font-size="22" font-weight="600" fill="#F2F4F7">The word &#x27;wrong&#x27;</text>
+<text x="190" y="54" font-size="13" fill="#C9D0DA">The same ten predictions, graded by their author and by called-it at the standard bar, three weeks apart. The difference</text>
+<text x="190" y="72" font-size="13" fill="#C9D0DA">is almost entirely which outcomes get called wrong.</text>
+<text x="190" y="114" font-size="16" font-weight="600" fill="#F2F4F7">Bob Doll, grading himself (Oct 5, 2026)</text>
+<text x="190" y="132" font-size="12" fill="#A3ABB8">10 predictions: 5 heading in the right direction, 0 wrong, 5 too soon or too close to call</text>
+<line x1="190.0" y1="142" x2="190.0" y2="262" stroke="#2A313D" stroke-width="1"/>
+<line x1="390.0" y1="142" x2="390.0" y2="262" stroke="#2A313D" stroke-width="1"/>
+<line x1="590.0" y1="142" x2="590.0" y2="262" stroke="#2A313D" stroke-width="1"/>
+<line x1="790.0" y1="142" x2="790.0" y2="262" stroke="#2A313D" stroke-width="1"/>
+<line x1="990.0" y1="142" x2="990.0" y2="262" stroke="#2A313D" stroke-width="1"/>
+<text x="178" y="167" font-size="14" fill="#F2F4F7" text-anchor="end">Right direction</text>
+<rect x="190" y="149" width="400.0" height="26" rx="3" fill="#4FD1A1"/>
+<text x="598.0" y="167" font-size="13" font-family='IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace' fill="#F2F4F7">50% <tspan fill="#A3ABB8">(5 of 10)</tspan></text>
+<text x="178" y="207" font-size="14" fill="#F2F4F7" text-anchor="end">Wrong</text>
+<rect x="190" y="189" width="0.0" height="26" rx="3" fill="#FF5C5C"/>
+<text x="198.0" y="207" font-size="13" font-family='IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace' fill="#F2F4F7">0% <tspan fill="#A3ABB8">(0 of 10)</tspan></text>
+<text x="178" y="247" font-size="14" fill="#F2F4F7" text-anchor="end">Too soon</text>
+<rect x="190" y="229" width="400.0" height="26" rx="3" fill="#A3ABB8"/>
+<text x="598.0" y="247" font-size="13" font-family='IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace' fill="#F2F4F7">50% <tspan fill="#A3ABB8">(5 of 10)</tspan></text>
+<line x1="190" y1="142" x2="190" y2="262" stroke="#2A313D" stroke-width="1"/>
+<text x="190" y="316" font-size="16" font-weight="600" fill="#F2F4F7">called-it, standard bar (Oct 24, 2026)</text>
+<text x="190" y="334" font-size="12" fill="#A3ABB8">14 claims from the same 10 predictions</text>
+<line x1="190.0" y1="344" x2="190.0" y2="464" stroke="#2A313D" stroke-width="1"/>
+<line x1="390.0" y1="344" x2="390.0" y2="464" stroke="#2A313D" stroke-width="1"/>
+<line x1="590.0" y1="344" x2="590.0" y2="464" stroke="#2A313D" stroke-width="1"/>
+<line x1="790.0" y1="344" x2="790.0" y2="464" stroke="#2A313D" stroke-width="1"/>
+<line x1="990.0" y1="344" x2="990.0" y2="464" stroke="#2A313D" stroke-width="1"/>
+<text x="178" y="369" font-size="14" fill="#F2F4F7" text-anchor="end">Met</text>
+<rect x="190" y="351" width="228.6" height="26" rx="3" fill="#4FD1A1"/>
+<text x="426.6" y="369" font-size="13" font-family='IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace' fill="#F2F4F7">29% <tspan fill="#A3ABB8">(4 of 14)</tspan></text>
+<text x="178" y="409" font-size="14" fill="#F2F4F7" text-anchor="end">Not met</text>
+<rect x="190" y="391" width="285.7" height="26" rx="3" fill="#FF5C5C"/>
+<text x="483.7" y="409" font-size="13" font-family='IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace' fill="#F2F4F7">36% <tspan fill="#A3ABB8">(5 of 14)</tspan></text>
+<text x="178" y="449" font-size="14" fill="#F2F4F7" text-anchor="end">Unresolved</text>
+<rect x="190" y="431" width="285.7" height="26" rx="3" fill="#A3ABB8"/>
+<text x="483.7" y="449" font-size="13" font-family='IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace' fill="#F2F4F7">36% <tspan fill="#A3ABB8">(5 of 14)</tspan></text>
+<line x1="190" y1="344" x2="190" y2="464" stroke="#2A313D" stroke-width="1"/>
+<text x="190.0" y="484" font-size="12" fill="#A3ABB8" text-anchor="middle">0%</text>
+<text x="390.0" y="484" font-size="12" fill="#A3ABB8" text-anchor="middle">25%</text>
+<text x="590.0" y="484" font-size="12" fill="#A3ABB8" text-anchor="middle">50%</text>
+<text x="790.0" y="484" font-size="12" fill="#A3ABB8" text-anchor="middle">75%</text>
+<text x="990.0" y="484" font-size="12" fill="#A3ABB8" text-anchor="middle">100%</text>
+</svg>

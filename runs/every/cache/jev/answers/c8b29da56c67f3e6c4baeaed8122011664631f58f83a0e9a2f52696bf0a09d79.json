@@ -1,0 +1,113 @@
+{
+ "hash": "c8b29da56c67f3e6c4baeaed8122011664631f58f83a0e9a2f52696bf0a09d79",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Every",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "2026 is when agents go mainstream.",
+   "author": "Kieran Klaassen",
+   "date": "2025-12-23",
+   "context": "Prediction 1 of 3. Editor's one-line rendering of Klaassen's view ('Kieran puts it simply'), not a direct quote. 'Mainstream' is undefined; the bars will need an adoption measure."
+  },
+  "bar": "standard",
+  "criterion": "In 2026 agent features reached hundreds of millions of people and the year was described as the one agents went mainstream.",
+  "measure": "Agent features generally available by default in at least two of ChatGPT, Gemini, Copilot, iOS or Android in 2026, plus major-outlet year-end coverage describing agents as mainstream; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-04-22",
+    "source": "Microsoft 365 Blog",
+    "direction": "supports",
+    "quote": "agentic capabilities in Word, Excel, and PowerPoint are now generally available. ... They are also available to users with Microsoft 365 Personal and Family plans.",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/04/22/copilots-agentic-capabilities-in-word-excel-and-powerpoint-are-generally-available/"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-02-26",
+    "source": "Phone Scoop",
+    "direction": "contradicts",
+    "quote": "The feature is strictly limited to select apps and devices for now ... The feature is launching first on the Google Pixel 10 series and Samsung Galaxy S26 series.",
+    "url": "https://www.phonescoop.com/articles/article.php?a=23678"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-03-20",
+    "source": "9to5Mac",
+    "direction": "contradicts",
+    "quote": "While that release turned out to be feature-packed, the new Siri features aren't present. ... Apple would instead target iOS 26.5 and iOS 27.",
+    "url": "https://9to5mac.com/2026/03/20/apples-gemini-powered-siri-upgrade-could-still-arrive-this-month/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.09
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.76
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.89,
+   "confidence": 0.85,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.1,
+    "2": 0.9
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1430,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:09:38Z"
+}

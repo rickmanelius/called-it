@@ -1,0 +1,122 @@
+{
+ "hash": "63c02f286cf400d5faaab12743848ac5f45698a466585199b4132c8deecb102b",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Mike Ippolito",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Most existing solutions will not do well, ZEC was a one off and will have a bad 2026.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "context": "Post 26, second part, split from c44. Zcash (ZEC) underperforms in 2026 after its late-2025 rally."
+  },
+  "bar": "lenient",
+  "criterion": "ZEC fell well below its late-2025 peak during 2026.",
+  "measure": "ZEC/USD at the latest reading at least 30% below its late-2025 high; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2025-12-31",
+    "source": "CoinGecko API, ZEC end-2025 baseline",
+    "direction": "neutral",
+    "quote": "market_data.current_price.usd: 527.9267845948881 [snapshot for 31-12-2025]",
+    "url": "https://api.coingecko.com/api/v3/coins/zcash/history?date=31-12-2025&localization=false"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-10-24",
+    "source": "CoinGecko API",
+    "direction": "contradicts",
+    "quote": "market_data.current_price.usd: 1207.95; price_change_percentage_200d: 339.2633; price_change_percentage_30d: -22.31223; market_cap_rank: 10; last_updated 2026-10-24T20:11:41.000Z. [About +129% versus $527.93 at end-2025 and above the late-2025 high; bitcoin is down about 8% over the same period.]",
+    "url": "https://api.coingecko.com/api/v3/coins/zcash?localization=false&tickers=false&community_data=false&developer_data=false&sparkline=false"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-01-08",
+    "source": "Cointelegraph",
+    "direction": "neutral",
+    "quote": "[ZEC] slid more than 20% on Thursday to about $381 [after the] sudden resignation [of the core development team from the Electric Coin Company; sell-off from the $550-$580 region after a] 1,000%-plus rally in late 2025. [Early-2026 weakness that later reversed; see e72 and e73.]",
+    "url": "https://cointelegraph.com/markets/zcash-governance-turmoil-how-low-can-zec-price-go"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-09-05",
+    "source": "Stocktwits News",
+    "direction": "contradicts",
+    "quote": "Intraday high: $1,021.58 on Sept. 4 (CoinGecko) [...] roughly doubled the privacy token in a month [...] Grayscale converted its Zcash Trust into an exchange-traded product, listed as ZCSH on NYSE Arca on Aug. 25 [...] ZEC perpetual open interest hit a record of about $2.4 billion on Sept. 4.",
+    "url": "https://stocktwits.com/news-articles/markets/cryptocurrency/zcash-tops-1-000-for-first-time-in-a-decade-as-short-covering-drive-rally/cZsz48zRJDn"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.17
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.98
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.97,
+   "confidence": 0.95,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.03,
+    "2": 0.97
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1807,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:05:58Z"
+}

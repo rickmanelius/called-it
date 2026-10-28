@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Secrets never belong here. Keys come from the environment.
+.env
+*.key
+
+# Media downloads are reproducible from the URL; the extracted text is what gets committed (cache/pages).
+runs/*/cache/media/*.vtt
+runs/*/cache/media/*.mp3
+runs/*/cache/media/*.mp4
+
+# Video renders and HyperFrames working files are rebuilt from the committed project (the voice
+# files under assets/voice stay committed because the render reads them); the MP4 lives on the Desktop.
+videos/*/out/
+videos/*/renders/
+videos/*/.hyperframes/
+videos/*/node_modules/
+*.mp4
+
+# Scratch
+tmp/
+.DS_Store
+
+# The HyperFrames film source left the repo on 2026-10-27 (renders live on the Desktop).
+videos/

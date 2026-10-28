@@ -1,0 +1,113 @@
+{
+ "hash": "67a9bcaf44275f6f4e26f55b26f41312705e74a29adf31b76d0ef192564efb57",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Mike Ippolito",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Infrastructure will go through massive consolidation. L2 frameworks, RaaS, shared sequencing, etc… all compress into one category. These move from being thought of as ecosystems to CoSS, similar to Redhat. 2-3 vertically integrated solutions will emerge and do well.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "context": "Post 23. Consolidation (mergers, acquisitions, shutdowns) among L2 frameworks and rollup-as-a-service providers in 2026."
+  },
+  "bar": "lenient",
+  "criterion": "At least one notable merger, acquisition or shutdown among such infrastructure providers in 2026.",
+  "measure": "Same.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-04-17",
+    "source": "L2BEAT project page, Mint",
+    "direction": "neutral",
+    "quote": "Mint Blockchain shutdown (announced 2026-04-17, withdrawal deadline 2026-10-20) [...] Built on OP Stack [...] ceased operations on April 17, 2026 and only supports withdrawals [...] Any assets left on the chain after that date will be unrecoverable. [An OP Stack L2 shutdown, not an L2 framework or RaaS provider.]",
+    "url": "https://l2beat.com/layer2s/projects/mint"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-07-01",
+    "source": "Alchemy developer docs, Polygon zkEVM deprecation notice",
+    "direction": "neutral",
+    "quote": "Polygon Labs shut down the Polygon zkEVM network on July 1, 2026 [...] There is no migration path for Polygon zkEVM, as the network itself was shut down. [Shutdown executed in 2026; the sunset was announced in 2025.]",
+    "url": "https://www.alchemy.com/docs/reference/polygon-zkevm-deprecation-notice.md"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-05-21",
+    "source": "Cointelegraph",
+    "direction": "supports",
+    "quote": "Syndicate Labs is winding down after five years of building onchain infrastructure for customizable Ethereum rollups and sequencers [...] the rollup market has fundamentally shifted [...] for every new rollup launching, several more quietly shut down. [Raised $20 million in Series A funding in 2021, led by Andreessen Horowitz.]",
+    "url": "https://www.cointelegraph.com/news/ethereum-infrastructure-firm-syndicate-labs-closes-citing-shift-in-rollup-market"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.86
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.03
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.72,
+   "confidence": 0.59,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.27,
+    "2": 0.73
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1512,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:05:56Z"
+}

@@ -1,0 +1,104 @@
+{
+ "hash": "7e390405f73511372af4548e0069dd2e556fa3943064321b5b658adddab497e6",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Mike Ippolito",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "4-5 new chains will get announced, Blackrock is one of them.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "context": "Post 24, split from c39. Four or five new corporate chains are announced in 2026, including one by BlackRock."
+  },
+  "bar": "lenient",
+  "criterion": "Several new corporate chains, read as at least three, were announced in 2026.",
+  "measure": "Same counting rule.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-07-28",
+    "source": "RL1 (Regulated Layer One) press release",
+    "direction": "supports",
+    "quote": "European blockchain initiative 'Regulated Layer One' goes live [...] owns and operates a private, permissioned blockchain network built for regulated financial markets. [Founding institutions: ABN AMRO, Cecabank, Chartered Investment, Credit Mutuel Alliance Federale, DekaBank, DZ BANK, LBBW, Natixis CIB, SC Ventures, Seturion.]",
+    "url": "https://www.rl1.network/news/rl1-launch/"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-07-29",
+    "source": "CryptoNinjas",
+    "direction": "neutral",
+    "quote": "RL1 opened its doors as a European Cooperative Society (SCE) [headquartered in Luxembourg, July 28]. [Runs on SWIAT's distributed ledger technology, which has operated in production for about three years; the earlier SWIAT infrastructure completed more than 50 institutional transactions worth over EUR 700 million, roughly $808 million; NatWest in discussions to join.]",
+    "url": "https://www.cryptoninjas.net/news/europes-10-major-banks-launch-rl1-blockchain-to-power-808m-tokenized-finance-network/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.22
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.05
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.79,
+   "confidence": 0.67,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.03,
+    "1": 0.16,
+    "2": 0.8099999999999999
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1304,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:05:56Z"
+}

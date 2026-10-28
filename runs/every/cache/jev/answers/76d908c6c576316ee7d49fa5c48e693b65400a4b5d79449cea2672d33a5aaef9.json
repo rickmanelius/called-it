@@ -1,0 +1,131 @@
+{
+ "hash": "76d908c6c576316ee7d49fa5c48e693b65400a4b5d79449cea2672d33a5aaef9",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Every",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "I don’t think any of the horses that are in the race will particularly stumble. I don’t think you’ll look up and go, Wow, I thought Cursor was fantastic—and it’s just gone.",
+   "author": "Reid Hoffman",
+   "date": "2026-01-05",
+   "context": "None of the current coding-agent leaders will collapse or exit the market during 2026. Hoffman: none of the coding-agent leaders will stumble. Pinned because it directly contradicts Shipper's own Cursor call (c31)."
+  },
+  "bar": "lenient",
+  "criterion": "None of the coding-agent leaders shut down or was sold in distress in 2026.",
+  "measure": "Same list, reputable reporting dated 2026; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-03-12",
+    "source": "CFOtech",
+    "direction": "supports",
+    "quote": "Replit has raised USD $400 million in a funding round that values the AI coding company at USD $9 billion,",
+    "url": "https://cfotech.co.uk/story/replit-raises-usd-400m-hits-usd-9bn-ai-valuation"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-06-09",
+    "source": "Dealroom",
+    "direction": "supports",
+    "quote": "has surpassed $4 billion in annualised revenue as of early June 2026 ... The run-rate is up from $3 billion in late April 2026 and $2 billion in February 2026.",
+    "url": "https://dealroom.co/news/134107-cursor-tops-4b-annualized-revenue/"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-06-16",
+    "source": "Decrypt",
+    "direction": "supports",
+    "quote": "SpaceX signed a $60 billion merger agreement with Anysphere and its subsidiary X67 ... was reportedly raising a $2 billion funding round that would have valued it at $50 billion.",
+    "url": "https://decrypt.co/371308/spacex-new-high-as-elon-musk-firm-agrees-acquire-ai-startup-cursor"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-08-13",
+    "source": "TechNode",
+    "direction": "supports",
+    "quote": "has raised $400 million in Series C funding at a $13.3 billion valuation.",
+    "url": "https://technode.com/2026/08/13/tencent-backs-lovable-in-400-million-series-c-at-13-3-billion-valuation/"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-09-09",
+    "source": "Channel Insider",
+    "direction": "supports",
+    "quote": "raised more than $2 billion in a Series E funding round, sending its valuation to $48 billion. ... run-rate revenue increased from $492 million in May to nearly $900 million.",
+    "url": "https://www.channelinsider.com/ai/news-cognition-devin-2b-funding-48b-valuation/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.35
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.32
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.92,
+   "confidence": 0.88,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.01,
+    "1": 0.06,
+    "2": 0.93
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1706,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:09:38Z"
+}

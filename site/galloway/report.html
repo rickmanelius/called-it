@@ -1,0 +1,347 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scott Galloway 2026 predictions</title><style>@font-face { font-family: 'Space Grotesk'; font-style: normal; font-weight: 300 700; font-display: block; src: url('../assets/fonts/space-grotesk.woff2') format('woff2'); }
+@font-face { font-family: 'IBM Plex Mono'; font-style: normal; font-weight: 500; font-display: block; src: url('../assets/fonts/ibm-plex-mono-500.woff2') format('woff2'); }
+@font-face { font-family: 'IBM Plex Mono'; font-style: normal; font-weight: 600; font-display: block; src: url('../assets/fonts/ibm-plex-mono-600.woff2') format('woff2'); }
+:root { color-scheme: dark; --page:#0F1218; --surface:#171C25; --surface-2:#1E2430; --border:#2A313D; --ink:#F2F4F7; --ink-2:#C9D0DA; --muted:#A3ABB8; --grid:#2A313D; --axis:#2A313D; --ring:#2A313D; --accent:#FFB020; --accent-hover:#FFD36B; --on-accent:#0F1218; --on-accent-small:#3D2A00; --bar-strict:#8B93A1; --bar-standard:#D7DCE3; --bar-lenient:#FFB020; --good:#4FD1A1; --critical:#FF5C5C; --open:#A3ABB8; --font-text:'Space Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif; --font-mono:'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--page); color: var(--ink); font-family: var(--font-text); }
+.mono, code, pre, .num, .badge, .chip { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+a { color: inherit; text-decoration: underline; text-decoration-color: var(--border); text-underline-offset: 2px; }
+a:hover { color: var(--accent-hover); }
+
+body { font-size: 15px; line-height: 1.5; }
+main { max-width: 1040px; margin: 0 auto; padding: 32px 16px 64px; }
+.badge { color: var(--muted); font-size: 13px; letter-spacing: .04em; text-transform: uppercase; }
+h1 { font-size: 30px; font-weight: 700; margin: 10px 0 4px; letter-spacing: -.02em; }
+h2 { font-size: 21px; font-weight: 700; margin: 40px 0 12px; letter-spacing: -.01em; }
+h3 { font-size: 16px; font-weight: 700; margin: 28px 0 8px; }
+.lede { color: var(--ink-2); max-width: 70ch; }
+.tiles { display:grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 20px 0; }
+.tile { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; }
+.tile .k { color: var(--muted); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+.tile .v { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-size: 32px; font-weight: 600; margin-top: 2px; line-height: 1.1; }
+.tile .s { color: var(--muted); font-size: 12px; margin-top: 4px; }
+.tile.gap { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.tile.gap .k, .tile.gap .s { color: var(--on-accent-small); }
+.chart { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+.chart svg { width: 100%; height: auto; display: block; }
+.chart .bar-strict { fill: var(--bar-strict); } .chart .bar-standard { fill: var(--bar-standard); } .chart .bar-lenient { fill: var(--bar-lenient); }
+.chart .bar:hover { opacity: .85; }
+.chart text { fill: var(--ink); font-size: 13px; font-family: var(--font-text); }
+.chart .val { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.chart .axis-label { fill: var(--muted); font-size: 12px; font-family: var(--font-mono); }
+.chart .grid { stroke: var(--border); stroke-width: 1; }
+.chart .baseline { stroke: var(--border); stroke-width: 1; }
+table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; font-size: 14px; }
+th, td { text-align: left; padding: 9px 10px; border-top: 1px solid var(--border); vertical-align: top; }
+th { color: var(--muted); font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; border-top: 0; }
+td.num, th.num { text-align: right; font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.v { white-space: nowrap; font-weight: 700; font-size: 13px; }
+.v .dot { display:inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; box-shadow: 0 0 0 2px var(--surface); }
+.v-met .dot { background: var(--good); } .v-met { color: var(--good); }
+.v-not_met .dot { background: var(--critical); } .v-not_met { color: var(--critical); }
+.v-unresolved .dot { background: var(--open); } .v-unresolved { color: var(--ink-2); }
+.claim { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px; margin: 14px 0; }
+.claim blockquote { margin: 0 0 8px; padding-left: 12px; border-left: 3px solid var(--accent); color: var(--ink); font-size: 16px; }
+.claim .meta, .claim .ctx { color: var(--ink-2); font-size: 13px; }
+.bars { list-style: none; padding: 0; margin: 12px 0 0; }
+.bars li { padding: 8px 0; border-top: 1px solid var(--border); }
+.bars .crit { color: var(--ink-2); font-size: 14px; }
+.bars .p { color: var(--muted); font-size: 12px; font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.ev { margin: 10px 0 0; padding-left: 18px; font-size: 13px; color: var(--ink-2); }
+.ev li { margin: 4px 0; }
+.tier { display:inline-block; min-width: 24px; text-align:center; font-size: 11px; font-weight: 600; font-family: var(--font-mono); border: 1px solid var(--border); border-radius: 4px; padding: 0 4px; margin-right: 6px; color: var(--ink); background: var(--surface-2); }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--ink-2); font-size: 13px; }
+footer code { font-size: 12px; }
+@media (max-width: 640px) { h1 { font-size: 22px; } .tile .v { font-size: 24px; } th, td { padding: 7px 6px; } }
+</style></head><body><main>
+<div class="badge">🎯 called-it v1.0.0 · Scott Galloway · 2026 · graded 2026-10-24 · jev-1.14.0</div>
+<h1>Scott Galloway: 2026 predictions, graded</h1>
+<p class="lede">15 claims, each graded at three bars against evidence from 2026-01-01 to 2026-10-24. The strict bar is what a hostile critic would require, the lenient bar is the weakest reading a critic would still concede, and the gap between them is how much the grade depends on who is grading.</p>
+<div class="tiles">
+<div class="tile"><div class="k">Strict</div><div class="v">0%</div><div class="s">0 met · 7 not met · 8 unresolved</div></div>
+<div class="tile"><div class="k">Standard</div><div class="v">27%</div><div class="s">4 met · 5 not met · 6 unresolved</div></div>
+<div class="tile"><div class="k">Lenient</div><div class="v">47%</div><div class="s">7 met · 3 not met · 5 unresolved</div></div>
+<div class="tile gap"><div class="k">Generosity gap</div><div class="v">47 pts</div><div class="s">lenient minus strict</div></div>
+</div>
+<div class="chart"><svg viewBox="0 0 720 172" role="img" aria-label="Hit rate at each bar">
+<line class="grid" x1="110.0" y1="12" x2="110.0" y2="144"/>
+<text class="axis-label" x="110.0" y="164" text-anchor="middle">0%</text>
+<line class="grid" x1="247.5" y1="12" x2="247.5" y2="144"/>
+<text class="axis-label" x="247.5" y="164" text-anchor="middle">25%</text>
+<line class="grid" x1="385.0" y1="12" x2="385.0" y2="144"/>
+<text class="axis-label" x="385.0" y="164" text-anchor="middle">50%</text>
+<line class="grid" x1="522.5" y1="12" x2="522.5" y2="144"/>
+<text class="axis-label" x="522.5" y="164" text-anchor="middle">75%</text>
+<line class="grid" x1="660.0" y1="12" x2="660.0" y2="144"/>
+<text class="axis-label" x="660.0" y="164" text-anchor="middle">100%</text>
+<text x="98" y="38" text-anchor="end">Strict</text>
+<rect class="bar bar-strict" x="110" y="20" width="0.0" height="26" rx="3" ry="3"><title>Strict: 0 met, 7 not met, 8 unresolved</title></rect>
+<text class="val" x="118.0" y="38">0% <tspan class="axis-label">(0 of 15)</tspan></text>
+<text x="98" y="82" text-anchor="end">Standard</text>
+<rect class="bar bar-standard" x="110" y="64" width="146.8" height="26" rx="3" ry="3"><title>Standard: 4 met, 5 not met, 6 unresolved</title></rect>
+<text class="val" x="264.9" y="82">27% <tspan class="axis-label">(4 of 15)</tspan></text>
+<text x="98" y="126" text-anchor="end">Lenient</text>
+<rect class="bar bar-lenient" x="110" y="108" width="256.9" height="26" rx="3" ry="3"><title>Lenient: 7 met, 3 not met, 5 unresolved</title></rect>
+<text class="val" x="374.9" y="126">47% <tspan class="axis-label">(7 of 15)</tspan></text>
+<line class="baseline" x1="110" y1="12" x2="110" y2="144"/>
+</svg></div>
+<h2>Ladder</h2>
+<table><thead><tr><th>#</th><th>Claim</th><th>Author</th><th>Strict</th><th>Standard</th><th>Lenient</th><th>Best evidence</th></tr></thead><tbody>
+<tr><td>c15</td><td><a href="#c15">Team Scotland will reach the semifinals of the World Cup on the back of a Pele-like performance from Scott Mc…</a></td><td>Scott Galloway</td><td><span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span></td><td><span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span></td><td><span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span></td><td><span class="tier">T2</span><a href="https://www.thestar.com.my/sport/football/2026/06/28/soccer-scotland-eliminated-from-world-cup">Reuters (via The Star)</a></td></tr>
+<tr><td>c7</td><td><a href="#c7">Best Investment (You Don’t Have Access to): TikTok U.S.</a></td><td>Scott Galloway</td><td><span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span><div class="p">provisional</div></td><td><span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span><div class="p">provisional</div></td><td><span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span><div class="p">provisional</div></td><td><span class="tier">T2</span><a href="https://www.techspot.com/news/111036-tiktok-long-running-us-saga-ends-deal-averts.html">TechSpot</a></td></tr>
+<tr><td>c3</td><td><a href="#c3">The Data Center Bubble Bursts</a></td><td>Scott Galloway</td><td><span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span><div class="p">provisional</div></td><td><span class="v v-met" title="met"><span class="dot" aria-hidden="true"></span>✓ met</span><div class="p">provisional</div></td><td><span class="v v-met" title="met"><span class="dot" aria-hidden="true"></span>✓ met</span><div class="p">provisional</div></td><td><span class="tier">T1</span><a href="https://datacenterwatch.org/q1-2026">Data Center Watch (10a Labs), Q1 2026 report</a></td></tr>
+<tr><td>c10</td><td><a href="#c10">Waymo Dominates</a></td><td>Scott Galloway</td><td><span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span><div class="p">provisional</div></td><td><span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span><div class="p">provisional</div></td><td><span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span><div class="p">provisional</div></td><td><span class="tier">T2</span><a href="https://amp.claimsjournal.com/news/national/2026/02/12/335668.htm">Bloomberg (via Claims Journal)</a></td></tr>
+<tr><td>c8</td><td><a href="#c8">Short-Form Video and AI Meteors Strike Hollywood</a></td><td>Scott Galloway</td><td><span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span><div class="p">provisional</div></td><td><span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span><div class="p">provisional</div></td><td><span class="v v-met" title="met"><span class="dot" aria-hidden="true"></span>✓ met</span><div class="p">provisional</div></td><td><span class="tier">T1</span><a href="https://www.nielsen.com/news-center/2026/streaming-embarks-on-annual-summer-ascent-in-nielsens-may-2026-gauge-reports/">Nielsen (The Gauge, May 2026)</a></td></tr>
+<tr><td>c11</td><td><a href="#c11">Humanoid Robots = Self-Driving Cars of 2015</a></td><td>Scott Galloway</td><td><span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span><div class="p">provisional</div></td><td><span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span><div class="p">provisional</div></td><td><span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span><div class="p">provisional</div></td><td><span class="tier">T2</span><a href="https://fool.com/investing/2026/07/28/elon-musk-says-optimus-could-be-the-biggest-produc">Motley Fool</a></td></tr>
+<tr><td>c12</td><td><a href="#c12">Vice of the Year: Prediction Markets</a></td><td>Scott Galloway</td><td><span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span><div class="p">provisional</div></td><td><span class="v v-met" title="met"><span class="dot" aria-hidden="true"></span>✓ met</span><div class="p">provisional</div></td><td><span class="v v-met" title="met"><span class="dot" aria-hidden="true"></span>✓ met</span><div class="p">provisional</div></td><td><span class="tier">T2</span><a href="https://www.theblock.co/post/406983/kalshi-polymarket-volume-45-billion">The Block</a></td></tr>
+<tr><td>c5</td><td><a href="#c5">Big Tech Pick: Amazon</a></td><td>Scott Galloway</td><td><span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span><div class="p">provisional</div></td><td><span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span><div class="p">provisional</div></td><td><span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span><div class="p">provisional</div></td><td><span class="tier">T2</span><a href="https://chartrow.com/lists/magnificent-7">ChartRow (market data, as of market close Oct 23, 2026)</a></td></tr>
+<tr><td>c9</td><td><a href="#c9">When Colbert shifts to podcasting, he’ll take eight people with him and make just $20 million, but it’ll only…</a></td><td>Scott Galloway</td><td><span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span><div class="p">provisional</div></td><td><span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span><div class="p">provisional</div></td><td><span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span><div class="p">provisional</div></td><td><span class="tier">T2</span><a href="https://krdo.com/news/2026/05/20/whats-next-for-stephen-colbert-after-the-late-show/">CNN (via KRDO)</a></td></tr>
+<tr><td>c2</td><td><a href="#c2">likely sending the U.S., possibly the globe, into recession.</a></td><td>Scott Galloway</td><td><span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span><div class="p">provisional</div></td><td><span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span><div class="p">provisional</div></td><td><span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span><div class="p">provisional</div></td><td><span class="tier">T1</span><a href="https://bea.gov/news/2026/gdp-advance-estimate-2nd-quarter-2026">BEA</a></td></tr>
+<tr><td>c1</td><td><a href="#c1">AI Stocks Correct</a></td><td>Scott Galloway</td><td><span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span><div class="p">provisional</div></td><td><span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span><div class="p">provisional</div></td><td><span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span><div class="p">provisional</div></td><td><span class="tier">T2</span><a href="https://www.fool.com/investing/2026/08/03/nasdaq-hit-correction-heres-history-says-next/">Motley Fool</a></td></tr>
+<tr><td>c13</td><td><a href="#c13">Synthetic Relationships Take Center Stage</a></td><td>Scott Galloway</td><td><span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span><div class="p">provisional</div></td><td><span class="v v-met" title="met"><span class="dot" aria-hidden="true"></span>✓ met</span><div class="p">provisional</div></td><td><span class="v v-met" title="met"><span class="dot" aria-hidden="true"></span>✓ met</span><div class="p">provisional</div></td><td><span class="tier">T2</span><a href="https://www.multistate.ai/updates/vol-105-state-ai-companion-chatbot-laws">MultiState</a></td></tr>
+<tr><td>c4</td><td><a href="#c4">Nvidia &amp; OpenAI Duopoly Comes Under Siege</a></td><td>Scott Galloway</td><td><span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span><div class="p">provisional</div></td><td><span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span><div class="p">provisional</div></td><td><span class="v v-met" title="met"><span class="dot" aria-hidden="true"></span>✓ met</span><div class="p">provisional</div></td><td><span class="tier">T1</span><a href="https://www.sec.gov/Archives/edgar/data/2488/000000248826000045/pressreleasedatedfebruary2.htm">AMD press release (SEC Form 8-K exhibit)</a></td></tr>
+<tr><td>c14</td><td><a href="#c14">The ‘College Is Dead’ Narrative Collapses</a></td><td>Scott Galloway</td><td><span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span><div class="p">provisional</div></td><td><span class="v v-met" title="met"><span class="dot" aria-hidden="true"></span>✓ met</span><div class="p">provisional</div></td><td><span class="v v-met" title="met"><span class="dot" aria-hidden="true"></span>✓ met</span><div class="p">provisional</div></td><td><span class="tier">T1</span><a href="https://www.studentclearinghouse.org/news/spring-enrollment-undergraduate-growth-continues-while-graduate-enrollment-holds-steady/">National Student Clearinghouse</a></td></tr>
+<tr><td>c6</td><td><a href="#c6">Space: The Next Big ‘Thing’</a></td><td>Scott Galloway</td><td><span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span><div class="p">provisional</div></td><td><span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span><div class="p">provisional</div></td><td><span class="v v-met" title="met"><span class="dot" aria-hidden="true"></span>✓ met</span><div class="p">provisional</div></td><td><span class="tier">T2</span><a href="https://www.hawaiitribune-herald.com/?p=369740">Reuters (via Hawaii Tribune-Herald)</a></td></tr>
+</tbody></table>
+<h2>Claims</h2>
+<section class="claim" id="c15"><h3>c15. Team Scotland will reach the semifinals of the World Cup on the back of a Pele-like performance from Scott McTominay.</h3>
+<blockquote>Team Scotland will reach the semifinals of the World Cup on the back of a Pele-like performance from Scott McTominay.</blockquote>
+<div class="meta">Scott Galloway, 2025-12-19, <a href="https://www.profgmedia.com/p/2026-predictions">2026 Predictions (No Mercy / No Malice)</a></div>
+<div class="ctx">Context: Closing line, offered with &#x27;Hey ... I can dream.&#x27; The 2026 World Cup final was 2026-07-19. Kept because it is the only clean binary on the list and because he wrote it down.</div>
+<ul class="bars">
+<li><div><strong>Strict</strong> &nbsp; <span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span></div><div class="crit">Scotland reached the semifinals of the 2026 World Cup.</div><div class="p">P(met) 0.02 · P(contradicted) 0.99 · evidence strength 1.96 of 2</div></li>
+<li><div><strong>Standard</strong> &nbsp; <span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span></div><div class="crit">Scotland reached the semifinals of the 2026 World Cup.</div><div class="p">P(met) 0.02 · P(contradicted) 0.99 · evidence strength 1.96 of 2</div></li>
+<li><div><strong>Lenient</strong> &nbsp; <span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span></div><div class="crit">Scotland reached the semifinals of the 2026 World Cup.</div><div class="p">P(met) 0.01 · P(contradicted) 0.99 · evidence strength 1.95 of 2</div></li>
+</ul>
+<ul class="ev">
+<li><span class="tier">T2</span>contradicts · 2026-06-27 · <a href="https://www.thestar.com.my/sport/football/2026/06/28/soccer-scotland-eliminated-from-world-cup">Reuters (via The Star)</a>: “Scotland and South Korea were eliminated from the World Cup on Saturday ... after failing to make it into the top eight of the third-placed teams ... Scotland beat Haiti 1-0 in their opener ... lost 1-0 to Morocco and 3…”</li>
+<li><span class="tier">T2</span>contradicts · 2026-06-27 · <a href="https://www.flashscore.co.uk/news/football-world-championship-scotland-eliminated-from-2026-world-cup-after-croatia-defeat-ghana/CCayxigR/">Flashscore</a>: “Scotland have been eliminated from the 2026 FIFA World Cup ... failing to finish as one of the eight best third-placed teams in the group stage ... Their fate was confirmed after Croatia beat Ghana 2-1 in Group L”</li>
+</ul>
+</section>
+<section class="claim" id="c7"><h3>c7. Best Investment (You Don’t Have Access to): TikTok U.S.</h3>
+<blockquote>Best Investment (You Don’t Have Access to): TikTok U.S.</blockquote>
+<div class="meta">Scott Galloway, 2025-12-19, <a href="https://www.profgmedia.com/p/2026-predictions">2026 Predictions (No Mercy / No Malice)</a></div>
+<div class="ctx">Context: Heading of prediction 6. Body: &#x27;Trump&#x27;s deal values U.S. TikTok at $28 billion&#x27; against an implied $120 billion. The US TikTok stake is the best investment of 2026, i.e. it proves to be worth far more than $28 billion.</div>
+<ul class="bars">
+<li><div><strong>Strict</strong> &nbsp; <span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span></div><div class="crit">The US TikTok stake proved the best investment of 2026: worth more than double the $28 billion deal value within the year.</div><div class="p">P(met) 0.01 · P(contradicted) 0.95 · evidence strength 1.86 of 2</div></li>
+<li><div><strong>Standard</strong> &nbsp; <span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span></div><div class="crit">The US TikTok joint venture was valued above the $28 billion deal value in 2026.</div><div class="p">P(met) 0.02 · P(contradicted) 0.95 · evidence strength 1.85 of 2</div></li>
+<li><div><strong>Lenient</strong> &nbsp; <span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span></div><div class="crit">The TikTok US deal closed in 2026 and reporting described the $28 billion price as a bargain for the buyers.</div><div class="p">P(met) 0.06 · P(contradicted) 0.12 · evidence strength 1.05 of 2</div></li>
+</ul>
+<ul class="ev">
+<li><span class="tier">T2</span>supports [lenient] · 2026-01-23 · <a href="https://www.techspot.com/news/111036-tiktok-long-running-us-saga-ends-deal-averts.html">TechSpot</a>: “The company has officially formed a US-based joint venture. ... gives Oracle, Silver Lake, and MGX 15 percent ownership each ... existing US-based TikTok investors hold 30.1 percent ... ByteDance retains a minority 19.9…”</li>
+<li><span class="tier">T2</span>contradicts [strict, standard] · 2026-01-23 · <a href="https://www.techspot.com/news/111036-tiktok-long-running-us-saga-ends-deal-averts.html">TechSpot</a>: “the new US venture is valued at about $14 billion [per Vice President JD Vance; the deal value Galloway gave was $28 billion]”</li>
+<li><span class="tier">T2</span>contradicts [strict, standard] · 2026-03-12 · <a href="https://www.storyboard18.com/brand-makers/oracle-discloses-roughly-2-billion-investment-in-tiktok-us-venture-91979.htm">Storyboard18 (reporting Oracle quarterly filing)</a>: “In its quarterly filing for the period ended February 28, ... Oracle&#x27;s investment in TikTok U.S. business is worth about $2 billion ... Oracle holds a 15% stake and a board seat in TikTok USDS Joint Venture LLC. ... Vic…”</li>
+</ul>
+</section>
+<section class="claim" id="c3"><h3>c3. The Data Center Bubble Bursts</h3>
+<blockquote>The Data Center Bubble Bursts</blockquote>
+<div class="meta">Scott Galloway, 2025-12-19, <a href="https://www.profgmedia.com/p/2026-predictions">2026 Predictions (No Mercy / No Malice)</a></div>
+<div class="ctx">Context: Heading of prediction 2. The body argues grid and power capacity cannot support announced build-outs (OpenAI/Oracle $300B). Data-center build-out plans collapse or are cut sharply in 2026.</div>
+<ul class="bars">
+<li><div><strong>Strict</strong> &nbsp; <span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span></div><div class="crit">The data-center bubble burst in 2026: large announced build-outs were cancelled or written down and a leading AI-infrastructure company&#x27;s stock collapsed.</div><div class="p">P(met) 0.08 · P(contradicted) 0.54 · evidence strength 1.51 of 2</div></li>
+<li><div><strong>Standard</strong> &nbsp; <span class="v v-met" title="met"><span class="dot" aria-hidden="true"></span>✓ met</span></div><div class="crit">The data-center boom cracked in 2026: multiple large projects were cancelled or delayed and at least one major AI-infrastructure stock fell sharply.</div><div class="p">P(met) 0.84 · P(contradicted) 0.37 · evidence strength 1.95 of 2</div></li>
+<li><div><strong>Lenient</strong> &nbsp; <span class="v v-met" title="met"><span class="dot" aria-hidden="true"></span>✓ met</span></div><div class="crit">At least one hyperscaler or major financier pulled back on data-center plans in 2026.</div><div class="p">P(met) 0.90 · P(contradicted) 0.02 · evidence strength 1.04 of 2</div></li>
+</ul>
+<ul class="ev">
+<li><span class="tier">T1</span>supports [standard] · 2026-06-12 · <a href="https://datacenterwatch.org/q1-2026">Data Center Watch (10a Labs), Q1 2026 report</a>: “At least 75 data center projects worth approximately $130 billion were blocked or delayed in a single quarter ... roughly matching the scale of all of 2025 in just three months”</li>
+<li><span class="tier">T2</span>neutral [strict] · 2025-12-16 · <a href="https://finance.yahoo.com/news/coreweave-collapse-sparks-fears-cracks-153437175.html">CoinDesk via Yahoo Finance (citing WSJ)</a>: “Baseline (December 2025): CoreWeave&#x27;s share price has fallen more than 60% from its June record”</li>
+<li><span class="tier">T2</span>supports [standard] · 2026-05-01 · <a href="https://news.bgov.com/mergers-and-acquisitions/wall-street-is-bullish-on-oracle-but-investors-arent-buying-it">Bloomberg Law / Bloomberg Government</a>: “Despite an April rally, the stock is down nearly 50% since hitting a high in September. [Oracle]”</li>
+<li><span class="tier">T2</span>neutral [strict] · 2026-06-14 · <a href="https://thenextweb.com/news/data-center-opposition-75-projects-blocked-q1-2026">The Next Web (citing Data Center Watch)</a>: “found that activists blocked or delayed at least 75 projects worth a combined $130 billion [blocked or delayed, not cancelled or written down]”</li>
+<li><span class="tier">T2</span>contradicts [strict, standard] · 2026-06-18 · <a href="https://newsletter.semianalysis.com/p/stop-saying-half-of-2026-us-datacenter">SemiAnalysis</a>: “our YE2026 NA Hyperscaler Self-build forecast only moved by ~1% ... Sightline&#x27;s dataset clearly doesn&#x27;t track every datacenter under development.”</li>
+<li><span class="tier">T2</span>supports [standard] · 2026-10-14 · <a href="https://siliconangle.com/2026/10/14/shares-of-oracle-neoclouds-drop-on-coreweave-debt-concerns/">SiliconANGLE</a>: “CoreWeave&#x27;s shareholders took note of the discussion: Its stock plummeted more than 15.5% today. ... Oracle Corp., which isn&#x27;t a neocloud but has borrowed heavily to finance its data center builtout, closed 8.8% lower.…”</li>
+<li><span class="tier">T2</span>supports [lenient, standard] · 2026-10-19 · <a href="https://www.thegardenisland.com/syndicated/tech-companies-need-more-data-centers-so-why-are-nearly-half-of-all-planned-projects-delayed-or-canceled">Stacker / ProLift (syndicated)</a>: “Oracle Corporation and OpenAI terminated plans to expand a flagship AI data center campus in Abilene, Texas. ... between 30% and 50% [of 16 GW of scheduled U.S. data center capacity faces severe delays or cancellation]”</li>
+</ul>
+</section>
+<section class="claim" id="c10"><h3>c10. Waymo Dominates</h3>
+<blockquote>Waymo Dominates</blockquote>
+<div class="meta">Scott Galloway, 2025-12-19, <a href="https://www.profgmedia.com/p/2026-predictions">2026 Predictions (No Mercy / No Malice)</a></div>
+<div class="ctx">Context: Heading of prediction 8. Body: 1 million paid rides a month, 100 million autonomous miles vs Tesla&#x27;s 1.25 million with monitors; &#x27;lapping the competition&#x27;. Waymo extends its lead in 2026.</div>
+<ul class="bars">
+<li><div><strong>Strict</strong> &nbsp; <span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span></div><div class="crit">Waymo dominated in 2026: paid rides at least doubled, it expanded to many more cities, and no rival came close.</div><div class="p">P(met) 0.21 · P(contradicted) 0.28 · evidence strength 1.78 of 2</div></li>
+<li><div><strong>Standard</strong> &nbsp; <span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span></div><div class="crit">Waymo&#x27;s paid rides at least doubled in 2026 and it remained the largest US robotaxi operator.</div><div class="p">P(met) 0.11 · P(contradicted) 0.09 · evidence strength 1.78 of 2</div></li>
+<li><div><strong>Lenient</strong> &nbsp; <span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span></div><div class="crit">Waymo remained the largest US robotaxi operator by paid rides in 2026.</div><div class="p">P(met) 0.24 · P(contradicted) 0.03 · evidence strength 1.75 of 2</div></li>
+</ul>
+<ul class="ev">
+<li><span class="tier">T2</span>neutral [strict, standard] · 2026-02-12 · <a href="https://amp.claimsjournal.com/news/national/2026/02/12/335668.htm">Bloomberg (via Claims Journal)</a>: “The company currently provides about 400,000 paid rides per week across the six cities. ... will hit more than 1 million paid weekly robotaxi rides in the US by the end of this year [co-CEO Tekedra Mawakana]”</li>
+<li><span class="tier">T2</span>supports [lenient] · 2026-03-27 · <a href="https://techcrunch.com/2026/03/27/waymo-skyrocketing-ridership-in-one-chart/">TechCrunch</a>: “providing 500,000 paid robotaxi rides every week across 10 U.S. cities ... tenfold, from 50,000 per week in May 2024 to 500,000 per week today ... Tesla began operating a paid robotaxi service in Austin in January”</li>
+<li><span class="tier">T2</span>supports [strict, lenient] · 2026-06-02 · <a href="https://www.electrive.com/2026/06/02/tesla-robotaxi-fleet-in-texas-reaches-only-42-vehicles/">electrive</a>: “Tesla has registered 42 autonomous robotaxis in Texas ... At the time, Musk said the robotaxi operation could reach around 1,000 vehicles within a month of launch.”</li>
+<li><span class="tier">T2</span>neutral [strict, standard] · 2026-09-01 · <a href="https://cryptobriefing.com/waymo-paid-robotaxi-denver-san-diego-tampa/">Crypto Briefing</a>: “the company is currently delivering more than 500,000 paid rides every week ... Waymo&#x27;s fleet now exceeds 4,000 vehicles nationwide ... launched paid public robotaxi service in Denver, San Diego, and Tampa ... bringing…”</li>
+</ul>
+</section>
+<section class="claim" id="c8"><h3>c8. Short-Form Video and AI Meteors Strike Hollywood</h3>
+<blockquote>Short-Form Video and AI Meteors Strike Hollywood</blockquote>
+<div class="meta">Scott Galloway, 2025-12-19, <a href="https://www.profgmedia.com/p/2026-predictions">2026 Predictions (No Mercy / No Malice)</a></div>
+<div class="ctx">Context: Heading of prediction 7. Body: YouTube and TikTok take young viewers (78% of 10 to 24 year olds), AI cuts production costs; &#x27;Hollywood is the new Detroit&#x27;. Visible damage to studios and networks in 2026.</div>
+<ul class="bars">
+<li><div><strong>Strict</strong> &nbsp; <span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span></div><div class="crit">Hollywood took visible damage from short-form video and AI in 2026: a major studio or network made deep cuts citing them, and YouTube&#x27;s share of TV time passed all subscription streamers combined.</div><div class="p">P(met) 0.02 · P(contradicted) 0.95 · evidence strength 1.94 of 2</div></li>
+<li><div><strong>Standard</strong> &nbsp; <span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span></div><div class="crit">At least one major studio or network made cuts or cancelled a flagship show in 2026, citing short-form video or AI economics.</div><div class="p">P(met) 0.02 · P(contradicted) 0.22 · evidence strength 1.00 of 2</div></li>
+<li><div><strong>Lenient</strong> &nbsp; <span class="v v-met" title="met"><span class="dot" aria-hidden="true"></span>✓ met</span></div><div class="crit">In 2026 YouTube or TikTok viewing overtook traditional TV among young audiences, or AI tools were credited with cutting production costs at a major studio.</div><div class="p">P(met) 0.96 · P(contradicted) 0.02 · evidence strength 1.03 of 2</div></li>
+</ul>
+<ul class="ev">
+<li><span class="tier">T1</span>contradicts [strict] · 2026-07-28 · <a href="https://www.nielsen.com/news-center/2026/streaming-embarks-on-annual-summer-ascent-in-nielsens-may-2026-gauge-reports/">Nielsen (The Gauge, May 2026)</a>: “YouTube recorded a platform-best 13.8% of TV watch-time in May. ... representing 8.0% of TV usage in May (+0.2 pts.) [Netflix] ... Disney maintained the second largest share of TV in May with 10.0% of total watch-time.…”</li>
+<li><span class="tier">T2</span>neutral [strict, standard] · 2026-04-14 · <a href="https://www.clickondetroit.com/business/2026/04/14/the-walt-disney-co-begins-laying-off-1000-employees/">Associated Press (via ClickOnDetroit)</a>: “The Walt Disney Co. on Tuesday began layoffs expected to lead to 1,000 job cuts across the company. ... traditional television businesses, including ESPN, as well as its movie studio ... a more agile and technologically…”</li>
+<li><span class="tier">T2</span>supports [lenient] · 2026-07-16 · <a href="https://fortune.com/2026/07/16/netflix-made-17-minutes-of-a-documentary-twice-as-fast-and-at-half-the-cost-amid-a-20-billion-projected-cost-for-content/">Fortune</a>: “It also included 17 minutes of AI-enhanced footage that was produced &quot;twice as fast and at half the cost,&quot; ... So far this year, Netflix said, its creative partners have used GenAI workflows in 300 of its titles ... wha…”</li>
+<li><span class="tier">T2</span>contradicts [strict] · 2026-09-10 · <a href="https://thewrap.com/media-platforms/streaming/youtube-viewership-july-2026">TheWrap (reporting Nielsen Gauge, July 2026)</a>: “a record 14.2% share of TV viewership in July ... it finished the month as the fourth largest distributor with a share of 7.8% [Netflix] ... Disney fell to the third place spot with 8.9% of TV viewership ... rose to 4.7…”</li>
+</ul>
+</section>
+<section class="claim" id="c11"><h3>c11. Humanoid Robots = Self-Driving Cars of 2015</h3>
+<blockquote>Humanoid Robots = Self-Driving Cars of 2015</blockquote>
+<div class="meta">Scott Galloway, 2025-12-19, <a href="https://www.profgmedia.com/p/2026-predictions">2026 Predictions (No Mercy / No Malice)</a></div>
+<div class="ctx">Context: Heading of prediction 9. Body: Optimus is a &#x27;weapon of mass distraction&#x27;; humanoids are a decade out. Humanoid robots do not ship commercially at scale in 2026 and Tesla&#x27;s claims go unmet.</div>
+<ul class="bars">
+<li><div><strong>Strict</strong> &nbsp; <span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span></div><div class="crit">Humanoid robots stayed a demo in 2026: none shipped to paying external customers in volume.</div><div class="p">P(met) 0.05 · P(contradicted) 0.95 · evidence strength 1.03 of 2</div></li>
+<li><div><strong>Standard</strong> &nbsp; <span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span></div><div class="crit">Tesla&#x27;s Optimus was not sold to external customers in 2026.</div><div class="p">P(met) 0.51 · P(contradicted) 0.39 · evidence strength 1.02 of 2</div></li>
+<li><div><strong>Lenient</strong> &nbsp; <span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span></div><div class="crit">Tesla missed its own stated 2026 Optimus production or sales targets.</div><div class="p">P(met) 0.21 · P(contradicted) 0.30 · evidence strength 1.02 of 2</div></li>
+</ul>
+<ul class="ev">
+<li><span class="tier">T2</span>supports [standard, lenient] · 2026-07-28 · <a href="https://fool.com/investing/2026/07/28/elon-musk-says-optimus-could-be-the-biggest-produc">Motley Fool</a>: “So, while possibly hundreds of Optimus prototypes have been built, the count on the official production line remains zero. ... the first robots off the Fremont line are not destined for customers. [first units go to an…”</li>
+<li><span class="tier">T2</span>contradicts [strict] · 2026-08-12 · <a href="https://www.kucoin.com/news/flash/unitree-robotics-announces-18-000-humanoid-robots-produced">KuCoin News / TechFlow (reporting Unitree announcement)</a>: “total cumulative production of biomimetic bipedal humanoid robots has reached approximately 18,000 units ... In the first half of 2026, Unitree shipped approximately 5,900 units, accounting for 31% of the global market…”</li>
+</ul>
+</section>
+<section class="claim" id="c12"><h3>c12. Vice of the Year: Prediction Markets</h3>
+<blockquote>Vice of the Year: Prediction Markets</blockquote>
+<div class="meta">Scott Galloway, 2025-12-19, <a href="https://www.profgmedia.com/p/2026-predictions">2026 Predictions (No Mercy / No Malice)</a></div>
+<div class="ctx">Context: Heading of prediction 10. Body: prediction markets are gambling, eating the gaming business (six gaming stocks down 22% YTD), with addiction and insider-trading externalities. Prediction markets grow and become the year&#x27;s vice story in 2026.</div>
+<ul class="bars">
+<li><div><strong>Strict</strong> &nbsp; <span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span></div><div class="crit">Prediction markets were the vice of 2026: volume at least doubled, the gaming stocks he named trailed the market, and the gambling and addiction framing was widespread.</div><div class="p">P(met) 0.35 · P(contradicted) 0.32 · evidence strength 1.94 of 2</div></li>
+<li><div><strong>Standard</strong> &nbsp; <span class="v v-met" title="met"><span class="dot" aria-hidden="true"></span>✓ met</span></div><div class="crit">Prediction markets grew strongly in 2026 and were widely framed as gambling, with legal or regulatory challenges.</div><div class="p">P(met) 0.91 · P(contradicted) 0.02 · evidence strength 1.92 of 2</div></li>
+<li><div><strong>Lenient</strong> &nbsp; <span class="v v-met" title="met"><span class="dot" aria-hidden="true"></span>✓ met</span></div><div class="crit">Prediction markets were a widely covered backlash or addiction topic in 2026.</div><div class="p">P(met) 0.71 · P(contradicted) 0.04 · evidence strength 1.94 of 2</div></li>
+</ul>
+<ul class="ev">
+<li><span class="tier">T2</span>supports [strict, standard] · 2025-12-31 · <a href="https://www.theblock.co/post/383733/prediction-markets-kalshi-polymarket-duopoly-2025">The Block</a>: “Baseline (full year 2025): generated more than $44 billion in trading volume this year ... monthly volumes topping $10 billion in November”</li>
+<li><span class="tier">T2</span>supports · 2026-07-01 · <a href="https://www.theblock.co/post/406983/kalshi-polymarket-volume-45-billion">The Block</a>: “Kalshi, Polymarket, and Polymarket US recorded $44.8 billion in combined monthly trading volume in June ... growing 87.4% to $31.5 billion from $16.81 billion [Kalshi] ... from May&#x27;s $25.66 billion monthly volume ... Mo…”</li>
+<li><span class="tier">T2</span>supports [standard, lenient] · 2026-07-31 · <a href="https://www.theblock.co/post/410247/new-york-sues-kalshi">The Block</a>: “New York State has sued Kalshi for allegedly running an illegal gambling operation in the state ... No matter what they call themselves, prediction markets like Kalshi are gambling platforms, plain and simple. ... the r…”</li>
+<li><span class="tier">T2</span>neutral [strict] · 2026-08-07 · <a href="https://frontofficesports.com/draftkings-fanduel-downplay-prediction-market-cannibalization/">Front Office Sports</a>: “DraftKings says it is seeing &quot;no discernible impact&quot; from prediction markets on its traditional sportsbook business ... Flutter says FanDuel has seen a &quot;low single-digit&quot; impact. ... while Flutter cut its full-year prof…”</li>
+<li><span class="tier">T2</span>supports · 2026-09-24 · <a href="https://www.aljazeera.com/economy/2026/9/24/new-york-sues-polymarket-over-allegations-of-illegal-gambling-operations">Al Jazeera</a>: “Our gambling laws exist to protect New Yorkers, prevent the potential harms of problem gambling [AG Letitia James] ... especially those underage who are most vulnerable to problem gaming. [Gov. Kathy Hochul]”</li>
+<li><span class="tier">T2</span>supports [strict] · 2026-10-15 · <a href="https://247wallst.com/investing/2026/10/15/draftkings-is-down-44-in-2026-is-dkng-stock-dead-money-or-due-for-a-bounce/">24/7 Wall St.</a>: “still down 44% year to date (YTD) to $19.14 [DraftKings] ... stock is down 65% YTD to $75.83 [Flutter Entertainment] ... is up 13% YTD to $771.55 [SPY] ... prediction markets are taking share of U.S. sports gambling and…”</li>
+</ul>
+</section>
+<section class="claim" id="c5"><h3>c5. Big Tech Pick: Amazon</h3>
+<blockquote>Big Tech Pick: Amazon</blockquote>
+<div class="meta">Scott Galloway, 2025-12-19, <a href="https://www.profgmedia.com/p/2026-predictions">2026 Predictions (No Mercy / No Malice)</a></div>
+<div class="ctx">Context: Heading of prediction 4. &#x27;I&#x27;m bullish on Amazon, even though it underperformed the Mag 7 this year.&#x27; Amazon outperforms the other Mag 7 stocks in 2026.</div>
+<ul class="bars">
+<li><div><strong>Strict</strong> &nbsp; <span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span></div><div class="crit">Amazon was the best-performing Magnificent Seven stock of 2026.</div><div class="p">P(met) 0.02 · P(contradicted) 0.98 · evidence strength 1.88 of 2</div></li>
+<li><div><strong>Standard</strong> &nbsp; <span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span></div><div class="crit">Amazon beat the Magnificent Seven as a group and the S&amp;P 500 in 2026.</div><div class="p">P(met) 0.01 · P(contradicted) 0.98 · evidence strength 1.90 of 2</div></li>
+<li><div><strong>Lenient</strong> &nbsp; <span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span></div><div class="crit">Amazon beat the S&amp;P 500 in 2026.</div><div class="p">P(met) 0.03 · P(contradicted) 0.98 · evidence strength 1.86 of 2</div></li>
+</ul>
+<ul class="ev">
+<li><span class="tier">T2</span>contradicts [strict] · 2026-07-17 · <a href="https://www.morningstar.com.au/markets/4-charts-not-so-magnificent-seven">Morningstar</a>: “Apple (up 16.9% through July 13) and Alphabet (up 12.7%) have done the best.”</li>
+<li><span class="tier">T2</span>contradicts [standard, lenient] · 2026-10-02 · <a href="https://www.trefis.com/articles/617445/the-dates-that-matter-most-for-amazon-stock/2026-10-02">Trefis</a>: “AMZN YTD+7.4% ... SPY YTD+12.0% ... The stock has returned 13.1% over the past twelve months, less than the S&amp;P 500&#x27;s 16.0%.”</li>
+<li><span class="tier">T2</span>contradicts · 2026-10-23 · <a href="https://chartrow.com/lists/magnificent-7">ChartRow (market data, as of market close Oct 23, 2026)</a>: “YTD total: NVDA +13.4%; AAPL +28.3%; GOOGL +2.5%; MSFT +9.1%; AMZN +7.4%; META -2.4%; TSLA -17.2%”</li>
+<li><span class="tier">T2</span>contradicts [standard, lenient] · 2026-10-23 · <a href="https://chartrow.com/quote/spy">ChartRow (SPY, as of close Oct 23, 2026)</a>: “YTD total return +12.32% ... YTD price return +11.45%”</li>
+</ul>
+</section>
+<section class="claim" id="c9"><h3>c9. When Colbert shifts to podcasting, he’ll take eight people with him and make just $20 million, but it’ll only cost $5 million to produce.</h3>
+<blockquote>When Colbert shifts to podcasting, he’ll take eight people with him and make just $20 million, but it’ll only cost $5 million to produce.</blockquote>
+<div class="meta">Scott Galloway, 2025-12-19, <a href="https://www.profgmedia.com/p/2026-predictions">2026 Predictions (No Mercy / No Malice)</a> · split from c8</div>
+<div class="ctx">Context: Prediction 7, specific example, split from c8. Stephen Colbert moves to podcasting after The Late Show ends.</div>
+<ul class="bars">
+<li><div><strong>Strict</strong> &nbsp; <span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span></div><div class="crit">Stephen Colbert launched a podcast or independent digital show in 2026 with a small team.</div><div class="p">P(met) 0.02 · P(contradicted) 0.28 · evidence strength 1.19 of 2</div></li>
+<li><div><strong>Standard</strong> &nbsp; <span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span></div><div class="crit">Stephen Colbert announced or launched a podcast or digital show in 2026.</div><div class="p">P(met) 0.02 · P(contradicted) 0.28 · evidence strength 1.23 of 2</div></li>
+<li><div><strong>Lenient</strong> &nbsp; <span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span></div><div class="crit">Stephen Colbert signed with a podcast or digital platform, or publicly committed to one, in 2026.</div><div class="p">P(met) 0.02 · P(contradicted) 0.29 · evidence strength 1.24 of 2</div></li>
+</ul>
+<ul class="ev">
+<li><span class="tier">T2</span>neutral · 2026-01-28 · <a href="https://www.foxnews.com/media/stephen-colbert-addresses-rumors-about-running-office-after-show-ends-says-he-consider-options.amp">Fox News</a>: “neither going to confirm nor deny the rumors ... if there is some way for me to serve the American people ... I would consider that ... [Meyers mentioned a $13.5 million Netflix deal, which Colbert called] not enough mo…”</li>
+<li><span class="tier">T2</span>neutral · 2026-05-20 · <a href="https://krdo.com/news/2026/05/20/whats-next-for-stephen-colbert-after-the-late-show/">CNN (via KRDO)</a>: “Stephen Colbert&#x27;s final &quot;Late Show&quot; broadcast on Thursday will close out his run. ... Colbert has confirmed that he is co-writing a new &quot;Lord of the Rings&quot; movie for Warner Bros. [No podcast or digital show mentioned]”</li>
+</ul>
+</section>
+<section class="claim" id="c2"><h3>c2. likely sending the U.S., possibly the globe, into recession.</h3>
+<blockquote>likely sending the U.S., possibly the globe, into recession.</blockquote>
+<div class="meta">Scott Galloway, 2025-12-19, <a href="https://www.profgmedia.com/p/2026-predictions">2026 Predictions (No Mercy / No Malice)</a> · split from c1</div>
+<div class="ctx">Context: Prediction 1, consequence clause, split from c1. A US recession in 2026 following the AI correction. Hedged with &#x27;likely&#x27;.</div>
+<ul class="bars">
+<li><div><strong>Strict</strong> &nbsp; <span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span></div><div class="crit">The US entered a recession in 2026.</div><div class="p">P(met) 0.03 · P(contradicted) 0.76 · evidence strength 1.65 of 2</div></li>
+<li><div><strong>Standard</strong> &nbsp; <span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span></div><div class="crit">The US economy contracted in 2026: at least one quarter of negative real GDP.</div><div class="p">P(met) 0.04 · P(contradicted) 0.47 · evidence strength 1.67 of 2</div></li>
+<li><div><strong>Lenient</strong> &nbsp; <span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span></div><div class="crit">The US economy stalled in 2026: a quarter near zero with rising unemployment, or a recession indicator that triggered.</div><div class="p">P(met) 0.03 · P(contradicted) 0.96 · evidence strength 1.99 of 2</div></li>
+</ul>
+<ul class="ev">
+<li><span class="tier">T1</span>contradicts · 2026-07-30 · <a href="https://bea.gov/news/2026/gdp-advance-estimate-2nd-quarter-2026">BEA</a>: “Real gross domestic product (GDP) increased at an annual rate of 1.5 percent in the second quarter of 2026 ... In the first quarter, real GDP increased 2.1 percent.”</li>
+<li><span class="tier">T1</span>contradicts [lenient] · 2026-10-02 · <a href="https://www.bls.gov/news.release/archives/empsit_10022026.htm">BLS Employment Situation, September 2026</a>: “Both nonfarm payroll employment (+29,000) and the unemployment rate (4.2 percent) changed little in September ... The unemployment rate has remained in a narrow range of 4.1 percent to 4.3 percent since March.”</li>
+<li><span class="tier">T1</span>contradicts [lenient] · 2026-10-02 · <a href="https://fred.stlouisfed.org/series/SAHMREALTIME">FRED (Sahm Rule Recession Indicator, real-time)</a>: “September 2026 observation: 0.00 percentage points. Series note: signals a recession when the three-month moving average of the national unemployment rate rises by 0.50 percentage points or more relative to the minimum…”</li>
+</ul>
+</section>
+<section class="claim" id="c1"><h3>c1. AI Stocks Correct</h3>
+<blockquote>AI Stocks Correct</blockquote>
+<div class="meta">Scott Galloway, 2025-12-19, <a href="https://www.profgmedia.com/p/2026-predictions">2026 Predictions (No Mercy / No Malice)</a></div>
+<div class="ctx">Context: Heading of prediction 1. The body argues Chinese model price pressure hits Mag 7 margins: &#x27;taking down a frighteningly concentrated S&amp;P&#x27;. An AI-stock correction in 2026.</div>
+<ul class="bars">
+<li><div><strong>Strict</strong> &nbsp; <span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span></div><div class="crit">AI stocks had a real correction in 2026: a drawdown of at least 20% in the AI leaders, with the S&amp;P 500&#x27;s concentration in them falling.</div><div class="p">P(met) 0.12 · P(contradicted) 0.97 · evidence strength 1.88 of 2</div></li>
+<li><div><strong>Standard</strong> &nbsp; <span class="v v-not_met" title="not met"><span class="dot" aria-hidden="true"></span>✗ not met</span></div><div class="crit">AI stocks corrected in 2026: a drawdown of at least 10% in the AI leaders and underperformance of the broad market for the year.</div><div class="p">P(met) 0.24 · P(contradicted) 0.90 · evidence strength 1.90 of 2</div></li>
+<li><div><strong>Lenient</strong> &nbsp; <span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span></div><div class="crit">AI stocks had at least one widely reported correction of 10% or more in 2026.</div><div class="p">P(met) 0.67 · P(contradicted) 0.02 · evidence strength 1.04 of 2</div></li>
+</ul>
+<ul class="ev">
+<li><span class="tier">T2</span>neutral [strict] · 2026-05-04 · <a href="https://www.marquetteassociates.com/this-too-shall-reconstitute/">Marquette Associates</a>: “Baseline (end of 2025): From 1985-2015, top 10 weight ranged from 17.6% to 21.1%, but 2025&#x27;s weight was 40.6%.”</li>
+<li><span class="tier">T2</span>neutral [standard] · 2026-07-17 · <a href="https://www.morningstar.com.au/markets/4-charts-not-so-magnificent-seven">Morningstar</a>: “Apple (up 16.9% through July 13) and Alphabet (up 12.7%) have done the best. ... Microsoft has been this year&#x27;s worst performer among the Magnificent Seven, down 20.4% through July 13. ... the broader market, which is u…”</li>
+<li><span class="tier">T2</span>supports [standard, lenient] · 2026-08-03 · <a href="https://www.fool.com/investing/2026/08/03/nasdaq-hit-correction-heres-history-says-next/">Motley Fool</a>: “On July 29, it closed just over 11% below its all-time high reached in early June.”</li>
+<li><span class="tier">T2</span>supports [strict] · 2026-10-07 · <a href="https://www.kucoin.com/blog/ae-nvidia-apple-and-microsoft-sp500-concentration">KuCoin blog citing S&amp;P Dow Jones Indices</a>: “S&amp;P Dow Jones Indices data as of September 30, 2026, place the top 10 at 39.1% and the single largest name at 8.4%.”</li>
+<li><span class="tier">T2</span>contradicts [standard] · 2026-10-09 · <a href="https://www.chase.com/personal/investments/learning-and-insights/article/nasdaq-performance-september-2026">J.P. Morgan / Chase insights</a>: “The Nasdaq Composite Index is up 15.6% year to date in 2026 (as of close on September 30) ... outpacing both the S&amp;P 500&#x27;s 11.8% gain and the Dow Jones Industrial Average&#x27;s 5.9% rise”</li>
+<li><span class="tier">T2</span>contradicts [strict] · 2026-10-23 · <a href="https://chartrow.com/nasdaq-100/drawdown">ChartRow (Nasdaq-100 drawdown data)</a>: “7.3% below its all-time high ... set Oct 6, 2026 (as of market close, Oct 23, 2026); the table of declines of 15% or more has no 2026 entries”</li>
+<li><span class="tier">T2</span>neutral [strict, standard] · 2026-10-23 · <a href="https://totalrealreturns.com/n/MAGS">TotalRealReturns (Roundhill Magnificent Seven ETF, MAGS)</a>: “This Year&#x27;s Performance, through 2026-10-23: YTD +6.23% ... -5.69% on 2026-10-23 from 2026-10-13 peak”</li>
+<li><span class="tier">T4</span>neutral · 2026-06-25 · <a href="https://www.profgmedia.com/p/predictions-2026-mid-year-check-in">Prof G Media (Scott Galloway)</a>: “If you know me, you know I make predictions (and then hold myself accountable). ... Prof G+ paid subscribers only - register (or upgrade) below. [No verdicts on any prediction are visible outside the paywall.]”</li>
+</ul>
+</section>
+<section class="claim" id="c13"><h3>c13. Synthetic Relationships Take Center Stage</h3>
+<blockquote>Synthetic Relationships Take Center Stage</blockquote>
+<div class="meta">Scott Galloway, 2025-12-19, <a href="https://www.profgmedia.com/p/2026-predictions">2026 Predictions (No Mercy / No Malice)</a></div>
+<div class="ctx">Context: Heading of prediction 11. Body: AI companions help isolated elderly, harm young people; &#x27;the next opioid crisis for young people&#x27;. AI companions become a central public and policy issue in 2026.</div>
+<ul class="bars">
+<li><div><strong>Strict</strong> &nbsp; <span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span></div><div class="crit">Synthetic relationships took center stage in 2026: AI companions became a national policy issue with binding rules, while usage kept growing.</div><div class="p">P(met) 0.27 · P(contradicted) 0.10 · evidence strength 1.63 of 2</div></li>
+<li><div><strong>Standard</strong> &nbsp; <span class="v v-met" title="met"><span class="dot" aria-hidden="true"></span>✓ met</span></div><div class="crit">AI companions became a major public and policy issue in 2026.</div><div class="p">P(met) 0.95 · P(contradicted) 0.01 · evidence strength 1.96 of 2</div></li>
+<li><div><strong>Lenient</strong> &nbsp; <span class="v v-met" title="met"><span class="dot" aria-hidden="true"></span>✓ met</span></div><div class="crit">AI companion harms to young people were a widely covered topic in 2026.</div><div class="p">P(met) 0.18 · P(contradicted) 0.10 · evidence strength 1.04 of 2</div></li>
+</ul>
+<ul class="ev">
+<li><span class="tier">T2</span>supports [standard, lenient] · 2026-01-08 · <a href="https://news.bloombergtax.com/esg/character-ai-google-agree-to-settle-teen-chatbot-harm-lawsuits">Bloomberg Law</a>: “Character Technologies Inc., maker of a customizable chatbot app called Character.AI, and Google LLC agreed to settle multiple lawsuits ... Families in Florida, Texas, Colorado, and New York have agreed to negotiate set…”</li>
+<li><span class="tier">T2</span>supports [strict, standard] · 2026-06-26 · <a href="https://www.multistate.ai/updates/vol-105-state-ai-companion-chatbot-laws">MultiState</a>: “Through the first half of 2026, twelve states have enacted companion chatbot laws. ... require disclosure reminders that users are interacting with AI rather than a human ... implement protocols to recognize expressions…”</li>
+<li><span class="tier">T2</span>neutral [strict] · 2026-07-31 · <a href="https://hoodline.com/2026/07/senators-kim-and-husted-roll-out-ai-guardrails-for-kids/">Hoodline</a>: “Children Harmed by AI Technology Act 2.0 [Sens. Andy Kim and Jon Husted] ... For minors, the proposal would require age-verification measures, parental controls, usage limits and break reminders. ... the bill still face…”</li>
+</ul>
+</section>
+<section class="claim" id="c4"><h3>c4. Nvidia &amp; OpenAI Duopoly Comes Under Siege</h3>
+<blockquote>Nvidia &amp; OpenAI Duopoly Comes Under Siege</blockquote>
+<div class="meta">Scott Galloway, 2025-12-19, <a href="https://www.profgmedia.com/p/2026-predictions">2026 Predictions (No Mercy / No Malice)</a></div>
+<div class="ctx">Context: Heading of prediction 3. Body: Chinese models, Anthropic&#x27;s enterprise lead and Alphabet erode both companies&#x27; positions; &#x27;OpenAI could be our era&#x27;s Netscape&#x27;.</div>
+<ul class="bars">
+<li><div><strong>Strict</strong> &nbsp; <span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span></div><div class="crit">Both Nvidia and OpenAI lost material share in 2026.</div><div class="p">P(met) 0.29 · P(contradicted) 0.27 · evidence strength 1.61 of 2</div></li>
+<li><div><strong>Standard</strong> &nbsp; <span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span></div><div class="crit">Both Nvidia and OpenAI came under visible competitive siege in 2026, with reputable reporting of share loss for each.</div><div class="p">P(met) 0.53 · P(contradicted) 0.12 · evidence strength 1.86 of 2</div></li>
+<li><div><strong>Lenient</strong> &nbsp; <span class="v v-met" title="met"><span class="dot" aria-hidden="true"></span>✓ met</span></div><div class="crit">Either Nvidia or OpenAI faced widely reported competitive pressure in 2026.</div><div class="p">P(met) 0.94 · P(contradicted) 0.01 · evidence strength 1.97 of 2</div></li>
+</ul>
+<ul class="ev">
+<li><span class="tier">T1</span>supports [standard, lenient] · 2026-02-24 · <a href="https://www.sec.gov/Archives/edgar/data/2488/000000248826000045/pressreleasedatedfebruary2.htm">AMD press release (SEC Form 8-K exhibit)</a>: “AMD and Meta today announced a 6-gigawatt agreement ... across multiple generations of AMD Instinct GPUs ... Shipments supporting the first gigawatt deployment are scheduled to begin in the second half of 2026 ... AMD h…”</li>
+<li><span class="tier">T2</span>supports · 2026-01-22 · <a href="https://techcrunch.com/2026/01/22/openai-is-coming-for-those-sweet-enterprise-dollars-in-2026">TechCrunch (citing Menlo Ventures)</a>: “The AI research lab holds a 40% market share, according to a December report from VC firm Menlo Ventures ... OpenAI on the other hand has seen its usage market share drop from 50% in 2023 to 27% at the end of 2025”</li>
+<li><span class="tier">T2</span>supports · 2026-05-13 · <a href="https://techcrunch.com/2026/05/13/anthropic-now-has-more-business-customers-than-openai-according-to-ramp-data/">TechCrunch (citing Ramp AI Index)</a>: “shows 34.4% of participating businesses are paying for Anthropic services ... while only 32.3% pay for OpenAI”</li>
+<li><span class="tier">T2</span>supports [lenient] · 2026-06-07 · <a href="https://fool.com/investing/2026/06/07/amazon-alphabet-and-microsoft-are-all-racing-to-de">Motley Fool</a>: “Amazon, Alphabet, and Microsoft are all scaling up custom AI chips to run more of their own workloads. ... Custom silicon is real and growing, and it could erode Nvidia&#x27;s pricing power over time.”</li>
+<li><span class="tier">T2</span>supports [strict, standard] · 2026-08-20 · <a href="https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/">TechCrunch (citing Ramp AI Index)</a>: “That&#x27;s when Anthropic hit 41% market share to OpenAI&#x27;s 39%. [May] ... As of July, Anthropic has nearly 44% to OpenAI&#x27;s nearly 40%. ... OpenAI is currently growing faster among this segment in Q3 to date than Anthropic.”</li>
+</ul>
+</section>
+<section class="claim" id="c14"><h3>c14. The ‘College Is Dead’ Narrative Collapses</h3>
+<blockquote>The ‘College Is Dead’ Narrative Collapses</blockquote>
+<div class="meta">Scott Galloway, 2025-12-19, <a href="https://www.profgmedia.com/p/2026-predictions">2026 Predictions (No Mercy / No Malice)</a></div>
+<div class="ctx">Context: Heading of prediction 12. Body: enrollment has rebounded, the degree premium holds; the problem is cost. The &#x27;college is dead&#x27; narrative loses in 2026 as enrollment and the wage premium hold up.</div>
+<ul class="bars">
+<li><div><strong>Strict</strong> &nbsp; <span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span></div><div class="crit">The &#x27;college is dead&#x27; narrative collapsed in 2026: enrollment rose again and the reversal was widely reported.</div><div class="p">no evidence gathered</div></li>
+<li><div><strong>Standard</strong> &nbsp; <span class="v v-met" title="met"><span class="dot" aria-hidden="true"></span>✓ met</span></div><div class="crit">US undergraduate enrollment rose in 2026.</div><div class="p">P(met) 0.98 · P(contradicted) 0.01 · evidence strength 1.99 of 2</div></li>
+<li><div><strong>Lenient</strong> &nbsp; <span class="v v-met" title="met"><span class="dot" aria-hidden="true"></span>✓ met</span></div><div class="crit">US undergraduate enrollment held steady or rose in 2026.</div><div class="p">P(met) 0.98 · P(contradicted) 0.01 · evidence strength 1.99 of 2</div></li>
+</ul>
+<ul class="ev">
+<li><span class="tier">T1</span>supports [standard, lenient] · 2026-06-04 · <a href="https://www.studentclearinghouse.org/news/spring-enrollment-undergraduate-growth-continues-while-graduate-enrollment-holds-steady/">National Student Clearinghouse</a>: “Total postsecondary enrollment rose to 18.6 million in spring 2026, up 1.0 percent (+192,000) from spring 2025 ... undergraduate enrollment increased to 15.5 million (+1.3%).”</li>
+<li><span class="tier">T2</span>supports [standard, lenient] · 2026-06-04 · <a href="https://www.highereddive.com/news/spring-enrollment-ticks-up-1-but-graduate-headcounts-take-a-hit/821957/">Higher Ed Dive</a>: “College enrollment ticked up 1% year over year in spring 2026 ... Undergraduate enrollment reached 15.5 million students in the spring term, up 1.3% from the year before.”</li>
+</ul>
+</section>
+<section class="claim" id="c6"><h3>c6. Space: The Next Big ‘Thing’</h3>
+<blockquote>Space: The Next Big ‘Thing’</blockquote>
+<div class="meta">Scott Galloway, 2025-12-19, <a href="https://www.profgmedia.com/p/2026-predictions">2026 Predictions (No Mercy / No Malice)</a></div>
+<div class="ctx">Context: Heading of prediction 5. Body: launch costs down 89%, private space investment up 6x, SpaceX 84% of US launches. Space becomes the next major investment theme in 2026.</div>
+<ul class="bars">
+<li><div><strong>Strict</strong> &nbsp; <span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span></div><div class="crit">Space became the next big thing in 2026: a landmark SpaceX capital event and record private space investment.</div><div class="p">P(met) 0.62 · P(contradicted) 0.03 · evidence strength 1.93 of 2</div></li>
+<li><div><strong>Standard</strong> &nbsp; <span class="v v-unresolved" title="unresolved"><span class="dot" aria-hidden="true"></span>○ unresolved</span></div><div class="crit">Private space investment set a record in 2026, or SpaceX filed to go public.</div><div class="p">P(met) 0.67 · P(contradicted) 0.01 · evidence strength 1.82 of 2</div></li>
+<li><div><strong>Lenient</strong> &nbsp; <span class="v v-met" title="met"><span class="dot" aria-hidden="true"></span>✓ met</span></div><div class="crit">Space investment grew in 2026 or a major space company went public.</div><div class="p">P(met) 0.98 · P(contradicted) 0.01 · evidence strength 1.96 of 2</div></li>
+</ul>
+<ul class="ev">
+<li><span class="tier">T2</span>supports · 2026-06-04 · <a href="https://www.hawaiitribune-herald.com/?p=369740">Reuters (via Hawaii Tribune-Herald)</a>: “SpaceX publicly set a $135 price for shares in its initial public offering on Wednesday ... The company is aiming to raise $75 billion, the most ever for an IPO ... in a deal that would value it at $1.75 trillion ... wi…”</li>
+<li><span class="tier">T2</span>supports · 2026-06-12 · <a href="https://techcrunch.com/2026/06/12/spacex-ipo-closes-up-19-and-delivers-the-worlds-first-trillionaire/">TechCrunch</a>: “before ultimately settling 19% higher at $160.95 as markets closed. ... reached as high as $176 in midday trading, pushing the company&#x27;s market capitalization to nearly $2.3 trillion.”</li>
+<li><span class="tier">T2</span>supports [lenient] · 2026-10-14 · <a href="https://newspaceeconomy.ca/2026/10/14/space-capital-reported-92-5-billion-in-space-investment-3q-2026/">New Space Economy (reporting Space Capital Q3 2026 report of Oct 13)</a>: “Space Capital reported $92.5 billion in tracked space investment through the third quarter of 2026. ... Its infrastructure category attracted $11.5 billion across 84 rounds during the quarter. ... The firm forecast that…”</li>
+<li><span class="tier">T2</span>neutral [strict, standard] · 2026-10-14 · <a href="https://newspaceeconomy.ca/2026/10/14/space-capital-reported-92-5-billion-in-space-investment-3q-2026/">New Space Economy (reporting Space Capital Q3 2026 report of Oct 13)</a>: “Space Capital reported $92.5 billion in tracked space investment through the third quarter of 2026. [The article makes no comparison to 2025 or to any prior annual record.]”</li>
+</ul>
+</section>
+<footer>**called-it v1.0.0** · run `galloway` · target year 2026 · season 2025-10-01 to 2026-01-31 · evidence 2026-01-01 to 2026-10-24<br>Grader: jev-1.14.0 (104 answers) · policy: met needs P(met) ≥ 0.7 and evidence strength ≥ 1.0; not met needs P(contradicted) ≥ 0.7; bars are nested, so a stricter bar met implies the looser ones met and a looser bar not met implies the stricter ones not met (2 cells implied)<br>Sources 3 (3 readable) · claims graded 15 · evidence items 59 (T1 7, T2 51, T3 0, T4 1, T5 0) · (claim, bar) pairs 45<br>Hit rate strict 0% · standard 27% · lenient 47% · generosity gap 47 points</footer></main></body></html>

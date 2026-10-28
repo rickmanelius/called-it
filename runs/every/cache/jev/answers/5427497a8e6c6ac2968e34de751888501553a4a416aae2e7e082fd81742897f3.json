@@ -1,0 +1,95 @@
+{
+ "hash": "5427497a8e6c6ac2968e34de751888501553a4a416aae2e7e082fd81742897f3",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Every",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "There’s a whole class of highly creative, highly visual people who have been held back from making full experiences because they can’t code. Now they’re going to be able to code.",
+   "author": "Dan Shipper",
+   "date": "2025-12-23",
+   "context": "Prediction 3 of 3, 'Designers become superheroes'. Designers and other non-coders ship working software with AI tools in 2026."
+  },
+  "bar": "strict",
+  "criterion": "In 2026 a large share of designers and other visual creatives shipped working software without writing code.",
+  "measure": "A reputable 2026 survey of designers (Figma, Stack Overflow, UX Collective or peers) finding at least a third shipped working apps or features with AI tools without hand-writing code.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-10-06",
+    "source": "AI in Design Report (Designer Fund / Foundation Capital)",
+    "direction": "supports",
+    "quote": "Half of respondents have pushed AI-generated code to production. (over 900 designers surveyed)",
+    "url": "https://www.stateofaidesign.com/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.71
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.03
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.06,
+   "confidence": 0.91,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.94,
+    "2": 0.06
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1089,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:09:38Z"
+}

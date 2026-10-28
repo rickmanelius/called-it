@@ -1,0 +1,113 @@
+{
+ "hash": "1bf7169b2b0aed0d3d7cbc44a1d0b480b8848fc3b7b45424585b4eafbb4b79c2",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Every",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "AGI, however you define that, is a lot more complicated and hard than we thought. And we will not have AGI in 2027.",
+   "author": "Dan Shipper",
+   "date": "2025-12-23",
+   "context": "No AGI by 2027; the horizon is a year past the target year and AGI is explicitly left undefined, so a 2026 check can only falsify it if AGI is widely agreed to have arrived."
+  },
+  "bar": "lenient",
+  "criterion": "We will not have AGI in 2027.",
+  "measure": "Same; provisional until 2027-12-31.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-09-07",
+    "source": "Business Today",
+    "direction": "supports",
+    "quote": "Huang: \"AGI has arrived\" ... Gary Marcus: \"Huang gave no evidence and no definitions.\" ... \"By conventional definitions, Astra still falls short.\"",
+    "url": "https://www.businesstoday.in/technology/artificial-intelligence/story/nvidias-jensen-huang-declares-agi-has-arrived-as-openai-unveils-gpt-6-astra-553640-2026-09-07"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-09-07",
+    "source": "Information Age (ACS)",
+    "direction": "neutral",
+    "quote": "Greg Brockman: \"I think it's not unreasonable to feel that we are now in the AGI era.\" ... \"I think it might be about this model.\"",
+    "url": "https://ia.acs.org.au/article/2026/openai-says-the-agi-era-is-here-experts-disagree.html"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-09-07",
+    "source": "Information Age (ACS)",
+    "direction": "supports",
+    "quote": "ARC Prize Foundation: \"while we believe Astra represents meaningful progress towards generalisation, we are not claiming that it is AGI.\" ... Altman called AGI \"a very poorly defined\" and \"irrelevant marketing term\"",
+    "url": "https://ia.acs.org.au/article/2026/openai-says-the-agi-era-is-here-experts-disagree.html"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.13
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.14
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.82,
+   "confidence": 0.74,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.01,
+    "1": 0.15,
+    "2": 0.84
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1432,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:09:38Z"
+}

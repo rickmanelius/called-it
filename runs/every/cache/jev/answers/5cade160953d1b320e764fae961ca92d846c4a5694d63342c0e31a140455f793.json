@@ -1,0 +1,104 @@
+{
+ "hash": "5cade160953d1b320e764fae961ca92d846c4a5694d63342c0e31a140455f793",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Every",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "And I think, shockingly, the most addictive technology of 2026—the narrative we might be talking about at the end of the year—is how addictive it is to just make things.",
+   "author": "Dan Shipper",
+   "date": "2026-01-05",
+   "context": "By end of 2026 the dominant tech-addiction narrative will be about compulsive making with AI coding tools (he adds that everyone will be prompting Claude Code), not social media."
+  },
+  "bar": "standard",
+  "criterion": "Multiple major outlets in 2026 described compulsive making with AI coding tools as an addiction or a defining behaviour of the year.",
+  "measure": "Two or more major outlets, dated 2026.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-01-31",
+    "source": "Scientific American",
+    "direction": "neutral",
+    "quote": "People have cited \"Claudeholism: The New Addiction of the Century\" or asserted that \"Claude Code is the opium of the permanent underclass\" in reference to the software's ability to remove the pain of drudgery.",
+    "url": "https://www.scientificamerican.com/article/how-claude-code-is-bringing-vibe-coding-to-everyone/"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-02-26",
+    "source": "Bloomberg Law",
+    "direction": "neutral",
+    "quote": "Claude Code Is Causing the Great Productivity Panic of 2026 (headline; body paywalled, framed as productivity pressure rather than addiction)",
+    "url": "https://news.bloomberglaw.com/litigation/claude-code-is-causing-the-great-productivity-panic-of-2026"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.35
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.16
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.45,
+   "confidence": 0.25,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.03,
+    "1": 0.5,
+    "2": 0.47
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1262,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:09:37Z"
+}

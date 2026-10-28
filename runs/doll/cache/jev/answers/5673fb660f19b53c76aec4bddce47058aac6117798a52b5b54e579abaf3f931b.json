@@ -1,0 +1,95 @@
+{
+ "hash": "5673fb660f19b53c76aec4bddce47058aac6117798a52b5b54e579abaf3f931b",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Bob Doll",
+  "target_year": 2026,
+  "as_of": "2026-06-30",
+  "claim": {
+   "quote": "Faith-based share of industry AUM increases for the 10th year in a row.",
+   "author": "Bob Doll",
+   "date": "2025-12-31",
+   "context": "Prediction 9 of 10. Faith-based or values-based funds grow as a share of total industry assets in 2026. Crossmark itself is a faith-based manager; data likely comes from Morningstar or industry bodies."
+  },
+  "bar": "standard",
+  "criterion": "Faith-based funds grew faster than the fund industry in 2026, per a reputable industry source.",
+  "measure": "Trade press or industry report comparing faith-based fund asset growth with total US fund asset growth in 2026, or stating the share rose.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-04-30",
+    "source": "Morningstar (faith-based investing data blog)",
+    "direction": "neutral",
+    "quote": "about 150 faith-based mutual funds and ETFs with nearly $97 billion in assets ... as of April 30, 2026 ... Total flows into religiously themed funds were positive for the year to date and over the trailing 1-, 3-, 5-, and 10-year periods ... multi-year amounts for the whole segment are small compared to the broader industry [no share-of-industry figure is given]",
+    "url": "https://www.morningstar.com/business/insights/blog/faith-based-investing-data"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.03
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.04
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.0,
+   "confidence": 0.98,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.99,
+    "2": 0.01
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1154,
+  "output_tokens": 52
+ },
+ "at": "2026-10-25T02:36:13Z"
+}

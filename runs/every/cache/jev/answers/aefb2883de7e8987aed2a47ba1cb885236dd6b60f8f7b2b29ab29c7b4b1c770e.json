@@ -1,0 +1,103 @@
+{
+ "hash": "aefb2883de7e8987aed2a47ba1cb885236dd6b60f8f7b2b29ab29c7b4b1c770e",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Every",
+  "target_year": 2026,
+  "published": "2025-12-23",
+  "author": "Brandon Gell",
+  "passage": "I think midterms are going to be like kind of scary. Um because I think there's going to be deep fakes, which used to be a really scary word and now nobody talks about nobody says deep fake anymore.",
+  "context": "AI deepfakes will be a significant, alarming feature of the 2026 US midterm elections."
+ },
+ "questions": {
+  "is_prediction": {
+   "type": "noul",
+   "instructions": "Does `passage` make a forward-looking claim about what will happen or be true during `target_year` that could later be checked against public evidence?",
+   "criteria": {
+    "true": "It states or clearly implies an outcome, trend, number, event or ranking for the target year.",
+    "false": "It describes the past or present, gives advice, asks a question, or is too vague to ever check."
+   }
+  },
+  "specificity": {
+   "type": "score",
+   "instructions": "How specific and checkable is the prediction in `passage`?",
+   "criteria": [
+    "A mood, theme or direction with no checkable outcome (for example: 'AI will matter more')",
+    "A named outcome with no number, date or threshold (for example: 'agents will reshape company operations')",
+    "A named outcome with one checkable element: a number, a date, a named party or a threshold",
+    "A named outcome with a number or threshold and a time by which it happens"
+   ]
+  },
+  "kind": {
+   "type": "choice",
+   "instructions": "Is the predicted outcome in `passage` binary or a matter of degree?",
+   "criteria": {
+    "binary": "It either happens or it does not (a launch, an approval, a ranking, a named event).",
+    "spectrum": "It can be partly right depending on magnitude, share, price, count or definition."
+   }
+  },
+  "boldness": {
+   "type": "score",
+   "instructions": "How bold is the prediction in `passage` relative to what most informed observers expected when it was made?",
+   "criteria": [
+    "Consensus or near-certain at the time",
+    "Plausible but contested",
+    "Contrarian or surprising to most informed observers"
+   ]
+  }
+ },
+ "answers": {
+  "is_prediction": {
+   "type": "noul",
+   "noul": 0.9
+  },
+  "specificity": {
+   "type": "score",
+   "score": 1.37,
+   "confidence": 0.33,
+   "legend": {
+    "0": "A mood, theme or direction with no checkable outcome (for example: 'AI will matter more')",
+    "1": "A named outcome with no number, date or threshold (for example: 'agents will reshape company operations')",
+    "2": "A named outcome with one checkable element: a number, a date, a named party or a threshold",
+    "3": "A named outcome with a number or threshold and a time by which it happens"
+   },
+   "probabilities": {
+    "0": 0.26,
+    "1": 0.13,
+    "2": 0.59,
+    "3": 0.02
+   }
+  },
+  "kind": {
+   "type": "choice",
+   "choice": "spectrum",
+   "confidence": 0.78,
+   "probabilities": {
+    "binary": 0.11,
+    "spectrum": 0.89
+   }
+  },
+  "boldness": {
+   "type": "score",
+   "score": 0.51,
+   "confidence": 0.25,
+   "legend": {
+    "0": "Consensus or near-certain at the time",
+    "1": "Plausible but contested",
+    "2": "Contrarian or surprising to most informed observers"
+   },
+   "probabilities": {
+    "0": 0.53,
+    "1": 0.44,
+    "2": 0.03
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 779,
+  "output_tokens": 80
+ },
+ "at": "2026-10-24T20:00:22Z"
+}

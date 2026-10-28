@@ -1,0 +1,103 @@
+{
+ "hash": "1b40123f56c3c330bc5bd96e4ffe93ea024ccfa91ad7fe98ed491adb7c6a30b2",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Scott Galloway",
+  "target_year": 2026,
+  "published": "2025-12-19",
+  "author": "Scott Galloway",
+  "passage": "When Colbert shifts to podcasting, he’ll take eight people with him and make just $20 million, but it’ll only cost $5 million to produce.",
+  "context": "Prediction 7, specific example, split from c8. Stephen Colbert moves to podcasting after The Late Show ends."
+ },
+ "questions": {
+  "is_prediction": {
+   "type": "noul",
+   "instructions": "Does `passage` make a forward-looking claim about what will happen or be true during `target_year` that could later be checked against public evidence?",
+   "criteria": {
+    "true": "It states or clearly implies an outcome, trend, number, event or ranking for the target year.",
+    "false": "It describes the past or present, gives advice, asks a question, or is too vague to ever check."
+   }
+  },
+  "specificity": {
+   "type": "score",
+   "instructions": "How specific and checkable is the prediction in `passage`?",
+   "criteria": [
+    "A mood, theme or direction with no checkable outcome (for example: 'AI will matter more')",
+    "A named outcome with no number, date or threshold (for example: 'agents will reshape company operations')",
+    "A named outcome with one checkable element: a number, a date, a named party or a threshold",
+    "A named outcome with a number or threshold and a time by which it happens"
+   ]
+  },
+  "kind": {
+   "type": "choice",
+   "instructions": "Is the predicted outcome in `passage` binary or a matter of degree?",
+   "criteria": {
+    "binary": "It either happens or it does not (a launch, an approval, a ranking, a named event).",
+    "spectrum": "It can be partly right depending on magnitude, share, price, count or definition."
+   }
+  },
+  "boldness": {
+   "type": "score",
+   "instructions": "How bold is the prediction in `passage` relative to what most informed observers expected when it was made?",
+   "criteria": [
+    "Consensus or near-certain at the time",
+    "Plausible but contested",
+    "Contrarian or surprising to most informed observers"
+   ]
+  }
+ },
+ "answers": {
+  "is_prediction": {
+   "type": "noul",
+   "noul": 0.81
+  },
+  "specificity": {
+   "type": "score",
+   "score": 2.85,
+   "confidence": 0.86,
+   "legend": {
+    "0": "A mood, theme or direction with no checkable outcome (for example: 'AI will matter more')",
+    "1": "A named outcome with no number, date or threshold (for example: 'agents will reshape company operations')",
+    "2": "A named outcome with one checkable element: a number, a date, a named party or a threshold",
+    "3": "A named outcome with a number or threshold and a time by which it happens"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": 0.14,
+    "3": 0.86
+   }
+  },
+  "kind": {
+   "type": "choice",
+   "choice": "spectrum",
+   "confidence": 0.92,
+   "probabilities": {
+    "binary": 0.04,
+    "spectrum": 0.96
+   }
+  },
+  "boldness": {
+   "type": "score",
+   "score": 1.43,
+   "confidence": 0.23,
+   "legend": {
+    "0": "Consensus or near-certain at the time",
+    "1": "Plausible but contested",
+    "2": "Contrarian or surprising to most informed observers"
+   },
+   "probabilities": {
+    "0": 0.04,
+    "1": 0.49,
+    "2": 0.47
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 775,
+  "output_tokens": 80
+ },
+ "at": "2026-10-25T02:30:54Z"
+}

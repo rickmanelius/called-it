@@ -1,0 +1,104 @@
+{
+ "hash": "e7fc6eced6649e3a00a75f9f117761bee613e69116ef59e200c6170066f57da1",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Every",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "A mass-market robotic pet succeeds by the end of 2026.",
+   "author": "Willie Williams",
+   "date": "2025-12-23",
+   "context": "The wildcard prediction, stated as the editor's rendering of Williams's view. He names Moflin as the one to watch. 'Succeeds' is undefined."
+  },
+  "bar": "lenient",
+  "criterion": "A consumer robotic pet was widely covered as a commercial hit in 2026.",
+  "measure": "Two or more major outlets describing a robotic pet as a hit, dated 2026.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-06-26",
+    "source": "New Straits Times (AFP)",
+    "direction": "contradicts",
+    "quote": "Sony is halting sales of its robotic puppy \"aibo\" in Japan ... Sony declined to give a total sales figure for the aibo model released in 2018.",
+    "url": "https://www.nst.com.my/amp/business/corporate/2026/06/1473356/sony-discontinues-japan-sales-robot-puppy-aibo"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-10-14",
+    "source": "BriefGlance",
+    "direction": "neutral",
+    "quote": "Pink Moflin retains the same emotional algorithm and personality capabilities as existing models, priced at $429. ... available in the U.S. starting October 1, 2026",
+    "url": "https://briefglance.com/companies/casio-america-inc/pulses/89427"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.02
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.55
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.11,
+   "confidence": 0.78,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.02,
+    "1": 0.85,
+    "2": 0.13
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1235,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:09:37Z"
+}

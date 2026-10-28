@@ -1,0 +1,104 @@
+{
+ "hash": "de818ee69661fa4335c6bdc5f298516c3e811d29d493452768b05ec95e011213",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Mike Ippolito",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Solana will have a mini crisis around non-meme price discovery not happening on their chain, which will resolve by EOY",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "context": "Post 20, second paragraph. A visible debate or crisis about Solana's role in non-memecoin price discovery during 2026."
+  },
+  "bar": "strict",
+  "criterion": "Solana had a mini crisis in 2026 over non-meme price discovery not happening on its chain, and by year end a major non-memecoin asset launched and traded primarily on Solana.",
+  "measure": "Two or more major crypto outlets or prominent Solana figures debating the issue in 2026, and a non-memecoin token with a market cap above $500M launching in 2026 with most of its spot volume on Solana DEXes, per DefiLlama or CoinGecko; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-10-15",
+    "source": "Blockworks Advisory, Solana Token Holder Report Q3 2026 (PDF)",
+    "direction": "neutral",
+    "quote": "tokenized equities set a new all-time high of $4.4B in September alone, taking the category to a record $7.1B for the quarter, up 40% QoQ. [...] SOL-stablecoin pairs remained the anchor at roughly 40% of volume, while memecoins rose to 29% from 16% in Q2, their strongest showing since mid-2025. Stablecoin swaps represented 15% of volume, foreign tokens 7%, and project tokens and tokenized assets roughly 4% each. [No major outlet or prominent Solana figure was found framing a mini crisis over non-meme price discovery in 2026.]",
+    "url": "https://blockworks.com/api/investor-report/solana-token-holder-report-q3-2026/pdf"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-02-03",
+    "source": "The Block (Standard Chartered note)",
+    "direction": "neutral",
+    "quote": "Kendrick lowered his end-2026 price forecast for Solana from $310 to $250 [...] Solana is evolving from memecoins to micropayments [...] the mix of flows on DEXs has shifted from memecoin trading towards SOL-stablecoin pairs [...] no longer a one-trick pony",
+    "url": "https://www.theblock.co/news/markets/2026-02-03-standard-chartered-cuts-solana-2026-target-shift-memecoins-micropayments-388248"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.02
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.7
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.74,
+   "confidence": 0.61,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.03,
+    "1": 0.2,
+    "2": 0.77
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1498,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:05:57Z"
+}

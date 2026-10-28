@@ -1,0 +1,104 @@
+{
+ "hash": "66d3d39a9a81471379090aa4e67cbed5494e749296037a75badccd08ffadce05",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Mike Ippolito",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "We'll see real pain in venture capital. Unflattering performance will get reported in media outlets, many will struggle to raise and 2 blue chip funds will close.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "context": "Post 6. The checkable core is two blue-chip crypto VC funds closing (winding down or ceasing new investment) in 2026."
+  },
+  "bar": "lenient",
+  "criterion": "At least one recognised crypto venture firm wound down in 2026 and reporting described fundraising difficulty across crypto VC.",
+  "measure": "Same.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-05-28",
+    "source": "Galaxy Research",
+    "direction": "supports",
+    "quote": "Raising new venture funds remains incredibly difficult, and Q1 saw the fewest new crypto VC funds raised since Q3 2020. [...] the total capital allocated to crypto-focused venture funds was roughly $1.1 billion across eight funds",
+    "url": "https://www.galaxy.com/insights/research/crypto-blockchain-vc-venture-capital-startups-fundraising-q1-2026"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-10-08",
+    "source": "CoinDesk",
+    "direction": "neutral",
+    "quote": "Crypto and fintech investment firm Deus X Capital has ceased operations as its backers pursue separate investment strategies [...] will cease operations and formally unwind on Jan. 31, 2027. Debuted in October 2023 with $1 billion in existing investments; strategy spans private equity, venture capital, and hedge fund allocations (not a pure venture firm). Galaxy Research said in September that interest in AI was diverting attention from digital assets, which added to venture firms' fundraising challenges.",
+    "url": "https://www.coindesk.com/business/2026/10/06/crypto-investment-firm-deus-x-capital-shuts-down-as-backers-pursue-separate-strategies"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.43
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.12
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.56,
+   "confidence": 0.34,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.44,
+    "2": 0.56
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1341,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:05:56Z"
+}

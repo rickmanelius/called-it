@@ -1,0 +1,95 @@
+{
+ "hash": "32569ea3f37a336b52e1d968c0bbfd7b035f702d916246ae67e1e304462cbdf1",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Every",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "agentic development will be maybe by the end of the year inside of the app that you're actually using.",
+   "author": "Brandon Gell",
+   "date": "2025-12-23",
+   "context": "By the end of 2026 users will be able to request features or bug fixes from inside an app and have an agent write and ship the code; unclear whether this means any shipping product or broad availability."
+  },
+  "bar": "lenient",
+  "criterion": "By the end of 2026 at least one product shipped or publicly beta-tested in-app agentic development.",
+  "measure": "A public beta or release, per the maker or reporting; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-06-24",
+    "source": "TechCrunch",
+    "direction": "supports",
+    "quote": "adding a feature to help users create custom plug-ins, like layout generators or vector path tracers, with prompts.",
+    "url": "https://techcrunch.com/2026/06/24/figma-adds-code-layers-support-for-animations-more-ai-features-in-new-update"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.28
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.04
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.02,
+   "confidence": 0.97,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.98,
+    "2": 0.02
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1077,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:09:37Z"
+}

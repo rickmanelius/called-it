@@ -1,0 +1,113 @@
+{
+ "hash": "dca8b42363b568e274d665019c6559ab8eeb3ff702c901e9f7bc9f4972a4140c",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Mike Ippolito",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Passive liquidity provision in AMMs largely dies in 2026, first driven by the success of prop AMMs in Solana.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "context": "Post 20, first sentence. Passive LP share of DEX volume falls sharply in 2026 as proprietary AMMs take share, starting on Solana."
+  },
+  "bar": "standard",
+  "criterion": "Passive liquidity provision lost most of its share of Solana DEX volume in 2026.",
+  "measure": "Blockworks Research, Dune or DefiLlama: passive-pool venues (Raydium and Orca standard pools and peers) below 50% of Solana DEX volume at the latest reading, with proprietary AMMs taking the share; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-06-30",
+    "source": "Blockworks Advisory, Solana Token Holder Report Q2 2026 (PDF)",
+    "direction": "supports",
+    "quote": "DEXs on Solana remain a prop AMM story. [...] With close to twenty prop AMMs live on Solana, their share of spot DEX volume sat at 53% in Q2 2026, up from 30% in Q2 2025. [...] BisonFi led prop AMMs with roughly 17% of Q2 volume, and Pumpfun's integrated AMM continued gaining share, representing 13% of volume in Q2. [...] Prop AMMs began quoting tokenized assets during the quarter and now represent an estimated 50% of tokenized-asset volume.",
+    "url": "https://blockworks.com/api/investor-report/solana-token-holder-report-q2-2026/pdf"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-10-15",
+    "source": "Blockworks Advisory, Solana Token Holder Report Q3 2026 (PDF)",
+    "direction": "contradicts",
+    "quote": "Prop AMMs remained the largest exchange type on Solana. [...] Their share of spot DEX volume was 40% in Q3, down from 51% in Q2, as memecoin flow concentrated on constant-product pools, whose share rose to 18% from 10%. [...] Pump's integrated AMM was the largest single venue at roughly 21% of Q3 volume, followed by BisonFi (13%) and Raydium (10%). [Note: the Q2 report states 53% for Q2; the Q3 report restates Q2 as 51%.]",
+    "url": "https://blockworks.com/api/investor-report/solana-token-holder-report-q3-2026/pdf"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-10-24",
+    "source": "DefiLlama DEX overview API, Solana, 30-day volumes",
+    "direction": "neutral",
+    "quote": "Solana total30d = 64479317950.59003. Prop AMMs: BisonFi 8598420577; Tessera V 3563783139; GoonFi 2216776002; HumidiFi 1217129892; SolFi V2 998393676; AlphaQ 974053875; QuantumAMM 788065766; ZeroFi 768934025; Aquifer 433074982. Pool AMMs: PumpSwap 9885122841; Orca DEX 8177271790; Raydium AMM 5964963732; Meteora DLMM 4254799044. [Named prop AMMs are about 30% of the listed 30d total; the total includes aggregator and wallet entries such as Manifest Trade 3396045918, fomo Wallet 3004394566 and Axiom 2444163186 that double count venue volume.]",
+    "url": "https://api.llama.fi/overview/dexs/solana?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true&dataType=dailyVolume"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.38
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.8
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.72,
+   "confidence": 0.59,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.27,
+    "2": 0.73
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1947,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:05:57Z"
+}

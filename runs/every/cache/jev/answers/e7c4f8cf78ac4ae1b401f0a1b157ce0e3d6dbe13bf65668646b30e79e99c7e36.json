@@ -1,0 +1,47 @@
+{
+ "hash": "e7c4f8cf78ac4ae1b401f0a1b157ce0e3d6dbe13bf65668646b30e79e99c7e36",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "claim": "What we're doing next year is um we're going to build this like unified memory and context layer where we have um we have a bunch of uh basically we can collect everything everything that you care about and who you are into one place and all of the apps and all the content can take that into account as they work with you.",
+  "author": "Dan Shipper",
+  "target_year": 2026,
+  "bar": "lenient",
+  "bar_meaning": "the weakest reading a critic would still concede counts",
+  "criterion": "Every publicly showed progress on a cross-app memory layer in 2026."
+ },
+ "questions": {
+  "critic_accepts": {
+   "type": "noul",
+   "instructions": "Would a skeptical critic of the author agree that `criterion` is a fair test of `claim` at the stated `bar`?",
+   "criteria": {
+    "true": "The criterion tests what the claim actually asserted; it does not move the goalposts in the author's favour or against them beyond what the bar name implies.",
+    "false": "The criterion tests something the claim did not assert, or is so loose that almost anything would satisfy it, or so tight that no reasonable reading of the claim could."
+   }
+  },
+  "checkable": {
+   "type": "noul",
+   "instructions": "Can `criterion` be settled by public evidence available by the end of `target_year`?",
+   "criteria": {
+    "true": "A specific public fact, number, release, ranking or event would settle it.",
+    "false": "It depends on private information, taste, or a judgement nobody can verify."
+   }
+  }
+ },
+ "answers": {
+  "critic_accepts": {
+   "type": "noul",
+   "noul": 0.4
+  },
+  "checkable": {
+   "type": "noul",
+   "noul": 0.61
+  }
+ },
+ "usage": {
+  "input_tokens": 598,
+  "output_tokens": 41
+ },
+ "at": "2026-10-24T20:10:22Z"
+}

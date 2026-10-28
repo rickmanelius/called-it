@@ -1,0 +1,113 @@
+{
+ "hash": "aefdd1419f4a8cfb86c852c2246a07405b42bfd3c4de76fc73b161946a9339ea",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Every",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "I think midterms are going to be like kind of scary. Um because I think there's going to be deep fakes, which used to be a really scary word and now nobody talks about nobody says deep fake anymore.",
+   "author": "Brandon Gell",
+   "date": "2025-12-23",
+   "context": "AI deepfakes will be a significant, alarming feature of the 2026 US midterm elections."
+  },
+  "bar": "strict",
+  "criterion": "AI deepfakes were a significant, widely covered part of the 2026 midterms.",
+  "measure": "At least three documented deepfake incidents involving candidates in major 2026 races covered by major outlets, at least one with reach of a million views or an official response (platform takedown, regulator or campaign action); open until November 3, so provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-03-28",
+    "source": "Reuters (via Honolulu Star-Advertiser)",
+    "direction": "supports",
+    "quote": "The Talarico ad, for instance, is one of three recent ads created by national Republicans that use deepfake technology",
+    "url": "https://www.staradvertiser.com/2026/03/28/breaking-news/ai-deepfakes-blur-reality-in-2026-us-midterm-campaigns/"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-06-20",
+    "source": "Washington Examiner",
+    "direction": "neutral",
+    "quote": "the Republican PAC Citizens for Sanity paid six figures for an ad campaign ... AI is almost exclusively used in attack ads against opponents (no view counts given)",
+    "url": "https://www.washingtonexaminer.com/news/campaigns/congressional/4617529/"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-10-13",
+    "source": "WRDW",
+    "direction": "supports",
+    "quote": "The Senate Leadership Fund's website features dozens of AI-generated videos. ... South Carolina and Georgia, Ossoff's home state, have no laws on the books addressing AI-generated political ads.",
+    "url": "https://www.wrdw.com/2026/10/13/real-or-fake-deepfakes-flood-georgia-political-ads/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.18
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.08
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.89,
+   "confidence": 0.83,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.11,
+    "2": 0.89
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1429,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:09:39Z"
+}

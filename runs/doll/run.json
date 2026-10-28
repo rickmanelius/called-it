@@ -1,0 +1,46 @@
+{
+  "name": "doll",
+  "tool": {
+    "name": "called-it",
+    "version": "0.1.0"
+  },
+  "subject": {
+    "name": "Bob Doll",
+    "kind": "person",
+    "website": "https://www.crossmarkglobal.com",
+    "x_handles": [],
+    "domains": [
+      "macro",
+      "rates",
+      "equities",
+      "earnings",
+      "sectors",
+      "regions",
+      "politics"
+    ]
+  },
+  "target_year": 2026,
+  "season_window": {
+    "start": "2025-10-01",
+    "end": "2026-01-31"
+  },
+  "evidence_window": {
+    "start": "2026-01-01",
+    "end": "2026-10-24"
+  },
+  "canonical_urls": [
+    "https://401kspecialistmag.com/bob-dolls-10-predictions-for-2026-high-risk-bull-market/"
+  ],
+  "top_n": 20,
+  "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+  },
+  "thresholds": {
+    "yes": 0.7,
+    "no": 0.3,
+    "min_strength": 1.0
+  },
+  "created": "2026-10-24",
+  "notes": "Crossmark Global CIO; ten numbered predictions every year for 30+ years; grades himself quarterly and in December"
+}

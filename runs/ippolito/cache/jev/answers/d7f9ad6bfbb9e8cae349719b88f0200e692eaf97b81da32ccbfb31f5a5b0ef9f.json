@@ -1,0 +1,47 @@
+{
+ "hash": "d7f9ad6bfbb9e8cae349719b88f0200e692eaf97b81da32ccbfb31f5a5b0ef9f",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "claim": "It’s another bad year for onchain infrastructure. Most general purpose L2s or alt L1s completely fail to attract any new users or apps. Expect big pivots or changes in the business model from several large protocols by EOY.",
+  "author": "Mike Ippolito",
+  "target_year": 2026,
+  "bar": "lenient",
+  "bar_meaning": "the weakest reading a critic would still concede counts",
+  "criterion": "At least one large infrastructure protocol announced a major pivot or business-model change in 2026."
+ },
+ "questions": {
+  "critic_accepts": {
+   "type": "noul",
+   "instructions": "Would a skeptical critic of the author agree that `criterion` is a fair test of `claim` at the stated `bar`?",
+   "criteria": {
+    "true": "The criterion tests what the claim actually asserted; it does not move the goalposts in the author's favour or against them beyond what the bar name implies.",
+    "false": "The criterion tests something the claim did not assert, or is so loose that almost anything would satisfy it, or so tight that no reasonable reading of the claim could."
+   }
+  },
+  "checkable": {
+   "type": "noul",
+   "instructions": "Can `criterion` be settled by public evidence available by the end of `target_year`?",
+   "criteria": {
+    "true": "A specific public fact, number, release, ranking or event would settle it.",
+    "false": "It depends on private information, taste, or a judgement nobody can verify."
+   }
+  }
+ },
+ "answers": {
+  "critic_accepts": {
+   "type": "noul",
+   "noul": 0.69
+  },
+  "checkable": {
+   "type": "noul",
+   "noul": 0.83
+  }
+ },
+ "usage": {
+  "input_tokens": 586,
+  "output_tokens": 41
+ },
+ "at": "2026-10-24T20:00:28Z"
+}

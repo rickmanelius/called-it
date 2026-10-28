@@ -1,0 +1,4468 @@
+{
+ "tool": {
+  "name": "called-it",
+  "version": "1.0.0"
+ },
+ "run": {
+  "name": "every",
+  "subject": {
+   "name": "Every",
+   "kind": "company",
+   "website": "https://every.to",
+   "x_handles": [
+    "every",
+    "danshipper"
+   ],
+   "domains": [
+    "AI models",
+    "software",
+    "agents",
+    "work",
+    "media",
+    "hardware"
+   ]
+  },
+  "target_year": 2026,
+  "season_window": {
+   "start": "2025-10-01",
+   "end": "2026-01-31"
+  },
+  "evidence_window": {
+   "start": "2026-01-01",
+   "end": "2026-10-24"
+  },
+  "thresholds": {
+   "yes": 0.7,
+   "no": 0.3,
+   "min_strength": 1.0
+  }
+ },
+ "grader_models": {
+  "jev-1.14.0": 194
+ },
+ "aggregate": {
+  "per_bar": {
+   "strict": {
+    "met": 1,
+    "not_met": 5,
+    "unresolved": 16,
+    "resolved": 6,
+    "hit_rate": 0.167,
+    "hit_rate_all": 0.045
+   },
+   "standard": {
+    "met": 7,
+    "not_met": 3,
+    "unresolved": 12,
+    "resolved": 10,
+    "hit_rate": 0.7,
+    "hit_rate_all": 0.318
+   },
+   "lenient": {
+    "met": 12,
+    "not_met": 0,
+    "unresolved": 10,
+    "resolved": 12,
+    "hit_rate": 1.0,
+    "hit_rate_all": 0.545
+   }
+  },
+  "generosity_gap": 0.5,
+  "ladder": {
+   "c1": "met:lenient",
+   "c2": "not_met",
+   "c3": "met:standard",
+   "c5": "unresolved",
+   "c6": "unresolved",
+   "c7": "met:strict",
+   "c8": "unresolved",
+   "c10": "unresolved",
+   "c11": "met:standard",
+   "c12": "unresolved",
+   "c13": "not_met",
+   "c14": "unresolved",
+   "c18": "met:standard",
+   "c22": "not_met",
+   "c26": "met:standard",
+   "c27": "met:lenient",
+   "c28": "met:lenient",
+   "c29": "met:standard",
+   "c30": "met:lenient",
+   "c31": "met:lenient",
+   "c32": "met:standard",
+   "c41": "not_met"
+  },
+  "ladder_counts": {
+   "met_strict": 1,
+   "met_standard": 6,
+   "met_lenient": 5,
+   "not_met": 4,
+   "unresolved": 6
+  },
+  "n_claims": 22
+ },
+ "claims": [
+  {
+   "id": "c1",
+   "quote": "Anything a user can do in an app, an agent can also do. Then anything the app can do, the agent can do. Eventually, anything a developer can do—changing logic, fixing bugs, customizing behavior—will be something the agent handles on the user’s behalf.",
+   "author": "Dan Shipper",
+   "date": "2025-12-23",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "agents",
+   "rank": 13,
+   "scores": {
+    "is_prediction": 0.93,
+    "specificity": 2.14,
+    "specificity_conf": 0.81,
+    "boldness": 1.2,
+    "kind_p": {
+     "binary": 0.16,
+     "spectrum": 0.84
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c2",
+   "quote": "2026 is when agents go mainstream.",
+   "author": "Kieran Klaassen",
+   "date": "2025-12-23",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "agents",
+   "rank": 22,
+   "scores": {
+    "is_prediction": 0.92,
+    "specificity": 1.81,
+    "specificity_conf": 0.79,
+    "boldness": 1.03,
+    "kind_p": {
+     "binary": 0.02,
+     "spectrum": 0.98
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c3",
+   "quote": "Natalia thinks the most advanced companies will have agentic workflows embedded in daily operations by year’s end",
+   "author": "Natalia Quintero",
+   "date": "2025-12-23",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "work",
+   "rank": 10,
+   "scores": {
+    "is_prediction": 0.96,
+    "specificity": 2.16,
+    "specificity_conf": 0.8,
+    "boldness": 1.15,
+    "kind_p": {
+     "binary": 0.28,
+     "spectrum": 0.72
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c5",
+   "quote": "Dan predicts a third kind of engineer: agentic engineers who fully delegate implementation to AI and move up a level to managing and orchestrating agents.",
+   "author": "Dan Shipper",
+   "date": "2025-12-23",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "work",
+   "rank": 12,
+   "scores": {
+    "is_prediction": 0.95,
+    "specificity": 2.23,
+    "specificity_conf": 0.73,
+    "boldness": 1.09,
+    "kind_p": {
+     "binary": 0.36,
+     "spectrum": 0.64
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c6",
+   "quote": "Kate expects most companies to have at least one dedicated role focused on building and maintaining internal AI systems by 2026—“someone whose job is to continuously optimize how the organization uses AI.”",
+   "author": "Kate Lee",
+   "date": "2025-12-23",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "work",
+   "rank": 8,
+   "scores": {
+    "is_prediction": 0.97,
+    "specificity": 2.83,
+    "specificity_conf": 0.83,
+    "boldness": 0.9,
+    "kind_p": {
+     "binary": 0.04,
+     "spectrum": 0.96
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c7",
+   "quote": "There’s a whole class of highly creative, highly visual people who have been held back from making full experiences because they can’t code. Now they’re going to be able to code.",
+   "author": "Dan Shipper",
+   "date": "2025-12-23",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "software",
+   "rank": 23,
+   "scores": {
+    "is_prediction": 0.9,
+    "specificity": 1.73,
+    "specificity_conf": 0.64,
+    "boldness": 1.06,
+    "kind_p": {
+     "binary": 0.12,
+     "spectrum": 0.88
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c8",
+   "quote": "A mass-market robotic pet succeeds by the end of 2026.",
+   "author": "Willie Williams",
+   "date": "2025-12-23",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "hardware",
+   "rank": 6,
+   "scores": {
+    "is_prediction": 0.89,
+    "specificity": 2.18,
+    "specificity_conf": 0.75,
+    "boldness": 1.58,
+    "kind_p": {
+     "binary": 0.11,
+     "spectrum": 0.89
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c10",
+   "quote": "AGI, however you define that, is a lot more complicated and hard than we thought. And we will not have AGI in 2027.",
+   "author": "Dan Shipper",
+   "date": "2025-12-23",
+   "attribution": "subject",
+   "kind": "binary",
+   "domain": "AI models",
+   "rank": 24,
+   "scores": {
+    "is_prediction": 0.73,
+    "specificity": 2.49,
+    "specificity_conf": 0.49,
+    "boldness": 1.23,
+    "kind_p": {
+     "binary": 0.66,
+     "spectrum": 0.34
+    }
+   },
+   "split_of": null,
+   "source_id": "s2y"
+  },
+  {
+   "id": "c11",
+   "quote": "if you are an engineer who wants to incorporate AI into your process but doesn't want to reinvent the skill of software engineering there's going to be a home and a job for you for a very long time.",
+   "author": "Dan Shipper",
+   "date": "2025-12-23",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "work",
+   "rank": 38,
+   "scores": {
+    "is_prediction": 0.79,
+    "specificity": 1.56,
+    "specificity_conf": 0.49,
+    "boldness": 0.97,
+    "kind_p": {
+     "binary": 0.33,
+     "spectrum": 0.67
+    }
+   },
+   "split_of": null,
+   "source_id": "s2y"
+  },
+  {
+   "id": "c12",
+   "quote": "What we're doing next year is um we're going to build this like unified memory and context layer where we have um we have a bunch of uh basically we can collect everything everything that you care about and who you are into one place and all of the apps and all the content can take that into account as they work with you.",
+   "author": "Dan Shipper",
+   "date": "2025-12-23",
+   "attribution": "subject",
+   "kind": "binary",
+   "domain": "software",
+   "rank": 17,
+   "scores": {
+    "is_prediction": 0.97,
+    "specificity": 2.14,
+    "specificity_conf": 0.82,
+    "boldness": 0.92,
+    "kind_p": {
+     "binary": 0.89,
+     "spectrum": 0.11
+    }
+   },
+   "split_of": null,
+   "source_id": "s2y"
+  },
+  {
+   "id": "c13",
+   "quote": "I think we'll hire next year, but I don't think we're going to hire a ton. Like the whole thing is like keep it small.",
+   "author": "Dan Shipper",
+   "date": "2025-12-23",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "work",
+   "rank": 33,
+   "scores": {
+    "is_prediction": 0.94,
+    "specificity": 1.88,
+    "specificity_conf": 0.69,
+    "boldness": 0.61,
+    "kind_p": {
+     "binary": 0.06,
+     "spectrum": 0.94
+    }
+   },
+   "split_of": null,
+   "source_id": "s2y"
+  },
+  {
+   "id": "c14",
+   "quote": "agentic development will be maybe by the end of the year inside of the app that you're actually using.",
+   "author": "Brandon Gell",
+   "date": "2025-12-23",
+   "attribution": "subject",
+   "kind": "binary",
+   "domain": "software",
+   "rank": 7,
+   "scores": {
+    "is_prediction": 0.94,
+    "specificity": 2.2,
+    "specificity_conf": 0.75,
+    "boldness": 1.37,
+    "kind_p": {
+     "binary": 0.54,
+     "spectrum": 0.46
+    }
+   },
+   "split_of": null,
+   "source_id": "s2y"
+  },
+  {
+   "id": "c18",
+   "quote": "I think midterms are going to be like kind of scary. Um because I think there's going to be deep fakes, which used to be a really scary word and now nobody talks about nobody says deep fake anymore.",
+   "author": "Brandon Gell",
+   "date": "2025-12-23",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "media",
+   "rank": 43,
+   "scores": {
+    "is_prediction": 0.9,
+    "specificity": 1.37,
+    "specificity_conf": 0.33,
+    "boldness": 0.51,
+    "kind_p": {
+     "binary": 0.11,
+     "spectrum": 0.89
+    }
+   },
+   "split_of": null,
+   "source_id": "s2y"
+  },
+  {
+   "id": "c22",
+   "quote": "if you then zoom out though that kind that style of engineering is going to be on a pretty slow and steady decline.",
+   "author": "Dan Shipper",
+   "date": "2025-12-23",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "work",
+   "rank": 44,
+   "scores": {
+    "is_prediction": 0.74,
+    "specificity": 0.94,
+    "specificity_conf": 0.42,
+    "boldness": 1.38,
+    "kind_p": {
+     "binary": 0.0,
+     "spectrum": 1.0
+    }
+   },
+   "split_of": null,
+   "source_id": "s2y"
+  },
+  {
+   "id": "c26",
+   "quote": "I think we will definitely see um layoffs that companies blame on AI um in 2026",
+   "author": "Dan Shipper",
+   "date": "2025-12-23",
+   "attribution": "subject",
+   "kind": "binary",
+   "domain": "work",
+   "rank": 28,
+   "scores": {
+    "is_prediction": 0.97,
+    "specificity": 1.97,
+    "specificity_conf": 0.88,
+    "boldness": 0.65,
+    "kind_p": {
+     "binary": 0.87,
+     "spectrum": 0.13
+    }
+   },
+   "split_of": null,
+   "source_id": "s2y"
+  },
+  {
+   "id": "c27",
+   "quote": "and I think mostly they will not be actually AI related they will be about the underlying business but they'll use AI as a good excuse.",
+   "author": "Dan Shipper",
+   "date": "2025-12-23",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "work",
+   "rank": 31,
+   "scores": {
+    "is_prediction": 0.91,
+    "specificity": 1.47,
+    "specificity_conf": 0.21,
+    "boldness": 1.0,
+    "kind_p": {
+     "binary": 0.05,
+     "spectrum": 0.95
+    }
+   },
+   "split_of": null,
+   "source_id": "s2y"
+  },
+  {
+   "id": "c28",
+   "quote": "I would guess that they will find it valuable this year. Um specifically because coding agents are good enough that once they make their way into Excel in a widely distributed way",
+   "author": "Dan Shipper",
+   "date": "2025-12-23",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "work",
+   "rank": 14,
+   "scores": {
+    "is_prediction": 0.94,
+    "specificity": 2.26,
+    "specificity_conf": 0.63,
+    "boldness": 1.02,
+    "kind_p": {
+     "binary": 0.08,
+     "spectrum": 0.92
+    }
+   },
+   "split_of": null,
+   "source_id": "s2y"
+  },
+  {
+   "id": "c29",
+   "quote": "So I think that's going to actually happen a lot more in in 2026 is is we're going to um use training approaches and architectures that allow them to like go off and do stuff.",
+   "author": "Dan Shipper",
+   "date": "2025-12-23",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "AI models",
+   "rank": 27,
+   "scores": {
+    "is_prediction": 0.91,
+    "specificity": 1.62,
+    "specificity_conf": 0.56,
+    "boldness": 1.05,
+    "kind_p": {
+     "binary": 0.01,
+     "spectrum": 0.99
+    }
+   },
+   "split_of": null,
+   "source_id": "s2y"
+  },
+  {
+   "id": "c30",
+   "quote": "And I think, shockingly, the most addictive technology of 2026—the narrative we might be talking about at the end of the year—is how addictive it is to just make things.",
+   "author": "Dan Shipper",
+   "date": "2026-01-05",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "media",
+   "rank": 2,
+   "scores": {
+    "is_prediction": 0.95,
+    "specificity": 1.9,
+    "specificity_conf": 0.64,
+    "boldness": 1.79,
+    "kind_p": {
+     "binary": 0.33,
+     "spectrum": 0.67
+    }
+   },
+   "split_of": null,
+   "source_id": "s3"
+  },
+  {
+   "id": "c31",
+   "quote": "And I think that’s going to hamper their product direction and velocity in a way that—if we look back in a couple years—we might say: that was an interesting era. It’s still a widely distributed piece of software, but it’s not the next-generation thing that we thought it was.",
+   "author": "Dan Shipper",
+   "date": "2026-01-05",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "software",
+   "rank": 47,
+   "scores": {
+    "is_prediction": 0.54,
+    "specificity": 1.66,
+    "specificity_conf": 0.45,
+    "boldness": 1.37,
+    "kind_p": {
+     "binary": 0.01,
+     "spectrum": 0.99
+    }
+   },
+   "split_of": null,
+   "source_id": "s3"
+  },
+  {
+   "id": "c32",
+   "quote": "But I think next year is going to be much more negative on AI than this year, in general popular discourse.",
+   "author": "Reid Hoffman",
+   "date": "2026-01-05",
+   "attribution": "guest",
+   "kind": "spectrum",
+   "domain": "media",
+   "rank": 20,
+   "scores": {
+    "is_prediction": 0.97,
+    "specificity": 1.32,
+    "specificity_conf": 0.27,
+    "boldness": 1.26,
+    "kind_p": {
+     "binary": 0.0,
+     "spectrum": 1.0
+    }
+   },
+   "split_of": null,
+   "source_id": "s3"
+  },
+  {
+   "id": "c41",
+   "quote": "I don’t think any of the horses that are in the race will particularly stumble. I don’t think you’ll look up and go, Wow, I thought Cursor was fantastic—and it’s just gone.",
+   "author": "Reid Hoffman",
+   "date": "2026-01-05",
+   "attribution": "guest",
+   "kind": "binary",
+   "domain": "software",
+   "rank": 15,
+   "scores": {
+    "is_prediction": 0.95,
+    "specificity": 2.14,
+    "specificity_conf": 0.74,
+    "boldness": 1.05,
+    "kind_p": {
+     "binary": 0.51,
+     "spectrum": 0.49
+    }
+   },
+   "split_of": null,
+   "source_id": "s3"
+  }
+ ],
+ "rubrics": [
+  {
+   "claim_id": "c30",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "By the end of 2026 the dominant tech-addiction narrative is about how addictive it is to make things with AI, not about social media or AI companions.",
+     "measure": "Three or more major general-interest outlets (NYT, The Atlantic, WSJ, FT, The Verge, Wired or peers) publishing 2026 pieces on compulsive building with AI coding tools, and at least one year-end piece naming it as the year's addiction story; provisional until December 31.",
+     "check": {
+      "critic_accepts": 0.64,
+      "checkable": 0.27
+     }
+    },
+    "standard": {
+     "criterion": "Multiple major outlets in 2026 described compulsive making with AI coding tools as an addiction or a defining behaviour of the year.",
+     "measure": "Two or more major outlets, dated 2026.",
+     "check": {
+      "critic_accepts": 0.4,
+      "checkable": 0.76
+     }
+    },
+    "lenient": {
+     "criterion": "At least one major outlet in 2026 described building with AI coding tools as addictive.",
+     "measure": "One major outlet, dated 2026.",
+     "check": {
+      "critic_accepts": 0.38,
+      "checkable": 0.79
+     }
+    }
+   },
+   "notes": "'Shockingly' and 'the narrative' are his framing; the bars count coverage. Spoken on a podcast, so the wording is conversational.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c8",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "A mass-market robotic pet was a clear commercial success in 2026: at least 100,000 units sold in the year.",
+     "measure": "Unit sales for calendar 2026 per the maker or a major outlet, any launch date; a product sold mainly to institutions does not count as mass-market.",
+     "check": {
+      "critic_accepts": 0.69,
+      "checkable": 0.46
+     }
+    },
+    "standard": {
+     "criterion": "A consumer robotic pet reached mass-market retail in 2026 and major outlets reported strong sales.",
+     "measure": "Availability at a major general retailer (Amazon, Target, Best Buy or peers) plus major-outlet reporting of strong sales or sell-outs, dated 2026; maker claims alone are tier 4.",
+     "check": {
+      "critic_accepts": 0.65,
+      "checkable": 0.65
+     }
+    },
+    "lenient": {
+     "criterion": "A consumer robotic pet was widely covered as a commercial hit in 2026.",
+     "measure": "Two or more major outlets describing a robotic pet as a hit, dated 2026.",
+     "check": {
+      "critic_accepts": 0.52,
+      "checkable": 0.67
+     }
+    }
+   },
+   "notes": "'Succeeds' is undefined in the source; the bars make three readings explicit. He named Moflin as the one to watch, but any consumer robotic pet counts.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c14",
+   "kind": "binary",
+   "bars": {
+    "strict": {
+     "criterion": "By the end of 2026 users of a widely used app can ask for a feature or a fix inside the app and have an agent write and ship the code into the app they are using.",
+     "measure": "A shipping product with at least one million users offering this to users (not a demo), per the maker's release notes or major-outlet reporting; provisional until December 31.",
+     "check": {
+      "critic_accepts": 0.56,
+      "checkable": 0.81
+     }
+    },
+    "standard": {
+     "criterion": "By the end of 2026 at least one shipping product lets users request features or fixes in-app and has an agent implement them inside the app.",
+     "measure": "A generally available product of any size, per release notes or reporting; provisional.",
+     "check": {
+      "critic_accepts": 0.55,
+      "checkable": 0.86
+     }
+    },
+    "lenient": {
+     "criterion": "By the end of 2026 at least one product shipped or publicly beta-tested in-app agentic development.",
+     "measure": "A public beta or release, per the maker or reporting; provisional.",
+     "check": {
+      "critic_accepts": 0.64,
+      "checkable": 0.85
+     }
+    }
+   },
+   "notes": "He hedged with 'maybe'; the bars grade the outcome, not the hedge. Every's own products count if they shipped it.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c6",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "By 2026 most companies have at least one dedicated role for building and maintaining internal AI systems.",
+     "measure": "A reputable 2026 survey (McKinsey, Gartner, Deloitte, LinkedIn Economic Graph or peers) finding more than 50% of surveyed companies have such a role.",
+     "check": {
+      "critic_accepts": 0.61,
+      "checkable": 0.27
+     }
+    },
+    "standard": {
+     "criterion": "By 2026 most large companies have a dedicated internal-AI role, or the role is described as standard practice at large companies.",
+     "measure": "A reputable 2026 survey of companies with 1,000 or more employees finding a majority have the role, or major-outlet reporting describing the head-of-AI or AI-operations role as standard at most large companies.",
+     "check": {
+      "critic_accepts": 0.4,
+      "checkable": 0.37
+     }
+    },
+    "lenient": {
+     "criterion": "Dedicated internal-AI roles grew substantially in 2026 and are common at large companies.",
+     "measure": "Reputable 2026 data showing dedicated AI-role postings up at least 50% year over year, or at least a third of large companies with the role.",
+     "check": {
+      "critic_accepts": 0.29,
+      "checkable": 0.36
+     }
+    }
+   },
+   "notes": "'Most companies' is the checkable element; strict holds her to it, standard narrows to large companies, lenient to a strong trend.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c3",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "By the end of 2026 the most advanced companies run agentic workflows in daily operations, not pilots, with finance leading.",
+     "measure": "At least three Fortune 500 companies or top-tier financial firms publicly describing agents running in daily operational workflows in 2026, at least one of them in finance, per company statements or major outlets; provisional until December 31.",
+     "check": {
+      "critic_accepts": 0.2,
+      "checkable": 0.23
+     }
+    },
+    "standard": {
+     "criterion": "By the end of 2026 several large companies run agentic workflows in daily operations.",
+     "measure": "At least three large companies in any sector, per company statements or reputable reporting dated 2026; provisional.",
+     "check": {
+      "critic_accepts": 0.46,
+      "checkable": 0.35
+     }
+    },
+    "lenient": {
+     "criterion": "In 2026 at least one large company publicly moved an agentic workflow from pilot into daily operations.",
+     "measure": "Company statement or reputable reporting dated 2026.",
+     "check": {
+      "critic_accepts": 0.59,
+      "checkable": 0.89
+     }
+    }
+   },
+   "notes": "Editor's paraphrase of Quintero. 'Most advanced companies' is read as leading large firms; the finance clause is required only at strict.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c5",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "In 2026 the agentic engineer, who delegates implementation to AI and manages agents instead of writing code, became a recognised third kind of engineering role.",
+     "measure": "Job postings using 'agentic engineer', 'AI engineer (agent orchestration)' or an equivalent title at three or more well-known companies in 2026, plus recognition as a distinct role by a major outlet or an industry survey (Stack Overflow, LinkedIn).",
+     "check": {
+      "critic_accepts": 0.66,
+      "checkable": 0.36
+     }
+    },
+    "standard": {
+     "criterion": "In 2026 job postings or major-outlet coverage recognised engineers who direct agents rather than write code as a distinct role.",
+     "measure": "Postings at named companies or major-outlet coverage dated 2026.",
+     "check": {
+      "critic_accepts": 0.7,
+      "checkable": 0.7
+     }
+    },
+    "lenient": {
+     "criterion": "In 2026 at least one named company hired for, or a widely read piece described, engineers whose job is directing agents rather than writing code.",
+     "measure": "One named company's posting or one widely read piece dated 2026.",
+     "check": {
+      "critic_accepts": 0.61,
+      "checkable": 0.84
+     }
+    }
+   },
+   "notes": "Editor's paraphrase. The spoken version (c21, 'a big deal in 2026') is folded into this claim.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c1",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "In 2026 agents can do anything a user can do in several major apps, and at least one shipping product already lets agents do what a developer does: change the app's own logic for the user.",
+     "measure": "Stage one: three or more major apps (from Microsoft, Google, Apple, Salesforce, Adobe, Meta, Notion, Figma or peers) shipping agents that can perform any user action end to end, per releases or reporting dated 2026. Stage three: one generally available product where an agent modifies the app's behaviour or code on the user's behalf; provisional until December 31.",
+     "check": {
+      "critic_accepts": 0.51,
+      "checkable": 0.79
+     }
+    },
+    "standard": {
+     "criterion": "In 2026 agents can do anything a user can do in several major apps.",
+     "measure": "Three or more major apps with agents able to perform the main user actions end to end, per releases or reporting dated 2026; provisional.",
+     "check": {
+      "critic_accepts": 0.51,
+      "checkable": 0.52
+     }
+    },
+    "lenient": {
+     "criterion": "In 2026 at least one major app beyond coding tools shipped an agent that can do most of what a user can do in it.",
+     "measure": "One major non-coding app, per release notes or reporting dated 2026; provisional.",
+     "check": {
+      "critic_accepts": 0.58,
+      "checkable": 0.59
+     }
+    }
+   },
+   "notes": "A staged claim; only the first stage carries a 2026 reading, so strict adds the third stage as a stretch and standard grades stage one. The spoken version (c15) is folded in.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c28",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "In 2026 coding agents reached Excel in a widely distributed way and non-technical knowledge workers found AI genuinely valuable at work.",
+     "measure": "Microsoft shipping agent or code-generation capability in Excel to general availability for Microsoft 365 commercial users in 2026, plus a reputable 2026 survey showing a majority of non-technical knowledge workers rating AI as valuable or useful in their work.",
+     "check": {
+      "critic_accepts": 0.53,
+      "checkable": 0.31
+     }
+    },
+    "standard": {
+     "criterion": "In 2026 agent capability shipped broadly in Excel and reported value among non-technical workers rose.",
+     "measure": "Excel agent GA in 2026 per Microsoft, plus any reputable 2026 survey showing a year-over-year rise in workers reporting AI as useful.",
+     "check": {
+      "critic_accepts": 0.65,
+      "checkable": 0.41
+     }
+    },
+    "lenient": {
+     "criterion": "In 2026 Microsoft shipped agent or coding capability in Excel to general availability.",
+     "measure": "Microsoft release notes or major-outlet reporting dated 2026.",
+     "check": {
+      "critic_accepts": 0.47,
+      "checkable": 0.95
+     }
+    }
+   },
+   "notes": "Spoken; the Excel clause is the concrete mechanism he named, so it anchors every bar.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c41",
+   "kind": "binary",
+   "bars": {
+    "strict": {
+     "criterion": "None of the coding-agent leaders stumbled in 2026: every one is still operating independently with no major shutdown, distressed sale or collapse in revenue.",
+     "measure": "Anthropic (Claude Code), OpenAI (Codex), Google (Gemini CLI), Cursor, Cognition (Windsurf), Replit and Lovable, checked against reputable 2026 reporting for shutdowns, distressed acquisitions, or a reported revenue or usage decline of 50% or more; provisional until December 31.",
+     "check": {
+      "critic_accepts": 0.46,
+      "checkable": 0.48
+     }
+    },
+    "standard": {
+     "criterion": "None of the coding-agent leaders shut down, was acquired in distress or lost most of its users or revenue in 2026.",
+     "measure": "Same list, reputable reporting dated 2026; provisional.",
+     "check": {
+      "critic_accepts": 0.47,
+      "checkable": 0.39
+     }
+    },
+    "lenient": {
+     "criterion": "None of the coding-agent leaders shut down or was sold in distress in 2026.",
+     "measure": "Same list, reputable reporting dated 2026; provisional.",
+     "check": {
+      "critic_accepts": 0.4,
+      "checkable": 0.55
+     }
+    }
+   },
+   "notes": "Guest claim (Reid Hoffman), pinned because it directly contradicts the host's own Cursor call (c31). Graded apart from Every's claims.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c12",
+   "kind": "binary",
+   "bars": {
+    "strict": {
+     "criterion": "Every shipped a unified memory and context layer shared across its apps to users in 2026.",
+     "measure": "An Every announcement or release in 2026 of a memory or context layer used by at least two of Cora, Spiral, Sparkle and Monologue, available to customers; provisional until December 31.",
+     "check": {
+      "critic_accepts": 0.58,
+      "checkable": 0.72
+     }
+    },
+    "standard": {
+     "criterion": "Every publicly launched a cross-app memory or context feature in 2026, as a release or a customer beta.",
+     "measure": "Every announcement, release notes or reporting dated 2026; provisional.",
+     "check": {
+      "critic_accepts": 0.52,
+      "checkable": 0.84
+     }
+    },
+    "lenient": {
+     "criterion": "Every publicly showed progress on a cross-app memory layer in 2026.",
+     "measure": "A shipped feature in one Every app that shares context with another, or a public demo or announcement, dated 2026; provisional.",
+     "check": {
+      "critic_accepts": 0.4,
+      "checkable": 0.61
+     }
+    }
+   },
+   "notes": "A company plan rather than an industry forecast; included because he stated it as what Every will do next year.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c32",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "Popular discourse on AI was much more negative in 2026 than in 2025.",
+     "measure": "Reputable 2026 polling (Pew, Gallup, YouGov or peers) showing the share of US adults with negative views of AI up at least five points from 2025, plus a media-sentiment analysis showing more negative coverage; provisional until December 31.",
+     "check": {
+      "critic_accepts": 0.69,
+      "checkable": 0.44
+     }
+    },
+    "standard": {
+     "criterion": "Popular discourse on AI was more negative in 2026 than in 2025.",
+     "measure": "Reputable 2026 polling showing any decline in favourability versus 2025, or a media-sentiment analysis showing more negative coverage; provisional.",
+     "check": {
+      "critic_accepts": 0.77,
+      "checkable": 0.45
+     }
+    },
+    "lenient": {
+     "criterion": "Major outlets in 2026 described a backlash or a souring public mood toward AI.",
+     "measure": "Two or more major outlets dated 2026.",
+     "check": {
+      "critic_accepts": 0.58,
+      "checkable": 0.61
+     }
+    }
+   },
+   "notes": "Guest claim (Reid Hoffman), pinned for contrast with the hosts' optimism. Graded apart from Every's claims.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c2",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "2026 is the year agents went mainstream: a majority of US adults or US workers used an AI agent during the year.",
+     "measure": "A reputable 2026 survey (Pew, Gallup, McKinsey, Microsoft Work Trend Index or peers) with a majority reporting use of an AI that takes multi-step actions on their behalf; provisional until December 31.",
+     "check": {
+      "critic_accepts": 0.6,
+      "checkable": 0.72
+     }
+    },
+    "standard": {
+     "criterion": "In 2026 agent features reached hundreds of millions of people and the year was described as the one agents went mainstream.",
+     "measure": "Agent features generally available by default in at least two of ChatGPT, Gemini, Copilot, iOS or Android in 2026, plus major-outlet year-end coverage describing agents as mainstream; provisional.",
+     "check": {
+      "critic_accepts": 0.45,
+      "checkable": 0.62
+     }
+    },
+    "lenient": {
+     "criterion": "In 2026 agent features became generally available, not waitlisted, in at least two of the most-used consumer AI products.",
+     "measure": "Release notes or reporting dated 2026 for ChatGPT, Gemini, Copilot, Claude, iOS or Android.",
+     "check": {
+      "critic_accepts": 0.51,
+      "checkable": 0.73
+     }
+    }
+   },
+   "notes": "Editor's one-line rendering of Klaassen's view. 'Mainstream' is given an adoption measure.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c7",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "In 2026 a large share of designers and other visual creatives shipped working software without writing code.",
+     "measure": "A reputable 2026 survey of designers (Figma, Stack Overflow, UX Collective or peers) finding at least a third shipped working apps or features with AI tools without hand-writing code.",
+     "check": {
+      "critic_accepts": 0.65,
+      "checkable": 0.29
+     }
+    },
+    "standard": {
+     "criterion": "In 2026 designers shipped working apps with AI tools at scale.",
+     "measure": "A major design or AI-coding tool reporting millions of designer-built apps or a large rise in non-engineer builders in 2026, or a reputable survey showing a substantial increase, per company data or major outlets.",
+     "check": {
+      "critic_accepts": 0.58,
+      "checkable": 0.47
+     }
+    },
+    "lenient": {
+     "criterion": "Major outlets in 2026 reported designers building and shipping software with AI coding tools as an established trend.",
+     "measure": "Two or more major outlets dated 2026.",
+     "check": {
+      "critic_accepts": 0.61,
+      "checkable": 0.76
+     }
+    }
+   },
+   "notes": "The spoken version (c16, 'designers going crazy') is folded in. 'Now they're going to be able to code' is read as shipping working software, not learning to write code.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c10",
+   "kind": "binary",
+   "bars": {
+    "strict": {
+     "criterion": "We will not have AGI in 2027.",
+     "measure": "No major lab has declared AGI achieved with broad agreement among independent experts, per reputable reporting; open until 2027-12-31, so any 2026 grade is provisional and can only record that the claim has not been falsified so far.",
+     "check": {
+      "critic_accepts": 0.56,
+      "checkable": 0.19
+     }
+    },
+    "standard": {
+     "criterion": "We will not have AGI in 2027.",
+     "measure": "Same; provisional until 2027-12-31.",
+     "check": {
+      "critic_accepts": 0.64,
+      "checkable": 0.17
+     }
+    },
+    "lenient": {
+     "criterion": "We will not have AGI in 2027.",
+     "measure": "Same; provisional until 2027-12-31.",
+     "check": {
+      "critic_accepts": 0.65,
+      "checkable": 0.2
+     }
+    }
+   },
+   "notes": "Binary and about 2027, so the three bars are identical and the horizon is a year past the target year. Kept because it is one of the few hard-edged claims in the set.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c29",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "In 2026 labs adopted training approaches and architectures that let agents go off and do things on their own for much longer.",
+     "measure": "At least two major labs publicly describing training for longer autonomous operation in 2026 (model cards, research posts), and an independent measurement (METR's time-horizon work or similar) showing the autonomous task length frontier at least doubled during 2026.",
+     "check": {
+      "critic_accepts": 0.59,
+      "checkable": 0.43
+     }
+    },
+    "standard": {
+     "criterion": "In 2026 agents' autonomous task horizons grew substantially, or major labs shipped models marketed on longer independent operation.",
+     "measure": "An independent measurement showing roughly a doubling in 2026, or two major labs' releases dated 2026 marketed on autonomous multi-hour operation.",
+     "check": {
+      "critic_accepts": 0.71,
+      "checkable": 0.64
+     }
+    },
+    "lenient": {
+     "criterion": "In 2026 at least one major lab shipped a model marketed on longer autonomous agent operation.",
+     "measure": "Release notes or announcement dated 2026.",
+     "check": {
+      "critic_accepts": 0.49,
+      "checkable": 0.85
+     }
+    }
+   },
+   "notes": "He called it 'a very vague prediction'; the measure gives it an edge via independent time-horizon measurements.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c26",
+   "kind": "binary",
+   "bars": {
+    "strict": {
+     "criterion": "In 2026 several large companies announced layoffs and blamed them on AI.",
+     "measure": "At least five companies with 1,000 or more employees announcing layoffs in 2026 and explicitly attributing them to AI, per company statements or major outlets.",
+     "check": {
+      "critic_accepts": 0.64,
+      "checkable": 0.92
+     }
+    },
+    "standard": {
+     "criterion": "In 2026 multiple large companies announced layoffs and blamed them on AI.",
+     "measure": "At least three such companies, per company statements or major outlets dated 2026.",
+     "check": {
+      "critic_accepts": 0.76,
+      "checkable": 0.93
+     }
+    },
+    "lenient": {
+     "criterion": "In 2026 at least one large company explicitly blamed AI for layoffs.",
+     "measure": "One company with 1,000 or more employees, per its statement or a major outlet dated 2026.",
+     "check": {
+      "critic_accepts": 0.75,
+      "checkable": 0.94
+     }
+    }
+   },
+   "notes": "'Definitely' and 'layoffs that companies blame on AI' are his words; the bars count companies.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c27",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "Most 2026 layoffs blamed on AI were really driven by the underlying business, with AI used as the excuse.",
+     "measure": "A reputable 2026 analysis (Challenger, an academic or Fed study, or a major-outlet investigation) concluding that most AI-attributed layoffs of 2026 were primarily driven by other factors.",
+     "check": {
+      "critic_accepts": 0.75,
+      "checkable": 0.13
+     }
+    },
+    "standard": {
+     "criterion": "Reputable analysis in 2026 found that AI-attributed layoffs were largely driven by other factors.",
+     "measure": "At least one reputable analysis or investigation dated 2026 reaching that conclusion ('AI-washing').",
+     "check": {
+      "critic_accepts": 0.63,
+      "checkable": 0.5
+     }
+    },
+    "lenient": {
+     "criterion": "In 2026 economists or analysts publicly doubted that AI was the real cause of layoffs announced as AI-driven.",
+     "measure": "Major-outlet reporting of such scepticism dated 2026.",
+     "check": {
+      "critic_accepts": 0.6,
+      "checkable": 0.67
+     }
+    }
+   },
+   "notes": "Judging the true cause of a layoff is contestable; the bars rely on independent analysis rather than our own reading.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c13",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "Every hired in 2026 but stayed small, adding only a handful of people.",
+     "measure": "Net headcount growth in 2026 under 10 people, from about 20 at the end of 2025, per Every's statements, team page or LinkedIn; provisional until December 31.",
+     "check": {
+      "critic_accepts": 0.44,
+      "checkable": 0.38
+     }
+    },
+    "standard": {
+     "criterion": "Every added staff in 2026 and remained a small company.",
+     "measure": "Headcount at the latest 2026 reading above end-2025 and below 35; provisional.",
+     "check": {
+      "critic_accepts": 0.3,
+      "checkable": 0.2
+     }
+    },
+    "lenient": {
+     "criterion": "Every remained a small company through 2026.",
+     "measure": "Headcount at the latest 2026 reading below 50; provisional.",
+     "check": {
+      "critic_accepts": 0.31,
+      "checkable": 0.36
+     }
+    }
+   },
+   "notes": "A company plan. 'A ton' is undefined; the bars give it numbers relative to the roughly 20 people Every had.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c11",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "In 2026 engineers who use AI as an accelerant without reinventing their craft still had a home and a job: traditional software roles did not shrink meaningfully.",
+     "measure": "BLS software-developer employment and Indeed software-development postings both down less than 10% year over year at the latest 2026 reading, with traditional engineering still the majority of software postings.",
+     "check": {
+      "critic_accepts": 0.54,
+      "checkable": 0.58
+     }
+    },
+    "standard": {
+     "criterion": "In 2026 traditional software-engineering roles remained widely available and were not in collapse.",
+     "measure": "BLS or Indeed data showing a year-over-year decline of less than 20% in software-developer employment or postings at the latest 2026 reading.",
+     "check": {
+      "critic_accepts": 0.72,
+      "checkable": 0.65
+     }
+    },
+    "lenient": {
+     "criterion": "In 2026 traditional software engineers were still being hired at scale.",
+     "measure": "Indeed or LinkedIn postings data showing substantial continued hiring for software developers in 2026.",
+     "check": {
+      "critic_accepts": 0.64,
+      "checkable": 0.66
+     }
+    }
+   },
+   "notes": "'A very long time' has no end date, so a 2026 check is weak by nature; the bars test only that the job category visibly persisted this year.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c18",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "AI deepfakes were a significant, widely covered part of the 2026 midterms.",
+     "measure": "At least three documented deepfake incidents involving candidates in major 2026 races covered by major outlets, at least one with reach of a million views or an official response (platform takedown, regulator or campaign action); open until November 3, so provisional.",
+     "check": {
+      "critic_accepts": 0.53,
+      "checkable": 0.58
+     }
+    },
+    "standard": {
+     "criterion": "Multiple documented deepfake incidents involving 2026 midterm candidates were covered by major outlets.",
+     "measure": "Two or more incidents, major-outlet reporting dated 2026; provisional.",
+     "check": {
+      "critic_accepts": 0.27,
+      "checkable": 0.88
+     }
+    },
+    "lenient": {
+     "criterion": "At least one documented deepfake incident involving a 2026 midterm candidate was covered by a major outlet.",
+     "measure": "One incident, major-outlet reporting dated 2026; provisional.",
+     "check": {
+      "critic_accepts": 0.29,
+      "checkable": 0.91
+     }
+    }
+   },
+   "notes": "'Kind of scary' is read as significant and widely covered. Horizon is election day.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c22",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "Demand for traditional, code-writing software engineering declined in 2026, with AI coding agents named as a cause.",
+     "measure": "Indeed software-development postings and BLS software-developer employment both lower at the latest 2026 reading than a year earlier, plus major-outlet reporting attributing part of the decline to AI coding agents.",
+     "check": {
+      "critic_accepts": 0.29,
+      "checkable": 0.57
+     }
+    },
+    "standard": {
+     "criterion": "Demand for traditional software engineering declined in 2026.",
+     "measure": "Indeed software-development postings or BLS software-developer employment lower at the latest 2026 reading than a year earlier.",
+     "check": {
+      "critic_accepts": 0.34,
+      "checkable": 0.56
+     }
+    },
+    "lenient": {
+     "criterion": "Reputable 2026 data or reporting described a decline in demand for traditional code-writing engineering roles.",
+     "measure": "Indeed, LinkedIn, BLS or major-outlet reporting dated 2026.",
+     "check": {
+      "critic_accepts": 0.56,
+      "checkable": 0.67
+     }
+    }
+   },
+   "notes": "'Slow and steady decline' is a multi-year claim; 2026 is one data point and the grade says only whether the year was consistent with it.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c31",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "Cursor stumbled in 2026: its growth stalled or reversed, or it took a down round, a distressed sale or a strategy-driven leadership exit.",
+     "measure": "Reputable 2026 reporting (The Information, Bloomberg, Reuters, WSJ or peers) of flat or falling revenue or usage, a down round, a distressed acquisition, or a senior exit tied to strategy; provisional until December 31.",
+     "check": {
+      "critic_accepts": 0.26,
+      "checkable": 0.61
+     }
+    },
+    "standard": {
+     "criterion": "In 2026 Cursor lost momentum to agent-first coding tools, with slowing growth or a strategic pivot away from the IDE.",
+     "measure": "Reputable 2026 reporting describing slowing growth, share loss to Claude Code or Codex, or a pivot; provisional.",
+     "check": {
+      "critic_accepts": 0.48,
+      "checkable": 0.4
+     }
+    },
+    "lenient": {
+     "criterion": "In 2026 Cursor was described as under competitive pressure from agent-first coding tools.",
+     "measure": "Reputable 2026 reporting.",
+     "check": {
+      "critic_accepts": 0.22,
+      "checkable": 0.47
+     }
+    }
+   },
+   "notes": "He gave a 'couple years' horizon, so a 2026 grade is partial. Pairs with Hoffman's c41, which predicts none of the leaders stumble.",
+   "revisions": []
+  }
+ ],
+ "grades": [
+  {
+   "claim_id": "c30",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "no evidence gathered",
+   "met_p": null,
+   "contradicted_p": null,
+   "strength": null,
+   "evidence_ids": [],
+   "grader": {
+    "provider": "none"
+   },
+   "provisional": true
+  },
+  {
+   "claim_id": "c30",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.35,
+   "contradicted_p": 0.16,
+   "strength": 1.45,
+   "strength_probs": {
+    "0": 0.03,
+    "1": 0.5,
+    "2": 0.47
+   },
+   "strength_conf": 0.25,
+   "evidence_ids": [
+    "e1",
+    "e3"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "5cade160953d1b320e764fae961ca92d846c4a5694d63342c0e31a140455f793",
+   "provisional": true
+  },
+  {
+   "claim_id": "c30",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.74,
+   "contradicted_p": 0.07,
+   "strength": 1.44,
+   "strength_probs": {
+    "0": 0.02,
+    "1": 0.52,
+    "2": 0.46
+   },
+   "strength_conf": 0.28,
+   "evidence_ids": [
+    "e1",
+    "e3",
+    "e2"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "e1e6fe28e0b21917a5275fd38ea01c117ba1ba6e4fa7ccc6b992380c43199253",
+   "provisional": true
+  },
+  {
+   "claim_id": "c8",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.05,
+   "contradicted_p": 0.29,
+   "strength": 1.67,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.33,
+    "2": 0.67
+   },
+   "strength_conf": 0.5,
+   "evidence_ids": [
+    "e6",
+    "e4",
+    "e97"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "431e7c0f630cf74327a9083eaea9a8b3d4d2058921f6ebdee26dac4f0f2773d6",
+   "provisional": true
+  },
+  {
+   "claim_id": "c8",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.08,
+   "contradicted_p": 0.22,
+   "strength": 1.61,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.38,
+    "2": 0.62
+   },
+   "strength_conf": 0.43,
+   "evidence_ids": [
+    "e6",
+    "e7",
+    "e5",
+    "e97"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "9e8a8a7e1008d36182a0f2890e2eaaa059221490a4e191997f4724d1ae47a784",
+   "provisional": true
+  },
+  {
+   "claim_id": "c8",
+   "bar": "lenient",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.02,
+   "contradicted_p": 0.55,
+   "strength": 1.11,
+   "strength_probs": {
+    "0": 0.02,
+    "1": 0.85,
+    "2": 0.13
+   },
+   "strength_conf": 0.78,
+   "evidence_ids": [
+    "e7",
+    "e5"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "e7fc6eced6649e3a00a75f9f117761bee613e69116ef59e200c6170066f57da1",
+   "provisional": true
+  },
+  {
+   "claim_id": "c14",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.02,
+   "contradicted_p": 0.51,
+   "strength": 1.04,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.94,
+    "2": 0.05
+   },
+   "strength_conf": 0.91,
+   "evidence_ids": [
+    "e9"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "c09441aded0eaf61fca5b7a97612e39d24fa3f65c293bcf250d11b9337b56b24",
+   "provisional": true
+  },
+  {
+   "claim_id": "c14",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.05,
+   "contradicted_p": 0.17,
+   "strength": 1.23,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.75,
+    "2": 0.24
+   },
+   "strength_conf": 0.62,
+   "evidence_ids": [
+    "e9",
+    "e8"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "834c00191212261b277464731a157fe6c6898cac3927acd603ea226509d1ce8f",
+   "provisional": true
+  },
+  {
+   "claim_id": "c14",
+   "bar": "lenient",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.28,
+   "contradicted_p": 0.04,
+   "strength": 1.02,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.98,
+    "2": 0.02
+   },
+   "strength_conf": 0.97,
+   "evidence_ids": [
+    "e8"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "32569ea3f37a336b52e1d968c0bbfd7b035f702d916246ae67e1e304462cbdf1",
+   "provisional": true
+  },
+  {
+   "claim_id": "c6",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.17,
+   "contradicted_p": 0.06,
+   "strength": 1.07,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.93,
+    "2": 0.07
+   },
+   "strength_conf": 0.9,
+   "evidence_ids": [
+    "e10",
+    "e11"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "ea5c6325c2564abd1fe7695a6c347debe2958a86f964f978ba224dd0fde6dadf",
+   "provisional": true
+  },
+  {
+   "claim_id": "c6",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.62,
+   "contradicted_p": 0.07,
+   "strength": 1.27,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.72,
+    "2": 0.28
+   },
+   "strength_conf": 0.58,
+   "evidence_ids": [
+    "e10",
+    "e13"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "da138acb8198deff6405e830f63eb618036ac8871f1755b2ae43fce14b37f87d",
+   "provisional": true
+  },
+  {
+   "claim_id": "c6",
+   "bar": "lenient",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.48,
+   "contradicted_p": 0.07,
+   "strength": 1.89,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.1,
+    "2": 0.9
+   },
+   "strength_conf": 0.85,
+   "evidence_ids": [
+    "e12",
+    "e10",
+    "e13"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "edf5e809fff0bb81054f8f3c2ccfb56a303b37611638bbcba780faaf08db56fe",
+   "provisional": true
+  },
+  {
+   "claim_id": "c3",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.22,
+   "contradicted_p": 0.16,
+   "strength": 1.41,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.58,
+    "2": 0.42
+   },
+   "strength_conf": 0.37,
+   "evidence_ids": [
+    "e18",
+    "e14",
+    "e15"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "159404e2897729698fae727d7265824e2e8adef3c7b9e47c72f0dde45a98395d",
+   "provisional": true
+  },
+  {
+   "claim_id": "c3",
+   "bar": "standard",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.73,
+   "contradicted_p": 0.04,
+   "strength": 1.96,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.03,
+    "2": 0.97
+   },
+   "strength_conf": 0.95,
+   "evidence_ids": [
+    "e17",
+    "e18",
+    "e14",
+    "e15",
+    "e16"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "d5134dfa06a6ca336b4053adcc896f7e8bcf03a702b983a6aede4c57fad89105",
+   "provisional": true
+  },
+  {
+   "claim_id": "c3",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.8,
+   "contradicted_p": 0.02,
+   "strength": 1.92,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.07,
+    "2": 0.93
+   },
+   "strength_conf": 0.9,
+   "evidence_ids": [
+    "e17",
+    "e14",
+    "e15",
+    "e16"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "8eacfbe0205154e07fbca890815d27b42ec666847598052e91b53cdff572f604",
+   "provisional": true
+  },
+  {
+   "claim_id": "c5",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.02,
+   "contradicted_p": 0.07,
+   "strength": 1.0,
+   "strength_probs": {
+    "0": 0.02,
+    "1": 0.96,
+    "2": 0.02
+   },
+   "strength_conf": 0.94,
+   "evidence_ids": [
+    "e21"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "dade5b532ea14ff23c63c37e623df2f81930a0bca732a78d8a2bee05eefbe67e",
+   "provisional": true
+  },
+  {
+   "claim_id": "c5",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.56,
+   "contradicted_p": 0.07,
+   "strength": 1.7,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.28,
+    "2": 0.71
+   },
+   "strength_conf": 0.55,
+   "evidence_ids": [
+    "e19",
+    "e22",
+    "e21",
+    "e20"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "2a0858bdd6c527371e998daa06d5097efd0e702446ed9f0e673f0b6fa26f27ad",
+   "provisional": true
+  },
+  {
+   "claim_id": "c5",
+   "bar": "lenient",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.65,
+   "contradicted_p": 0.04,
+   "strength": 1.6,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.38,
+    "2": 0.61
+   },
+   "strength_conf": 0.4,
+   "evidence_ids": [
+    "e19",
+    "e22",
+    "e20",
+    "e94"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "2b04d3153a53defa6e792efc4420f1e15dc0019cdd56a5f97863be9b8af0756a",
+   "provisional": true
+  },
+  {
+   "claim_id": "c1",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.07,
+   "contradicted_p": 0.35,
+   "strength": 1.7,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.3,
+    "2": 0.7
+   },
+   "strength_conf": 0.55,
+   "evidence_ids": [
+    "e25",
+    "e26"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "3de623cb5c226db37c88322fdf24b7219278c2cb3db513d402d07cb4f262aee7",
+   "provisional": true
+  },
+  {
+   "claim_id": "c1",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.62,
+   "contradicted_p": 0.06,
+   "strength": 1.97,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.03,
+    "2": 0.97
+   },
+   "strength_conf": 0.95,
+   "evidence_ids": [
+    "e23",
+    "e24",
+    "e25"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "35ba4501e5870193828490f2f1999a219dde0382aa44dde34d7df007e4598df6",
+   "provisional": true
+  },
+  {
+   "claim_id": "c1",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.73,
+   "contradicted_p": 0.02,
+   "strength": 1.95,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.05,
+    "2": 0.95
+   },
+   "strength_conf": 0.93,
+   "evidence_ids": [
+    "e23",
+    "e24"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "69f3e86db148cda03e11c7da0b086beb7166bcce48cacba1d16f2df39fc71472",
+   "provisional": true
+  },
+  {
+   "claim_id": "c28",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.68,
+   "contradicted_p": 0.03,
+   "strength": 1.98,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.02,
+    "2": 0.98
+   },
+   "strength_conf": 0.97,
+   "evidence_ids": [
+    "e27",
+    "e28",
+    "e29"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "6b90372a9da6e973d5273ab630a59b9f5944c8c4395af4f67bb142644f7bace7",
+   "provisional": true
+  },
+  {
+   "claim_id": "c28",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.52,
+   "contradicted_p": 0.04,
+   "strength": 1.96,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.03,
+    "2": 0.97
+   },
+   "strength_conf": 0.95,
+   "evidence_ids": [
+    "e27",
+    "e28",
+    "e29",
+    "e30"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "9b3a978379255dc3c01c822bc3aba7ecf2f1fd4a0f7c32097a7a581d0a5eb0d9",
+   "provisional": true
+  },
+  {
+   "claim_id": "c28",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.98,
+   "contradicted_p": 0.01,
+   "strength": 1.98,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.02,
+    "2": 0.98
+   },
+   "strength_conf": 0.97,
+   "evidence_ids": [
+    "e27",
+    "e28"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "987f6b5fc4890becc7bbc7ad58a441559b4ea547056c0d582c04b926c45882b2",
+   "provisional": true
+  },
+  {
+   "claim_id": "c41",
+   "bar": "strict",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.11,
+   "contradicted_p": 0.96,
+   "strength": 1.87,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.13,
+    "2": 0.87
+   },
+   "strength_conf": 0.8,
+   "evidence_ids": [
+    "e35",
+    "e33",
+    "e31",
+    "e36",
+    "e34"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "46ffad6c90b56575fa99c803af9fde4dbe396726ed7ce696caeaa954f7a61a7d",
+   "provisional": true
+  },
+  {
+   "claim_id": "c41",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.38,
+   "contradicted_p": 0.4,
+   "strength": 1.92,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.07,
+    "2": 0.93
+   },
+   "strength_conf": 0.9,
+   "evidence_ids": [
+    "e35",
+    "e33",
+    "e32",
+    "e36",
+    "e34"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "092cd35e2c3083a556295ed8ca1c3c824890584346f06037abe310cf563dc53d",
+   "provisional": true
+  },
+  {
+   "claim_id": "c41",
+   "bar": "lenient",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.35,
+   "contradicted_p": 0.32,
+   "strength": 1.92,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.06,
+    "2": 0.93
+   },
+   "strength_conf": 0.88,
+   "evidence_ids": [
+    "e35",
+    "e33",
+    "e32",
+    "e36",
+    "e34"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "76d908c6c576316ee7d49fa5c48e693b65400a4b5d79449cea2672d33a5aaef9",
+   "provisional": true
+  },
+  {
+   "claim_id": "c12",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.02,
+   "contradicted_p": 0.05,
+   "strength": 0.96,
+   "strength_probs": {
+    "0": 0.05,
+    "1": 0.94,
+    "2": 0.01
+   },
+   "strength_conf": 0.91,
+   "evidence_ids": [
+    "e42"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "c7a8982434cc649735e74b1e599bad608b8e89c41dbb5e1b2578c7a802b4d398",
+   "provisional": true
+  },
+  {
+   "claim_id": "c12",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.04,
+   "contradicted_p": 0.52,
+   "strength": 1.01,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.98,
+    "2": 0.01
+   },
+   "strength_conf": 0.97,
+   "evidence_ids": [
+    "e42",
+    "e45"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "f964cd079001710dd778272728f6c445e3eb00859ba8cbb3ae1fd8060f688ce5",
+   "provisional": true
+  },
+  {
+   "claim_id": "c12",
+   "bar": "lenient",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.43,
+   "contradicted_p": 0.37,
+   "strength": 1.13,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.87,
+    "2": 0.13
+   },
+   "strength_conf": 0.8,
+   "evidence_ids": [
+    "e42",
+    "e45",
+    "e43",
+    "e44"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "e51282d1843491ab79ded340b54f808259a30fa4bde5e4e1adc3724a455ae10f",
+   "provisional": true
+  },
+  {
+   "claim_id": "c32",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.35,
+   "contradicted_p": 0.46,
+   "strength": 1.83,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.17,
+    "2": 0.83
+   },
+   "strength_conf": 0.74,
+   "evidence_ids": [
+    "e48",
+    "e47"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "7b75081a4389cb49bafab24a948f4fb158235475cdb3b595e1c95fc3f0f00587",
+   "provisional": true
+  },
+  {
+   "claim_id": "c32",
+   "bar": "standard",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.95,
+   "contradicted_p": 0.03,
+   "strength": 1.94,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.05,
+    "2": 0.95
+   },
+   "strength_conf": 0.93,
+   "evidence_ids": [
+    "e48",
+    "e49",
+    "e46"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "c270654ad2d680aa4d9639be230cfb914b75c73fc7279099fadbbf65eb0042de",
+   "provisional": true
+  },
+  {
+   "claim_id": "c32",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.93,
+   "contradicted_p": 0.02,
+   "strength": 1.98,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.02,
+    "2": 0.98
+   },
+   "strength_conf": 0.97,
+   "evidence_ids": [
+    "e48",
+    "e49",
+    "e46",
+    "e51",
+    "e50"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "267b7dcc1a88065abea6158dd074dfdfa12f84edbadee9f3183a675c9a5bed34",
+   "provisional": true
+  },
+  {
+   "claim_id": "c2",
+   "bar": "strict",
+   "verdict": "not_met",
+   "reason": "implied: the standard bar is not met",
+   "met_p": 0.09,
+   "contradicted_p": 0.21,
+   "strength": 1.47,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.51,
+    "2": 0.48
+   },
+   "strength_conf": 0.27,
+   "evidence_ids": [
+    "e56",
+    "e55"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "bbc170ee21cf9f1d65687814a2d68ce6bd04f4f8188d5de615aeaa822504a62a",
+   "provisional": true,
+   "implied_from": "standard"
+  },
+  {
+   "claim_id": "c2",
+   "bar": "standard",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.09,
+   "contradicted_p": 0.76,
+   "strength": 1.89,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.1,
+    "2": 0.9
+   },
+   "strength_conf": 0.85,
+   "evidence_ids": [
+    "e52",
+    "e53",
+    "e54"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "c8b29da56c67f3e6c4baeaed8122011664631f58f83a0e9a2f52696bf0a09d79",
+   "provisional": true
+  },
+  {
+   "claim_id": "c2",
+   "bar": "lenient",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.57,
+   "contradicted_p": 0.25,
+   "strength": 1.88,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.12,
+    "2": 0.88
+   },
+   "strength_conf": 0.82,
+   "evidence_ids": [
+    "e52",
+    "e53",
+    "e54"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "51b79080373ef4235dec49f9e8486a5aa7cd868776ed04560660951ad8a3127f",
+   "provisional": true
+  },
+  {
+   "claim_id": "c7",
+   "bar": "strict",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.71,
+   "contradicted_p": 0.03,
+   "strength": 1.06,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.94,
+    "2": 0.06
+   },
+   "strength_conf": 0.91,
+   "evidence_ids": [
+    "e57"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "5427497a8e6c6ac2968e34de751888501553a4a416aae2e7e082fd81742897f3",
+   "provisional": true
+  },
+  {
+   "claim_id": "c7",
+   "bar": "standard",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.78,
+   "contradicted_p": 0.02,
+   "strength": 1.96,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.03,
+    "2": 0.97
+   },
+   "strength_conf": 0.95,
+   "evidence_ids": [
+    "e58",
+    "e57",
+    "e60",
+    "e59"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "c5bc16fba485233ab227092b01661b65f679d7e5a9964971c784dfa44294f9bc",
+   "provisional": true
+  },
+  {
+   "claim_id": "c7",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "implied: the strict bar is met",
+   "met_p": 0.62,
+   "contradicted_p": 0.06,
+   "strength": 1.95,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.05,
+    "2": 0.95
+   },
+   "strength_conf": 0.93,
+   "evidence_ids": [
+    "e58",
+    "e60",
+    "e61"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "be60ce8d0c42d07d99b105aedccb48553e7fbbe5ff14372b774dfdd71eb0b17c",
+   "provisional": true,
+   "implied_from": "strict"
+  },
+  {
+   "claim_id": "c10",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.49,
+   "contradicted_p": 0.15,
+   "strength": 1.88,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.11,
+    "2": 0.89
+   },
+   "strength_conf": 0.83,
+   "evidence_ids": [
+    "e62",
+    "e63",
+    "e64"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "251425f46fa238f06075095e34a4e0368f9aedde3451e385828be7e4efebc7c0",
+   "provisional": true
+  },
+  {
+   "claim_id": "c10",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.1,
+   "contradicted_p": 0.16,
+   "strength": 1.85,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.12,
+    "2": 0.87
+   },
+   "strength_conf": 0.79,
+   "evidence_ids": [
+    "e62",
+    "e63",
+    "e64"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "75a7b9cc58e6542f0b7d4ab425ad09600f8ca3b7f8e51ba266ec871fc59ade8f",
+   "provisional": true
+  },
+  {
+   "claim_id": "c10",
+   "bar": "lenient",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.13,
+   "contradicted_p": 0.14,
+   "strength": 1.82,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.15,
+    "2": 0.84
+   },
+   "strength_conf": 0.74,
+   "evidence_ids": [
+    "e62",
+    "e63",
+    "e64"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "1bf7169b2b0aed0d3d7cbc44a1d0b480b8848fc3b7b45424585b4eafbb4b79c2",
+   "provisional": true
+  },
+  {
+   "claim_id": "c29",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.03,
+   "contradicted_p": 0.3,
+   "strength": 1.09,
+   "strength_probs": {
+    "0": 0.05,
+    "1": 0.81,
+    "2": 0.14
+   },
+   "strength_conf": 0.71,
+   "evidence_ids": [
+    "e67",
+    "e68"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "30677e17721958c38507c8f2836e5eb4750a3ab0294f486ca0174254f73343fa",
+   "provisional": true
+  },
+  {
+   "claim_id": "c29",
+   "bar": "standard",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.79,
+   "contradicted_p": 0.06,
+   "strength": 1.96,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.04,
+    "2": 0.96
+   },
+   "strength_conf": 0.94,
+   "evidence_ids": [
+    "e67",
+    "e65",
+    "e93",
+    "e68"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "54efb79dfdf3937570d42dab46c109f8867dfe7cfb743dbf86a9e0e9b7d53a84",
+   "provisional": true
+  },
+  {
+   "claim_id": "c29",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.95,
+   "contradicted_p": 0.01,
+   "strength": 1.99,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.01,
+    "2": 0.99
+   },
+   "strength_conf": 0.98,
+   "evidence_ids": [
+    "e65",
+    "e66",
+    "e93"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "659d293ca67ec8b1b11ef2b0f0b10189d0341a8522224bb92d02fd31489c9432",
+   "provisional": true
+  },
+  {
+   "claim_id": "c26",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.49,
+   "contradicted_p": 0.05,
+   "strength": 1.95,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.05,
+    "2": 0.95
+   },
+   "strength_conf": 0.93,
+   "evidence_ids": [
+    "e69",
+    "e70",
+    "e73",
+    "e72",
+    "e71"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "e023b7ebe4f22f41e552d383aee82ceb5967e31cd1f5423ade0c86070ebc4e3d",
+   "provisional": true
+  },
+  {
+   "claim_id": "c26",
+   "bar": "standard",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.91,
+   "contradicted_p": 0.02,
+   "strength": 1.98,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.02,
+    "2": 0.98
+   },
+   "strength_conf": 0.97,
+   "evidence_ids": [
+    "e69",
+    "e70",
+    "e72",
+    "e71"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "4a8d940b36c0a50947aa015bbbd9193c9d9075955e98ff42776d7719d03057a6",
+   "provisional": true
+  },
+  {
+   "claim_id": "c26",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.93,
+   "contradicted_p": 0.01,
+   "strength": 1.93,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.07,
+    "2": 0.93
+   },
+   "strength_conf": 0.9,
+   "evidence_ids": [
+    "e69",
+    "e70",
+    "e72",
+    "e71"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "a92b0e3f19f4814688b33719a4497d09059b700302a397842f148f39b458743d",
+   "provisional": true
+  },
+  {
+   "claim_id": "c27",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.02,
+   "contradicted_p": 0.07,
+   "strength": 0.97,
+   "strength_probs": {
+    "0": 0.03,
+    "1": 0.97,
+    "2": 0.0
+   },
+   "strength_conf": 0.95,
+   "evidence_ids": [
+    "e77"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "06942f1fd5a479feb0a996cc627690865f5bf4a23c2a6627f56fea3696249807",
+   "provisional": true
+  },
+  {
+   "claim_id": "c27",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.62,
+   "contradicted_p": 0.1,
+   "strength": 1.33,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.66,
+    "2": 0.34
+   },
+   "strength_conf": 0.49,
+   "evidence_ids": [
+    "e77",
+    "e76",
+    "e74"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "243340c35603160ab057d5d4a5eb3e8387c486eef41ce7b4a1a53593da76eaa7",
+   "provisional": true
+  },
+  {
+   "claim_id": "c27",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.9,
+   "contradicted_p": 0.05,
+   "strength": 1.84,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.16,
+    "2": 0.84
+   },
+   "strength_conf": 0.76,
+   "evidence_ids": [
+    "e76",
+    "e74",
+    "e75"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "c316bfd18e28728c885c4abbe8d204e37a8cbd4f7323ebe205865f35d4a6906b",
+   "provisional": true
+  },
+  {
+   "claim_id": "c13",
+   "bar": "strict",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.07,
+   "contradicted_p": 0.94,
+   "strength": 1.06,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.9400000000000001,
+    "2": 0.06
+   },
+   "strength_conf": 0.91,
+   "evidence_ids": [
+    "e80",
+    "e95",
+    "e78"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "bac1597f3a48c2d43295f7599913c368edfda4600d409cbfd8d46d32c75c065b",
+   "provisional": true
+  },
+  {
+   "claim_id": "c13",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.67,
+   "contradicted_p": 0.04,
+   "strength": 1.08,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.92,
+    "2": 0.08
+   },
+   "strength_conf": 0.88,
+   "evidence_ids": [
+    "e80",
+    "e96",
+    "e79"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "5a36fd47382748ab5abb9a33ab0fc8dd210d6a3906aeb583feea953163df93d0",
+   "provisional": true
+  },
+  {
+   "claim_id": "c13",
+   "bar": "lenient",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.38,
+   "contradicted_p": 0.05,
+   "strength": 1.05,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.94,
+    "2": 0.06
+   },
+   "strength_conf": 0.91,
+   "evidence_ids": [
+    "e96",
+    "e79"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "528d45bad9258c11573519680e2004e3971977017959ad792710320e02256f21",
+   "provisional": true
+  },
+  {
+   "claim_id": "c11",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.31,
+   "contradicted_p": 0.12,
+   "strength": 1.65,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.34,
+    "2": 0.66
+   },
+   "strength_conf": 0.49,
+   "evidence_ids": [
+    "e82",
+    "e81"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "8346080df48690d5100aaf1a14241785a6f58a8fd17443d109d9d72b58b9de5f",
+   "provisional": true
+  },
+  {
+   "claim_id": "c11",
+   "bar": "standard",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.94,
+   "contradicted_p": 0.07,
+   "strength": 1.95,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.04,
+    "2": 0.96
+   },
+   "strength_conf": 0.94,
+   "evidence_ids": [
+    "e82",
+    "e81",
+    "e83"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "8f3a03fd24239af6ee63e9c86b4fc3619c66aee8296d8ed07056429dd2dc2533",
+   "provisional": true
+  },
+  {
+   "claim_id": "c11",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.95,
+   "contradicted_p": 0.01,
+   "strength": 1.98,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.02,
+    "2": 0.98
+   },
+   "strength_conf": 0.97,
+   "evidence_ids": [
+    "e81",
+    "e83"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "20ac1800a6d316756a823440662bf68c80a2fce3a905c3687181fda2226eeb0e",
+   "provisional": true
+  },
+  {
+   "claim_id": "c18",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.18,
+   "contradicted_p": 0.08,
+   "strength": 1.89,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.11,
+    "2": 0.89
+   },
+   "strength_conf": 0.83,
+   "evidence_ids": [
+    "e89",
+    "e91",
+    "e92"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "aefdd1419f4a8cfb86c852c2246a07405b42bfd3c4de76fc73b161946a9339ea",
+   "provisional": true
+  },
+  {
+   "claim_id": "c18",
+   "bar": "standard",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.95,
+   "contradicted_p": 0.02,
+   "strength": 1.98,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.02,
+    "2": 0.98
+   },
+   "strength_conf": 0.97,
+   "evidence_ids": [
+    "e88",
+    "e89",
+    "e90",
+    "e92"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "351f01f13ae8e24a44127bfa6d79acb165fd8ad66b9768e8159f7f2427366781",
+   "provisional": true
+  },
+  {
+   "claim_id": "c18",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.97,
+   "contradicted_p": 0.01,
+   "strength": 1.94,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.06,
+    "2": 0.94
+   },
+   "strength_conf": 0.91,
+   "evidence_ids": [
+    "e88",
+    "e89",
+    "e90"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "e93e3145e3e695f35207af0b00f3423f9edd613b9bdad9ef8abe802551427712",
+   "provisional": true
+  },
+  {
+   "claim_id": "c22",
+   "bar": "strict",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.01,
+   "contradicted_p": 0.98,
+   "strength": 1.7,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.29,
+    "2": 0.7
+   },
+   "strength_conf": 0.53,
+   "evidence_ids": [
+    "e84"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "281843a4986c8f9a964aa3ed74a8bb89942134f03142c39b12b67a8b1d4e662a",
+   "provisional": true
+  },
+  {
+   "claim_id": "c22",
+   "bar": "standard",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.63,
+   "contradicted_p": 0.97,
+   "strength": 1.86,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.14,
+    "2": 0.86
+   },
+   "strength_conf": 0.79,
+   "evidence_ids": [
+    "e86",
+    "e84",
+    "e87"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "60eab6b490e5c9c16d976232f3fda4272c4b53cd4a8236dca68a1841a84ead80",
+   "provisional": true
+  },
+  {
+   "claim_id": "c22",
+   "bar": "lenient",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.45,
+   "contradicted_p": 0.42,
+   "strength": 1.52,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.47,
+    "2": 0.53
+   },
+   "strength_conf": 0.3,
+   "evidence_ids": [
+    "e85",
+    "e86",
+    "e87"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "36247e5f018aaf12efd4728f6c4f8ce0eabd68c6eed53b48c4fd822819b01ecf",
+   "provisional": true
+  },
+  {
+   "claim_id": "c31",
+   "bar": "strict",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.11,
+   "contradicted_p": 0.94,
+   "strength": 1.88,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.1,
+    "2": 0.89
+   },
+   "strength_conf": 0.82,
+   "evidence_ids": [
+    "e37",
+    "e38",
+    "e40"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "20deacf1635bd831c18f4bdae8bdebe545b18b78faf0e9d5ff3d4ce2eb75c669",
+   "provisional": true
+  },
+  {
+   "claim_id": "c31",
+   "bar": "standard",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.33,
+   "contradicted_p": 0.9,
+   "strength": 1.85,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.13,
+    "2": 0.86
+   },
+   "strength_conf": 0.78,
+   "evidence_ids": [
+    "e41",
+    "e37",
+    "e38"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "cb6c8289985dda8c9bc14730b197f78d9096757dd4f8ec16e9a0e8807b08cbab",
+   "provisional": true
+  },
+  {
+   "claim_id": "c31",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.78,
+   "contradicted_p": 0.06,
+   "strength": 1.77,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.21,
+    "2": 0.78
+   },
+   "strength_conf": 0.66,
+   "evidence_ids": [
+    "e41",
+    "e39"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "b56a7246a8ee86007f2c2bf64fbf774d0645829ae1625751428f4896fecee374",
+   "provisional": true
+  }
+ ],
+ "evidence": [
+  {
+   "id": "e1",
+   "claim_id": "c30",
+   "bars": [
+    "lenient",
+    "standard"
+   ],
+   "url": "https://www.scientificamerican.com/article/how-claude-code-is-bringing-vibe-coding-to-everyone/",
+   "date": "2026-01-31",
+   "source": "Scientific American",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "People have cited \"Claudeholism: The New Addiction of the Century\" or asserted that \"Claude Code is the opium of the permanent underclass\" in reference to the software's ability to remove the pain of drudgery.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e2",
+   "claim_id": "c30",
+   "bars": [
+    "lenient"
+   ],
+   "url": "https://zephrcf.leaddev.com/?p=32719",
+   "date": "2026-04-21",
+   "source": "LeadDev",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "The \"just one more prompt\" era is here ... \"provides constant, unpredictable micro-rewards\" ... \"biologically impossible to wind down\" (trade outlet, not a general-interest major outlet)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e3",
+   "claim_id": "c30",
+   "bars": [
+    "lenient",
+    "standard"
+   ],
+   "url": "https://news.bloomberglaw.com/litigation/claude-code-is-causing-the-great-productivity-panic-of-2026",
+   "date": "2026-02-26",
+   "source": "Bloomberg Law",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "Claude Code Is Causing the Great Productivity Panic of 2026 (headline; body paywalled, framed as productivity pressure rather than addiction)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e4",
+   "claim_id": "c8",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://briefglance.com/companies/casio-america-inc/pulses/89427",
+   "date": "2026-10-14",
+   "source": "BriefGlance",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "Moflin has sold over 20,000 units in Japan since its November 2024 debut.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e5",
+   "claim_id": "c8",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://briefglance.com/companies/casio-america-inc/pulses/89427",
+   "date": "2026-10-14",
+   "source": "BriefGlance",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "Pink Moflin retains the same emotional algorithm and personality capabilities as existing models, priced at $429. ... available in the U.S. starting October 1, 2026",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e6",
+   "claim_id": "c8",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://sherwood.news/business/casio-now-selling-furry-ai-powered-pet-robot-bets-on-loneliness",
+   "date": "2025-09-19",
+   "source": "Sherwood News",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "Baseline (2025): The company is hoping to sell a total of 7,000 units in the UK and US by the end of March 2026 ... The G-Shock-maker sold some 10,000 of the pet robots in its home country as of the end of May",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e7",
+   "claim_id": "c8",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://www.nst.com.my/amp/business/corporate/2026/06/1473356/sony-discontinues-japan-sales-robot-puppy-aibo",
+   "date": "2026-06-26",
+   "source": "New Straits Times (AFP)",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "Sony is halting sales of its robotic puppy \"aibo\" in Japan ... Sony declined to give a total sales figure for the aibo model released in 2018.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e8",
+   "claim_id": "c14",
+   "bars": [
+    "lenient",
+    "standard"
+   ],
+   "url": "https://techcrunch.com/2026/06/24/figma-adds-code-layers-support-for-animations-more-ai-features-in-new-update",
+   "date": "2026-06-24",
+   "source": "TechCrunch",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "adding a feature to help users create custom plug-ins, like layout generators or vector path tracers, with prompts.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e9",
+   "claim_id": "c14",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/04/22/copilots-agentic-capabilities-in-word-excel-and-powerpoint-are-generally-available/",
+   "date": "2026-04-22",
+   "source": "Microsoft 365 Blog",
+   "tier": 1,
+   "direction": "neutral",
+   "quote": "can take multi-step, app-native actions directly in your documents, worksheets, and presentations. (agents act in-app; no code shipped into the app)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e10",
+   "claim_id": "c6",
+   "url": "https://newsroom.ibm.com/2026-05-04-ibm-study-ceos-are-reshaping-c-suite-roles-for-the-ai-era",
+   "date": "2026-05-04",
+   "source": "IBM Newsroom",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "76% of surveyed organizations have a Chief AI Officer (CAIO) in 2026, up from just 26% in 2025.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e11",
+   "claim_id": "c6",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://newsroom.ibm.com/2026-05-04-ibm-study-ceos-are-reshaping-c-suite-roles-for-the-ai-era",
+   "date": "2026-05-04",
+   "source": "IBM Newsroom",
+   "tier": 1,
+   "direction": "neutral",
+   "quote": "a survey of 2,000 CEOs and equivalent senior leaders across 33 geographies and 21 industries (sample skews to large organizations; fieldwork February to April 2026)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e12",
+   "claim_id": "c6",
+   "bars": [
+    "lenient"
+   ],
+   "url": "https://lightcast.io/resources/blog/stanford-ai-2026",
+   "date": "2026-04-13",
+   "source": "Lightcast (Stanford AI Index 2026 data)",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "That's a more than 280% increase in a single year, representing nearly 90,000 job postings in the US alone. (agentic AI skills in postings, 2024 to 2025)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e13",
+   "claim_id": "c6",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://www.gallup.com/workplace/712736/organizational-ai-adoption-jumps-six-points.aspx",
+   "date": "2026-07-20",
+   "source": "Gallup",
+   "tier": 1,
+   "direction": "neutral",
+   "quote": "Forty-seven percent of U.S. employees now say their organization has integrated AI tools ... up from 41%",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e14",
+   "claim_id": "c3",
+   "url": "https://www.investmentnews.com/wirehouses/bny-goldman-double-down-on-tech-with-digital-employees-and-ai-agents/265198",
+   "date": "2026-02-09",
+   "source": "InvestmentNews",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "At BNY, 134 software-based \"digital employees\" now work alongside the bank's roughly 48,100 human staff",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e15",
+   "claim_id": "c3",
+   "url": "https://www.investmentnews.com/wirehouses/bny-goldman-double-down-on-tech-with-digital-employees-and-ai-agents/265198",
+   "date": "2026-02-09",
+   "source": "InvestmentNews",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Goldman has already rolled out an autonomous AI coder called Devin to its engineering teams.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e16",
+   "claim_id": "c3",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://www.fm-magazine.com/news/2026/sep/companies-financial-value-from-ai-holds-firm-in-2026/",
+   "date": "2026-09-01",
+   "source": "FM Magazine (reporting McKinsey State of AI 2026)",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "The share of large companies scaling AI agents in one or more functions increased from 27% to 40% ... while similar adoption among smaller organisations remained flat (22%).",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e17",
+   "claim_id": "c3",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://www.anthropic.com/news/claude-opus-4-6",
+   "date": "2026-02-05",
+   "source": "Anthropic",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "autonomously closed 13 issues and assigned 12 issues to the right team members in a single day (Rakuten customer quote)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e18",
+   "claim_id": "c3",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://stackoverflow.blog/2026/05/27/agents-on-a-leash-agentic-ai-remains-mostly-monitored-at-work",
+   "date": "2026-05-27",
+   "source": "Stack Overflow",
+   "tier": 1,
+   "direction": "neutral",
+   "quote": "63% of technologists still rarely or never let agents run entirely on autopilot.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e19",
+   "claim_id": "c5",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://lightcast.io/resources/blog/stanford-ai-2026",
+   "date": "2026-04-13",
+   "source": "Lightcast (Stanford AI Index 2026 data)",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "grew from just 0.06% of postings in 2024 to 0.23% in 2025. ... That's a more than 280% increase in a single year, representing nearly 90,000 job postings in the US alone.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e20",
+   "claim_id": "c5",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://www.talentify.io/agentic-ai-engineer-mclean-virginia-us-booz-allen-hamilton-1",
+   "date": "2026-09-01",
+   "source": "Talentify (Booz Allen Hamilton posting)",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Agentic AI Engineer (job title, Booz Allen Hamilton, McLean, Virginia; aggregator listing, not fetched)",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e21",
+   "claim_id": "c5",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://stackoverflow.blog/2026/10/06/the-results-of-the-2026-developer-survey-are-here/",
+   "date": "2026-10-06",
+   "source": "Stack Overflow",
+   "tier": 1,
+   "direction": "neutral",
+   "quote": "73% of respondents who indicate using AI coding assistants/agents use them daily ... The agents of choice are Claude Code (66%) and GitHub Copilot (59%).",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e22",
+   "claim_id": "c5",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://stackoverflow.blog/2026/05/27/agents-on-a-leash-agentic-ai-remains-mostly-monitored-at-work",
+   "date": "2026-05-27",
+   "source": "Stack Overflow",
+   "tier": 1,
+   "direction": "neutral",
+   "quote": "This new survey shows 59% use agents at work at any frequency, compared to 31% in the 2025 Developer Survey.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e23",
+   "claim_id": "c1",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/04/22/copilots-agentic-capabilities-in-word-excel-and-powerpoint-are-generally-available/",
+   "date": "2026-04-22",
+   "source": "Microsoft 365 Blog",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "agentic capabilities in Word, Excel, and PowerPoint are now generally available. ... can take multi-step, app-native actions directly in your documents, worksheets, and presentations.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e24",
+   "claim_id": "c1",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://alternativeto.net/news/2026/2/notion-3-3-launches-custom-agents-for-autonomous-team-automation",
+   "date": "2026-02-25",
+   "source": "AlternativeTo",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Once configured, agents run without manual prompting, using triggers or schedules to keep work moving. ... Custom Agents are free through May 3, 2026, then will require Notion credits starting May 4, 2026.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e25",
+   "claim_id": "c1",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://www.phonescoop.com/articles/article.php?a=23678",
+   "date": "2026-02-26",
+   "source": "Phone Scoop",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "you can ask Gemini to perform multi-step tasks on its own on your phone ... The feature is strictly limited to select apps and devices for now",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e26",
+   "claim_id": "c1",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://techcrunch.com/2026/06/24/figma-adds-code-layers-support-for-animations-more-ai-features-in-new-update",
+   "date": "2026-06-24",
+   "source": "TechCrunch",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "adding a feature to help users create custom plug-ins, like layout generators or vector path tracers, with prompts. (closest shipped example of an agent changing an app's behaviour for the user)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e27",
+   "claim_id": "c28",
+   "url": "https://techcommunity.microsoft.com/t5/excel/bg-p/ExcelBlog",
+   "date": "2026-01-27",
+   "source": "Microsoft Tech Community (Excel Blog)",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "Agent Mode in Excel is now generally available in Excel on Windows and is rolling out to Excel on Mac",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e28",
+   "claim_id": "c28",
+   "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/04/22/copilots-agentic-capabilities-in-word-excel-and-powerpoint-are-generally-available/",
+   "date": "2026-04-22",
+   "source": "Microsoft 365 Blog",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "the default experience for customers with Microsoft 365 Copilot and Microsoft 365 Premium subscriptions. ... Over the last month, our data already shows increased engagement, retention, and satisfaction. (table: Excel engagement +67%, new user retention +50%, satisfaction +65%)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e29",
+   "claim_id": "c28",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://www.gallup.com/699797/indicator-artificial-intelligence.aspx",
+   "date": "2026-05-20",
+   "source": "Gallup",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "65% of employees working in organizations that have implemented AI say it has had a positive effect on their productivity and efficiency at work, including 17% who say the impact has been 'extremely positive.'",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e30",
+   "claim_id": "c28",
+   "bars": [
+    "standard"
+   ],
+   "url": "https://www.gallup.com/workplace/712736/organizational-ai-adoption-jumps-six-points.aspx",
+   "date": "2026-07-20",
+   "source": "Gallup",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "More than half of U.S. workers (52%) now use AI in their role, with 30% using it frequently ... The highest productivity ratings come from employees using AI for coding assistance and automation",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e31",
+   "claim_id": "c41",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://decrypt.co/371308/spacex-new-high-as-elon-musk-firm-agrees-acquire-ai-startup-cursor",
+   "date": "2026-06-16",
+   "source": "Decrypt",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "The all-stock deal would make Cursor a wholly owned SpaceX subsidiary (Cursor no longer independent; not a distressed sale)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e32",
+   "claim_id": "c41",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://decrypt.co/371308/spacex-new-high-as-elon-musk-firm-agrees-acquire-ai-startup-cursor",
+   "date": "2026-06-16",
+   "source": "Decrypt",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "SpaceX signed a $60 billion merger agreement with Anysphere and its subsidiary X67 ... was reportedly raising a $2 billion funding round that would have valued it at $50 billion.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e33",
+   "claim_id": "c41",
+   "url": "https://dealroom.co/news/134107-cursor-tops-4b-annualized-revenue/",
+   "date": "2026-06-09",
+   "source": "Dealroom",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "has surpassed $4 billion in annualised revenue as of early June 2026 ... The run-rate is up from $3 billion in late April 2026 and $2 billion in February 2026.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e34",
+   "claim_id": "c41",
+   "url": "https://www.channelinsider.com/ai/news-cognition-devin-2b-funding-48b-valuation/",
+   "date": "2026-09-09",
+   "source": "Channel Insider",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "raised more than $2 billion in a Series E funding round, sending its valuation to $48 billion. ... run-rate revenue increased from $492 million in May to nearly $900 million.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e35",
+   "claim_id": "c41",
+   "url": "https://cfotech.co.uk/story/replit-raises-usd-400m-hits-usd-9bn-ai-valuation",
+   "date": "2026-03-12",
+   "source": "CFOtech",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Replit has raised USD $400 million in a funding round that values the AI coding company at USD $9 billion,",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e36",
+   "claim_id": "c41",
+   "url": "https://technode.com/2026/08/13/tencent-backs-lovable-in-400-million-series-c-at-13-3-billion-valuation/",
+   "date": "2026-08-13",
+   "source": "TechNode",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "has raised $400 million in Series C funding at a $13.3 billion valuation.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e37",
+   "claim_id": "c31",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://www.bloomberg.com/news/articles/2026-03-02/cursor-recurring-revenue-doubles-in-three-months-to-2-billion",
+   "date": "2026-03-02",
+   "source": "Bloomberg",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "AI Coding Startup Cursor Hits $2 Billion Annual Sales Rate (headline; body paywalled)",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e38",
+   "claim_id": "c31",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://dealroom.co/news/134107-cursor-tops-4b-annualized-revenue/",
+   "date": "2026-06-09",
+   "source": "Dealroom",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "The run-rate is up from $3 billion in late April 2026 and $2 billion in February 2026. ... the enterprise business reported to have tripled in Q1 2026 versus Q4 2025",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e39",
+   "claim_id": "c31",
+   "bars": [
+    "lenient"
+   ],
+   "url": "https://dealroom.co/news/134107-cursor-tops-4b-annualized-revenue/",
+   "date": "2026-06-09",
+   "source": "Dealroom",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "intensifying competition from GitHub Copilot, OpenAI and Google in the AI coding market. (Claude Code not named)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e40",
+   "claim_id": "c31",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://decrypt.co/371308/spacex-new-high-as-elon-musk-firm-agrees-acquire-ai-startup-cursor",
+   "date": "2026-06-16",
+   "source": "Decrypt",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "SpaceX signed a $60 billion merger agreement with Anysphere and its subsidiary X67 ... SpaceX secured an exclusive option in April to acquire Anysphere",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e41",
+   "claim_id": "c31",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://stackoverflow.blog/2026/10/06/the-results-of-the-2026-developer-survey-are-here/",
+   "date": "2026-10-06",
+   "source": "Stack Overflow",
+   "tier": 1,
+   "direction": "neutral",
+   "quote": "The agents of choice are Claude Code (66%) and GitHub Copilot (59%). (Cursor not named among agents of choice)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e42",
+   "claim_id": "c12",
+   "url": "https://every.to/on-every/every-s-master-plan-part-ii",
+   "date": "2025-09-26",
+   "source": "Every",
+   "tier": 4,
+   "direction": "neutral",
+   "quote": "Baseline (2025, plan): working on a platform layer that unifies memories from each part of the ecosystem.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e43",
+   "claim_id": "c12",
+   "bars": [
+    "lenient"
+   ],
+   "url": "https://every.to/context-window/codex-moves-beyond-coding",
+   "date": "2026-04-24",
+   "source": "Every",
+   "tier": 4,
+   "direction": "supports",
+   "quote": "adding memory to its API agents ... Memory is live now through the API (it's not inside the app yet, but stay tuned). (Spiral only)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e44",
+   "claim_id": "c12",
+   "bars": [
+    "lenient"
+   ],
+   "url": "https://every.to/chain-of-thought/inside-anthropic-s-2026-developer-conference",
+   "date": "2026-05-07",
+   "source": "Every",
+   "tier": 4,
+   "direction": "supports",
+   "quote": "Each Spiral subscriber also gets their own personal memory store. ... lives in an Anthropic-hosted global memory store.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e45",
+   "claim_id": "c12",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://every.to/context-window/everyone-gets-a-sidekick",
+   "date": "2026-03-29",
+   "source": "Every",
+   "tier": 4,
+   "direction": "neutral",
+   "quote": "All notes are also accessible via Monologue's API, CLI, and model-context protocol (MCP), (cross-app access to notes, not a shared memory layer)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e46",
+   "claim_id": "c32",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://www.pewresearch.org/short-reads/2026/08/18/young-adults-in-the-us-are-increasingly-wary-of-ai/",
+   "date": "2026-08-18",
+   "source": "Pew Research Center",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "52% of Americans say they are more concerned than excited about the increased use of AI in daily life (trend table: 2025 50%, 2026 52%; survey June 22-28, 2026)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e47",
+   "claim_id": "c32",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://www.pewresearch.org/short-reads/2026/08/18/young-adults-in-the-us-are-increasingly-wary-of-ai/",
+   "date": "2026-08-18",
+   "source": "Pew Research Center",
+   "tier": 1,
+   "direction": "contradicts",
+   "quote": "52% of Americans say they are more concerned than excited about the increased use of AI in daily life (only 2 points above 2025's 50%; under-30s: For the first time, a majority of adults under 30 (55%) now say they're more concerned than excited about AI.)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e48",
+   "claim_id": "c32",
+   "url": "https://news.gallup.com/poll/712751/americans-cool-toward.aspx",
+   "date": "2026-07-28",
+   "source": "Gallup",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "has increased from 31% in 2025 to 39% in 2026. (share saying AI does more harm than good; survey May 4-11, 2026)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e49",
+   "claim_id": "c32",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://news.gallup.com/poll/712751/americans-cool-toward.aspx",
+   "date": "2026-07-28",
+   "source": "Gallup",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "down slightly from 31% in 2025 (trust in businesses to use AI responsibly, now 27%) ... up from 73% in 2025 and 75% before that (79% expect fewer U.S. jobs)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e50",
+   "claim_id": "c32",
+   "bars": [
+    "lenient"
+   ],
+   "url": "https://axios.com/2026/05/17/ai-backlash-polling-sentiment",
+   "date": "2026-05-17",
+   "source": "Axios",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "An AI hate wave is here (headline; page not fetchable)",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e51",
+   "claim_id": "c32",
+   "bars": [
+    "lenient"
+   ],
+   "url": "https://newrepublic.com/article/209163/ai-industry-discovering-public-backlash",
+   "date": "2026-04-24",
+   "source": "The New Republic",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "If there was any doubt over the brewing public backlash to this technology, the last few weeks have erased it. ... a rapidly growing populist backlash toward AI",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e52",
+   "claim_id": "c2",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/04/22/copilots-agentic-capabilities-in-word-excel-and-powerpoint-are-generally-available/",
+   "date": "2026-04-22",
+   "source": "Microsoft 365 Blog",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "agentic capabilities in Word, Excel, and PowerPoint are now generally available. ... They are also available to users with Microsoft 365 Personal and Family plans.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e53",
+   "claim_id": "c2",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://www.phonescoop.com/articles/article.php?a=23678",
+   "date": "2026-02-26",
+   "source": "Phone Scoop",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "The feature is strictly limited to select apps and devices for now ... The feature is launching first on the Google Pixel 10 series and Samsung Galaxy S26 series.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e54",
+   "claim_id": "c2",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://9to5mac.com/2026/03/20/apples-gemini-powered-siri-upgrade-could-still-arrive-this-month/",
+   "date": "2026-03-20",
+   "source": "9to5Mac",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "While that release turned out to be feature-packed, the new Siri features aren't present. ... Apple would instead target iOS 26.5 and iOS 27.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e55",
+   "claim_id": "c2",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://www.gallup.com/workplace/712736/organizational-ai-adoption-jumps-six-points.aspx",
+   "date": "2026-07-20",
+   "source": "Gallup",
+   "tier": 1,
+   "direction": "neutral",
+   "quote": "More than half of U.S. workers (52%) now use AI in their role, with 30% using it frequently ... Fifteen percent use it daily. (AI use generally, not agents)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e56",
+   "claim_id": "c2",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://stackoverflow.blog/2026/05/27/agents-on-a-leash-agentic-ai-remains-mostly-monitored-at-work",
+   "date": "2026-05-27",
+   "source": "Stack Overflow",
+   "tier": 1,
+   "direction": "neutral",
+   "quote": "This new survey shows 59% use agents at work at any frequency, compared to 31% in the 2025 Developer Survey. (technologists, n=1,100)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e57",
+   "claim_id": "c7",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://www.stateofaidesign.com/",
+   "date": "2026-10-06",
+   "source": "AI in Design Report (Designer Fund / Foundation Capital)",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "Half of respondents have pushed AI-generated code to production. (over 900 designers surveyed)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e58",
+   "claim_id": "c7",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://www.figma.com/blog/2026-ai-report/",
+   "date": "2026-06-24",
+   "source": "Figma",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "the number of designers participating in development doubled to 41% (from 21%; 8,403 survey responses)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e59",
+   "claim_id": "c7",
+   "bars": [
+    "standard"
+   ],
+   "url": "https://technode.com/2026/08/13/tencent-backs-lovable-in-400-million-series-c-at-13-3-billion-valuation/",
+   "date": "2026-08-13",
+   "source": "TechNode",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "users have created more than 60 million projects since its launch in November 2024 ... Lovable-built applications receive more than 900 million visits each month.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e60",
+   "claim_id": "c7",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://cfotech.co.uk/story/replit-raises-usd-400m-hits-usd-9bn-ai-valuation",
+   "date": "2026-03-12",
+   "source": "CFOtech",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Zillow has around 600 Replit seats, and employees created more than 7,000 apps over the past year",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e61",
+   "claim_id": "c7",
+   "bars": [
+    "lenient"
+   ],
+   "url": "https://techcrunch.com/2026/06/24/figma-adds-code-layers-support-for-animations-more-ai-features-in-new-update",
+   "date": "2026-06-24",
+   "source": "TechCrunch",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "The company is now adding code layers directly to the collaborative canvas ... adding a feature to help users create custom plug-ins, like layout generators or vector path tracers, with prompts.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e62",
+   "claim_id": "c10",
+   "url": "https://www.businesstoday.in/technology/artificial-intelligence/story/nvidias-jensen-huang-declares-agi-has-arrived-as-openai-unveils-gpt-6-astra-553640-2026-09-07",
+   "date": "2026-09-07",
+   "source": "Business Today",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Huang: \"AGI has arrived\" ... Gary Marcus: \"Huang gave no evidence and no definitions.\" ... \"By conventional definitions, Astra still falls short.\"",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e63",
+   "claim_id": "c10",
+   "url": "https://ia.acs.org.au/article/2026/openai-says-the-agi-era-is-here-experts-disagree.html",
+   "date": "2026-09-07",
+   "source": "Information Age (ACS)",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "Greg Brockman: \"I think it's not unreasonable to feel that we are now in the AGI era.\" ... \"I think it might be about this model.\"",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e64",
+   "claim_id": "c10",
+   "url": "https://ia.acs.org.au/article/2026/openai-says-the-agi-era-is-here-experts-disagree.html",
+   "date": "2026-09-07",
+   "source": "Information Age (ACS)",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "ARC Prize Foundation: \"while we believe Astra represents meaningful progress towards generalisation, we are not claiming that it is AGI.\" ... Altman called AGI \"a very poorly defined\" and \"irrelevant marketing term\"",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e65",
+   "claim_id": "c29",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://www.anthropic.com/news/claude-opus-4-6",
+   "date": "2026-02-05",
+   "source": "Anthropic",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "spin up multiple agents that work in parallel as a team and coordinate autonomously ... sustains agentic tasks for longer ... stays productive over longer sessions",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e66",
+   "claim_id": "c29",
+   "bars": [
+    "lenient"
+   ],
+   "url": "https://www.anthropic.com/news/claude-opus-4-6",
+   "date": "2026-02-05",
+   "source": "Anthropic",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "Claude can use compaction to summarize its own context and perform longer-running tasks without bumping up against limits",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e67",
+   "claim_id": "c29",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://metr.org/blog/2026-01-29-time-horizon-1-1/",
+   "date": "2026-01-29",
+   "source": "METR",
+   "tier": 1,
+   "direction": "neutral",
+   "quote": "The post-2023 doubling-time is 131 days under TH1.1, compared to 165 days under TH1 (top model in table: Claude Opus 4.5 at 320 minutes, interval 170-729; measured on 2023-2025 models)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e68",
+   "claim_id": "c29",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://metr.org/time-horizons/",
+   "date": "2026-09-08",
+   "source": "METR",
+   "tier": 1,
+   "direction": "neutral",
+   "quote": "Measurements above 16 hrs are unreliable with our current task suite. ... Clarified that this page is no longer actively updated. (no 2026 within-year doubling measurement published)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e69",
+   "claim_id": "c26",
+   "url": "https://www.challengergray.com/?p=28455",
+   "date": "2026-07-01",
+   "source": "Challenger, Gray & Christmas",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "In June, Artificial Intelligence led all reasons for job cuts, with 14,029 announced during the month, or 31%. ... So far this year, AI has been cited in 101,743 job cut announcements, approximately 23% of all cuts.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e70",
+   "claim_id": "c26",
+   "url": "https://fortune.com/2026/02/27/block-jack-dorsey-ceo-xyz-stock-square-4000-ai-layoffs/",
+   "date": "2026-02-27",
+   "source": "Fortune",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "laying off nearly half its workforce, cutting 4,000 employees, down to just under 6,000 workers from over 10,000. ... We're already seeing that the intelligence tools we're creating and using, paired with smaller and flatter teams,",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e71",
+   "claim_id": "c26",
+   "url": "https://www.thewrap.com/industry-news/tech/snap-layoffs-snapchat-ceo-evan-spiegel-artificial-intelligence/",
+   "date": "2026-04-15",
+   "source": "TheWrap",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "laying off 16% of its global workforce, or about 1,000 employees. ... rapid advancements in artificial intelligence enable our teams to reduce repetitive work",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e72",
+   "claim_id": "c26",
+   "url": "https://www.bloomberg.com/news/articles/2026-03-11/atlassian-team-ceo-announces-layoffs-of-1-600-citing-ai-shift",
+   "date": "2026-03-11",
+   "source": "Bloomberg",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Atlassian to Reduce 1,600 Jobs in the Latest AI-Linked Cuts (headline; body paywalled)",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e73",
+   "claim_id": "c26",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://capeargus.co.za/technology/big-tech/2026-03-10-ai-blamed-for-one-in-five-tech-layoffs-so-far-in-2026/",
+   "date": "2026-03-10",
+   "source": "Cape Argus (IOL)",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "about 9,238 of the 45,363 tech layoffs recorded worldwide in 2026 so far (RationalFX tally; lists Pinterest 675 and eBay 800 without stating how each tied cuts to AI)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e74",
+   "claim_id": "c27",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://fortune.com/2026/02/02/ai-labor-market-yale-budget-lab-ai-washing/",
+   "date": "2026-02-02",
+   "source": "Fortune",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "it just doesn't seem like there's major macroeconomic effects here ... the technology to become a convenient scapegoat for CEOs. (Martha Gimbel, Yale Budget Lab; Challenger: 55,000 U.S. job cuts in the first 11 months of 2025 were attributed to AI)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e75",
+   "claim_id": "c27",
+   "bars": [
+    "lenient"
+   ],
+   "url": "https://www.fortune.com/article/sam-altman-ai-washing-tech-layoffs/",
+   "date": "2026-05-03",
+   "source": "Fortune",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "there's some AI washing where people are blaming AI for layoffs that they would otherwise do (Sam Altman)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e76",
+   "claim_id": "c27",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://digitaleconomy.stanford.edu/news/canariesaug26/",
+   "date": "2026-08-12",
+   "source": "Stanford Digital Economy Lab",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "The adjustment appears to operate primarily through reduced hiring of young workers rather than increased separations.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e77",
+   "claim_id": "c27",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://www.challengergray.com/?p=28455",
+   "date": "2026-07-01",
+   "source": "Challenger, Gray & Christmas",
+   "tier": 1,
+   "direction": "neutral",
+   "quote": "artificial intelligence continues to reshape how companies think about headcount (Andy Challenger; Challenger reports the stated reason and does not audit it)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e78",
+   "claim_id": "c13",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://every.to/podcast/transcript-we-automated-everything-with-ai-and-tripled-our-headcount",
+   "date": "2026-05-27",
+   "source": "Every",
+   "tier": 4,
+   "direction": "contradicts",
+   "quote": "In fact, since the GPT-3 days, we've grown from four people to around 30 people, and we're hiring more now. (about 10 above the roughly 20 at end-2025)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e79",
+   "claim_id": "c13",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://every.to/podcast/transcript-we-automated-everything-with-ai-and-tripled-our-headcount",
+   "date": "2026-05-27",
+   "source": "Every",
+   "tier": 4,
+   "direction": "supports",
+   "quote": "In fact, since the GPT-3 days, we've grown from four people to around 30 people, and we're hiring more now.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e80",
+   "claim_id": "c13",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://every.to/on-every/every-s-master-plan-part-ii",
+   "date": "2025-09-26",
+   "source": "Every",
+   "tier": 4,
+   "direction": "neutral",
+   "quote": "Baseline (2025, consulting arm only): 15 full-time employees",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e81",
+   "claim_id": "c11",
+   "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=IHLIDXUSTPSOFTDEVE",
+   "date": "2026-10-16",
+   "source": "FRED (Indeed Hiring Lab)",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "2026-10-16,78.8649883609 ... 2025-10-16,65.0270378284 (Software Development Job Postings on Indeed, index Feb 1 2020=100; up about 21% year over year)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e82",
+   "claim_id": "c11",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=IHLIDXUSTPSOFTDEVE",
+   "date": "2026-06-26",
+   "source": "FRED (Indeed Hiring Lab)",
+   "tier": 1,
+   "direction": "neutral",
+   "quote": "2026-06-26,73.4952491432 (about 26.5% below the Feb 2020 level; CIO reported 27.5% from an earlier vintage)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e83",
+   "claim_id": "c11",
+   "bars": [
+    "lenient",
+    "standard"
+   ],
+   "url": "https://www.cio.com/article/4195780/it-hiring-sees-a-boost-as-software-development-jobs-slowly-bounce-back.html",
+   "date": "2026-07-13",
+   "source": "CIO",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Indeed has tracked a rise of 15% for software development job postings in the US ... software developer and software engineer job postings were the top roles for June (49k postings)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e84",
+   "claim_id": "c22",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=IHLIDXUSTPSOFTDEVE",
+   "date": "2026-10-16",
+   "source": "FRED (Indeed Hiring Lab)",
+   "tier": 1,
+   "direction": "contradicts",
+   "quote": "2026-10-16,78.8649883609 ... 2025-10-16,65.0270378284 (postings higher than a year earlier, not lower)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e85",
+   "claim_id": "c22",
+   "bars": [
+    "lenient"
+   ],
+   "url": "https://digitaleconomy.stanford.edu/news/canariesaug26/",
+   "date": "2026-08-12",
+   "source": "Stanford Digital Economy Lab",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "Employment among workers ages 22-25 in highly AI-exposed occupations now stands about 19% below where it would be. ... by this same measure, the shortfall was 15% at the July 2025 data vintage and is 19% as of June 2026.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e86",
+   "claim_id": "c22",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://digitaleconomy.stanford.edu/news/canariesaug26/",
+   "date": "2026-08-12",
+   "source": "Stanford Digital Economy Lab",
+   "tier": 1,
+   "direction": "neutral",
+   "quote": "The divergence remains when we exclude technology firms and computer occupations. (no separate software-developer figure)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e87",
+   "claim_id": "c22",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://www.cio.com/article/4195780/it-hiring-sees-a-boost-as-software-development-jobs-slowly-bounce-back.html",
+   "date": "2026-07-13",
+   "source": "CIO",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "down 22% from 2025, according to Dice (conflicts with Indeed's rise over the same period)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e88",
+   "claim_id": "c18",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://krdo.com/news/2026/03/13/republicans-release-ai-deepfake-of-james-talarico-as-phony-videos-proliferate-in-midterm-races/",
+   "date": "2026-03-13",
+   "source": "CNN (via KRDO)",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "a real-looking but fake version of a Democratic candidate, fabricated with artificial intelligence. ... the disclosure text is small, mostly faint and confined to a bottom corner of the screen. (NRSC 85-second Talarico ad)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e89",
+   "claim_id": "c18",
+   "url": "https://www.staradvertiser.com/2026/03/28/breaking-news/ai-deepfakes-blur-reality-in-2026-us-midterm-campaigns/",
+   "date": "2026-03-28",
+   "source": "Reuters (via Honolulu Star-Advertiser)",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "The Talarico ad, for instance, is one of three recent ads created by national Republicans that use deepfake technology",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e90",
+   "claim_id": "c18",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://www.staradvertiser.com/2026/03/28/breaking-news/ai-deepfakes-blur-reality-in-2026-us-midterm-campaigns/",
+   "date": "2026-03-28",
+   "source": "Reuters (via Honolulu Star-Advertiser)",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "I just voted to keep the government shut down. They say it would hurt farmers, but I wouldn't know. (Collins campaign deepfake of Ossoff; Paxton campaign ad shows an AI-generated version of Cornyn dancing with Democratic Rep. Jasmine Crockett)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e91",
+   "claim_id": "c18",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://www.washingtonexaminer.com/news/campaigns/congressional/4617529/",
+   "date": "2026-06-20",
+   "source": "Washington Examiner",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "the Republican PAC Citizens for Sanity paid six figures for an ad campaign ... AI is almost exclusively used in attack ads against opponents (no view counts given)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e92",
+   "claim_id": "c18",
+   "bars": [
+    "standard",
+    "strict"
+   ],
+   "url": "https://www.wrdw.com/2026/10/13/real-or-fake-deepfakes-flood-georgia-political-ads/",
+   "date": "2026-10-13",
+   "source": "WRDW",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "The Senate Leadership Fund's website features dozens of AI-generated videos. ... South Carolina and Georgia, Ossoff's home state, have no laws on the books addressing AI-generated political ads.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e93",
+   "claim_id": "c29",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://developers.openai.com/blog/run-long-horizon-tasks-with-codex",
+   "date": "2026-02-23",
+   "source": "OpenAI Developers blog",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "Codex ran for about 25 hours uninterrupted, used about 13M tokens, and generated about 30k lines of code. (GPT-5.3-Codex experiment, second lab marketing long autonomous operation)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e94",
+   "claim_id": "c5",
+   "bars": [
+    "lenient"
+   ],
+   "url": "https://podscripts.co/podcasts/lennys-podcast-product-career-growth/the-ai-paradox-more-automation-more-humans-more-work-dan-shipper",
+   "date": "2026-05-24",
+   "source": "Lenny's Podcast (Dan Shipper), via Podscripts",
+   "tier": 4,
+   "direction": "supports",
+   "quote": "the whole forward deployed engineer concept, I think is for real. (Shipper's later framing of the agent-directing role; not the 'agentic engineer' label)",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e95",
+   "claim_id": "c13",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://podscripts.co/podcasts/lennys-podcast-product-career-growth/the-ai-paradox-more-automation-more-humans-more-work-dan-shipper",
+   "date": "2026-05-24",
+   "source": "Lenny's Podcast (Dan Shipper), via Podscripts",
+   "tier": 4,
+   "direction": "contradicts",
+   "quote": "We're almost 30 people now. ... So we've doubled in size in the last year.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e96",
+   "claim_id": "c13",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://podscripts.co/podcasts/lennys-podcast-product-career-growth/the-ai-paradox-more-automation-more-humans-more-work-dan-shipper",
+   "date": "2026-05-24",
+   "source": "Lenny's Podcast (Dan Shipper), via Podscripts",
+   "tier": 4,
+   "direction": "supports",
+   "quote": "We're almost 30 people now.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e97",
+   "claim_id": "c8",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://every.to/context-window/every-s-2026-predictions",
+   "date": "2025-12-23",
+   "source": "Every",
+   "tier": 4,
+   "direction": "neutral",
+   "quote": "Baseline (2025, the prediction itself): About 85 percent of people viscerally hate it and want to throw it out ... 10 percent are neutral ... 5 percent absolutely love it. ... 'nailed the experience of threading the uncanny valley.'",
+   "found_by": "webfetch"
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://every.to/context-window/every-s-2026-predictions",
+   "title": "Every's 2026 Predictions",
+   "author": "Every staff (Shipper, Klaassen, Quintero, Lee, Sharma, Gell, Williams; reading list by Katie Parrott)",
+   "date": "2025-12-23",
+   "format": "newsletter",
+   "access": "free",
+   "role": "canonical",
+   "note": "About 11 predictions; several are editor paraphrases of team members rather than quotes.",
+   "chars": 9029,
+   "text_sha256": "f7b6ff6bb99b383d1e7bb6723a05c3c8fb589e9c924ef27b317851d184a4af46",
+   "archive": {
+    "url": "https://web.archive.org/web/20260105073315/https://every.to/context-window/every-s-2026-predictions",
+    "timestamp": "20260105073315",
+    "similarity": 0.8553,
+    "chars": 10861
+   }
+  },
+  {
+   "id": "s2",
+   "url": "https://every.to/podcast/four-predictions-for-how-ai-will-change-software-in-2026",
+   "title": "Four Predictions for How AI Will Change Software in 2026 (companion article)",
+   "author": "Rhea Purohit (companion); Dan Shipper and Brandon Gell on air",
+   "date": "2025-12-23",
+   "format": "podcast",
+   "access": "free",
+   "role": "canonical",
+   "note": "Companion page with the four prediction headings. No transcript page exists; the spoken wording is in s2y.",
+   "chars": 9637,
+   "text_sha256": "dffb2377faec83a546ccf6c8e58cfbf5302ebe94a2e9cd9c05c1c230fecaafd0"
+  },
+  {
+   "id": "s2y",
+   "url": "youtube:srnTvlmTq3U",
+   "title": "AI & I: Four Predictions for How AI Will Change Software in 2026 (episode captions)",
+   "author": "Dan Shipper and Brandon Gell",
+   "date": "2025-12-23",
+   "format": "video",
+   "access": "free",
+   "role": "canonical",
+   "note": "YouTube auto-captions; proper nouns may be misheard. Quote with that caveat and prefer s2 headings for wording where they match."
+  },
+  {
+   "id": "s3",
+   "url": "https://every.to/podcast/transcript-reid-hoffman-makes-five-predictions-about-ai-in-2026",
+   "title": "Transcript: Reid Hoffman Makes Five Predictions About AI In 2026",
+   "author": "Dan Shipper (host), Reid Hoffman (guest)",
+   "date": "2026-01-05",
+   "format": "transcript",
+   "access": "free",
+   "role": "additional",
+   "note": "Hoffman's predictions are a guest's (attribution: guest). Shipper makes several of his own on air (attribution: subject).",
+   "chars": 48102,
+   "text_sha256": "62a54ccd78f47f879b7f3f4fa729ea72bd94f0de08b19ef0c066ef28eb0bb046"
+  },
+  {
+   "id": "s4",
+   "url": "https://every.to/context-window/claude-code-in-a-trenchcoat",
+   "title": "Claude Code in a Trenchcoat",
+   "author": "Every staff",
+   "date": "2026-01-09",
+   "format": "newsletter",
+   "access": "free",
+   "role": "additional",
+   "note": "Restates Hoffman's five predictions in Every's own words.",
+   "chars": 10501,
+   "text_sha256": "9b4067a13debbfa1075dcc20edc02bab69f77a08433ee4eac5813e8aafaf53e1"
+  },
+  {
+   "id": "s5",
+   "url": "https://every.to/chain-of-thought/agent-native-architectures-how-to-build-apps-after-the-end-of-code",
+   "title": "Agent-native Architectures: How to Build Apps After the End of Code",
+   "author": "Dan Shipper",
+   "date": "2026-01-09",
+   "format": "essay",
+   "access": "free",
+   "role": "additional",
+   "note": "Written form of the first prediction in s2.",
+   "chars": 34407,
+   "text_sha256": "958d789b4f01b1308ee26c2c7b780af303ef8003d12e4d3e17ca1851964f5c53"
+  },
+  {
+   "id": "s6",
+   "url": "https://every.to/context-window/the-vibe-coders-guide-to-what-s-next",
+   "title": "The Vibe Coders' Guide to What's Next",
+   "author": "Every staff",
+   "date": "2026-01-23",
+   "format": "newsletter",
+   "access": "free",
+   "role": "additional",
+   "note": "Roundup with a short 'what's next' list.",
+   "chars": 8460,
+   "text_sha256": "54d0c42ffc1442556fe85af5d2f8454cde86ed1f0c9de6550f3b99e859fb3896"
+  },
+  {
+   "id": "s7",
+   "url": "https://every.to/context-window/what-ai-looks-like-in-2025",
+   "title": "What AI Looks Like in 2025",
+   "author": "Kate Lee (intro); Alex Duffy, Ashwin Sharma, AV",
+   "date": "2025-01-05",
+   "format": "newsletter",
+   "access": "free",
+   "role": "prior_year",
+   "note": "Prior year's list, for ritual context only. Not graded.",
+   "chars": 10856,
+   "text_sha256": "f33f2e9964af39a9b2c3fa546f964c2a202969aa7df72eefea6b8a78a32327bb"
+  }
+ ],
+ "extras": {
+  "jev_tokens": 178853,
+  "input_sha256": {
+   "sources": "02b6e499d9d1fb7c12d669d24a5dc7fc5d57e4155a71ed93d287c6f3eeee1391",
+   "claims": "fbb00b161e2aea7171498b449c609da519f957e87ccf7dc9826e991df1a31329",
+   "rubrics": "6e4defb42f7249adb3d88f42ed4e5b9c0a3f3d6cf55455942959bc6d334189d2",
+   "evidence": "562bbeba9af0a7f579cb0d955de80e54a8e7835cd26b546a85bc42da82d5d460",
+   "grades": "381ef411d8d5a3a22cc3ddfba289399a7b01bd9f097557bab6547cf18e2f233b"
+  }
+ }
+}

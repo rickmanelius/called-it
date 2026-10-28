@@ -1,0 +1,47 @@
+{
+ "hash": "cda36418815df335ff429d3b8e27ccf21ab001d9e7869e014e29452490ed935a",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "claim": "Inflation remains sticky and fails to make much if any progress toward the Fed’s 2% target.",
+  "author": "Bob Doll",
+  "target_year": 2026,
+  "bar": "standard",
+  "bar_meaning": "what a fair reader would accept as 'this happened'",
+  "criterion": "Core PCE or core CPI inflation (year over year) in the latest 2026 reading is at or above 2.5%, per the BEA or BLS."
+ },
+ "questions": {
+  "critic_accepts": {
+   "type": "noul",
+   "instructions": "Would a skeptical critic of the author agree that `criterion` is a fair test of `claim` at the stated `bar`?",
+   "criteria": {
+    "true": "The criterion tests what the claim actually asserted; it does not move the goalposts in the author's favour or against them beyond what the bar name implies.",
+    "false": "The criterion tests something the claim did not assert, or is so loose that almost anything would satisfy it, or so tight that no reasonable reading of the claim could."
+   }
+  },
+  "checkable": {
+   "type": "noul",
+   "instructions": "Can `criterion` be settled by public evidence available by the end of `target_year`?",
+   "criteria": {
+    "true": "A specific public fact, number, release, ranking or event would settle it.",
+    "false": "It depends on private information, taste, or a judgement nobody can verify."
+   }
+  }
+ },
+ "answers": {
+  "critic_accepts": {
+   "type": "noul",
+   "noul": 0.64
+  },
+  "checkable": {
+   "type": "noul",
+   "noul": 0.96
+  }
+ },
+ "usage": {
+  "input_tokens": 573,
+  "output_tokens": 41
+ },
+ "at": "2026-10-24T19:49:06Z"
+}

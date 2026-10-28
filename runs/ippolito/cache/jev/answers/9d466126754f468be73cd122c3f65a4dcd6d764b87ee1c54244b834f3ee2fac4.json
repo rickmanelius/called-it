@@ -1,0 +1,104 @@
+{
+ "hash": "9d466126754f468be73cd122c3f65a4dcd6d764b87ee1c54244b834f3ee2fac4",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Mike Ippolito",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "L1 will have a renaissance in 2026 and largely win the market for RWA issuance.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "context": "Post 14, second sentence. Ethereum mainnet holds the majority of tokenized real-world asset value at end of 2026."
+  },
+  "bar": "strict",
+  "criterion": "Ethereum mainnet largely won RWA issuance in 2026: it captured the majority of the tokenized real-world asset value added during the year and ended with a higher share than it started.",
+  "measure": "rwa.xyz tokenized asset value by chain, excluding stablecoins: mainnet's share of the 2026 net increase above 50%, and its share at the latest reading above its 2026-01-01 share; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-10-24",
+    "source": "rwa.xyz networks dashboard",
+    "direction": "contradicts",
+    "quote": "Ethereum RWA Total Value (Excl. Stablecoins) $15,990,996,441; RWA Value (Distributed) $15,884,627,706; page summary Distributed Asset Value ($39.06B). [Ethereum is about 40.7% of distributed RWA value, below half.]",
+    "url": "https://app.rwa.xyz/networks"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-08-07",
+    "source": "Crypto Briefing (rwa.xyz data)",
+    "direction": "contradicts",
+    "quote": "[early June 2026] Ethereum held approximately $16.6 billion in distributed tokenized RWA value, representing 52.85% of the entire on-chain RWA market [...] By early August 2026, the total distributed RWA value across all chains had surged to $38 billion. Ethereum's slice grew to roughly $17.3 billion, though its percentage share dipped to around 45-46% as competing chains absorbed a portion of the overall market expansion. BNB Chain reported $3.6 billion in RWA value in the June snapshot.",
+    "url": "https://cryptobriefing.com/ethereum-dominates-tokenized-rwa-market/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.02
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.98
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.96,
+   "confidence": 0.94,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.04,
+    "2": 0.96
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1421,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:05:56Z"
+}

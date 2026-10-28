@@ -1,0 +1,113 @@
+{
+ "hash": "e5afc5625f9b84be38e2cdddf6402a912ca9bdae4043744904bbb03372be402f",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Mike Ippolito",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "VCs will launch credit funds (which largely won't work), but real credit funds will become more active. They'll act as liquidators for RWAs and vault managers, 2-3 Apollo size funds will make big pushes in.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "context": "Post 16. Two or three large traditional credit managers (Apollo-scale) make major onchain credit moves in 2026."
+  },
+  "bar": "standard",
+  "criterion": "At least two large traditional credit managers made notable onchain credit moves in 2026.",
+  "measure": "Same, with 'large' read as a top-20 alternative credit manager.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-02-13",
+    "source": "Morpho Association announcement",
+    "direction": "supports",
+    "quote": "subject to an overall ownership cap of 90 million MORPHO tokens over a 48-month period [...] Apollo and Morpho will be working together to support onchain lending markets on Morpho's protocol.",
+    "url": "https://morpho.org/blog/morpho-association-announces-cooperation-agreement-with-apollo/"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-02-16",
+    "source": "Cointelegraph",
+    "direction": "supports",
+    "quote": "Apollo or its affiliates may buy up to 90 million MORPHO governance tokens over four years [...] 9% of the 1 billion-token supply [...] Apollo [has] nearly $940 billion in assets under management.",
+    "url": "https://cointelegraph.com/news/apollo-deepens-blockchain-play-enters-crypto-lending-via-morpho-partnership"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-06-07",
+    "source": "Crypto Briefing",
+    "direction": "neutral",
+    "quote": "In early June 2026, Securitize launched a tokenized private credit fund based on Hamilton Lane's strategy, deployed on the TRON blockchain. [Hamilton Lane manages hundreds of billions in private markets assets.] Active on-chain private credit loans now exceed $14B. [No 2026 onchain credit move by Blackstone, KKR, Ares, Blue Owl or Carlyle was found.]",
+    "url": "https://cryptobriefing.com/private-credit-issuance-falls-onchain-surges/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.14
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.49
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.79,
+   "confidence": 0.69,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.21,
+    "2": 0.79
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1462,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:05:56Z"
+}

@@ -1,0 +1,122 @@
+{
+ "hash": "2a0858bdd6c527371e998daa06d5097efd0e702446ed9f0e673f0b6fa26f27ad",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Every",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Dan predicts a third kind of engineer: agentic engineers who fully delegate implementation to AI and move up a level to managing and orchestrating agents.",
+   "author": "Dan Shipper",
+   "date": "2025-12-23",
+   "context": "Prediction 2 of 3, 'New roles are emerging'. Editor's paraphrase. A recognised job category of engineers who direct agents rather than write code emerges in 2026."
+  },
+  "bar": "standard",
+  "criterion": "In 2026 job postings or major-outlet coverage recognised engineers who direct agents rather than write code as a distinct role.",
+  "measure": "Postings at named companies or major-outlet coverage dated 2026.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-04-13",
+    "source": "Lightcast (Stanford AI Index 2026 data)",
+    "direction": "supports",
+    "quote": "grew from just 0.06% of postings in 2024 to 0.23% in 2025. ... That's a more than 280% increase in a single year, representing nearly 90,000 job postings in the US alone.",
+    "url": "https://lightcast.io/resources/blog/stanford-ai-2026"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-05-27",
+    "source": "Stack Overflow",
+    "direction": "neutral",
+    "quote": "This new survey shows 59% use agents at work at any frequency, compared to 31% in the 2025 Developer Survey.",
+    "url": "https://stackoverflow.blog/2026/05/27/agents-on-a-leash-agentic-ai-remains-mostly-monitored-at-work"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-10-06",
+    "source": "Stack Overflow",
+    "direction": "neutral",
+    "quote": "73% of respondents who indicate using AI coding assistants/agents use them daily ... The agents of choice are Claude Code (66%) and GitHub Copilot (59%).",
+    "url": "https://stackoverflow.blog/2026/10/06/the-results-of-the-2026-developer-survey-are-here/"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-09-01",
+    "source": "Talentify (Booz Allen Hamilton posting)",
+    "direction": "supports",
+    "quote": "Agentic AI Engineer (job title, Booz Allen Hamilton, McLean, Virginia; aggregator listing, not fetched)",
+    "url": "https://www.talentify.io/agentic-ai-engineer-mclean-virginia-us-booz-allen-hamilton-1"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.56
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.07
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.7,
+   "confidence": 0.55,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.01,
+    "1": 0.28,
+    "2": 0.71
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1576,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:09:37Z"
+}

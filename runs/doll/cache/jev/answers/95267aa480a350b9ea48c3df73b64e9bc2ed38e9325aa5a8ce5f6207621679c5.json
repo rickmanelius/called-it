@@ -1,0 +1,131 @@
+{
+ "hash": "95267aa480a350b9ea48c3df73b64e9bc2ed38e9325aa5a8ce5f6207621679c5",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Bob Doll",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Earnings growth falls short of consensus +14%",
+   "author": "Bob Doll",
+   "date": "2025-12-31",
+   "context": "Prediction 4 of 10, first half. S&P 500 calendar-2026 earnings growth comes in below the roughly 14% consensus that stood at the start of the year."
+  },
+  "bar": "strict",
+  "criterion": "S&P 500 earnings growth for 2026 falls short of the 14% consensus he cited, according to both major trackers.",
+  "measure": "FactSet Earnings Insight and LSEG I/B/E/S latest calendar-2026 growth figures (estimates blended with reported results), both below 14% and below each tracker's end-December-2025 consensus; provisional until all four quarters report.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2025-12-19",
+    "source": "FactSet Insight (December 19, 2025)",
+    "direction": "neutral",
+    "quote": "The estimated (year-over-year) earnings growth rate for CY 2026 is 15.0%, which is above the trailing 10-year average (annual) earnings growth rate of 8.6% (2015 - 2024).",
+    "url": "https://insight.factset.com/sp-500-cy-2026-earnings-preview-analysts-expect-earnings-growth-of-15"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-01-09",
+    "source": "FactSet Earnings Insight (January 9, 2026)",
+    "direction": "neutral",
+    "quote": "For CY 2026, analysts are projecting earnings growth of 14.9% and revenue growth of 7.3%. [start-of-year consensus baseline]",
+    "url": "https://advantage.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_010926.pdf"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-10-16",
+    "source": "FactSet Earnings Insight (October 16, 2026)",
+    "direction": "contradicts",
+    "quote": "For CY 2026, analysts are predicting (year-over-year) earnings growth of 32.8%.",
+    "url": "https://insight.factset.com/sp-500-earnings-season-update-october-16-2026"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-10-13",
+    "source": "CMC Markets citing LSEG I/B/E/S",
+    "direction": "neutral",
+    "quote": "S&P 500 earnings are expected to grow 30.6% year on year in the third quarter of 2026 ... 28.5% in the fourth [no LSEG full-year CY2026 figure was found]",
+    "url": "https://www.cmcmarkets.com/en-sg/news-and-analysis/sp-500-earnings-ai-optimism-faces-the-test-of-higher-rates"
+   },
+   {
+    "tier": 4,
+    "tier_meaning": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+    "date": "2026-10-05",
+    "source": "Bob Doll, Crossmark (4Q26 commentary)",
+    "direction": "contradicts",
+    "quote": "Earnings growth has been extraordinary, both in absolute terms and relative to expectations. Earnings growth has exceeded expectations by nearly 15%, stocks are up roughly 10%, and therefore the P/E of the market has fallen by about 15% (or three P/E turns) since the start of the year.",
+    "url": "https://www.crossmarkglobal.com/quarterly-investment-commentary-4q26/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.02
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.99
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.78,
+   "confidence": 0.67,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.22,
+    "2": 0.78
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1883,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T20:16:43Z"
+}

@@ -1,0 +1,104 @@
+{
+ "hash": "69f3e86db148cda03e11c7da0b086beb7166bcce48cacba1d16f2df39fc71472",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Every",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Anything a user can do in an app, an agent can also do. Then anything the app can do, the agent can do. Eventually, anything a developer can do—changing logic, fixing bugs, customizing behavior—will be something the agent handles on the user’s behalf.",
+   "author": "Dan Shipper",
+   "date": "2025-12-23",
+   "context": "Prediction 1 of 3, 'Agents become infrastructure'. A staged claim about how software gets built; the first stage (agents can do anything a user can in an app) is the checkable 2026 part, the 'eventually' stage has no date."
+  },
+  "bar": "lenient",
+  "criterion": "In 2026 at least one major app beyond coding tools shipped an agent that can do most of what a user can do in it.",
+  "measure": "One major non-coding app, per release notes or reporting dated 2026; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-04-22",
+    "source": "Microsoft 365 Blog",
+    "direction": "supports",
+    "quote": "agentic capabilities in Word, Excel, and PowerPoint are now generally available. ... can take multi-step, app-native actions directly in your documents, worksheets, and presentations.",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/04/22/copilots-agentic-capabilities-in-word-excel-and-powerpoint-are-generally-available/"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-02-25",
+    "source": "AlternativeTo",
+    "direction": "supports",
+    "quote": "Once configured, agents run without manual prompting, using triggers or schedules to keep work moving. ... Custom Agents are free through May 3, 2026, then will require Notion credits starting May 4, 2026.",
+    "url": "https://alternativeto.net/news/2026/2/notion-3-3-launches-custom-agents-for-autonomous-team-automation"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.73
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.02
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.95,
+   "confidence": 0.93,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.05,
+    "2": 0.95
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1347,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:09:37Z"
+}

@@ -1,0 +1,95 @@
+{
+ "hash": "e6f41be0b9ebedc2a722376aaf2dc6cd56975ed2ff2c4e86983c3dc2ad50f13b",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Bob Doll",
+  "target_year": 2026,
+  "as_of": "2026-06-30",
+  "claim": {
+   "quote": "P/Es decline modestly, making it a tougher year to make money.",
+   "author": "Bob Doll",
+   "date": "2025-12-31",
+   "context": "Prediction 4 of 10, second half, split from c5. The S&P 500 forward or trailing P/E ends 2026 modestly below where it started."
+  },
+  "bar": "standard",
+  "criterion": "The S&P 500's P/E declined in 2026, read as at least a quarter of a point.",
+  "measure": "FactSet, LSEG or Yardeni forward 12-month P/E, latest reading versus 2025-12-31; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-01-09",
+    "source": "FactSet Earnings Insight (January 9, 2026)",
+    "direction": "neutral",
+    "quote": "The forward 12-month P/E ratio is 22.2, which is above the 5-year average (20.0) and above the 10-year average (18.7). [closest published FactSet reading to December 31, 2025; the December 19, 2025 edition read 21.8]",
+    "url": "https://advantage.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_010926.pdf"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.04
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.09
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.12,
+   "confidence": 0.7,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.04,
+    "1": 0.8,
+    "2": 0.16
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1180,
+  "output_tokens": 52
+ },
+ "at": "2026-10-25T02:36:13Z"
+}

@@ -1,0 +1,95 @@
+{
+ "hash": "4bd738f9d9b62a4735ff582ff9b39608cc96707eacfbf2c976b29b408ca74165",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Scott Galloway",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Short-Form Video and AI Meteors Strike Hollywood",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "context": "Heading of prediction 7. Body: YouTube and TikTok take young viewers (78% of 10 to 24 year olds), AI cuts production costs; 'Hollywood is the new Detroit'. Visible damage to studios and networks in 2026."
+  },
+  "bar": "lenient",
+  "criterion": "In 2026 YouTube or TikTok viewing overtook traditional TV among young audiences, or AI tools were credited with cutting production costs at a major studio.",
+  "measure": "Nielsen or a reputable survey dated 2026, or major-outlet reporting of AI-driven cost cuts at a studio.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-07-16",
+    "source": "Fortune",
+    "direction": "supports",
+    "quote": "It also included 17 minutes of AI-enhanced footage that was produced \"twice as fast and at half the cost,\" ... So far this year, Netflix said, its creative partners have used GenAI workflows in 300 of its titles ... what could be up to $20 billion this year on content creation",
+    "url": "https://fortune.com/2026/07/16/netflix-made-17-minutes-of-a-documentary-twice-as-fast-and-at-half-the-cost-amid-a-20-billion-projected-cost-for-content/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.96
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.02
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.03,
+   "confidence": 0.95,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.97,
+    "2": 0.03
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1167,
+  "output_tokens": 52
+ },
+ "at": "2026-10-25T02:56:59Z"
+}

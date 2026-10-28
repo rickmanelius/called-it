@@ -1,0 +1,113 @@
+{
+ "hash": "ffadde7a4337f156f27884fae1ec7893e845c09013fb8efe58ed7e28b45ba85e",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Mike Ippolito",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Saylor’s reputation will take a hit, and Bitcoin’s weakness about “not being a productive asset” will gain steam again.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "context": "Post 12, second sentence. Michael Saylor / Strategy face reputational damage (e.g. stock underperformance, forced selling, index removal, widespread critical coverage) in 2026."
+  },
+  "bar": "strict",
+  "criterion": "Saylor's reputation took a real hit in 2026: Strategy underperformed bitcoin, its premium to net asset value disappeared or it suffered an index setback, and major outlets ran critical coverage.",
+  "measure": "MSTR versus BTC/USD 2026 returns through the run date; mNAV below 1.0 or an index removal or rejection per reporting; two or more major outlets with critical pieces dated 2026; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-10-23",
+    "source": "Yahoo Finance chart API (MSTR daily closes)",
+    "direction": "contradicts",
+    "quote": "Closing price on Dec 31, 2025: 151.95. Most recent close: 146.01 on October 23, 2026. [About -3.9% year to date versus bitcoin's roughly -8% (CoinGecko $80,480 vs $87,508.83), so MSTR has not underperformed bitcoin in 2026 to date.]",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/MSTR?range=1y&interval=1d"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-05-08",
+    "source": "Fortune",
+    "direction": "supports",
+    "quote": "We will probably sell some Bitcoin to fund a dividend just to inoculate the market. [Saylor on the earnings call, reversing his October stance You do not sell your Bitcoin.] Strategy's market capitalization skyrocketed to over $100 billion in late 2024 and is now worth around $63 billion. [Fortune calls it a seeming about-face that surprised devotees and analysts.]",
+    "url": "https://fortune.com/2026/05/08/michael-saylor-mstr-strategy-microstrategy-bitcoin-sales-short-sellers-haters/"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-06-28",
+    "source": "Stocktwits News",
+    "direction": "supports",
+    "quote": "Strategy's mNAV ratio dipped to 0.99, below 1 for the first time in its history [...] saw its market value slip below the worth of its Bitcoin (BTC) holdings for the first time ever. Bitcoin finished the week near $59,900, down about 6.4%.",
+    "url": "https://stocktwits.com/news-articles/markets/equity/mstr-mnav-below-1-first-time-saylor-bitcoin/cZ1e5jgR7Wr"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.38
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.94
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.71,
+   "confidence": 0.58,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.01,
+    "1": 0.26,
+    "2": 0.73
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1626,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:05:58Z"
+}

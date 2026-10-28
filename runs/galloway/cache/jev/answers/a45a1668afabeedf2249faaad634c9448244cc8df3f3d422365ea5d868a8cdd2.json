@@ -1,0 +1,131 @@
+{
+ "hash": "a45a1668afabeedf2249faaad634c9448244cc8df3f3d422365ea5d868a8cdd2",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Scott Galloway",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Vice of the Year: Prediction Markets",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "context": "Heading of prediction 10. Body: prediction markets are gambling, eating the gaming business (six gaming stocks down 22% YTD), with addiction and insider-trading externalities. Prediction markets grow and become the year's vice story in 2026."
+  },
+  "bar": "strict",
+  "criterion": "Prediction markets were the vice of 2026: volume at least doubled, the gaming stocks he named trailed the market, and the gambling and addiction framing was widespread.",
+  "measure": "Combined Kalshi and Polymarket 2026 volume at least 2x 2025 (annualised); the six named gaming stocks (Aristocrat, Caesars, DraftKings, Evolution, Flutter, MGM) on average underperforming the S&P 500 in 2026; and two or more major outlets framing prediction markets as gambling or addiction in 2026; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2025-12-31",
+    "source": "The Block",
+    "direction": "supports",
+    "quote": "Baseline (full year 2025): generated more than $44 billion in trading volume this year ... monthly volumes topping $10 billion in November",
+    "url": "https://www.theblock.co/post/383733/prediction-markets-kalshi-polymarket-duopoly-2025"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-07-01",
+    "source": "The Block",
+    "direction": "supports",
+    "quote": "Kalshi, Polymarket, and Polymarket US recorded $44.8 billion in combined monthly trading volume in June ... growing 87.4% to $31.5 billion from $16.81 billion [Kalshi] ... from May's $25.66 billion monthly volume ... More than a dozen state-level authorities have taken legal action against Kalshi and Polymarket",
+    "url": "https://www.theblock.co/post/406983/kalshi-polymarket-volume-45-billion"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-08-07",
+    "source": "Front Office Sports",
+    "direction": "neutral",
+    "quote": "DraftKings says it is seeing \"no discernible impact\" from prediction markets on its traditional sportsbook business ... Flutter says FanDuel has seen a \"low single-digit\" impact. ... while Flutter cut its full-year profit guidance by 22%",
+    "url": "https://frontofficesports.com/draftkings-fanduel-downplay-prediction-market-cannibalization/"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-09-24",
+    "source": "Al Jazeera",
+    "direction": "supports",
+    "quote": "Our gambling laws exist to protect New Yorkers, prevent the potential harms of problem gambling [AG Letitia James] ... especially those underage who are most vulnerable to problem gaming. [Gov. Kathy Hochul]",
+    "url": "https://www.aljazeera.com/economy/2026/9/24/new-york-sues-polymarket-over-allegations-of-illegal-gambling-operations"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-10-15",
+    "source": "24/7 Wall St.",
+    "direction": "supports",
+    "quote": "still down 44% year to date (YTD) to $19.14 [DraftKings] ... stock is down 65% YTD to $75.83 [Flutter Entertainment] ... is up 13% YTD to $771.55 [SPY] ... prediction markets are taking share of U.S. sports gambling and pressuring the licensed operators",
+    "url": "https://247wallst.com/investing/2026/10/15/draftkings-is-down-44-in-2026-is-dkng-stock-dead-money-or-due-for-a-bounce/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.35
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.32
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.94,
+   "confidence": 0.93,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.05,
+    "2": 0.95
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1926,
+  "output_tokens": 52
+ },
+ "at": "2026-10-25T02:56:59Z"
+}

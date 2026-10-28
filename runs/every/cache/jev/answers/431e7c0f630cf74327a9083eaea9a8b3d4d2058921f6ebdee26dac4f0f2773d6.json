@@ -1,0 +1,113 @@
+{
+ "hash": "431e7c0f630cf74327a9083eaea9a8b3d4d2058921f6ebdee26dac4f0f2773d6",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Every",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "A mass-market robotic pet succeeds by the end of 2026.",
+   "author": "Willie Williams",
+   "date": "2025-12-23",
+   "context": "The wildcard prediction, stated as the editor's rendering of Williams's view. He names Moflin as the one to watch. 'Succeeds' is undefined."
+  },
+  "bar": "strict",
+  "criterion": "A mass-market robotic pet was a clear commercial success in 2026: at least 100,000 units sold in the year.",
+  "measure": "Unit sales for calendar 2026 per the maker or a major outlet, any launch date; a product sold mainly to institutions does not count as mass-market.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2025-09-19",
+    "source": "Sherwood News",
+    "direction": "neutral",
+    "quote": "Baseline (2025): The company is hoping to sell a total of 7,000 units in the UK and US by the end of March 2026 ... The G-Shock-maker sold some 10,000 of the pet robots in its home country as of the end of May",
+    "url": "https://sherwood.news/business/casio-now-selling-furry-ai-powered-pet-robot-bets-on-loneliness"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-10-14",
+    "source": "BriefGlance",
+    "direction": "contradicts",
+    "quote": "Moflin has sold over 20,000 units in Japan since its November 2024 debut.",
+    "url": "https://briefglance.com/companies/casio-america-inc/pulses/89427"
+   },
+   {
+    "tier": 4,
+    "tier_meaning": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+    "date": "2025-12-23",
+    "source": "Every",
+    "direction": "neutral",
+    "quote": "Baseline (2025, the prediction itself): About 85 percent of people viscerally hate it and want to throw it out ... 10 percent are neutral ... 5 percent absolutely love it. ... 'nailed the experience of threading the uncanny valley.'",
+    "url": "https://every.to/context-window/every-s-2026-predictions"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.05
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.29
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.67,
+   "confidence": 0.5,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.33,
+    "2": 0.67
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1415,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:09:37Z"
+}

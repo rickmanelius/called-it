@@ -1,0 +1,95 @@
+{
+ "hash": "ea96357ee364059283e929ee1a05a5bb88e0dd73958f9ea3768822860c65b961",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Bob Doll",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "losing at least 20-25 seats.",
+   "author": "Bob Doll",
+   "date": "2025-12-31",
+   "context": "Prediction 10 of 10, third part, split from c12. Republicans' net House loss is at least 20 seats. 'At least 20-25' is itself a range; the bars settle it."
+  },
+  "bar": "standard",
+  "criterion": "Republicans lose at least 20 House seats, the floor he stated.",
+  "measure": "Net change in Republican House seats after the November 3, 2026 election, per the AP or an official count; open until November 3.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-10-22",
+    "source": "Reuters explainer (syndicated via Devdiscourse)",
+    "direction": "neutral",
+    "quote": "ahead of the November 3, 2026, midterm elections ... Currently, Republicans hold a 218-214 majority in the House [the net seat change is not known until after November 3, 2026]",
+    "url": "https://www.devdiscourse.com/article/international/3996004-explainer-what-you-need-to-know-about-the-2026-us-midterm-elections"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.01
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.02
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.0,
+   "confidence": 0.97,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.01,
+    "1": 0.98,
+    "2": 0.01
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1133,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T20:16:44Z"
+}

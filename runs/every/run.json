@@ -1,0 +1,49 @@
+{
+  "name": "every",
+  "tool": {
+    "name": "called-it",
+    "version": "0.1.0"
+  },
+  "subject": {
+    "name": "Every",
+    "kind": "company",
+    "website": "https://every.to",
+    "x_handles": [
+      "every",
+      "danshipper"
+    ],
+    "domains": [
+      "AI models",
+      "software",
+      "agents",
+      "work",
+      "media",
+      "hardware"
+    ]
+  },
+  "target_year": 2026,
+  "season_window": {
+    "start": "2025-10-01",
+    "end": "2026-01-31"
+  },
+  "evidence_window": {
+    "start": "2026-01-01",
+    "end": "2026-10-24"
+  },
+  "canonical_urls": [
+    "https://every.to/context-window/every-s-2026-predictions",
+    "https://every.to/podcast/four-predictions-for-how-ai-will-change-software-in-2026"
+  ],
+  "top_n": 20,
+  "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+  },
+  "thresholds": {
+    "yes": 0.7,
+    "no": 0.3,
+    "min_strength": 1.0
+  },
+  "created": "2026-10-24",
+  "notes": "AI-first media and software company; predictions by staff plus a guest episode with Reid Hoffman"
+}

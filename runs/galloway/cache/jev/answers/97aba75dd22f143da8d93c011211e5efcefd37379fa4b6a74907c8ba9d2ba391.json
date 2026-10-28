@@ -1,0 +1,122 @@
+{
+ "hash": "97aba75dd22f143da8d93c011211e5efcefd37379fa4b6a74907c8ba9d2ba391",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Scott Galloway",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Nvidia & OpenAI Duopoly Comes Under Siege",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "context": "Heading of prediction 3. Body: Chinese models, Anthropic's enterprise lead and Alphabet erode both companies' positions; 'OpenAI could be our era's Netscape'."
+  },
+  "bar": "lenient",
+  "criterion": "Either Nvidia or OpenAI faced widely reported competitive pressure in 2026.",
+  "measure": "Major-outlet reporting dated 2026.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-02-24",
+    "source": "AMD press release (SEC Form 8-K exhibit)",
+    "direction": "supports",
+    "quote": "AMD and Meta today announced a 6-gigawatt agreement ... across multiple generations of AMD Instinct GPUs ... Shipments supporting the first gigawatt deployment are scheduled to begin in the second half of 2026 ... AMD has issued Meta a performance-based warrant for up to 160 million shares of AMD common stock",
+    "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000045/pressreleasedatedfebruary2.htm"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-01-22",
+    "source": "TechCrunch (citing Menlo Ventures)",
+    "direction": "supports",
+    "quote": "The AI research lab holds a 40% market share, according to a December report from VC firm Menlo Ventures ... OpenAI on the other hand has seen its usage market share drop from 50% in 2023 to 27% at the end of 2025",
+    "url": "https://techcrunch.com/2026/01/22/openai-is-coming-for-those-sweet-enterprise-dollars-in-2026"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-05-13",
+    "source": "TechCrunch (citing Ramp AI Index)",
+    "direction": "supports",
+    "quote": "shows 34.4% of participating businesses are paying for Anthropic services ... while only 32.3% pay for OpenAI",
+    "url": "https://techcrunch.com/2026/05/13/anthropic-now-has-more-business-customers-than-openai-according-to-ramp-data/"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-06-07",
+    "source": "Motley Fool",
+    "direction": "supports",
+    "quote": "Amazon, Alphabet, and Microsoft are all scaling up custom AI chips to run more of their own workloads. ... Custom silicon is real and growing, and it could erode Nvidia's pricing power over time.",
+    "url": "https://fool.com/investing/2026/06/07/amazon-alphabet-and-microsoft-are-all-racing-to-de"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.94
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.01
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.97,
+   "confidence": 0.95,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.03,
+    "2": 0.97
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1637,
+  "output_tokens": 52
+ },
+ "at": "2026-10-25T02:56:58Z"
+}

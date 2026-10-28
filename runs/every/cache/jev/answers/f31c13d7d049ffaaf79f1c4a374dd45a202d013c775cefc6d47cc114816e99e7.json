@@ -1,0 +1,47 @@
+{
+ "hash": "f31c13d7d049ffaaf79f1c4a374dd45a202d013c775cefc6d47cc114816e99e7",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "claim": "if you then zoom out though that kind that style of engineering is going to be on a pretty slow and steady decline.",
+  "author": "Dan Shipper",
+  "target_year": 2026,
+  "bar": "strict",
+  "bar_meaning": "what a hostile critic would require before conceding",
+  "criterion": "Demand for traditional, code-writing software engineering declined in 2026, with AI coding agents named as a cause."
+ },
+ "questions": {
+  "critic_accepts": {
+   "type": "noul",
+   "instructions": "Would a skeptical critic of the author agree that `criterion` is a fair test of `claim` at the stated `bar`?",
+   "criteria": {
+    "true": "The criterion tests what the claim actually asserted; it does not move the goalposts in the author's favour or against them beyond what the bar name implies.",
+    "false": "The criterion tests something the claim did not assert, or is so loose that almost anything would satisfy it, or so tight that no reasonable reading of the claim could."
+   }
+  },
+  "checkable": {
+   "type": "noul",
+   "instructions": "Can `criterion` be settled by public evidence available by the end of `target_year`?",
+   "criteria": {
+    "true": "A specific public fact, number, release, ranking or event would settle it.",
+    "false": "It depends on private information, taste, or a judgement nobody can verify."
+   }
+  }
+ },
+ "answers": {
+  "critic_accepts": {
+   "type": "noul",
+   "noul": 0.29
+  },
+  "checkable": {
+   "type": "noul",
+   "noul": 0.57
+  }
+ },
+ "usage": {
+  "input_tokens": 563,
+  "output_tokens": 41
+ },
+ "at": "2026-10-24T20:10:24Z"
+}

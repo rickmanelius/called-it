@@ -1,0 +1,113 @@
+{
+ "hash": "cb6c8289985dda8c9bc14730b197f78d9096757dd4f8ec16e9a0e8807b08cbab",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Every",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "And I think that’s going to hamper their product direction and velocity in a way that—if we look back in a couple years—we might say: that was an interesting era. It’s still a widely distributed piece of software, but it’s not the next-generation thing that we thought it was.",
+   "author": "Dan Shipper",
+   "date": "2026-01-05",
+   "context": "Cursor is the coding-agent leader most likely to stumble, caught between the IDE-plus-AI paradigm and the Claude Code paradigm; the stated horizon is 'a couple years', so an end-2026 check is partial."
+  },
+  "bar": "standard",
+  "criterion": "In 2026 Cursor lost momentum to agent-first coding tools, with slowing growth or a strategic pivot away from the IDE.",
+  "measure": "Reputable 2026 reporting describing slowing growth, share loss to Claude Code or Codex, or a pivot; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-10-06",
+    "source": "Stack Overflow",
+    "direction": "neutral",
+    "quote": "The agents of choice are Claude Code (66%) and GitHub Copilot (59%). (Cursor not named among agents of choice)",
+    "url": "https://stackoverflow.blog/2026/10/06/the-results-of-the-2026-developer-survey-are-here/"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-03-02",
+    "source": "Bloomberg",
+    "direction": "contradicts",
+    "quote": "AI Coding Startup Cursor Hits $2 Billion Annual Sales Rate (headline; body paywalled)",
+    "url": "https://www.bloomberg.com/news/articles/2026-03-02/cursor-recurring-revenue-doubles-in-three-months-to-2-billion"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-06-09",
+    "source": "Dealroom",
+    "direction": "contradicts",
+    "quote": "The run-rate is up from $3 billion in late April 2026 and $2 billion in February 2026. ... the enterprise business reported to have tripled in Q1 2026 versus Q4 2025",
+    "url": "https://dealroom.co/news/134107-cursor-tops-4b-annualized-revenue/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.33
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.9
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.85,
+   "confidence": 0.78,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.01,
+    "1": 0.13,
+    "2": 0.86
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1446,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:09:39Z"
+}

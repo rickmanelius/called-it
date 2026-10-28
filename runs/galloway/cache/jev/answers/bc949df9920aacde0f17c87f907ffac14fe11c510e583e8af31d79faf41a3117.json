@@ -1,0 +1,95 @@
+{
+ "hash": "bc949df9920aacde0f17c87f907ffac14fe11c510e583e8af31d79faf41a3117",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Scott Galloway",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Humanoid Robots = Self-Driving Cars of 2015",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "context": "Heading of prediction 9. Body: Optimus is a 'weapon of mass distraction'; humanoids are a decade out. Humanoid robots do not ship commercially at scale in 2026 and Tesla's claims go unmet."
+  },
+  "bar": "strict",
+  "criterion": "Humanoid robots stayed a demo in 2026: none shipped to paying external customers in volume.",
+  "measure": "No humanoid robot maker (Tesla, Figure, Agility, Unitree, 1X or peers) reported 1,000 or more units delivered to external paying customers in 2026, per company statements or major outlets; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-08-12",
+    "source": "KuCoin News / TechFlow (reporting Unitree announcement)",
+    "direction": "contradicts",
+    "quote": "total cumulative production of biomimetic bipedal humanoid robots has reached approximately 18,000 units ... In the first half of 2026, Unitree shipped approximately 5,900 units, accounting for 31% of the global market share",
+    "url": "https://www.kucoin.com/news/flash/unitree-robotics-announces-18-000-humanoid-robots-produced"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.05
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.95
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.03,
+   "confidence": 0.93,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.01,
+    "1": 0.95,
+    "2": 0.04
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1160,
+  "output_tokens": 52
+ },
+ "at": "2026-10-25T02:56:59Z"
+}

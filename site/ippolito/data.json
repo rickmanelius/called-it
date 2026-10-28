@@ -1,0 +1,3783 @@
+{
+ "tool": {
+  "name": "called-it",
+  "version": "1.0.0"
+ },
+ "run": {
+  "name": "ippolito",
+  "subject": {
+   "name": "Mike Ippolito",
+   "kind": "person",
+   "website": "https://blockworks.co",
+   "x_handles": [
+    "MikeIppolito_"
+   ],
+   "domains": [
+    "crypto markets",
+    "DeFi",
+    "stablecoins",
+    "chains",
+    "venture",
+    "regulation",
+    "prediction markets",
+    "corporate chains"
+   ]
+  },
+  "target_year": 2026,
+  "season_window": {
+   "start": "2025-10-01",
+   "end": "2026-01-31"
+  },
+  "evidence_window": {
+   "start": "2026-01-01",
+   "end": "2026-10-24"
+  },
+  "thresholds": {
+   "yes": 0.7,
+   "no": 0.3,
+   "min_strength": 1.0
+  }
+ },
+ "grader_models": {
+  "jev-1.14.0": 180
+ },
+ "aggregate": {
+  "per_bar": {
+   "strict": {
+    "met": 2,
+    "not_met": 11,
+    "unresolved": 7,
+    "resolved": 13,
+    "hit_rate": 0.154,
+    "hit_rate_all": 0.1
+   },
+   "standard": {
+    "met": 7,
+    "not_met": 4,
+    "unresolved": 9,
+    "resolved": 11,
+    "hit_rate": 0.636,
+    "hit_rate_all": 0.35
+   },
+   "lenient": {
+    "met": 9,
+    "not_met": 2,
+    "unresolved": 9,
+    "resolved": 11,
+    "hit_rate": 0.818,
+    "hit_rate_all": 0.45
+   }
+  },
+  "generosity_gap": 0.35,
+  "ladder": {
+   "c9": "not_met",
+   "c11": "unresolved",
+   "c13": "met:strict",
+   "c15": "not_met",
+   "c16": "unresolved",
+   "c20": "unresolved",
+   "c21": "met:standard",
+   "c22": "met:standard",
+   "c25": "not_met",
+   "c26": "not_met",
+   "c29": "met:lenient",
+   "c30": "met:lenient",
+   "c33": "met:strict",
+   "c34": "not_met",
+   "c35": "not_met",
+   "c37": "met:standard",
+   "c38": "met:standard",
+   "c42": "not_met",
+   "c43": "met:standard",
+   "c45": "not_met"
+  },
+  "ladder_counts": {
+   "met_strict": 2,
+   "met_standard": 5,
+   "met_lenient": 2,
+   "not_met": 8,
+   "unresolved": 3
+  },
+  "n_claims": 20
+ },
+ "claims": [
+  {
+   "id": "c9",
+   "quote": "We'll see real pain in venture capital. Unflattering performance will get reported in media outlets, many will struggle to raise and 2 blue chip funds will close.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "venture",
+   "rank": 3,
+   "scores": {
+    "is_prediction": 0.98,
+    "specificity": 2.95,
+    "specificity_conf": 0.96,
+    "boldness": 1.35,
+    "kind_p": {
+     "binary": 0.31,
+     "spectrum": 0.69
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c11",
+   "quote": "VC investment will be anemic. Expect a slightly diminished figure from 2025’s $25B, $12-$18B.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "venture",
+   "rank": 11,
+   "scores": {
+    "is_prediction": 0.98,
+    "specificity": 2.98,
+    "specificity_conf": 0.99,
+    "boldness": 0.92,
+    "kind_p": {
+     "binary": 0.0,
+     "spectrum": 1.0
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c13",
+   "quote": "despite that volume will continue to climb. Expect 2X from this year’s levels.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "prediction markets",
+   "rank": 12,
+   "scores": {
+    "is_prediction": 0.96,
+    "specificity": 2.85,
+    "specificity_conf": 0.87,
+    "boldness": 1.04,
+    "kind_p": {
+     "binary": 0.0,
+     "spectrum": 1.0
+    }
+   },
+   "split_of": "c12",
+   "source_id": "s1"
+  },
+  {
+   "id": "c15",
+   "quote": "Other CEXes will make inroads, Robinhood will continue to succed, Coinbase will fail.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "prediction markets",
+   "rank": 9,
+   "scores": {
+    "is_prediction": 0.93,
+    "specificity": 2.04,
+    "specificity_conf": 0.8,
+    "boldness": 1.79,
+    "kind_p": {
+     "binary": 0.24,
+     "spectrum": 0.76
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c16",
+   "quote": "No new startups will be successful, but some sports betting apps will.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "prediction markets",
+   "rank": 14,
+   "scores": {
+    "is_prediction": 0.97,
+    "specificity": 2.06,
+    "specificity_conf": 0.81,
+    "boldness": 1.4,
+    "kind_p": {
+     "binary": 0.26,
+     "spectrum": 0.74
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c20",
+   "quote": "Despite the loud fanfare, equity perps will have a slow start in 2026 but will do better on CEX venues than DEXes. Expect <5% of perp volume by EOY.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "DeFi",
+   "rank": 15,
+   "scores": {
+    "is_prediction": 0.98,
+    "specificity": 2.99,
+    "specificity_conf": 0.99,
+    "boldness": 0.82,
+    "kind_p": {
+     "binary": 0.0,
+     "spectrum": 1.0
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c21",
+   "quote": "It will be a bad year for Bitcoin sentiment, driven by outperformance in gold, quantum fears, and an overhang from DATs.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "crypto markets",
+   "rank": 18,
+   "scores": {
+    "is_prediction": 0.97,
+    "specificity": 1.82,
+    "specificity_conf": 0.72,
+    "boldness": 1.28,
+    "kind_p": {
+     "binary": 0.02,
+     "spectrum": 0.98
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c22",
+   "quote": "Saylor’s reputation will take a hit, and Bitcoin’s weakness about “not being a productive asset” will gain steam again.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "crypto markets",
+   "rank": 20,
+   "scores": {
+    "is_prediction": 0.94,
+    "specificity": 1.89,
+    "specificity_conf": 0.83,
+    "boldness": 1.24,
+    "kind_p": {
+     "binary": 0.01,
+     "spectrum": 0.99
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c25",
+   "quote": "Ethereum will completely reverse sentiment and have its best year since 2021.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "crypto markets",
+   "rank": 4,
+   "scores": {
+    "is_prediction": 0.98,
+    "specificity": 2.37,
+    "specificity_conf": 0.55,
+    "boldness": 1.66,
+    "kind_p": {
+     "binary": 0.11,
+     "spectrum": 0.89
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c26",
+   "quote": "L1 will have a renaissance in 2026 and largely win the market for RWA issuance.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "chains",
+   "rank": 5,
+   "scores": {
+    "is_prediction": 0.97,
+    "specificity": 2.09,
+    "specificity_conf": 0.79,
+    "boldness": 1.84,
+    "kind_p": {
+     "binary": 0.04,
+     "spectrum": 0.96
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c29",
+   "quote": "VCs will launch credit funds (which largely won't work), but real credit funds will become more active. They'll act as liquidators for RWAs and vault managers, 2-3 Apollo size funds will make big pushes in.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "DeFi",
+   "rank": 2,
+   "scores": {
+    "is_prediction": 0.97,
+    "specificity": 2.9,
+    "specificity_conf": 0.91,
+    "boldness": 1.42,
+    "kind_p": {
+     "binary": 0.04,
+     "spectrum": 0.96
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c30",
+   "quote": "Vault AUM will grow but not an explosive amount from ~$5B today to $15-20B.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "DeFi",
+   "rank": 16,
+   "scores": {
+    "is_prediction": 0.97,
+    "specificity": 2.8,
+    "specificity_conf": 0.78,
+    "boldness": 0.88,
+    "kind_p": {
+     "binary": 0.0,
+     "spectrum": 1.0
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c33",
+   "quote": "REV will bottom around mid 2026, and start recovering into year end.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "chains",
+   "rank": 13,
+   "scores": {
+    "is_prediction": 0.98,
+    "specificity": 2.38,
+    "specificity_conf": 0.6,
+    "boldness": 1.18,
+    "kind_p": {
+     "binary": 0.09,
+     "spectrum": 0.91
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c34",
+   "quote": "Passive liquidity provision in AMMs largely dies in 2026, first driven by the success of prop AMMs in Solana.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "DeFi",
+   "rank": 8,
+   "scores": {
+    "is_prediction": 0.96,
+    "specificity": 2.06,
+    "specificity_conf": 0.88,
+    "boldness": 1.68,
+    "kind_p": {
+     "binary": 0.15,
+     "spectrum": 0.85
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c35",
+   "quote": "Solana will have a mini crisis around non-meme price discovery not happening on their chain, which will resolve by EOY",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "chains",
+   "rank": 10,
+   "scores": {
+    "is_prediction": 0.96,
+    "specificity": 2.4,
+    "specificity_conf": 0.57,
+    "boldness": 1.31,
+    "kind_p": {
+     "binary": 0.5,
+     "spectrum": 0.5
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c37",
+   "quote": "It’s another bad year for onchain infrastructure. Most general purpose L2s or alt L1s completely fail to attract any new users or apps. Expect big pivots or changes in the business model from several large protocols by EOY.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "chains",
+   "rank": 17,
+   "scores": {
+    "is_prediction": 0.96,
+    "specificity": 2.11,
+    "specificity_conf": 0.76,
+    "boldness": 1.17,
+    "kind_p": {
+     "binary": 0.19,
+     "spectrum": 0.81
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c38",
+   "quote": "Infrastructure will go through massive consolidation. L2 frameworks, RaaS, shared sequencing, etc… all compress into one category. These move from being thought of as ecosystems to CoSS, similar to Redhat. 2-3 vertically integrated solutions will emerge and do well.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "chains",
+   "rank": 7,
+   "scores": {
+    "is_prediction": 0.96,
+    "specificity": 2.9,
+    "specificity_conf": 0.9,
+    "boldness": 1.26,
+    "kind_p": {
+     "binary": 0.01,
+     "spectrum": 0.99
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c42",
+   "quote": "4-5 new chains will get announced, Blackrock is one of them.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "corporate chains",
+   "rank": 1,
+   "scores": {
+    "is_prediction": 0.97,
+    "specificity": 2.84,
+    "specificity_conf": 0.85,
+    "boldness": 1.61,
+    "kind_p": {
+     "binary": 0.05,
+     "spectrum": 0.95
+    }
+   },
+   "split_of": "c39",
+   "source_id": "s1"
+  },
+  {
+   "id": "c43",
+   "quote": "Base will begin to come under some amount of scrutiny after having largely been assumed to win the L2 war in 2025. The content coin push will fail, and there will be an existential crisis around not winning any category.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "chains",
+   "rank": 6,
+   "scores": {
+    "is_prediction": 0.97,
+    "specificity": 2.17,
+    "specificity_conf": 0.7,
+    "boldness": 1.73,
+    "kind_p": {
+     "binary": 0.21,
+     "spectrum": 0.79
+    }
+   },
+   "split_of": null,
+   "source_id": "s1"
+  },
+  {
+   "id": "c45",
+   "quote": "Most existing solutions will not do well, ZEC was a one off and will have a bad 2026.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "attribution": "subject",
+   "kind": "spectrum",
+   "domain": "crypto markets",
+   "rank": 19,
+   "scores": {
+    "is_prediction": 0.97,
+    "specificity": 1.92,
+    "specificity_conf": 0.87,
+    "boldness": 1.17,
+    "kind_p": {
+     "binary": 0.03,
+     "spectrum": 0.97
+    }
+   },
+   "split_of": "c44",
+   "source_id": "s1"
+  }
+ ],
+ "rubrics": [
+  {
+   "claim_id": "c42",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "Four or five new corporate chains were announced in 2026, and one of them is BlackRock's.",
+     "measure": "Public announcements by the company or coverage in a major crypto outlet, dated 2026-01-01 to the run date. A corporate chain is a blockchain launched or branded by a non-crypto-native company or financial institution (Tempo, Arc and Robinhood Chain are 2025 examples and do not count as new).",
+     "check": {
+      "critic_accepts": 0.74,
+      "checkable": 0.83
+     }
+    },
+    "standard": {
+     "criterion": "At least four new corporate chains were announced in 2026.",
+     "measure": "Same counting rule; BlackRock not required.",
+     "check": {
+      "critic_accepts": 0.42,
+      "checkable": 0.72
+     }
+    },
+    "lenient": {
+     "criterion": "Several new corporate chains, read as at least three, were announced in 2026.",
+     "measure": "Same counting rule.",
+     "check": {
+      "critic_accepts": 0.4,
+      "checkable": 0.68
+     }
+    }
+   },
+   "notes": "The BlackRock clause is the bold specific, so it is required only at strict. 'Announced' means a public announcement of a chain, not a rumour. Standard and lenient drop the BlackRock clause by design; the critic check rates them near even odds for that reason.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c29",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "Two or three credit managers of Apollo's scale made big pushes into onchain credit in 2026.",
+     "measure": "Announcements by the firms or major-outlet reporting of tokenized credit funds, onchain lending commitments or vault-management roles by alternative credit managers with at least $100B of credit assets (Apollo, Ares, Blackstone, KKR, Blue Owl, Carlyle, Brookfield or peers), dated 2026.",
+     "check": {
+      "critic_accepts": 0.73,
+      "checkable": 0.46
+     }
+    },
+    "standard": {
+     "criterion": "At least two large traditional credit managers made notable onchain credit moves in 2026.",
+     "measure": "Same, with 'large' read as a top-20 alternative credit manager.",
+     "check": {
+      "critic_accepts": 0.65,
+      "checkable": 0.58
+     }
+    },
+    "lenient": {
+     "criterion": "At least one large traditional credit manager made a notable new onchain credit move in 2026.",
+     "measure": "Same; the move must be new in 2026, not a product that existed at the start of the year.",
+     "check": {
+      "critic_accepts": 0.68,
+      "checkable": 0.61
+     }
+    }
+   },
+   "notes": "The VC-credit-fund clause ('largely won't work') is not graded; the Apollo-size clause is the checkable part.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c9",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "Two blue-chip crypto venture firms closed in 2026, and reporting documented widespread fundraising pain across crypto VC.",
+     "measure": "Major-outlet reporting of two widely recognised top-tier crypto VC firms (historically $500M or more raised) announcing a wind-down or an end to new investments in 2026, plus reporting on fundraising difficulty.",
+     "check": {
+      "critic_accepts": 0.75,
+      "checkable": 0.6
+     }
+    },
+    "standard": {
+     "criterion": "At least two recognised crypto venture firms wound down or stopped making new investments in 2026.",
+     "measure": "Major-outlet or trade-press reporting, dated 2026.",
+     "check": {
+      "critic_accepts": 0.66,
+      "checkable": 0.78
+     }
+    },
+    "lenient": {
+     "criterion": "At least one recognised crypto venture firm wound down in 2026 and reporting described fundraising difficulty across crypto VC.",
+     "measure": "Same.",
+     "check": {
+      "critic_accepts": 0.39,
+      "checkable": 0.79
+     }
+    }
+   },
+   "notes": "'Blue chip' is read as top-tier by capital raised; 'close' as winding down or ceasing new investments, not merely downsizing. Lenient halves his count; the critic check rates it near even odds, which is what a lenient bar on a count looks like.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c25",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "2026 is Ethereum's best year since 2021: ETH's return beats each of 2022, 2023, 2024 and 2025, and sentiment flipped positive.",
+     "measure": "ETH/USD calendar-2026 return through the run date (CoinGecko or CoinMarketCap) compared with each prior calendar-year return, plus major-outlet coverage describing a sentiment turn; provisional until December 31.",
+     "check": {
+      "critic_accepts": 0.8,
+      "checkable": 0.55
+     }
+    },
+    "standard": {
+     "criterion": "ETH's 2026 return beats its 2024 and 2025 returns.",
+     "measure": "ETH/USD calendar-2026 return through the run date (CoinGecko or CoinMarketCap) versus the 2024 and 2025 calendar returns; sentiment coverage is context, not a condition; provisional.",
+     "check": {
+      "critic_accepts": 0.37,
+      "checkable": 0.95
+     }
+    },
+    "lenient": {
+     "criterion": "Ethereum had a clearly better year than 2025: ETH's 2026 return is positive and above its 2025 return.",
+     "measure": "ETH/USD 2026 return through the run date, positive and above the 2025 calendar return; provisional.",
+     "check": {
+      "critic_accepts": 0.38,
+      "checkable": 0.94
+     }
+    }
+   },
+   "notes": "'Best year since 2021' is read literally at strict; standard asks for better than the last two years; lenient for outperformance of bitcoin plus a sentiment turn. An earlier lenient (outperformed bitcoin) was flagged as testing something the claim did not say.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c26",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "Ethereum mainnet largely won RWA issuance in 2026: it captured the majority of the tokenized real-world asset value added during the year and ended with a higher share than it started.",
+     "measure": "rwa.xyz tokenized asset value by chain, excluding stablecoins: mainnet's share of the 2026 net increase above 50%, and its share at the latest reading above its 2026-01-01 share; provisional.",
+     "check": {
+      "critic_accepts": 0.37,
+      "checkable": 0.72
+     }
+    },
+    "standard": {
+     "criterion": "Ethereum mainnet gained share of tokenized real-world assets in 2026 and remains the largest chain.",
+     "measure": "rwa.xyz by chain, excluding stablecoins: mainnet share at the latest reading above its 2026-01-01 share and the largest of any chain; provisional.",
+     "check": {
+      "critic_accepts": 0.21,
+      "checkable": 0.79
+     }
+    },
+    "lenient": {
+     "criterion": "Ethereum, counting mainnet and its L2s, held or gained share of tokenized real-world assets in 2026 and remains the largest ecosystem.",
+     "measure": "rwa.xyz by chain, excluding stablecoins, ecosystem share at the latest reading not below its 2026-01-01 share and the largest; provisional.",
+     "check": {
+      "critic_accepts": 0.27,
+      "checkable": 0.75
+     }
+    }
+   },
+   "notes": "'L1' is read as Ethereum mainnet; lenient allows the whole Ethereum ecosystem. 'Renaissance' is not graded separately. The first draft asked only whether Ethereum was the largest RWA chain, which it already was when the prediction was made; the critic check flagged all three bars and they were rewritten around gaining share.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c43",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "Base came under real scrutiny in 2026: its content-coin push failed, major outlets ran critical coverage of its strategy, and it lost its lead in at least one major L2 category.",
+     "measure": "Content-coin (Zora-style) volume on Base down at least 80% from its 2025 peak per Dune or reporting; two or more major crypto outlets with critical pieces dated 2026; L2Beat or DefiLlama showing Base no longer first among L2s in TVL, DEX volume or stablecoin supply at the latest reading.",
+     "check": {
+      "critic_accepts": 0.44,
+      "checkable": 0.71
+     }
+    },
+    "standard": {
+     "criterion": "Base's content-coin push faded sharply in 2026 and major outlets ran critical coverage of Base's strategy.",
+     "measure": "Dune or reporting on content-coin activity; at least one major crypto outlet with a critical piece dated 2026.",
+     "check": {
+      "critic_accepts": 0.48,
+      "checkable": 0.53
+     }
+    },
+    "lenient": {
+     "criterion": "Base's content-coin push faded in 2026, with activity well below its 2025 peak.",
+     "measure": "Content-coin (Zora-style) daily volume or active posters on Base down at least 50% from the 2025 peak at the latest reading, per Dune or reporting.",
+     "check": {
+      "critic_accepts": 0.58,
+      "checkable": 0.63
+     }
+    }
+   },
+   "notes": "'Existential crisis' is not gradable; the checkable parts are the content-coin outcome, critical coverage and category leadership.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c38",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "Infrastructure consolidated heavily in 2026: at least three mergers, acquisitions or shutdowns among L2 framework, rollup-as-a-service or shared-sequencing providers.",
+     "measure": "Company announcements or major-outlet reporting dated 2026. Reporting that names two or three vertically integrated providers as the survivors is supporting context.",
+     "check": {
+      "critic_accepts": 0.36,
+      "checkable": 0.83
+     }
+    },
+    "standard": {
+     "criterion": "At least two mergers, acquisitions or shutdowns among L2 framework, rollup-as-a-service or shared-sequencing providers in 2026.",
+     "measure": "Company announcements or major-outlet reporting dated 2026.",
+     "check": {
+      "critic_accepts": 0.33,
+      "checkable": 0.9
+     }
+    },
+    "lenient": {
+     "criterion": "At least one notable merger, acquisition or shutdown among such infrastructure providers in 2026.",
+     "measure": "Same.",
+     "check": {
+      "critic_accepts": 0.45,
+      "checkable": 0.86
+     }
+    }
+   },
+   "notes": "'Massive consolidation' is given a count; the CoSS/Redhat analogy is not graded. Standard and lenient halve and third his implied count; recorded as ours.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c34",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "Passive AMM liquidity provision largely died in 2026, led by Solana: proprietary AMMs carry most Solana DEX volume and passive LP share fell substantially across major chains.",
+     "measure": "Blockworks Research, Dune or DefiLlama DEX volume by venue type: prop AMMs (SolFi, ZeroFi, HumidiFi, Tessera and peers) above 50% of Solana DEX volume at the latest reading; passive-LP venues' share of DEX volume on Ethereum and Solana down materially during 2026.",
+     "check": {
+      "critic_accepts": 0.64,
+      "checkable": 0.62
+     }
+    },
+    "standard": {
+     "criterion": "Passive liquidity provision lost most of its share of Solana DEX volume in 2026.",
+     "measure": "Blockworks Research, Dune or DefiLlama: passive-pool venues (Raydium and Orca standard pools and peers) below 50% of Solana DEX volume at the latest reading, with proprietary AMMs taking the share; provisional.",
+     "check": {
+      "critic_accepts": 0.44,
+      "checkable": 0.75
+     }
+    },
+    "lenient": {
+     "criterion": "Passive liquidity provision lost share of Solana DEX volume during 2026 and was described as in decline.",
+     "measure": "Passive-pool share at the latest reading below its 2026-01-01 share per data, plus at least one major crypto outlet or research note describing the decline.",
+     "check": {
+      "critic_accepts": 0.5,
+      "checkable": 0.77
+     }
+    }
+   },
+   "notes": "'Largely dies' read as a majority-share flip at strict and standard, a direction at lenient. An earlier standard bar measured prop-AMM share directly; the critic check flagged it as testing the cause rather than the claim.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c15",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "Robinhood's prediction markets kept succeeding in 2026 and Coinbase's failed.",
+     "measure": "Robinhood: company disclosures or earnings showing 2026 prediction-market contract volume above 2025's. Coinbase: its prediction-market product under 5% of US prediction-market volume at the latest reading, or discontinued, per Dune, The Block or major-outlet reporting; provisional.",
+     "check": {
+      "critic_accepts": 0.31,
+      "checkable": 0.39
+     }
+    },
+    "standard": {
+     "criterion": "Robinhood's prediction-market business grew in 2026 and Coinbase's did not gain meaningful traction.",
+     "measure": "Company disclosures and major-outlet reporting dated 2026.",
+     "check": {
+      "critic_accepts": 0.36,
+      "checkable": 0.62
+     }
+    },
+    "lenient": {
+     "criterion": "Coinbase's prediction-market effort did not become a meaningful competitor to Kalshi or Polymarket in 2026.",
+     "measure": "Coinbase prediction-market volume under 10% of US prediction-market volume at the latest reading, or major-outlet reporting describing it as lagging; provisional.",
+     "check": {
+      "critic_accepts": 0.36,
+      "checkable": 0.49
+     }
+    }
+   },
+   "notes": "'Other CEXes will make inroads' is too vague to grade; Robinhood and Coinbase are the named, checkable parts.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c35",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "Solana had a mini crisis in 2026 over non-meme price discovery not happening on its chain, and by year end a major non-memecoin asset launched and traded primarily on Solana.",
+     "measure": "Two or more major crypto outlets or prominent Solana figures debating the issue in 2026, and a non-memecoin token with a market cap above $500M launching in 2026 with most of its spot volume on Solana DEXes, per DefiLlama or CoinGecko; provisional.",
+     "check": {
+      "critic_accepts": 0.55,
+      "checkable": 0.46
+     }
+    },
+    "standard": {
+     "criterion": "A widely covered debate took place in 2026 about non-meme price discovery not happening on Solana.",
+     "measure": "Two or more major crypto outlets (CoinDesk, The Block, Blockworks, Decrypt) or named Solana Foundation, Anza or Jupiter leaders raising the issue publicly, dated 2026.",
+     "check": {
+      "critic_accepts": 0.41,
+      "checkable": 0.48
+     }
+    },
+    "lenient": {
+     "criterion": "The concern that non-meme price discovery is not happening on Solana was raised publicly in 2026 by a prominent figure or outlet.",
+     "measure": "At least one major crypto outlet or prominent Solana figure, dated 2026.",
+     "check": {
+      "critic_accepts": 0.37,
+      "checkable": 0.69
+     }
+    }
+   },
+   "notes": "'Mini crisis' is read as a widely covered debate.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c11",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "2026 crypto venture investment comes in between $12B and $18B.",
+     "measure": "A major tracker (Galaxy Research, PitchBook, The Block, DefiLlama) full-year total when available; until then, quarterly 2026 totals annualised (year to date times 12 over months elapsed) falling inside the range; provisional.",
+     "check": {
+      "critic_accepts": 0.69,
+      "checkable": 0.67
+     }
+    },
+    "standard": {
+     "criterion": "2026 crypto venture investment is a diminished year: on pace for a total below 2025's roughly $25B but above $10B.",
+     "measure": "Same trackers, annualised; provisional.",
+     "check": {
+      "critic_accepts": 0.57,
+      "checkable": 0.8
+     }
+    },
+    "lenient": {
+     "criterion": "2026 crypto venture investment is on pace to come in below 2025's total.",
+     "measure": "Same trackers, annualised versus the tracker's own 2025 total; provisional.",
+     "check": {
+      "critic_accepts": 0.56,
+      "checkable": 0.93
+     }
+    }
+   },
+   "notes": "Trackers differ in methodology; compare within one tracker. He gave the range, so strict holds him to it.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c13",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "Prediction-market volume in 2026 is about double 2025's.",
+     "measure": "Combined Polymarket and Kalshi notional volume, 2026 year to date versus the same period of 2025 at or above 2.0x, or 2026 annualised at or above 2.0x full-year 2025, per Dune dashboards, The Block or company statements; provisional.",
+     "check": {
+      "critic_accepts": 0.76,
+      "checkable": 0.66
+     }
+    },
+    "standard": {
+     "criterion": "Prediction-market volume in 2026 grew strongly, at least 1.5x 2025's.",
+     "measure": "Same data, ratio at or above 1.5x; provisional.",
+     "check": {
+      "critic_accepts": 0.56,
+      "checkable": 0.76
+     }
+    },
+    "lenient": {
+     "criterion": "Prediction-market volume grew strongly in 2026, by at least a third over 2025.",
+     "measure": "Combined Polymarket and Kalshi notional volume, 2026 year to date versus the same period of 2025 at or above 1.33x, or annualised at or above 1.33x full-year 2025; provisional.",
+     "check": {
+      "critic_accepts": 0.33,
+      "checkable": 0.64
+     }
+    }
+   },
+   "notes": "Split from c12. 'Expect 2X' is held at strict; standard allows strong growth short of doubling; lenient the direction. An earlier lenient ('on pace to exceed 2025') was flagged as too loose for a prediction of 2X.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c33",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "Solana REV bottomed around mid-2026 and has been recovering into year end.",
+     "measure": "Blockworks Research monthly Solana REV: the 2026 low falls in May to August, every later full month is above that low, and the latest full month is at least 25% above it; provisional.",
+     "check": {
+      "critic_accepts": 0.67,
+      "checkable": 0.62
+     }
+    },
+    "standard": {
+     "criterion": "Solana REV reached its 2026 low around the middle of the year and has risen since.",
+     "measure": "Monthly REV low in April to September with the latest full month above it; provisional.",
+     "check": {
+      "critic_accepts": 0.67,
+      "checkable": 0.78
+     }
+    },
+    "lenient": {
+     "criterion": "Solana REV has recovered from a trough at some point in 2026.",
+     "measure": "Latest full month of REV above the lowest month of 2026; provisional.",
+     "check": {
+      "critic_accepts": 0.46,
+      "checkable": 0.77
+     }
+    }
+   },
+   "notes": "'Around mid 2026' read as May to August at strict and April to September at standard.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c16",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "No new prediction-market startup succeeded in 2026, while at least one major sports-betting app did.",
+     "measure": "No prediction-market startup launched in 2025 or 2026 reached 5% of US prediction-market monthly volume at any point in 2026 per Dune or The Block; at least one major sportsbook (DraftKings, FanDuel or peer) launched prediction markets in 2026 and reported, or was reported to have, meaningful volume.",
+     "check": {
+      "critic_accepts": 0.41,
+      "checkable": 0.45
+     }
+    },
+    "standard": {
+     "criterion": "No new prediction-market startup broke into the top tier in 2026, and at least one major sportsbook launched prediction markets.",
+     "measure": "Top tier read as the top three US venues by monthly volume per Dune or The Block; sportsbook launch per company announcement or major-outlet reporting.",
+     "check": {
+      "critic_accepts": 0.2,
+      "checkable": 0.58
+     }
+    },
+    "lenient": {
+     "criterion": "No new prediction-market startup rivalled Kalshi or Polymarket in 2026, and at least one major sportsbook entered prediction markets.",
+     "measure": "No new venue above 10% of US prediction-market volume per data or reporting; sportsbook entry per announcement or reporting.",
+     "check": {
+      "critic_accepts": 0.33,
+      "checkable": 0.69
+     }
+    }
+   },
+   "notes": "The startup clause is a negative that needs volume data; the sportsbook clause is a clean binary. The first draft's lenient bar dropped the startup half of the claim; the critic check flagged it at 0.18 and it was rewritten.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c20",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "Equity perps had a slow 2026: under 5% of perp volume at year end, with centralized venues ahead of decentralized ones.",
+     "measure": "Tokenized-stock perpetual volume as a share of total crypto perpetual volume at the latest 2026 reading per The Block, Dune or venue reports, and CEX equity-perp volume above DEX equity-perp volume; provisional.",
+     "check": {
+      "critic_accepts": 0.76,
+      "checkable": 0.71
+     }
+    },
+    "standard": {
+     "criterion": "Equity perps are under 5% of perp volume at the latest 2026 reading.",
+     "measure": "Same data; provisional.",
+     "check": {
+      "critic_accepts": 0.7,
+      "checkable": 0.65
+     }
+    },
+    "lenient": {
+     "criterion": "Equity perps remained a small minority of perp volume in 2026, read as under 10%.",
+     "measure": "Same data; provisional.",
+     "check": {
+      "critic_accepts": 0.54,
+      "checkable": 0.67
+     }
+    }
+   },
+   "notes": "He gave the number (under 5%) and the venue ordering; strict needs both, standard the number, lenient a looser reading of 'slow start'.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c30",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "Onchain vault AUM reached $15B to $20B in 2026.",
+     "measure": "DefiLlama vaults or Blockworks Research onchain asset-management AUM at the latest 2026 reading; provisional until December 31.",
+     "check": {
+      "critic_accepts": 0.59,
+      "checkable": 0.83
+     }
+    },
+    "standard": {
+     "criterion": "Onchain vault AUM reached at least $12B in 2026, close to the bottom of his range.",
+     "measure": "DefiLlama vaults or Blockworks Research onchain asset-management AUM at the latest 2026 reading; provisional.",
+     "check": {
+      "critic_accepts": 0.62,
+      "checkable": 0.74
+     }
+    },
+    "lenient": {
+     "criterion": "Onchain vault AUM grew meaningfully in 2026, read as at least 50% growth.",
+     "measure": "Same data, at least $7.5B at the latest reading; provisional.",
+     "check": {
+      "critic_accepts": 0.5,
+      "checkable": 0.81
+     }
+    }
+   },
+   "notes": "He gave the range; strict holds him to it. If the latest reading is above $20B the strict bar is also not met ('not an explosive amount').",
+   "revisions": []
+  },
+  {
+   "claim_id": "c37",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "2026 was another bad year for onchain infrastructure: at least three large protocols announced major pivots, and general-purpose chains broadly failed to grow their users.",
+     "measure": "Three or more general-purpose L2 or alt-L1 protocols with a peak market cap of $1B or more announcing a major pivot or business-model change in 2026, per announcements or major outlets; Artemis or Token Terminal showing median daily active addresses across the top 20 such chains lower at the latest reading than on 2026-01-01.",
+     "check": {
+      "critic_accepts": 0.61,
+      "checkable": 0.53
+     }
+    },
+    "standard": {
+     "criterion": "At least two large infrastructure protocols announced major pivots or business-model changes in 2026.",
+     "measure": "Announcements or major-outlet reporting dated 2026.",
+     "check": {
+      "critic_accepts": 0.63,
+      "checkable": 0.73
+     }
+    },
+    "lenient": {
+     "criterion": "At least one large infrastructure protocol announced a major pivot or business-model change in 2026.",
+     "measure": "Same.",
+     "check": {
+      "critic_accepts": 0.69,
+      "checkable": 0.83
+     }
+    }
+   },
+   "notes": "'Several' read as three at strict and two at standard.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c21",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "2026 was a bad year for Bitcoin sentiment: gold outperformed bitcoin, bitcoin is down for the year, and sentiment measures were predominantly negative.",
+     "measure": "Gold and BTC/USD 2026 returns through the run date; BTC/USD below its 2025 year-end price; Alternative.me Fear and Greed index averaging below 50 for the year or major-outlet coverage describing persistent negative sentiment; provisional.",
+     "check": {
+      "critic_accepts": 0.4,
+      "checkable": 0.75
+     }
+    },
+    "standard": {
+     "criterion": "Gold outperformed bitcoin in 2026 and bitcoin sentiment was described as poor for much of the year.",
+     "measure": "Price data plus major-outlet coverage dated 2026; provisional.",
+     "check": {
+      "critic_accepts": 0.59,
+      "checkable": 0.6
+     }
+    },
+    "lenient": {
+     "criterion": "Either gold outperformed bitcoin in 2026 or bitcoin spent most of 2026 below its end-2025 price.",
+     "measure": "Price data through the run date; provisional.",
+     "check": {
+      "critic_accepts": 0.63,
+      "checkable": 0.94
+     }
+    }
+   },
+   "notes": "'Bad year for sentiment' is made measurable through relative performance and a sentiment index. The causes he lists (gold, quantum, DATs) are not graded. Strict combines three conditions he implied but did not state; recorded as ours.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c45",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "ZEC had a bad 2026: down for the year and worse than bitcoin.",
+     "measure": "ZEC/USD 2026 return through the run date negative and below BTC/USD's, per CoinGecko or CoinMarketCap; provisional.",
+     "check": {
+      "critic_accepts": 0.41,
+      "checkable": 0.94
+     }
+    },
+    "standard": {
+     "criterion": "ZEC is down for 2026.",
+     "measure": "ZEC/USD 2026 return through the run date negative; provisional.",
+     "check": {
+      "critic_accepts": 0.41,
+      "checkable": 0.7
+     }
+    },
+    "lenient": {
+     "criterion": "ZEC fell well below its late-2025 peak during 2026.",
+     "measure": "ZEC/USD at the latest reading at least 30% below its late-2025 high; provisional.",
+     "check": {
+      "critic_accepts": 0.43,
+      "checkable": 0.94
+     }
+    }
+   },
+   "notes": "Split from c44. 'ZEC was a one off' is the thesis; the bars grade the price outcome. The critic check rates all three bars near 0.4; 'bad 2026' has no cleaner reading than price.",
+   "revisions": []
+  },
+  {
+   "claim_id": "c22",
+   "kind": "spectrum",
+   "bars": {
+    "strict": {
+     "criterion": "Saylor's reputation took a real hit in 2026: Strategy underperformed bitcoin, its premium to net asset value disappeared or it suffered an index setback, and major outlets ran critical coverage.",
+     "measure": "MSTR versus BTC/USD 2026 returns through the run date; mNAV below 1.0 or an index removal or rejection per reporting; two or more major outlets with critical pieces dated 2026; provisional.",
+     "check": {
+      "critic_accepts": 0.51,
+      "checkable": 0.76
+     }
+    },
+    "standard": {
+     "criterion": "Strategy's premium to its bitcoin holdings compressed materially in 2026 and major outlets published critical coverage of Saylor's strategy.",
+     "measure": "mNAV data (Strategy's own dashboard or trackers) and at least one major outlet dated 2026; provisional.",
+     "check": {
+      "critic_accepts": 0.56,
+      "checkable": 0.64
+     }
+    },
+    "lenient": {
+     "criterion": "In 2026 either MSTR underperformed bitcoin or major outlets published critical coverage of Saylor and Strategy.",
+     "measure": "Price data or major-outlet coverage dated 2026; provisional.",
+     "check": {
+      "critic_accepts": 0.47,
+      "checkable": 0.76
+     }
+    }
+   },
+   "notes": "The 'not a productive asset' clause is discourse and is not graded separately.",
+   "revisions": []
+  }
+ ],
+ "grades": [
+  {
+   "claim_id": "c29",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "no evidence gathered",
+   "met_p": null,
+   "contradicted_p": null,
+   "strength": null,
+   "evidence_ids": [],
+   "grader": {
+    "provider": "none"
+   },
+   "provisional": true
+  },
+  {
+   "claim_id": "c42",
+   "bar": "strict",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.05,
+   "contradicted_p": 0.93,
+   "strength": 1.75,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.24,
+    "2": 0.75
+   },
+   "strength_conf": 0.61,
+   "evidence_ids": [
+    "e64",
+    "e65",
+    "e66"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "802eab0f7505520d9595a40768c6496a44f363fbe035900d5154f2060beccba2",
+   "provisional": true
+  },
+  {
+   "claim_id": "c42",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.08,
+   "contradicted_p": 0.04,
+   "strength": 1.69,
+   "strength_probs": {
+    "0": 0.06,
+    "1": 0.19,
+    "2": 0.75
+   },
+   "strength_conf": 0.53,
+   "evidence_ids": [
+    "e64",
+    "e65"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "913169b77bd1d5d8fe03863a0f3eac2ff6767e1795fe7d8db39e04d6e8a9a015",
+   "provisional": true
+  },
+  {
+   "claim_id": "c42",
+   "bar": "lenient",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.22,
+   "contradicted_p": 0.05,
+   "strength": 1.79,
+   "strength_probs": {
+    "0": 0.03,
+    "1": 0.16,
+    "2": 0.8099999999999999
+   },
+   "strength_conf": 0.67,
+   "evidence_ids": [
+    "e64",
+    "e65"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "7e390405f73511372af4548e0069dd2e556fa3943064321b5b658adddab497e6",
+   "provisional": true
+  },
+  {
+   "claim_id": "c29",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.14,
+   "contradicted_p": 0.49,
+   "strength": 1.79,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.21,
+    "2": 0.79
+   },
+   "strength_conf": 0.69,
+   "evidence_ids": [
+    "e41",
+    "e42",
+    "e43"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "e5afc5625f9b84be38e2cdddf6402a912ca9bdae4043744904bbb03372be402f",
+   "provisional": true
+  },
+  {
+   "claim_id": "c29",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.72,
+   "contradicted_p": 0.06,
+   "strength": 1.95,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.04,
+    "2": 0.96
+   },
+   "strength_conf": 0.94,
+   "evidence_ids": [
+    "e41",
+    "e42",
+    "e43"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "2b1e8e8c5b439013fb588d858583fa593840d540109f5a47312280d8b3f79c58",
+   "provisional": true
+  },
+  {
+   "claim_id": "c9",
+   "bar": "strict",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.05,
+   "contradicted_p": 0.87,
+   "strength": 1.65,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.34,
+    "2": 0.65
+   },
+   "strength_conf": 0.46,
+   "evidence_ids": [
+    "e4",
+    "e6",
+    "e5"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "f6e0ac9976bc22c5ddd0b0e422ae5b9c599473b49cdc7f19fec890fcab227d3f",
+   "provisional": true
+  },
+  {
+   "claim_id": "c9",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.05,
+   "contradicted_p": 0.17,
+   "strength": 1.0,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.98,
+    "2": 0.01
+   },
+   "strength_conf": 0.97,
+   "evidence_ids": [
+    "e5"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "f2f252dc68b106cf009386867fb91c7d2de3a98fe4b28cefd575daa76d552583",
+   "provisional": true
+  },
+  {
+   "claim_id": "c9",
+   "bar": "lenient",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.43,
+   "contradicted_p": 0.12,
+   "strength": 1.56,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.44,
+    "2": 0.56
+   },
+   "strength_conf": 0.34,
+   "evidence_ids": [
+    "e4",
+    "e5"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "66d3d39a9a81471379090aa4e67cbed5494e749296037a75badccd08ffadce05",
+   "provisional": true
+  },
+  {
+   "claim_id": "c25",
+   "bar": "strict",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.01,
+   "contradicted_p": 0.99,
+   "strength": 1.94,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.06,
+    "2": 0.94
+   },
+   "strength_conf": 0.91,
+   "evidence_ids": [
+    "e33",
+    "e34",
+    "e35"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "2c37b85a019fe24a1fa67fc5dcd614e19953f7bea54ebc8d75c28a44a188fc6d",
+   "provisional": true
+  },
+  {
+   "claim_id": "c25",
+   "bar": "standard",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.04,
+   "contradicted_p": 0.97,
+   "strength": 1.97,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.03,
+    "2": 0.97
+   },
+   "strength_conf": 0.95,
+   "evidence_ids": [
+    "e33",
+    "e34",
+    "e35"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "bd107e3352eb0d6c88254a6a5e06d4330810b63935cb1997bba19b9cd0b84995",
+   "provisional": true
+  },
+  {
+   "claim_id": "c25",
+   "bar": "lenient",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.01,
+   "contradicted_p": 0.99,
+   "strength": 1.98,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.02,
+    "2": 0.98
+   },
+   "strength_conf": 0.97,
+   "evidence_ids": [
+    "e33",
+    "e34",
+    "e35",
+    "e36"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "0a836ae62c70a369f8866745d4831e90a66f9729c3dbce24f0f042b7b504b9af",
+   "provisional": true
+  },
+  {
+   "claim_id": "c26",
+   "bar": "strict",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.02,
+   "contradicted_p": 0.98,
+   "strength": 1.96,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.04,
+    "2": 0.96
+   },
+   "strength_conf": 0.94,
+   "evidence_ids": [
+    "e37",
+    "e40"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "9d466126754f468be73cd122c3f65a4dcd6d764b87ee1c54244b834f3ee2fac4",
+   "provisional": true
+  },
+  {
+   "claim_id": "c26",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.17,
+   "contradicted_p": 0.05,
+   "strength": 1.81,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.17,
+    "2": 0.82
+   },
+   "strength_conf": 0.71,
+   "evidence_ids": [
+    "e38"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "4af5698ddae99731bfc2bda4e4c409403f0341f97513374a4d874b4a867c4993",
+   "provisional": true
+  },
+  {
+   "claim_id": "c26",
+   "bar": "lenient",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.24,
+   "contradicted_p": 0.06,
+   "strength": 1.78,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.2,
+    "2": 0.79
+   },
+   "strength_conf": 0.67,
+   "evidence_ids": [
+    "e39"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "e445f7932d15b3d5f7f30321d317f9ff8da9fe1a23effe8d66e840a2bb00cfe4",
+   "provisional": true
+  },
+  {
+   "claim_id": "c43",
+   "bar": "strict",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.17,
+   "contradicted_p": 0.96,
+   "strength": 1.83,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.17,
+    "2": 0.83
+   },
+   "strength_conf": 0.74,
+   "evidence_ids": [
+    "e69",
+    "e70",
+    "e68",
+    "e67"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "de5aa04ee70de33c81b5b0334674e0ca5606481f51fe6556335493096271535b",
+   "provisional": true
+  },
+  {
+   "claim_id": "c43",
+   "bar": "standard",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.9,
+   "contradicted_p": 0.04,
+   "strength": 1.63,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.37,
+    "2": 0.63
+   },
+   "strength_conf": 0.44,
+   "evidence_ids": [
+    "e68",
+    "e67"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "61e883198e41eb456fd4e58cdfda31d65103859dfb4251bddbc4478ca1d5bb24",
+   "provisional": true
+  },
+  {
+   "claim_id": "c43",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.94,
+   "contradicted_p": 0.02,
+   "strength": 1.07,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.93,
+    "2": 0.07
+   },
+   "strength_conf": 0.9,
+   "evidence_ids": [
+    "e67"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "af31d9850bf3587ef218ca09c0f9c62e2eee1b8569b8e537452ab5a2492b8cb9",
+   "provisional": true
+  },
+  {
+   "claim_id": "c38",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.24,
+   "contradicted_p": 0.68,
+   "strength": 1.87,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.12,
+    "2": 0.88
+   },
+   "strength_conf": 0.82,
+   "evidence_ids": [
+    "e60",
+    "e63"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "be1621fe1a22b59fafd06df64c870cd33c6592a38f14faaa4ea13dfa9c4a8cc7",
+   "provisional": true
+  },
+  {
+   "claim_id": "c38",
+   "bar": "standard",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.75,
+   "contradicted_p": 0.07,
+   "strength": 1.68,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.31,
+    "2": 0.69
+   },
+   "strength_conf": 0.53,
+   "evidence_ids": [
+    "e61",
+    "e62",
+    "e60"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "20a5d3f4bb8e6665430440da8a7d87ffb9b28f8bc9a247c7342a8512fb464709",
+   "provisional": true
+  },
+  {
+   "claim_id": "c38",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.86,
+   "contradicted_p": 0.03,
+   "strength": 1.72,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.27,
+    "2": 0.73
+   },
+   "strength_conf": 0.59,
+   "evidence_ids": [
+    "e61",
+    "e62",
+    "e60"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "67a9bcaf44275f6f4e26f55b26f41312705e74a29adf31b76d0ef192564efb57",
+   "provisional": true
+  },
+  {
+   "claim_id": "c34",
+   "bar": "strict",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.03,
+   "contradicted_p": 0.9,
+   "strength": 1.79,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.2,
+    "2": 0.8
+   },
+   "strength_conf": 0.7,
+   "evidence_ids": [
+    "e50",
+    "e51"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "9f3587fd99f97030293e5fdbdea690f1fa1d18eb50bd9456436214344b029602",
+   "provisional": true
+  },
+  {
+   "claim_id": "c34",
+   "bar": "standard",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.38,
+   "contradicted_p": 0.8,
+   "strength": 1.72,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.27,
+    "2": 0.73
+   },
+   "strength_conf": 0.59,
+   "evidence_ids": [
+    "e49",
+    "e50",
+    "e51"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "dca8b42363b568e274d665019c6559ab8eeb3ff702c901e9f7bc9f4972a4140c",
+   "provisional": true
+  },
+  {
+   "claim_id": "c34",
+   "bar": "lenient",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.4,
+   "contradicted_p": 0.12,
+   "strength": 1.08,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.91,
+    "2": 0.09
+   },
+   "strength_conf": 0.86,
+   "evidence_ids": [
+    "e49"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "03c7dacdd893ebda5fdabfdbb3e90eec79438b1be8930d049c088355e6682f6a",
+   "provisional": true
+  },
+  {
+   "claim_id": "c15",
+   "bar": "strict",
+   "verdict": "not_met",
+   "reason": "implied: the standard bar is not met",
+   "met_p": 0.31,
+   "contradicted_p": 0.08,
+   "strength": 1.85,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.14,
+    "2": 0.86
+   },
+   "strength_conf": 0.79,
+   "evidence_ids": [
+    "e10",
+    "e11"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "817d55eb4c9d19ace68607c237e2d4e90c0bb2da86a2237cca28fef030e4aee2",
+   "provisional": true,
+   "implied_from": "standard"
+  },
+  {
+   "claim_id": "c15",
+   "bar": "standard",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.22,
+   "contradicted_p": 0.98,
+   "strength": 1.88,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.12,
+    "2": 0.88
+   },
+   "strength_conf": 0.82,
+   "evidence_ids": [
+    "e12",
+    "e10",
+    "e11"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "5a41cc2d45b85023021379fc2d3be0b095e74e9a987cf0c2c49a7cd1c39cbe8c",
+   "provisional": true
+  },
+  {
+   "claim_id": "c15",
+   "bar": "lenient",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.33,
+   "contradicted_p": 0.55,
+   "strength": 1.73,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.26,
+    "2": 0.74
+   },
+   "strength_conf": 0.61,
+   "evidence_ids": [
+    "e12",
+    "e13"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "b29c7a250ca0ccfd7d03f41a18dd41df0a58d4a9ff88a0efe66ef1908eedeccc",
+   "provisional": true
+  },
+  {
+   "claim_id": "c35",
+   "bar": "strict",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.02,
+   "contradicted_p": 0.7,
+   "strength": 1.74,
+   "strength_probs": {
+    "0": 0.03,
+    "1": 0.2,
+    "2": 0.77
+   },
+   "strength_conf": 0.61,
+   "evidence_ids": [
+    "e54",
+    "e53"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "de818ee69661fa4335c6bdc5f298516c3e811d29d493452768b05ec95e011213",
+   "provisional": true
+  },
+  {
+   "claim_id": "c35",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.15,
+   "contradicted_p": 0.29,
+   "strength": 1.58,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.39,
+    "2": 0.6
+   },
+   "strength_conf": 0.38,
+   "evidence_ids": [
+    "e53",
+    "e52"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "ca3a31f8afbdb5cf9d5af6eb79e1d7798297f6bbc2e7abbdce142ef1cc853643",
+   "provisional": true
+  },
+  {
+   "claim_id": "c35",
+   "bar": "lenient",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.46,
+   "contradicted_p": 0.25,
+   "strength": 1.65,
+   "strength_probs": {
+    "0": 0.07,
+    "1": 0.22,
+    "2": 0.71
+   },
+   "strength_conf": 0.46,
+   "evidence_ids": [
+    "e53",
+    "e52"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "855e2e74121fc1c5c71e3766603fd3b72c91a012d590733149b5db1ea93149f5",
+   "provisional": true
+  },
+  {
+   "claim_id": "c11",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.03,
+   "contradicted_p": 0.51,
+   "strength": 1.03,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.97,
+    "2": 0.03
+   },
+   "strength_conf": 0.95,
+   "evidence_ids": [
+    "e2"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "2ebd9e36e49bff9b2bfb422dc36a7c03f36a9d6dd7f70023d9a16cb5991436ad",
+   "provisional": true
+  },
+  {
+   "claim_id": "c11",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.18,
+   "contradicted_p": 0.35,
+   "strength": 1.31,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.66,
+    "2": 0.33
+   },
+   "strength_conf": 0.49,
+   "evidence_ids": [
+    "e1",
+    "e3"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "8a566e5a0f287094e3e3e930bcec4fd5735cffeb4ae52ef006910b934fb20b66",
+   "provisional": true
+  },
+  {
+   "claim_id": "c11",
+   "bar": "lenient",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.54,
+   "contradicted_p": 0.22,
+   "strength": 1.34,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.64,
+    "2": 0.35
+   },
+   "strength_conf": 0.46,
+   "evidence_ids": [
+    "e1",
+    "e3"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "a29e3f4338b552a4f79a73c8391dd5e6202243d40f997be548589d4d0e502976",
+   "provisional": true
+  },
+  {
+   "claim_id": "c13",
+   "bar": "strict",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.81,
+   "contradicted_p": 0.04,
+   "strength": 1.86,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.13,
+    "2": 0.87
+   },
+   "strength_conf": 0.8,
+   "evidence_ids": [
+    "e8",
+    "e7",
+    "e9"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "4c95cf48c55f1c6f7903e7de4080a728768a60f20782b57fdeeb9db3ef938699",
+   "provisional": true
+  },
+  {
+   "claim_id": "c13",
+   "bar": "standard",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.76,
+   "contradicted_p": 0.03,
+   "strength": 1.85,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.15,
+    "2": 0.85
+   },
+   "strength_conf": 0.78,
+   "evidence_ids": [
+    "e8",
+    "e7",
+    "e9"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "033560cb0447a36e6f44c5d53a3335ca23f618de67688778c47313971cb05aa0",
+   "provisional": true
+  },
+  {
+   "claim_id": "c13",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.86,
+   "contradicted_p": 0.02,
+   "strength": 1.85,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.15,
+    "2": 0.85
+   },
+   "strength_conf": 0.78,
+   "evidence_ids": [
+    "e8",
+    "e7",
+    "e9"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "1595972efbe0e35dd7a6d31947375f27b5bbba4631ef06122c618dc30e7fd7fa",
+   "provisional": true
+  },
+  {
+   "claim_id": "c33",
+   "bar": "strict",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.7,
+   "contradicted_p": 0.07,
+   "strength": 1.89,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.11,
+    "2": 0.89
+   },
+   "strength_conf": 0.83,
+   "evidence_ids": [
+    "e46",
+    "e47",
+    "e48"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "a5c20a5e881a694cf20ddb6aff1de73c4961eb2cb586863fe09d5c56dbc1867e",
+   "provisional": true
+  },
+  {
+   "claim_id": "c33",
+   "bar": "standard",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.86,
+   "contradicted_p": 0.07,
+   "strength": 1.86,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.13,
+    "2": 0.87
+   },
+   "strength_conf": 0.8,
+   "evidence_ids": [
+    "e46",
+    "e47",
+    "e48"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "6073422e72665037e570f746c90a3e726ca588a59559f118fd97bb7c99a8f097",
+   "provisional": true
+  },
+  {
+   "claim_id": "c33",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.98,
+   "contradicted_p": 0.02,
+   "strength": 1.87,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.13,
+    "2": 0.87
+   },
+   "strength_conf": 0.8,
+   "evidence_ids": [
+    "e46",
+    "e47",
+    "e48"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "60df983b6e9dd34172124fe9c4d742a1c0c094680d0b916feeb3831d6fa46d69",
+   "provisional": true
+  },
+  {
+   "claim_id": "c16",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.37,
+   "contradicted_p": 0.31,
+   "strength": 1.9,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.1,
+    "2": 0.9
+   },
+   "strength_conf": 0.85,
+   "evidence_ids": [
+    "e17",
+    "e15",
+    "e16",
+    "e14"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "33c66fc3c7fab0cceb4cfcb24531d7291361485f6ecafccd5b774d2406d43305",
+   "provisional": true
+  },
+  {
+   "claim_id": "c16",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.66,
+   "contradicted_p": 0.21,
+   "strength": 1.93,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.07,
+    "2": 0.93
+   },
+   "strength_conf": 0.9,
+   "evidence_ids": [
+    "e17",
+    "e15",
+    "e16",
+    "e14"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "e376aa5a79c94ab8808ce269b4b8cf64ffa459c6f222674253e268ec52a6e331",
+   "provisional": true
+  },
+  {
+   "claim_id": "c16",
+   "bar": "lenient",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.47,
+   "contradicted_p": 0.11,
+   "strength": 1.86,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.14,
+    "2": 0.86
+   },
+   "strength_conf": 0.79,
+   "evidence_ids": [
+    "e15",
+    "e14"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "68e712999b8708074f5b78a06c4b02bee5111edf5640ff00fca4c026c04dc318",
+   "provisional": true
+  },
+  {
+   "claim_id": "c20",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.06,
+   "contradicted_p": 0.1,
+   "strength": 1.05,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.93,
+    "2": 0.06
+   },
+   "strength_conf": 0.9,
+   "evidence_ids": [
+    "e18",
+    "e19"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "1a699c1dab31cb0b47bc40605d09808f80da931b0c64291c2ce371bfe0d6a13d",
+   "provisional": true
+  },
+  {
+   "claim_id": "c20",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.31,
+   "contradicted_p": 0.09,
+   "strength": 1.79,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.21,
+    "2": 0.79
+   },
+   "strength_conf": 0.69,
+   "evidence_ids": [
+    "e19",
+    "e21",
+    "e20"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "ee3059446a20796ddabc7043e18c7d2d4263313ea911ca7518afb0d08a05e1f9",
+   "provisional": true
+  },
+  {
+   "claim_id": "c20",
+   "bar": "lenient",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.52,
+   "contradicted_p": 0.08,
+   "strength": 1.86,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.14,
+    "2": 0.86
+   },
+   "strength_conf": 0.79,
+   "evidence_ids": [
+    "e19",
+    "e21",
+    "e20"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "dc32d00e3856d54bb5cea01db94bde8b72d9953fc0e58b56dd215a9b5165efc2",
+   "provisional": true
+  },
+  {
+   "claim_id": "c30",
+   "bar": "strict",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.03,
+   "contradicted_p": 0.7,
+   "strength": 1.9,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.1,
+    "2": 0.9
+   },
+   "strength_conf": 0.85,
+   "evidence_ids": [
+    "e44",
+    "e45"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "e7c1b0ed101cca32012a3664e1cca4aee0478b54feb36111c0f3727fa286ea62",
+   "provisional": true
+  },
+  {
+   "claim_id": "c30",
+   "bar": "standard",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.38,
+   "contradicted_p": 0.4,
+   "strength": 1.81,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.19,
+    "2": 0.81
+   },
+   "strength_conf": 0.71,
+   "evidence_ids": [
+    "e44",
+    "e45"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "bfaa6fdc10b6e7b9c841d4bd83e796d1beb37155a825788040f7a984f5d6432c",
+   "provisional": true
+  },
+  {
+   "claim_id": "c30",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.85,
+   "contradicted_p": 0.13,
+   "strength": 1.9,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.1,
+    "2": 0.9
+   },
+   "strength_conf": 0.85,
+   "evidence_ids": [
+    "e44",
+    "e45"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "c7225d036bfb1dfc9338fff3183f78b8446210cc40fade0e79570c6435527d79",
+   "provisional": true
+  },
+  {
+   "claim_id": "c37",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "evidence is silent",
+   "met_p": 0.27,
+   "contradicted_p": 0.07,
+   "strength": 1.98,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.02,
+    "2": 0.98
+   },
+   "strength_conf": 0.97,
+   "evidence_ids": [
+    "e59",
+    "e58",
+    "e55",
+    "e56"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "1c3b2416f087d691a2742c82df607f97e62d4ff793632097dec7a975efb30768",
+   "provisional": true
+  },
+  {
+   "claim_id": "c37",
+   "bar": "standard",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.97,
+   "contradicted_p": 0.01,
+   "strength": 1.98,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.02,
+    "2": 0.98
+   },
+   "strength_conf": 0.97,
+   "evidence_ids": [
+    "e59",
+    "e58",
+    "e55",
+    "e56",
+    "e57"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "c046f77dff172e73fa35ae3ee0e93b64baaee6613185ee00ceaaebd152fedd58",
+   "provisional": true
+  },
+  {
+   "claim_id": "c37",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.98,
+   "contradicted_p": 0.01,
+   "strength": 1.98,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.02,
+    "2": 0.98
+   },
+   "strength_conf": 0.97,
+   "evidence_ids": [
+    "e59",
+    "e58",
+    "e55",
+    "e56",
+    "e57"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "56dd858bf59a656d4552cfdc50cfa3c7d4514ff87ad2cc208a91307352f06a7f",
+   "provisional": true
+  },
+  {
+   "claim_id": "c21",
+   "bar": "strict",
+   "verdict": "unresolved",
+   "reason": "grader is uncertain",
+   "met_p": 0.6,
+   "contradicted_p": 0.69,
+   "strength": 1.97,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.03,
+    "2": 0.97
+   },
+   "strength_conf": 0.95,
+   "evidence_ids": [
+    "e24",
+    "e23",
+    "e25",
+    "e22",
+    "e27",
+    "e26",
+    "e28"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "f1be913eba67822221715fdb6bd181111b5b4e53c53989270e5dba57eb85762b",
+   "provisional": true
+  },
+  {
+   "claim_id": "c21",
+   "bar": "standard",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.73,
+   "contradicted_p": 0.41,
+   "strength": 1.95,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.04,
+    "2": 0.96
+   },
+   "strength_conf": 0.94,
+   "evidence_ids": [
+    "e24",
+    "e23",
+    "e25",
+    "e22",
+    "e27",
+    "e26",
+    "e28"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "ecbc092b61793129f7377650260b69a90eea9a30e73aea6cc0dc939acb4e4141",
+   "provisional": true
+  },
+  {
+   "claim_id": "c21",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.98,
+   "contradicted_p": 0.02,
+   "strength": 1.96,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.03,
+    "2": 0.97
+   },
+   "strength_conf": 0.95,
+   "evidence_ids": [
+    "e24",
+    "e23",
+    "e25",
+    "e22",
+    "e26"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "fb488a26a21d375178856ad859f95b8554397c449bd64db46f1ca8ce119f2fb6",
+   "provisional": true
+  },
+  {
+   "claim_id": "c45",
+   "bar": "strict",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.02,
+   "contradicted_p": 0.98,
+   "strength": 1.96,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.04,
+    "2": 0.96
+   },
+   "strength_conf": 0.94,
+   "evidence_ids": [
+    "e71",
+    "e72",
+    "e73"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "76f9c1081782d4aee46d6e0ad9c423024a7dbf2af508d06d6020fab45b8bf094",
+   "provisional": true
+  },
+  {
+   "claim_id": "c45",
+   "bar": "standard",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.02,
+   "contradicted_p": 0.98,
+   "strength": 1.96,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.03,
+    "2": 0.97
+   },
+   "strength_conf": 0.95,
+   "evidence_ids": [
+    "e71",
+    "e72",
+    "e73"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "03bb419d9e2906a83575144c7acbd3e143fe641b4c4e84a3d9f9a159475633b3",
+   "provisional": true
+  },
+  {
+   "claim_id": "c45",
+   "bar": "lenient",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.17,
+   "contradicted_p": 0.98,
+   "strength": 1.97,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.03,
+    "2": 0.97
+   },
+   "strength_conf": 0.95,
+   "evidence_ids": [
+    "e71",
+    "e72",
+    "e74",
+    "e73"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "63c02f286cf400d5faaab12743848ac5f45698a466585199b4132c8deecb102b",
+   "provisional": true
+  },
+  {
+   "claim_id": "c22",
+   "bar": "strict",
+   "verdict": "not_met",
+   "reason": "evidence shows the criterion was not met",
+   "met_p": 0.38,
+   "contradicted_p": 0.94,
+   "strength": 1.71,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.26,
+    "2": 0.73
+   },
+   "strength_conf": 0.58,
+   "evidence_ids": [
+    "e32",
+    "e31",
+    "e30"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "ffadde7a4337f156f27884fae1ec7893e845c09013fb8efe58ed7e28b45ba85e",
+   "provisional": true
+  },
+  {
+   "claim_id": "c22",
+   "bar": "standard",
+   "verdict": "met",
+   "reason": "criterion met on evidence with standing",
+   "met_p": 0.79,
+   "contradicted_p": 0.07,
+   "strength": 1.86,
+   "strength_probs": {
+    "0": 0.01,
+    "1": 0.12,
+    "2": 0.87
+   },
+   "strength_conf": 0.79,
+   "evidence_ids": [
+    "e31",
+    "e29",
+    "e30"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "0a52bf21ab4eddd41017c3f4ee4207beb578511f8e4a798ed19562fe4c7c51a2",
+   "provisional": true
+  },
+  {
+   "claim_id": "c22",
+   "bar": "lenient",
+   "verdict": "met",
+   "reason": "implied: the standard bar is met",
+   "met_p": 0.68,
+   "contradicted_p": 0.19,
+   "strength": 1.84,
+   "strength_probs": {
+    "0": 0.0,
+    "1": 0.16,
+    "2": 0.84
+   },
+   "strength_conf": 0.76,
+   "evidence_ids": [
+    "e32",
+    "e31",
+    "e29"
+   ],
+   "grader": {
+    "provider": "jev",
+    "model": "jev-1.14.0"
+   },
+   "question_hash": "ef25c18793be5711e33e03744b2636efa9d6c154e115ab5e3ac4e5e72b94085f",
+   "provisional": true,
+   "implied_from": "standard"
+  }
+ ],
+ "evidence": [
+  {
+   "id": "e1",
+   "claim_id": "c11",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://www.galaxy.com/insights/research/crypto-blockchain-vc-venture-capital-startups-fundraising-q1-2026",
+   "date": "2026-05-28",
+   "source": "Galaxy Research",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "In total, VCs deployed $4 billion into private crypto and blockchain-related companies across 355 deals. [...] the Q1 2026 run-rate is below 2025's nearly $20 billion annual total",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e2",
+   "claim_id": "c11",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://crypto.news/crypto-vc-funding-hits-5-68b-in-q2-galaxy-says/",
+   "date": "2026-09-17",
+   "source": "crypto.news (reporting Galaxy Research Q2 2026 report of Sep 16, 2026)",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "Q2 2026: $5.683 billion across 384 deals; H1 2026: $10.018 billion across 744 deals; full-year 2026 projection if the first-half pace holds: roughly $20.037 billion. Annualised H1 is above the $12B-$18B range.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e3",
+   "claim_id": "c11",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://crypto.news/crypto-vc-funding-hits-5-68b-in-q2-galaxy-says/",
+   "date": "2026-09-17",
+   "source": "crypto.news (reporting Galaxy Research)",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "2025 total cited: $20.3 billion for crypto venture investment (Galaxy's 2025 baseline; Ippolito's thread used $25B). 2026 projection roughly $20.037 billion, i.e. roughly flat to slightly below Galaxy's own 2025 total.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e4",
+   "claim_id": "c9",
+   "bars": [
+    "strict",
+    "lenient"
+   ],
+   "url": "https://www.galaxy.com/insights/research/crypto-blockchain-vc-venture-capital-startups-fundraising-q1-2026",
+   "date": "2026-05-28",
+   "source": "Galaxy Research",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "Raising new venture funds remains incredibly difficult, and Q1 saw the fewest new crypto VC funds raised since Q3 2020. [...] the total capital allocated to crypto-focused venture funds was roughly $1.1 billion across eight funds",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e5",
+   "claim_id": "c9",
+   "url": "https://www.coindesk.com/business/2026/10/06/crypto-investment-firm-deus-x-capital-shuts-down-as-backers-pursue-separate-strategies",
+   "date": "2026-10-08",
+   "source": "CoinDesk",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "Crypto and fintech investment firm Deus X Capital has ceased operations as its backers pursue separate investment strategies [...] will cease operations and formally unwind on Jan. 31, 2027. Debuted in October 2023 with $1 billion in existing investments; strategy spans private equity, venture capital, and hedge fund allocations (not a pure venture firm). Galaxy Research said in September that interest in AI was diverting attention from digital assets, which added to venture firms' fundraising challenges.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e6",
+   "claim_id": "c9",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://www.fortune.com/2026/05/05/a16z-crypto-andreessen-horowitz-fifth-fund-2-2-billion/",
+   "date": "2026-05-05",
+   "source": "Fortune",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "a16z crypto announced Tuesday morning that it's drummed up $2.2 billion for its fifth venture fund [vs] the $4.5 billion a16z crypto raised for its fourth vehicle in 2022. [...] Still, the top crypto investors have been able to drum up capital.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e7",
+   "claim_id": "c13",
+   "url": "https://www.kucoin.com/news/flash/kalshi-and-polymarket-combined-2025-trading-volume-surpasses-44-billion",
+   "date": "2026-07-23",
+   "source": "KuCoin News (citing Odaily Planet Daily)",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "2025 baseline: Kalshi and Polymarket processed a combined trading volume of over $44 billion in 2025. [...] Kalshi generated $263.5 million in fee revenue last year, with annualized revenue now exceeding $1.5 billion.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e8",
+   "claim_id": "c13",
+   "url": "https://www.theblock.co/post/406983/kalshi-polymarket-volume-45-billion",
+   "date": "2026-07-01",
+   "source": "The Block",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "$44.8 billion in combined monthly trading volume in June [2026, across Kalshi, Polymarket and Polymarket US; May 2026 was $25.66 billion]. Kalshi: growing 87.4% to $31.5 billion from $16.81 billion. Polymarket's main, non-U.S. platform attracted $10.26 billion worth of volume last month. Polymarket US reported $3.04 billion in monthly volume last month, up from $1.77 billion in May.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e9",
+   "claim_id": "c13",
+   "url": "https://www.theblock.co/news/business/2026-09-02-kalshi-polymarkets-volume-falls-august-413309",
+   "date": "2026-09-02",
+   "source": "The Block",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "the combined monthly volume at Kalshi, Polymarket and Polymarket US fell 14.5% in August to $45.33 billion [...] the first decline since August 2025. Kalshi recorded $37.17 billion in volume in August, down 7.3% from $40.1 billion in July. Polymarket and its U.S. platform saw a combined $8.16 billion, down 36.7% from $12.89 billion in July. [June-August 2026 alone, $140.7B, exceeds 2.0x the $44B full-year 2025 figure.]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e10",
+   "claim_id": "c15",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://www.theblock.co/post/410102/robinhood-prediction-markets-top-crypto-and-equities-revenue-in-q2",
+   "date": "2026-07-29",
+   "source": "The Block",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "The trading platform said it generated $156 million from event contracts, compared with $100 million from cryptocurrency trading, which fell 38% from the same period a year ago.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e11",
+   "claim_id": "c15",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://fxnewsgroup.com/forex-news/retail-forex/prediction-markets-trading-drives-robinhood-revenues-up-23-to-record-1-3-billion-in-q2-2026/",
+   "date": "2026-07-29",
+   "source": "FX News Group (quoting Robinhood Q2 2026 results release)",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Event Contracts Traded increased over 10x year-over-year to a record 13.6 billion. [...] event contracts revenue of $156 million, up over 10x",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e12",
+   "claim_id": "c15",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://www.sec.gov/Archives/edgar/data/0001679788/000167978826000087/q226earningsdeck_sec.htm",
+   "date": "2026-06-30",
+   "source": "Coinbase Q2 2026 earnings deck (Form 8-K Exhibit 99.1)",
+   "tier": 1,
+   "direction": "contradicts",
+   "quote": "Everything Exchange: Prediction markets contracts and revenue up over 2x Q/Q [...] $100M+ Annualized prediction markets revenue in Q2 [...] Sports continue to lead, followed by crypto [...] New crypto binaries experience drove 3x daily traders and 4x daily revenue by quarter-end vs. May's daily average",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e13",
+   "claim_id": "c15",
+   "bars": [
+    "lenient"
+   ],
+   "url": "https://www.kucoin.com/news/flash/kalshi-and-polymarket-combined-2025-trading-volume-surpasses-44-billion",
+   "date": "2026-07-23",
+   "source": "KuCoin News (citing Odaily)",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Kalshi generated $263.5 million in fee revenue last year, with annualized revenue now exceeding $1.5 billion. [Comparator: Coinbase's own deck reports $100M+ annualized prediction-market revenue, and Coinbase's contracts route through Kalshi.]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e14",
+   "claim_id": "c16",
+   "url": "https://bettorsinsider.com/news/2026/06/19/draftkings-predictions-platform-hits-1-3-billion-in-annualized-volume-as-world-cup-fuels-rapid-growth/",
+   "date": "2026-06-19",
+   "source": "Bettors Insider (reporting DraftKings figures)",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "$1.3 billion in annualized consumer volume during May [...] a 24 percent increase from April [...] December 2025 launch [in 38 states]. DraftKings still trails Kalshi and Polymarket in total volume.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e15",
+   "claim_id": "c16",
+   "url": "https://www.ingame.com/fanduel-crypto-com-contracts/",
+   "date": "2026-06-09",
+   "source": "InGame",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "FanDuel does not publish exact volume numbers from its exchange [...] CME has averaged around $4 million worth of contracts traded per day [...] DraftKings reported annualized May volume of $3.1 billion [about $8.5 million per day; consumer volume $1.3 billion] [...] Kalshi has averaged more than $650 million in volume per day over the past week",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e16",
+   "claim_id": "c16",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://www.theblock.co/post/405086/limitless-ceo-no-prediction-market-platform-will-dominate-perpetual-futures-precedent",
+   "date": "2026-06-17",
+   "source": "The Block",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "Limitless now clears close to $2 billion in monthly volume, according to Bernstein. [Against ~$44.8B combined Kalshi/Polymarket volume in June 2026 that is roughly 4%; Limitless launched in 2024, so it may not meet the rubric's 2025-or-2026 startup definition.]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e17",
+   "claim_id": "c16",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://www.kucoin.com/ms/news/flash/kalshi-surpasses-polymarket-in-april-2026-prediction-market-volume",
+   "date": "2026-05-01",
+   "source": "KuCoin News (Dune data), seen in search result; page fetch failed",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "Kalshi recorded $5.42 billion in taker volume in April 2026, passing Polymarket's $1.99 billion for the first time. (Same Dune dataset as summarized in the search result: Predict.fun third with $579.2 million, Opinion $376.2 million, Limitless $205 million, all other platforms about $12.2 million combined. Dune's dataset excludes Polymarket US.)",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e18",
+   "claim_id": "c20",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://coinmarketcap.com/academy/de/article/rwa-perpetuals-state-of-the-market-%E2%80%94-may-2026",
+   "date": "2026-05-20",
+   "source": "CoinMarketCap Academy research, RWA Perpetuals State of the Market May 2026",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "overall split is 72% CEX and 28% DEX across all RWA perps [...] Binance leads stocks-perp volume cumulatively at 32% of category [...] HIP-3 is the largest DEX at 18%. [...] Only 4.1% of RWA-perp volume in this dataset settles on tokenized contracts.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e19",
+   "claim_id": "c20",
+   "url": "https://coinmarketcap.com/academy/de/article/rwa-perpetuals-state-of-the-market-%E2%80%94-may-2026",
+   "date": "2026-05-20",
+   "source": "CoinMarketCap Academy research",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "stocks-perp volume has gone from $2.7B/week in late January to $15.6B in the week of May 11 [...] Stock RWA perps have risen from ~5% to ~28% of weekly volume in four months [share of RWA-perp volume, not of total crypto perp volume]. The dataset spans December 29, 2025 through May 20, 2026",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e20",
+   "claim_id": "c20",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://www.tradeinformer.com/broker-news/mexc-coingecko-cex-tradfi-volume-report-2026",
+   "date": "2026-07-29",
+   "source": "TradeInformer (reporting CoinGecko/MEXC TradFi-on-CEX report)",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "June 2026 TradFi volume across six CEXs (Binance, MEXC, Bitget, OKX, Gate, and Bybit): $393.15 billion, up from $3.46 billion in January 2025. Perpetual futures: $387.39 billion of the June total. U.S. stock volume rose 337.4% month over month to $189.84 billion in June, making it the largest category, ahead of precious metals, which fell to $122.59 billion. [Against roughly $5.2T per month of CEX futures (Q2 total $15.7T) plus $676B of DEX perps in June, US-stock perps are about 3% of perp volume.]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e21",
+   "claim_id": "c20",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://cointelegraph.com/news/binance-futures-volume-2026-high-crypto-spot-slump",
+   "date": "2026-07-13",
+   "source": "Cointelegraph (CryptoQuant and CryptoRank data)",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "$1.61 trillion in futures trading volume in June [Binance; May $893 billion]; OKX $609 billion; Bybit $434 billion. The Q2 2026 total [CEX futures] is $15.7 trillion. [Denominator for the equity-perp share; see e20.]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e22",
+   "claim_id": "c21",
+   "url": "https://www.odaily.news/en/newsflash/462739",
+   "date": "2025-12-31",
+   "source": "Odaily (BullionVault data), gold end-2025 baseline",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "Spot gold closing price, December 31, 2025: $4,318.65 per ounce; closed down 0.46%; 2025 annual gain approximately 65%.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e23",
+   "claim_id": "c21",
+   "url": "https://tradingeconomics.com/commodity/gold",
+   "date": "2026-10-23",
+   "source": "Trading Economics gold price page",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "3,993.96 USD/t.oz [October 23, 2026]; down 2.87% compared to the same time last year; all-time high of 5608.35 (January 2026). [Versus the $4,318.65 end-2025 close this is about -7.5% year to date.]",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e24",
+   "claim_id": "c21",
+   "url": "https://dqydj.com/2025-bitcoin-return/",
+   "date": "2025-12-31",
+   "source": "DQYDJ (CoinMarketCap data), BTC end-2025 baseline",
+   "tier": 1,
+   "direction": "neutral",
+   "quote": "In 2025, bitcoin returned -6.33% in US dollar terms [...] opening trade $93,425.10 [...] closing trade $87,508.83 [...] October 6, 2025, bitcoin set a new all-time high with a trade of $126,198.07.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e25",
+   "claim_id": "c21",
+   "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,zcash,solana&vs_currencies=usd&include_24hr_change=true",
+   "date": "2026-10-24",
+   "source": "CoinGecko API",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "Bitcoin (BTC): $80,480 (-0.94% in 24h). [Versus the $87,508.83 close on December 31, 2025 that is about -8.0% year to date, below the end-2025 price; gold's -7.5% is marginally better, so the gold-vs-bitcoin margin is about one percentage point.]",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e26",
+   "claim_id": "c21",
+   "url": "https://stocktwits.com/news-articles/markets/equity/gold-and-bitcoin-are-2026-s-worst-assets-despite-active-war-market-strategist-says-it-s-something-we-haven-t-seen-before/cZZLtqwR7Mt",
+   "date": "2026-07-20",
+   "source": "Stocktwits News",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Bitcoin down nearly 27% [year to date]; gold down more than 7% [year to date]. Charlie Bilello of Creative Planning: This is something we haven't seen before in any calendar year.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e27",
+   "claim_id": "c21",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://finance.yahoo.com/news/crypto-fear-greed-index-plummets-104215900.html",
+   "date": "2026-02-12",
+   "source": "Yahoo Finance (CCN)",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "On Feb. 6, 2026, the Crypto Fear and Greed index hit an all-time low of 5, reflecting the deepest level of fear in its recorded history. [BTC] plummeted to a low of $60,062 on Feb. 6, 2026",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e28",
+   "claim_id": "c21",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://decrypt.co/376503/Alternative.me",
+   "date": "2026-08-25",
+   "source": "Decrypt",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "Fear and Greed Index reading: 81, classified as extreme greed (CoinMarketCap index); a month earlier 36, firmly in the fear zone. Bitcoin broke $70,000 during a short squeeze.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e29",
+   "claim_id": "c22",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://finance.yahoo.com/markets/crypto/articles/why-mstr-stock-down-58-115139508.html",
+   "date": "2026-05-19",
+   "source": "Yahoo Finance",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "MSTR is down 58% over the past year [...] peaked near $540 in November 2024 and now trades near $166, which is a 70% drop. mNAV: 3.89x peak in November 2024; 1.91x by July 2025; 0.97x in November 2025, briefly below 1.0x; 1.24x at the time of writing. Saylor's personal net worth has fallen $2.6 billion over the period, per Bloomberg.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e30",
+   "claim_id": "c22",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://stocktwits.com/news-articles/markets/equity/mstr-mnav-below-1-first-time-saylor-bitcoin/cZ1e5jgR7Wr",
+   "date": "2026-06-28",
+   "source": "Stocktwits News",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Strategy's mNAV ratio dipped to 0.99, below 1 for the first time in its history [...] saw its market value slip below the worth of its Bitcoin (BTC) holdings for the first time ever. Bitcoin finished the week near $59,900, down about 6.4%.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e31",
+   "claim_id": "c22",
+   "url": "https://fortune.com/2026/05/08/michael-saylor-mstr-strategy-microstrategy-bitcoin-sales-short-sellers-haters/",
+   "date": "2026-05-08",
+   "source": "Fortune",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "We will probably sell some Bitcoin to fund a dividend just to inoculate the market. [Saylor on the earnings call, reversing his October stance You do not sell your Bitcoin.] Strategy's market capitalization skyrocketed to over $100 billion in late 2024 and is now worth around $63 billion. [Fortune calls it a seeming about-face that surprised devotees and analysts.]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e32",
+   "claim_id": "c22",
+   "bars": [
+    "strict",
+    "lenient"
+   ],
+   "url": "https://query1.finance.yahoo.com/v8/finance/chart/MSTR?range=1y&interval=1d",
+   "date": "2026-10-23",
+   "source": "Yahoo Finance chart API (MSTR daily closes)",
+   "tier": 1,
+   "direction": "contradicts",
+   "quote": "Closing price on Dec 31, 2025: 151.95. Most recent close: 146.01 on October 23, 2026. [About -3.9% year to date versus bitcoin's roughly -8% (CoinGecko $80,480 vs $87,508.83), so MSTR has not underperformed bitcoin in 2026 to date.]",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e33",
+   "claim_id": "c25",
+   "url": "https://dqydj.com/2025-ethereum-return/",
+   "date": "2025-12-31",
+   "source": "DQYDJ (CoinMarketCap data), ETH 2025 baseline",
+   "tier": 1,
+   "direction": "neutral",
+   "quote": "Ethereum returned -10.96% in 2025 [in US Dollar terms]. January 1, 2025 opening: $3,332.41; December 31, 2025 closing: $2,967.04",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e34",
+   "claim_id": "c25",
+   "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,zcash,solana&vs_currencies=usd&include_24hr_change=true",
+   "date": "2026-10-24",
+   "source": "CoinGecko API",
+   "tier": 1,
+   "direction": "contradicts",
+   "quote": "Ethereum (ETH): $2,342.89 (-2.09% in 24h). [Versus $2,967.04 at end-2025 that is about -21% year to date, worse than 2025's -10.96% and worse than bitcoin's roughly -8%.]",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e35",
+   "claim_id": "c25",
+   "url": "https://www.ig.com/uk/trading-strategies/why-is-ethereum-falling-faster-than-bitcoin-2026-260616",
+   "date": "2026-06-16",
+   "source": "IG",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "[ETH] down 32% year-to-date [vs] Bitcoin's 11% decline [...] approximately 0.027, a 10-month low [ETH/BTC] [...] Bankless co-founder David Hoffman publicly sold his entire ETH holdings in June 2026 [...] a high-profile signal of the narrative problem",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e36",
+   "claim_id": "c25",
+   "bars": [
+    "lenient"
+   ],
+   "url": "https://cryptoticker.io/en/ethereum-forecast-eth-btc-ratio-october-2026/",
+   "date": "2026-10-19",
+   "source": "CryptoTicker",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "one ETH buys 0.0293 Bitcoin after five weeks of losses against BTC [October 19, 2026]; 12-month low 0.0248 on June 7, 2026; ETH around $2,400 on October 19",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e37",
+   "claim_id": "c26",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://app.rwa.xyz/networks",
+   "date": "2026-10-24",
+   "source": "rwa.xyz networks dashboard",
+   "tier": 1,
+   "direction": "contradicts",
+   "quote": "Ethereum RWA Total Value (Excl. Stablecoins) $15,990,996,441; RWA Value (Distributed) $15,884,627,706; page summary Distributed Asset Value ($39.06B). [Ethereum is about 40.7% of distributed RWA value, below half.]",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e38",
+   "claim_id": "c26",
+   "bars": [
+    "standard"
+   ],
+   "url": "https://app.rwa.xyz/networks",
+   "date": "2026-10-24",
+   "source": "rwa.xyz networks dashboard",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "Ethereum $15,990,996,441; BNB Chain $6,221,150,680; Solana $4,994,986,234; Stellar $3,831,606,400; Avalanche $12,992,505,446 total but RWA Value (Distributed) $1,589,004,149 (12.2%); XRP Ledger $5,378,633,103 total, $642,194,336 distributed; Provenance $25,547,443,822 total, $55,213,164 distributed. [Ethereum is the largest chain by distributed RWA value excluding stablecoins.]",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e39",
+   "claim_id": "c26",
+   "bars": [
+    "lenient"
+   ],
+   "url": "https://app.rwa.xyz/networks",
+   "date": "2026-10-24",
+   "source": "rwa.xyz networks dashboard",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "Ethereum L2 distributed RWA value: ZKsync Era $943,984,846; Arbitrum $836,634,100; Polygon $507,044,247; Base $363,166,254; Mantle $226,701,879; Ink $37,413,891; Optimism $26,629,420. [Ethereum mainnet plus these L2s is about $18.8B of the $39.06B distributed total, about 48%, the largest ecosystem.]",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e40",
+   "claim_id": "c26",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://cryptobriefing.com/ethereum-dominates-tokenized-rwa-market/",
+   "date": "2026-08-07",
+   "source": "Crypto Briefing (rwa.xyz data)",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "[early June 2026] Ethereum held approximately $16.6 billion in distributed tokenized RWA value, representing 52.85% of the entire on-chain RWA market [...] By early August 2026, the total distributed RWA value across all chains had surged to $38 billion. Ethereum's slice grew to roughly $17.3 billion, though its percentage share dipped to around 45-46% as competing chains absorbed a portion of the overall market expansion. BNB Chain reported $3.6 billion in RWA value in the June snapshot.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e41",
+   "claim_id": "c29",
+   "bars": [
+    "lenient",
+    "standard"
+   ],
+   "url": "https://morpho.org/blog/morpho-association-announces-cooperation-agreement-with-apollo/",
+   "date": "2026-02-13",
+   "source": "Morpho Association announcement",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "subject to an overall ownership cap of 90 million MORPHO tokens over a 48-month period [...] Apollo and Morpho will be working together to support onchain lending markets on Morpho's protocol.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e42",
+   "claim_id": "c29",
+   "bars": [
+    "lenient",
+    "standard"
+   ],
+   "url": "https://cointelegraph.com/news/apollo-deepens-blockchain-play-enters-crypto-lending-via-morpho-partnership",
+   "date": "2026-02-16",
+   "source": "Cointelegraph",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Apollo or its affiliates may buy up to 90 million MORPHO governance tokens over four years [...] 9% of the 1 billion-token supply [...] Apollo [has] nearly $940 billion in assets under management.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e43",
+   "claim_id": "c29",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://cryptobriefing.com/private-credit-issuance-falls-onchain-surges/",
+   "date": "2026-06-07",
+   "source": "Crypto Briefing",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "In early June 2026, Securitize launched a tokenized private credit fund based on Hamilton Lane's strategy, deployed on the TRON blockchain. [Hamilton Lane manages hundreds of billions in private markets assets.] Active on-chain private credit loans now exceed $14B. [No 2026 onchain credit move by Blackstone, KKR, Ares, Blue Owl or Carlyle was found.]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e44",
+   "claim_id": "c30",
+   "url": "https://cryptobriefing.com/blockworks-vaults-dashboard-7-billion-aum/",
+   "date": "2026-07-20",
+   "source": "Crypto Briefing (reporting Blockworks vaults dashboard and Lagoon Finance)",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "roughly $7 billion in assets under management [tracked by Blockworks' Vaults Overview] across 24 blockchain networks, 59 curators and 132 distinct assets. [Separately, broader figure:] By March 2026, vault AUM across the broader DeFi ecosystem reached $23.6 billion, a 66% increase year-to-date [Lagoon Finance report]. [Also:] onchain vault AUM rose from under $100 million in early 2024 to the multi-billion-dollar range by late 2025.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e45",
+   "claim_id": "c30",
+   "url": "https://www.cryptopolitan.com/morpho-leads-curated-defi-market/",
+   "date": "2026-08-25",
+   "source": "Cryptopolitan (reporting vaults.fyi State of Vaults report of Aug 24, 2026 and a DefiLlama/Sentora study)",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "$11.29 billion [curated vaults], with data current as of August 20; 856 vaults, 131 curators, and 18 protocols. Morpho 46.2% of curated TVL. DefiLlama alternative: $7.18 billion across 55 tracked curators (Sentora data collected in July). Curated cohort grew 39% [year over year] while supply-side DeFi TVL fell 41.8%. [Above the $10B standard bar and 2x the ~$5B start point, below the $15B strict bar; the two trackers disagree by $4B.]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e46",
+   "claim_id": "c33",
+   "url": "https://blockworks.com/api/investor-report/solana-token-holder-report-q2-2026/pdf",
+   "date": "2026-06-30",
+   "source": "Blockworks Advisory, Solana Token Holder Report Q2 2026 (PDF, data through June 2026)",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "Solana's Real Economic Value (REV) totaled $51.0M in Q2 2026, down 43% from Q1's $89.8M. [...] monthly REV declined from $18.6M in April to $18.1M in May and $14.3M in June.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e47",
+   "claim_id": "c33",
+   "url": "https://blockworks.com/api/investor-report/solana-token-holder-report-q3-2026/pdf",
+   "date": "2026-10-15",
+   "source": "Blockworks Advisory, Solana Token Holder Report Q3 2026 (PDF)",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "Solana's Real Economic Value (REV) totaled $75.7M in Q3 2026, up 48% from Q2's $51.0M and the first quarterly increase since Q4 2024. The recovery strengthened every month, with REV rising from $19.1M in July to $26.5M in August and $30.1M in September, the highest monthly figure since January. [September is 2.1x the June low of $14.3M.]",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e48",
+   "claim_id": "c33",
+   "url": "https://www.kucoin.com/blog/solana-q3-2026-report-revenue-jumps-48-percent",
+   "date": "2026-10-16",
+   "source": "KuCoin (coverage of the Blockworks Q3 2026 report published October 15, 2026)",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Solana's real economic value (REV) increased 48% quarter over quarter to $75.7 million [...] monthly application revenue reached $117.1 million and REV reached $30.1 million [September 2026]. Solana's DEX volume rose 23% to $197.2 billion.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e49",
+   "claim_id": "c34",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://blockworks.com/api/investor-report/solana-token-holder-report-q2-2026/pdf",
+   "date": "2026-06-30",
+   "source": "Blockworks Advisory, Solana Token Holder Report Q2 2026 (PDF)",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "DEXs on Solana remain a prop AMM story. [...] With close to twenty prop AMMs live on Solana, their share of spot DEX volume sat at 53% in Q2 2026, up from 30% in Q2 2025. [...] BisonFi led prop AMMs with roughly 17% of Q2 volume, and Pumpfun's integrated AMM continued gaining share, representing 13% of volume in Q2. [...] Prop AMMs began quoting tokenized assets during the quarter and now represent an estimated 50% of tokenized-asset volume.",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e50",
+   "claim_id": "c34",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://blockworks.com/api/investor-report/solana-token-holder-report-q3-2026/pdf",
+   "date": "2026-10-15",
+   "source": "Blockworks Advisory, Solana Token Holder Report Q3 2026 (PDF)",
+   "tier": 1,
+   "direction": "contradicts",
+   "quote": "Prop AMMs remained the largest exchange type on Solana. [...] Their share of spot DEX volume was 40% in Q3, down from 51% in Q2, as memecoin flow concentrated on constant-product pools, whose share rose to 18% from 10%. [...] Pump's integrated AMM was the largest single venue at roughly 21% of Q3 volume, followed by BisonFi (13%) and Raydium (10%). [Note: the Q2 report states 53% for Q2; the Q3 report restates Q2 as 51%.]",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e51",
+   "claim_id": "c34",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://api.llama.fi/overview/dexs/solana?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true&dataType=dailyVolume",
+   "date": "2026-10-24",
+   "source": "DefiLlama DEX overview API, Solana, 30-day volumes",
+   "tier": 1,
+   "direction": "neutral",
+   "quote": "Solana total30d = 64479317950.59003. Prop AMMs: BisonFi 8598420577; Tessera V 3563783139; GoonFi 2216776002; HumidiFi 1217129892; SolFi V2 998393676; AlphaQ 974053875; QuantumAMM 788065766; ZeroFi 768934025; Aquifer 433074982. Pool AMMs: PumpSwap 9885122841; Orca DEX 8177271790; Raydium AMM 5964963732; Meteora DLMM 4254799044. [Named prop AMMs are about 30% of the listed 30d total; the total includes aggregator and wallet entries such as Manifest Trade 3396045918, fomo Wallet 3004394566 and Axiom 2444163186 that double count venue volume.]",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e52",
+   "claim_id": "c35",
+   "bars": [
+    "lenient",
+    "standard"
+   ],
+   "url": "https://www.coindesk.com/opinion/2026/07/29/spacex-is-a-battleground-solana-must-win",
+   "date": "2026-07-29",
+   "source": "CoinDesk opinion, Brian Smith, president of the Jito Foundation",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "[Onchain perps venues] contributed to price discovery [for the Cerebras Systems and SpaceX IPOs; SpaceX's perps-implied price of $171 matched its $171 launch price]. Solana and Hyperliquid are where SpaceX tokenized stocks and perps trade most actively [Hyperliquid described as the early leader in perps]. Whoever wins the battle for Sunday volume might just win the whole war. [24-hour spot volume for tokenized stocks on Solana passed $100 million after the IPO; the author says this isn't enough and the gap is execution and focus.]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e53",
+   "claim_id": "c35",
+   "url": "https://www.theblock.co/news/markets/2026-02-03-standard-chartered-cuts-solana-2026-target-shift-memecoins-micropayments-388248",
+   "date": "2026-02-03",
+   "source": "The Block (Standard Chartered note)",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "Kendrick lowered his end-2026 price forecast for Solana from $310 to $250 [...] Solana is evolving from memecoins to micropayments [...] the mix of flows on DEXs has shifted from memecoin trading towards SOL-stablecoin pairs [...] no longer a one-trick pony",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e54",
+   "claim_id": "c35",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://blockworks.com/api/investor-report/solana-token-holder-report-q3-2026/pdf",
+   "date": "2026-10-15",
+   "source": "Blockworks Advisory, Solana Token Holder Report Q3 2026 (PDF)",
+   "tier": 1,
+   "direction": "neutral",
+   "quote": "tokenized equities set a new all-time high of $4.4B in September alone, taking the category to a record $7.1B for the quarter, up 40% QoQ. [...] SOL-stablecoin pairs remained the anchor at roughly 40% of volume, while memecoins rose to 29% from 16% in Q2, their strongest showing since mid-2025. Stablecoin swaps represented 15% of volume, foreign tokens 7%, and project tokens and tokenized assets roughly 4% each. [No major outlet or prominent Solana figure was found framing a mini crisis over non-meme price discovery in 2026.]",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e55",
+   "claim_id": "c37",
+   "url": "https://cryptobriefing.com/lisk-chain-shutdown-october-2026/",
+   "date": "2026-08-27",
+   "source": "Crypto Briefing",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "The transition will come with the closure of the Lisk Chain on Oct. 31, 2026. [Lisk is moving to] a financial platform designed to help businesses manage fiat and stablecoin operations. [Proposal includes] burning 100 million LSK from its treasury [cutting supply from 400 million to 300 million; LSK stays as the platform's loyalty token; projects on the chain can migrate to Celo.]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e56",
+   "claim_id": "c37",
+   "url": "https://www.coindesk.com/tech/2026/10/02/once-a-usd2-billion-ethereum-layer-2-blast-is-shutting-down-after-assets-plunge-98",
+   "date": "2026-10-02",
+   "source": "CoinDesk",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Blast said it will shut down after concluding that its Ethereum layer-2 network no longer makes economic sense to operate. [...] the economics of operating the chain no longer make sense. [TVL peak over $2 billion in June 2024 per DeFiLlama; current $32 million; withdrawals through the standard interface close October 26.]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e57",
+   "claim_id": "c37",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://www.theblock.co/news/ecosystems/2026-10-06-abstract-ethereum-layer-2-shutting-down-pudgy-penguins-igloo-417855",
+   "date": "2026-10-06",
+   "source": "The Block",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "[Abstract] said it will wind down operations and shut down the chain on Dec. 15, 2026 [...] Parent company Igloo Inc. lost tens of millions of dollars [...] stagnant growth, thin liquidity, a restricted DeFi ecosystem and limited institutional adoption [...] has ultimately proven to be unsustainable as a standalone model. [...] comes less than a week after Paradigm-backed Layer 2 Blast said it will wind down",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e58",
+   "claim_id": "c37",
+   "url": "https://www.theblock.co/post/393339/optimism-op-labs-layoff",
+   "date": "2026-03-12",
+   "source": "The Block",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "[OP Labs laid off 20 employees, roughly 19.6% of staff.] This is not about finances. [CEO Jing Wang:] doing fewer things well, making decisions faster, and reducing coordination overhead. [Base announced in February 2026 that it] is shifting to its own unified tech stack to pursue independent development.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e59",
+   "claim_id": "c37",
+   "url": "https://www.theblock.co/post/388285/vitalik-buterin-reevaluates-rollup-centric-roadmap-arguing-l2s-decentralized-far-slower-while-ethereum-base-layer-advanced",
+   "date": "2026-02-03",
+   "source": "The Block",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "the original vision of L2s and their role in Ethereum no longer makes sense [Vitalik Buterin] [...] We should stop thinking about L2s as literally being 'branded shards' of Ethereum [...] identify a value add other than 'scaling'",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e60",
+   "claim_id": "c38",
+   "url": "https://www.cointelegraph.com/news/ethereum-infrastructure-firm-syndicate-labs-closes-citing-shift-in-rollup-market",
+   "date": "2026-05-21",
+   "source": "Cointelegraph",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Syndicate Labs is winding down after five years of building onchain infrastructure for customizable Ethereum rollups and sequencers [...] the rollup market has fundamentally shifted [...] for every new rollup launching, several more quietly shut down. [Raised $20 million in Series A funding in 2021, led by Andreessen Horowitz.]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e61",
+   "claim_id": "c38",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://l2beat.com/layer2s/projects/mint",
+   "date": "2026-04-17",
+   "source": "L2BEAT project page, Mint",
+   "tier": 1,
+   "direction": "neutral",
+   "quote": "Mint Blockchain shutdown (announced 2026-04-17, withdrawal deadline 2026-10-20) [...] Built on OP Stack [...] ceased operations on April 17, 2026 and only supports withdrawals [...] Any assets left on the chain after that date will be unrecoverable. [An OP Stack L2 shutdown, not an L2 framework or RaaS provider.]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e62",
+   "claim_id": "c38",
+   "bars": [
+    "standard",
+    "lenient"
+   ],
+   "url": "https://www.alchemy.com/docs/reference/polygon-zkevm-deprecation-notice.md",
+   "date": "2026-07-01",
+   "source": "Alchemy developer docs, Polygon zkEVM deprecation notice",
+   "tier": 1,
+   "direction": "neutral",
+   "quote": "Polygon Labs shut down the Polygon zkEVM network on July 1, 2026 [...] There is no migration path for Polygon zkEVM, as the network itself was shut down. [Shutdown executed in 2026; the sunset was announced in 2025.]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e63",
+   "claim_id": "c38",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://www.theblock.co/news/ecosystems/2026-10-06-abstract-ethereum-layer-2-shutting-down-pudgy-penguins-igloo-417855",
+   "date": "2026-10-06",
+   "source": "The Block",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "[Abstract] said it will wind down operations and shut down the chain on Dec. 15, 2026 [...] comes less than a week after Paradigm-backed Layer 2 Blast said it will wind down [L2 chain shutdowns; no merger or acquisition among L2 framework, RaaS or shared-sequencer providers was found in 2026, and no reporting naming two or three vertically integrated winners.]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e64",
+   "claim_id": "c42",
+   "url": "https://www.rl1.network/news/rl1-launch/",
+   "date": "2026-07-28",
+   "source": "RL1 (Regulated Layer One) press release",
+   "tier": 1,
+   "direction": "supports",
+   "quote": "European blockchain initiative 'Regulated Layer One' goes live [...] owns and operates a private, permissioned blockchain network built for regulated financial markets. [Founding institutions: ABN AMRO, Cecabank, Chartered Investment, Credit Mutuel Alliance Federale, DekaBank, DZ BANK, LBBW, Natixis CIB, SC Ventures, Seturion.]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e65",
+   "claim_id": "c42",
+   "url": "https://www.cryptoninjas.net/news/europes-10-major-banks-launch-rl1-blockchain-to-power-808m-tokenized-finance-network/",
+   "date": "2026-07-29",
+   "source": "CryptoNinjas",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "RL1 opened its doors as a European Cooperative Society (SCE) [headquartered in Luxembourg, July 28]. [Runs on SWIAT's distributed ledger technology, which has operated in production for about three years; the earlier SWIAT infrastructure completed more than 50 institutional transactions worth over EUR 700 million, roughly $808 million; NatWest in discussions to join.]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e66",
+   "claim_id": "c42",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://fortune.com/2026/09/21/corporate-blockchain-wars-circle-arc-launch-canton-tempo-avalanche-robinhood-base-chain-wall-street/",
+   "date": "2026-09-21",
+   "source": "Fortune",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "[Circle's Arc public launch] inaugural validators, including Visa, Mastercard and BlackRock. [Chains named: Arc (Circle), Canton (JPMorgan-backed, partners Nasdaq, Goldman Sachs, BNP Paribas), Tempo (Stripe), Robinhood Chain, Base (Coinbase), Avalanche. BlackRock appears only as an Arc validator; no BlackRock chain announcement was found in 2026.]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e67",
+   "claim_id": "c43",
+   "url": "https://www.mitrade.com/insights/news/live-news/article-3-1906923-20260716",
+   "date": "2026-07-16",
+   "source": "Mitrade (Zora dashboard data and Jesse Pollak posts on X)",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "Daily trading volume fell to $112,170 on July 15, down 99.8% from a $63 million peak in April 2025. Coins minted: 852 on July 15, down from a peak of 118,069 in January 2026. Daily creators fell from 32,286 on February 13 to 512 by July 15. [Pollak:] I was wrong - whether it was timing wrong (is $ansem a creator coin?) or fully wrong [...] I've handed the base app back to the coinbase mothership",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e68",
+   "claim_id": "c43",
+   "bars": [
+    "strict",
+    "standard"
+   ],
+   "url": "https://cryptobriefing.com/coinbase-ceo-armstrong-admits-bases-content-coin-failure-shifts-focus/",
+   "date": "2026-07-13",
+   "source": "Crypto Briefing",
+   "tier": 2,
+   "direction": "supports",
+   "quote": "[Brian Armstrong said the company] messed up [and acknowledged that Base's content coin initiatives did not succeed; Base pivoted away from content coins earlier this year to focus on infrastructure, payments, and AI agents; the article notes scrutiny over Base's earlier involvement in a controversial memecoin campaign.]",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e69",
+   "claim_id": "c43",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://l2beat.com/scaling/tvs",
+   "date": "2026-10-24",
+   "source": "L2BEAT total value secured",
+   "tier": 1,
+   "direction": "contradicts",
+   "quote": "1 Base Chain $14.87 B; 2 Arbitrum One $10.07 B; 3 OP Mainnet $1.76 B; 4 Mantle $1.29 B; 5 Lighter $1.08 B; 6 Ink $367.51 M. [Base remains first among L2s by TVS.]",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e70",
+   "claim_id": "c43",
+   "bars": [
+    "strict"
+   ],
+   "url": "https://api.llama.fi/v2/chains",
+   "date": "2026-10-24",
+   "source": "DefiLlama chains API",
+   "tier": 1,
+   "direction": "contradicts",
+   "quote": "Base tvl 6020790483.2677555; Arbitrum 1438992640.7707756; Robinhood Chain 1135063816.903437; OP Mainnet 415890957.73989296; Ink 199854487.91379032; Ethereum 48561113394.278755. [Base is first among L2s by DeFi TVL.]",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e71",
+   "claim_id": "c45",
+   "url": "https://api.coingecko.com/api/v3/coins/zcash/history?date=31-12-2025&localization=false",
+   "date": "2025-12-31",
+   "source": "CoinGecko API, ZEC end-2025 baseline",
+   "tier": 1,
+   "direction": "neutral",
+   "quote": "market_data.current_price.usd: 527.9267845948881 [snapshot for 31-12-2025]",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e72",
+   "claim_id": "c45",
+   "url": "https://api.coingecko.com/api/v3/coins/zcash?localization=false&tickers=false&community_data=false&developer_data=false&sparkline=false",
+   "date": "2026-10-24",
+   "source": "CoinGecko API",
+   "tier": 1,
+   "direction": "contradicts",
+   "quote": "market_data.current_price.usd: 1207.95; price_change_percentage_200d: 339.2633; price_change_percentage_30d: -22.31223; market_cap_rank: 10; last_updated 2026-10-24T20:11:41.000Z. [About +129% versus $527.93 at end-2025 and above the late-2025 high; bitcoin is down about 8% over the same period.]",
+   "found_by": "webfetch"
+  },
+  {
+   "id": "e73",
+   "claim_id": "c45",
+   "url": "https://stocktwits.com/news-articles/markets/cryptocurrency/zcash-tops-1-000-for-first-time-in-a-decade-as-short-covering-drive-rally/cZsz48zRJDn",
+   "date": "2026-09-05",
+   "source": "Stocktwits News",
+   "tier": 2,
+   "direction": "contradicts",
+   "quote": "Intraday high: $1,021.58 on Sept. 4 (CoinGecko) [...] roughly doubled the privacy token in a month [...] Grayscale converted its Zcash Trust into an exchange-traded product, listed as ZCSH on NYSE Arca on Aug. 25 [...] ZEC perpetual open interest hit a record of about $2.4 billion on Sept. 4.",
+   "found_by": "websearch"
+  },
+  {
+   "id": "e74",
+   "claim_id": "c45",
+   "bars": [
+    "lenient"
+   ],
+   "url": "https://cointelegraph.com/markets/zcash-governance-turmoil-how-low-can-zec-price-go",
+   "date": "2026-01-08",
+   "source": "Cointelegraph",
+   "tier": 2,
+   "direction": "neutral",
+   "quote": "[ZEC] slid more than 20% on Thursday to about $381 [after the] sudden resignation [of the core development team from the Electric Coin Company; sell-off from the $550-$580 region after a] 1,000%-plus rally in late 2025. [Early-2026 weakness that later reversed; see e72 and e73.]",
+   "found_by": "websearch"
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://x.com/MikeIppolito_/status/2006813164768571857",
+   "title": "27 predictions for 2026 (X thread)",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "format": "thread",
+   "access": "free",
+   "role": "canonical",
+   "note": "28 posts hydrated through the X API on 2026-10-24; every claim quotes the posted text.",
+   "chars": 6816,
+   "text_sha256": "9528d824f4df4f47bc651c87676237ee428fc68538030b8f741ca24de129c72b"
+  },
+  {
+   "id": "s2",
+   "url": "https://www.bankless.com/podcast/27-crypto-predictions-for-2026-mike-ippolito",
+   "title": "27 Crypto Predictions for 2026 | Mike Ippolito (Bankless episode page)",
+   "author": "Bankless (David Hoffman, host); Mike Ippolito",
+   "date": "2025-12-31",
+   "format": "podcast",
+   "access": "free",
+   "role": "additional",
+   "note": "Episode page. Spoken wording is in s2y; where the spoken numbers differ from the thread, the thread governs.",
+   "chars": 89114,
+   "text_sha256": "6bbd4666e390921666f806e0a4b9037a41f6598d36364002aa3ecc8ddf25c911"
+  },
+  {
+   "id": "s2y",
+   "url": "youtube:4R0Xi-XTkt8",
+   "title": "27 Crypto Predictions for 2026 | Mike Ippolito (Bankless episode captions)",
+   "author": "Mike Ippolito, with David Hoffman",
+   "date": "2025-12-31",
+   "format": "video",
+   "access": "free",
+   "role": "context",
+   "note": "YouTube auto-captions. Carries his spoken self-grade for 2025 ('21 out of the 27') and elaboration on the thread; grade against s1."
+  },
+  {
+   "id": "s3",
+   "url": "https://www.techflowpost.com/en-US/article/29841",
+   "title": "TechFlow summary of the Bankless episode",
+   "author": "TechFlow",
+   "date": "2026-01-07",
+   "format": "article",
+   "access": "free",
+   "role": "context",
+   "note": "Third-party translated summary; context only.",
+   "chars": 31853,
+   "text_sha256": "48a5de37a8b9a2b4f6f16c741219751d4b5719a3b2ead52cccf0dfffb3c4ee4a"
+  },
+  {
+   "id": "s4",
+   "url": "https://threadreaderapp.com/thread/1870938934337020106.html",
+   "title": "27 predictions for 2025 (X thread, mirror)",
+   "author": "Mike Ippolito",
+   "date": "2024-12-22",
+   "format": "thread",
+   "access": "free",
+   "role": "prior_year",
+   "note": "Prior year's list via a mirror, for ritual context only. Not graded.",
+   "chars": 9746,
+   "text_sha256": "4e0c77223711d6331e90a01c859dc4b45a094d81423cda776d3b0ce9c585de4a"
+  },
+  {
+   "id": "s5",
+   "url": "https://www.odaily.news/en/post/5207980",
+   "title": "Third-party review of the 2025 predictions (TechFlow, Odaily mirror)",
+   "author": "TechFlow",
+   "date": "2025-12-04",
+   "format": "article",
+   "access": "free",
+   "role": "context",
+   "note": "Scores his 2025 list at 48%; per-item verdicts are in an image. Context for the article's generosity-gap paragraph, not evidence for 2026 claims.",
+   "chars": 13727,
+   "text_sha256": "69c332759a111c79fe3f0671e1e65b1f4c2c03857d4bf46d025e1b1a270cc71a"
+  }
+ ],
+ "extras": {
+  "x_posts": 29,
+  "x_spend": 0.145,
+  "jev_tokens": 170884,
+  "input_sha256": {
+   "sources": "5308ca544489c4fe828d805bf402c5633a7c2e9427fca5ed52ed15fb3723d1fe",
+   "claims": "d2b5af4361b08cf9d7505a5a0ee3c0b80be4c51cc464c8b7be4bdd0f8709ab24",
+   "rubrics": "5ab43530379aac8bc999ef347d984ccef0e332161986b2a5dbdc114525f231fd",
+   "evidence": "576138132f5cd438c75f4740a557c80c263ddfaa196b83afc93da199783165c9",
+   "grades": "3dc5818977b3bf0888200ca603b073922c515309ccb46f419414d4f8c6fe221f"
+  }
+ }
+}

@@ -1,0 +1,131 @@
+{
+ "hash": "52f44d89db4edf2a8f1f933b39acea6a33573ff2a0bddd6ce662dc4aa9e51889",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Bob Doll",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Economic growth in the U.S. improves from approximately 2.0% to approximately 2.5% real GDP.",
+   "author": "Bob Doll",
+   "date": "2025-12-31",
+   "context": "Prediction 1 of 10. Full-year 2026 real GDP growth of about 2.5%, up from about 2.0% in 2025. Final 2026 GDP is published in early 2027; quarterly readings exist through Q3 2026."
+  },
+  "bar": "standard",
+  "criterion": "US real GDP growth for 2026 improves on 2025 and is at least 2.3%.",
+  "measure": "BEA full-year figure when available, otherwise the latest year-over-year quarterly reading, compared with 2025's full-year rate; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-09-30",
+    "source": "BEA",
+    "direction": "neutral",
+    "quote": "Real gross domestic product (GDP) increased at an annual rate of 2.2 percent in the second quarter of 2026. In the first quarter, real GDP increased 2.5 percent (revised).",
+    "url": "https://www.bea.gov/news/2026/gdp-third-estimate-industries-corporate-profits-state-gdp-and-state-personal-income-2nd"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-09-30",
+    "source": "FRED (BEA), Real GDP percent change from quarter one year ago",
+    "direction": "contradicts",
+    "quote": "2025-10-01,2.0; 2026-01-01,2.6; 2026-04-01,2.2 [the most recent reported quarter, Q2 2026, shows year-over-year real GDP growth of 2.2%; Q1 2026 was 2.6%]",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=A191RO1Q156NBEA&cosd=2024-01-01&coed=2026-10-24"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-09-30",
+    "source": "FRED (BEA), Real GDP annual percent change",
+    "direction": "neutral",
+    "quote": "2024-01-01,3.0; 2025-01-01,2.3 [2025 full-year real GDP growth is 2.3% after BEA's September 2026 annual update; the February 2026 advance release had said 'Real GDP increased 2.2 percent in 2025']",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=A191RL1A225NBEA&cosd=2024-01-01&coed=2026-10-24"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-10-24",
+    "source": "BEA release schedule",
+    "direction": "neutral",
+    "quote": "GDP (Advance Estimate), 3rd Quarter 2026: October 29, 8:30 AM; Personal Income and Outlays, September 2026: October 29, 8:30 AM [the Q3 2026 GDP figure is not yet published as of the run date]",
+    "url": "https://www.bea.gov/news/schedule"
+   },
+   {
+    "tier": 4,
+    "tier_meaning": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+    "date": "2026-10-05",
+    "source": "Bob Doll, Crossmark (4Q26 commentary)",
+    "direction": "supports",
+    "quote": "Despite oil reaching $100 per barrel (which one might think could bring any economy to its knees), economic growth in the U.S. remains relatively robust on the back of a resilient consumer and significant capital expenditures. ... U.S. real GDP tracking 5% q/q A.R. in 3Q",
+    "url": "https://www.crossmarkglobal.com/quarterly-investment-commentary-4q26/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.19
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.7
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.83,
+   "confidence": 0.74,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.17,
+    "2": 0.83
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1982,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T20:16:42Z"
+}

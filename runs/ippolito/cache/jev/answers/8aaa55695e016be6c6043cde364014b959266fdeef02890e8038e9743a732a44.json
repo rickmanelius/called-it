@@ -1,0 +1,47 @@
+{
+ "hash": "8aaa55695e016be6c6043cde364014b959266fdeef02890e8038e9743a732a44",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "claim": "Despite the loud fanfare, equity perps will have a slow start in 2026 but will do better on CEX venues than DEXes. Expect <5% of perp volume by EOY.",
+  "author": "Mike Ippolito",
+  "target_year": 2026,
+  "bar": "lenient",
+  "bar_meaning": "the weakest reading a critic would still concede counts",
+  "criterion": "Equity perps remained a small minority of perp volume in 2026, read as under 10%."
+ },
+ "questions": {
+  "critic_accepts": {
+   "type": "noul",
+   "instructions": "Would a skeptical critic of the author agree that `criterion` is a fair test of `claim` at the stated `bar`?",
+   "criteria": {
+    "true": "The criterion tests what the claim actually asserted; it does not move the goalposts in the author's favour or against them beyond what the bar name implies.",
+    "false": "The criterion tests something the claim did not assert, or is so loose that almost anything would satisfy it, or so tight that no reasonable reading of the claim could."
+   }
+  },
+  "checkable": {
+   "type": "noul",
+   "instructions": "Can `criterion` be settled by public evidence available by the end of `target_year`?",
+   "criteria": {
+    "true": "A specific public fact, number, release, ranking or event would settle it.",
+    "false": "It depends on private information, taste, or a judgement nobody can verify."
+   }
+  }
+ },
+ "answers": {
+  "critic_accepts": {
+   "type": "noul",
+   "noul": 0.54
+  },
+  "checkable": {
+   "type": "noul",
+   "noul": 0.67
+  }
+ },
+ "usage": {
+  "input_tokens": 585,
+  "output_tokens": 41
+ },
+ "at": "2026-10-24T20:00:28Z"
+}

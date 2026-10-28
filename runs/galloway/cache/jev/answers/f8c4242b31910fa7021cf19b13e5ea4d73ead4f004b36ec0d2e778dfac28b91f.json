@@ -1,0 +1,104 @@
+{
+ "hash": "f8c4242b31910fa7021cf19b13e5ea4d73ead4f004b36ec0d2e778dfac28b91f",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Scott Galloway",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Waymo Dominates",
+   "author": "Scott Galloway",
+   "date": "2025-12-19",
+   "context": "Heading of prediction 8. Body: 1 million paid rides a month, 100 million autonomous miles vs Tesla's 1.25 million with monitors; 'lapping the competition'. Waymo extends its lead in 2026."
+  },
+  "bar": "lenient",
+  "criterion": "Waymo remained the largest US robotaxi operator by paid rides in 2026.",
+  "measure": "Reputable reporting or company data at the latest 2026 reading; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-03-27",
+    "source": "TechCrunch",
+    "direction": "supports",
+    "quote": "providing 500,000 paid robotaxi rides every week across 10 U.S. cities ... tenfold, from 50,000 per week in May 2024 to 500,000 per week today ... Tesla began operating a paid robotaxi service in Austin in January",
+    "url": "https://techcrunch.com/2026/03/27/waymo-skyrocketing-ridership-in-one-chart/"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-06-02",
+    "source": "electrive",
+    "direction": "supports",
+    "quote": "Tesla has registered 42 autonomous robotaxis in Texas ... At the time, Musk said the robotaxi operation could reach around 1,000 vehicles within a month of launch.",
+    "url": "https://www.electrive.com/2026/06/02/tesla-robotaxi-fleet-in-texas-reaches-only-42-vehicles/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.24
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.03
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.75,
+   "confidence": 0.62,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.25,
+    "2": 0.75
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1277,
+  "output_tokens": 52
+ },
+ "at": "2026-10-25T02:56:59Z"
+}

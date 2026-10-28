@@ -1,0 +1,104 @@
+{
+ "hash": "e7c1b0ed101cca32012a3664e1cca4aee0478b54feb36111c0f3727fa286ea62",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Mike Ippolito",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Vault AUM will grow but not an explosive amount from ~$5B today to $15-20B.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "context": "Post 17. Onchain vault (asset-management) AUM ends 2026 at $15B to $20B, from about $5B at the start of the year."
+  },
+  "bar": "strict",
+  "criterion": "Onchain vault AUM reached $15B to $20B in 2026.",
+  "measure": "DefiLlama vaults or Blockworks Research onchain asset-management AUM at the latest 2026 reading; provisional until December 31.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-07-20",
+    "source": "Crypto Briefing (reporting Blockworks vaults dashboard and Lagoon Finance)",
+    "direction": "contradicts",
+    "quote": "roughly $7 billion in assets under management [tracked by Blockworks' Vaults Overview] across 24 blockchain networks, 59 curators and 132 distinct assets. [Separately, broader figure:] By March 2026, vault AUM across the broader DeFi ecosystem reached $23.6 billion, a 66% increase year-to-date [Lagoon Finance report]. [Also:] onchain vault AUM rose from under $100 million in early 2024 to the multi-billion-dollar range by late 2025.",
+    "url": "https://cryptobriefing.com/blockworks-vaults-dashboard-7-billion-aum/"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-08-25",
+    "source": "Cryptopolitan (reporting vaults.fyi State of Vaults report of Aug 24, 2026 and a DefiLlama/Sentora study)",
+    "direction": "neutral",
+    "quote": "$11.29 billion [curated vaults], with data current as of August 20; 856 vaults, 131 curators, and 18 protocols. Morpho 46.2% of curated TVL. DefiLlama alternative: $7.18 billion across 55 tracked curators (Sentora data collected in July). Curated cohort grew 39% [year over year] while supply-side DeFi TVL fell 41.8%. [Above the $10B standard bar and 2x the ~$5B start point, below the $15B strict bar; the two trackers disagree by $4B.]",
+    "url": "https://www.cryptopolitan.com/morpho-leads-curated-defi-market/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.03
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.7
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.9,
+   "confidence": 0.85,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.1,
+    "2": 0.9
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1495,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:05:58Z"
+}

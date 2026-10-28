@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 546" width="1200" height="546" font-family='Space Grotesk, system-ui, -apple-system, Segoe UI, sans-serif'>
+<rect width="1200" height="546" fill="#0F1218"/>
+<text x="190" y="34" font-size="22" font-weight="600" fill="#F2F4F7">Numbers protect the reader</text>
+<text x="190" y="54" font-size="13" fill="#C9D0DA">Hit rate at each bar for claims with a number, date or threshold versus claims without, pooled across subjects.</text>
+<text x="190" y="72" font-size="13" fill="#C9D0DA">Specificity was scored by the classifier before any evidence was seen. A number narrows the gap and makes the author</text>
+<text x="190" y="90" font-size="13" fill="#C9D0DA">easier to catch.</text>
+<text x="190" y="132" font-size="16" font-weight="600" fill="#F2F4F7">Claims with a number, date or threshold (specificity 2.5 to 3)</text>
+<text x="190" y="150" font-size="12" fill="#A3ABB8">22 claims across all subjects, generosity gap 23 points</text>
+<line x1="190.0" y1="160" x2="190.0" y2="280" stroke="#2A313D" stroke-width="1"/>
+<line x1="390.0" y1="160" x2="390.0" y2="280" stroke="#2A313D" stroke-width="1"/>
+<line x1="590.0" y1="160" x2="590.0" y2="280" stroke="#2A313D" stroke-width="1"/>
+<line x1="790.0" y1="160" x2="790.0" y2="280" stroke="#2A313D" stroke-width="1"/>
+<line x1="990.0" y1="160" x2="990.0" y2="280" stroke="#2A313D" stroke-width="1"/>
+<text x="178" y="185" font-size="14" fill="#F2F4F7" text-anchor="end">Strict</text>
+<rect x="190" y="167" width="72.7" height="26" rx="3" fill="#8B93A1"/>
+<text x="270.7" y="185" font-size="13" font-family='IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace' fill="#F2F4F7">9% <tspan fill="#A3ABB8">(2 of 22)</tspan></text>
+<text x="178" y="225" font-size="14" fill="#F2F4F7" text-anchor="end">Standard</text>
+<rect x="190" y="207" width="109.1" height="26" rx="3" fill="#D7DCE3"/>
+<text x="307.1" y="225" font-size="13" font-family='IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace' fill="#F2F4F7">14% <tspan fill="#A3ABB8">(3 of 22)</tspan></text>
+<text x="178" y="265" font-size="14" fill="#F2F4F7" text-anchor="end">Lenient</text>
+<rect x="190" y="247" width="254.5" height="26" rx="3" fill="#FFB020"/>
+<text x="452.5" y="265" font-size="13" font-family='IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace' fill="#F2F4F7">32% <tspan fill="#A3ABB8">(7 of 22)</tspan></text>
+<line x1="190" y1="160" x2="190" y2="280" stroke="#2A313D" stroke-width="1"/>
+<text x="190" y="334" font-size="16" font-weight="600" fill="#F2F4F7">Claims without one (specificity below 2.5)</text>
+<text x="190" y="352" font-size="12" fill="#A3ABB8">49 claims across all subjects, generosity gap 45 points</text>
+<line x1="190.0" y1="362" x2="190.0" y2="482" stroke="#2A313D" stroke-width="1"/>
+<line x1="390.0" y1="362" x2="390.0" y2="482" stroke="#2A313D" stroke-width="1"/>
+<line x1="590.0" y1="362" x2="590.0" y2="482" stroke="#2A313D" stroke-width="1"/>
+<line x1="790.0" y1="362" x2="790.0" y2="482" stroke="#2A313D" stroke-width="1"/>
+<line x1="990.0" y1="362" x2="990.0" y2="482" stroke="#2A313D" stroke-width="1"/>
+<text x="178" y="387" font-size="14" fill="#F2F4F7" text-anchor="end">Strict</text>
+<rect x="190" y="369" width="65.3" height="26" rx="3" fill="#8B93A1"/>
+<text x="263.3" y="387" font-size="13" font-family='IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace' fill="#F2F4F7">8% <tspan fill="#A3ABB8">(4 of 49)</tspan></text>
+<text x="178" y="427" font-size="14" fill="#F2F4F7" text-anchor="end">Standard</text>
+<rect x="190" y="409" width="310.2" height="26" rx="3" fill="#D7DCE3"/>
+<text x="508.2" y="427" font-size="13" font-family='IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace' fill="#F2F4F7">39% <tspan fill="#A3ABB8">(19 of 49)</tspan></text>
+<text x="178" y="467" font-size="14" fill="#F2F4F7" text-anchor="end">Lenient</text>
+<rect x="190" y="449" width="424.5" height="26" rx="3" fill="#FFB020"/>
+<text x="622.5" y="467" font-size="13" font-family='IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace' fill="#F2F4F7">53% <tspan fill="#A3ABB8">(26 of 49)</tspan></text>
+<line x1="190" y1="362" x2="190" y2="482" stroke="#2A313D" stroke-width="1"/>
+<text x="190.0" y="502" font-size="12" fill="#A3ABB8" text-anchor="middle">0%</text>
+<text x="390.0" y="502" font-size="12" fill="#A3ABB8" text-anchor="middle">25%</text>
+<text x="590.0" y="502" font-size="12" fill="#A3ABB8" text-anchor="middle">50%</text>
+<text x="790.0" y="502" font-size="12" fill="#A3ABB8" text-anchor="middle">75%</text>
+<text x="990.0" y="502" font-size="12" fill="#A3ABB8" text-anchor="middle">100%</text>
+</svg>

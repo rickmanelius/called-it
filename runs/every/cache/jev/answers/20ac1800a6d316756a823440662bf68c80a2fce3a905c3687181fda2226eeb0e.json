@@ -1,0 +1,104 @@
+{
+ "hash": "20ac1800a6d316756a823440662bf68c80a2fce3a905c3687181fda2226eeb0e",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Every",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "if you are an engineer who wants to incorporate AI into your process but doesn't want to reinvent the skill of software engineering there's going to be a home and a job for you for a very long time.",
+   "author": "Dan Shipper",
+   "date": "2025-12-23",
+   "context": "Traditional engineers who use AI as an accelerant will keep having jobs; 'a very long time' has no end date, so a 2026 check is only whether that job category visibly persisted."
+  },
+  "bar": "lenient",
+  "criterion": "In 2026 traditional software engineers were still being hired at scale.",
+  "measure": "Indeed or LinkedIn postings data showing substantial continued hiring for software developers in 2026.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-10-16",
+    "source": "FRED (Indeed Hiring Lab)",
+    "direction": "supports",
+    "quote": "2026-10-16,78.8649883609 ... 2025-10-16,65.0270378284 (Software Development Job Postings on Indeed, index Feb 1 2020=100; up about 21% year over year)",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=IHLIDXUSTPSOFTDEVE"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-07-13",
+    "source": "CIO",
+    "direction": "supports",
+    "quote": "Indeed has tracked a rise of 15% for software development job postings in the US ... software developer and software engineer job postings were the top roles for June (49k postings)",
+    "url": "https://www.cio.com/article/4195780/it-hiring-sees-a-boost-as-software-development-jobs-slowly-bounce-back.html"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.95
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.01
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.98,
+   "confidence": 0.97,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.02,
+    "2": 0.98
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1307,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:09:39Z"
+}

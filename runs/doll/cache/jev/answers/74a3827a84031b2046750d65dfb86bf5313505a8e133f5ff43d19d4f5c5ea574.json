@@ -1,0 +1,47 @@
+{
+ "hash": "74a3827a84031b2046750d65dfb86bf5313505a8e133f5ff43d19d4f5c5ea574",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "claim": "as credit spreads widen (i.e., a “coupon-ish” year)",
+  "author": "Bob Doll",
+  "target_year": 2026,
+  "bar": "strict",
+  "bar_meaning": "what a hostile critic would require before conceding",
+  "criterion": "Both the ICE BofA US Corporate (investment grade) option-adjusted spread and the ICE BofA US High Yield option-adjusted spread are wider at the latest 2026 reading than on December 31, 2025, by at least 10 bps for investment grade and 25 bps for high yield, per FRED."
+ },
+ "questions": {
+  "critic_accepts": {
+   "type": "noul",
+   "instructions": "Would a skeptical critic of the author agree that `criterion` is a fair test of `claim` at the stated `bar`?",
+   "criteria": {
+    "true": "The criterion tests what the claim actually asserted; it does not move the goalposts in the author's favour or against them beyond what the bar name implies.",
+    "false": "The criterion tests something the claim did not assert, or is so loose that almost anything would satisfy it, or so tight that no reasonable reading of the claim could."
+   }
+  },
+  "checkable": {
+   "type": "noul",
+   "instructions": "Can `criterion` be settled by public evidence available by the end of `target_year`?",
+   "criteria": {
+    "true": "A specific public fact, number, release, ranking or event would settle it.",
+    "false": "It depends on private information, taste, or a judgement nobody can verify."
+   }
+  }
+ },
+ "answers": {
+  "critic_accepts": {
+   "type": "noul",
+   "noul": 0.5
+  },
+  "checkable": {
+   "type": "noul",
+   "noul": 0.92
+  }
+ },
+ "usage": {
+  "input_tokens": 608,
+  "output_tokens": 41
+ },
+ "at": "2026-10-24T19:49:07Z"
+}

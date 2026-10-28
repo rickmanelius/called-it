@@ -1,0 +1,47 @@
+{
+ "hash": "66df27933bcf6af7f2b624b14dfe9fdf49ea41d113a41adc05dbfd74c9906fde",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "claim": "AI continues to be volatile/erratic creating another year of elevated volatility.",
+  "author": "Bob Doll",
+  "target_year": 2026,
+  "bar": "standard",
+  "bar_meaning": "what a fair reader would accept as 'this happened'",
+  "criterion": "2026 saw elevated equity volatility and at least one notable selloff attributed to AI stocks."
+ },
+ "questions": {
+  "critic_accepts": {
+   "type": "noul",
+   "instructions": "Would a skeptical critic of the author agree that `criterion` is a fair test of `claim` at the stated `bar`?",
+   "criteria": {
+    "true": "The criterion tests what the claim actually asserted; it does not move the goalposts in the author's favour or against them beyond what the bar name implies.",
+    "false": "The criterion tests something the claim did not assert, or is so loose that almost anything would satisfy it, or so tight that no reasonable reading of the claim could."
+   }
+  },
+  "checkable": {
+   "type": "noul",
+   "instructions": "Can `criterion` be settled by public evidence available by the end of `target_year`?",
+   "criteria": {
+    "true": "A specific public fact, number, release, ranking or event would settle it.",
+    "false": "It depends on private information, taste, or a judgement nobody can verify."
+   }
+  }
+ },
+ "answers": {
+  "critic_accepts": {
+   "type": "noul",
+   "noul": 0.66
+  },
+  "checkable": {
+   "type": "noul",
+   "noul": 0.87
+  }
+ },
+ "usage": {
+  "input_tokens": 549,
+  "output_tokens": 41
+ },
+ "at": "2026-10-24T19:56:42Z"
+}

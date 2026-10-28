@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Called It! sample B: Scoreboard</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+body{margin:0}
+a{color:#F2F4F7}a:hover{color:#FFB020}
+</style>
+</helmet>
+<div style="width: 1440px; height: 900px; box-sizing: border-box; background: #0F1218; color: #F2F4F7; font-family: 'Space Grotesk', system-ui, sans-serif; padding: 44px 48px; display: flex; flex-direction: column; gap: 28px; position: relative; overflow: hidden">
+
+  <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 32px">
+    <div style="display: flex; flex-direction: column; gap: 8px">
+      <h1 style="margin: 0; font-size: 96px; font-weight: 700; line-height: 0.95; letter-spacing: -0.03em">Called It<span style="color: {{accent}}">!</span></h1>
+      <p style="margin: 0; font-size: 22px; font-weight: 500; color: #A3ABB8">Using AI Classifiers to Score Annual Predictions</p>
+    </div>
+    <div style="display: flex; gap: 12px; padding-bottom: 6px">
+      <a href="#" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 20px; border: 1.5px solid #3A4250; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 16px; background: #171C25">
+        <svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14"><path d="M3 1.5v11l9-5.5z" fill="#FFB020"></path></svg>
+        Watch the 90-second explainer
+      </a>
+      <a href="#" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 20px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 16px; background: {{accent}}; color: #0F1218">Read the article</a>
+    </div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; flex-grow: 1">
+
+    <div style="background: #171C25; border: 1px solid #2A313D; border-radius: 16px; padding: 28px 30px; display: flex; flex-direction: column; gap: 18px">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: #A3ABB8">called-it v0.2.0 · Every · 2026 · graded 2026-10-24 · jev-1.14.0</div>
+      <h2 style="margin: 0; font-size: 36px; font-weight: 700; line-height: 1.05; letter-spacing: -0.02em">Every: 2026 predictions, graded</h2>
+      <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #A3ABB8">22 claims, each graded at three bars against evidence from 2026-01-01 to 2026-10-24. The gap between the strict and lenient bars is how much the grade depends on who is grading.</p>
+      <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px">
+        <div style="background: #0F1218; border: 1px solid #2A313D; border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px"><div style="font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #A3ABB8">Strict</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 34px; font-weight: 600; line-height: 1; font-variant-numeric: tabular-nums">4%</div><div style="font-size: 11px; color: #A3ABB8">1 met · 5 not · 16 open</div></div>
+        <div style="background: #0F1218; border: 1px solid #2A313D; border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px"><div style="font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #A3ABB8">Standard</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 34px; font-weight: 600; line-height: 1; font-variant-numeric: tabular-nums">32%</div><div style="font-size: 11px; color: #A3ABB8">7 met · 3 not · 12 open</div></div>
+        <div style="background: #0F1218; border: 1px solid #2A313D; border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px"><div style="font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #A3ABB8">Lenient</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 34px; font-weight: 600; line-height: 1; font-variant-numeric: tabular-nums">55%</div><div style="font-size: 11px; color: #A3ABB8">12 met · 0 not · 10 open</div></div>
+        <div style="background: {{accent}}; color: #0F1218; border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px"><div style="font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #3D2A00">Generosity gap</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 34px; font-weight: 600; line-height: 1; font-variant-numeric: tabular-nums">50 pts</div><div style="font-size: 11px; color: #3D2A00">lenient minus strict</div></div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 4px">
+        <div style="display: grid; grid-template-columns: 90px minmax(0, 1fr); align-items: center; gap: 12px"><div style="font-size: 14px; font-weight: 700">Strict</div><div style="display: flex; align-items: center; gap: 10px"><div style="height: 22px; width: 4%; background: #F2F4F7; border-radius: 4px"></div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #A3ABB8">4% (1 of 22)</div></div></div>
+        <div style="display: grid; grid-template-columns: 90px minmax(0, 1fr); align-items: center; gap: 12px"><div style="font-size: 14px; font-weight: 700">Standard</div><div style="display: flex; align-items: center; gap: 10px"><div style="height: 22px; width: 32%; background: #F2F4F7; border-radius: 4px"></div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #A3ABB8">32% (7 of 22)</div></div></div>
+        <div style="display: grid; grid-template-columns: 90px minmax(0, 1fr); align-items: center; gap: 12px"><div style="font-size: 14px; font-weight: 700">Lenient</div><div style="display: flex; align-items: center; gap: 10px"><div style="height: 22px; width: 55%; background: {{accent}}; border-radius: 4px"></div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #A3ABB8">55% (12 of 22)</div></div></div>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 16px">
+      <div style="font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #A3ABB8">Explainer frame · scene 8 in this look</div>
+      <div style="aspect-ratio: 16 / 9; background: #171C25; border: 1px solid #2A313D; border-radius: 16px; padding: 36px 40px; display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow: hidden">
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #A3ABB8">Every · 22 claims · one list, two conventions</div>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: end">
+          <div style="display: flex; flex-direction: column; gap: 6px"><div style="font-family: 'IBM Plex Mono', monospace; font-size: 112px; font-weight: 600; line-height: 0.9; letter-spacing: -0.04em; font-variant-numeric: tabular-nums">100%</div><div style="font-size: 15px; color: #A3ABB8"><strong style="color: #F2F4F7">lenient</strong> bar · 12 of 12</div></div>
+          <div style="display: flex; flex-direction: column; gap: 6px"><div style="font-family: 'IBM Plex Mono', monospace; font-size: 112px; font-weight: 600; line-height: 0.9; letter-spacing: -0.04em; font-variant-numeric: tabular-nums; color: {{accent}}">17%</div><div style="font-size: 15px; color: #A3ABB8"><strong style="color: #F2F4F7">strict</strong> bar · 1 of 6</div></div>
+        </div>
+        <div style="font-size: 30px; font-weight: 700; letter-spacing: -0.02em">Both are honest.</div>
+        <div style="position: absolute; right: 0; top: 0; width: 220px; height: 6px; background: {{accent}}"></div>
+      </div>
+      <div style="background: #0F1218; border: 1px solid #2A313D; border-radius: 12px; padding: 16px 20px; font-family: 'IBM Plex Mono', monospace; font-size: 15px; line-height: 1.6; color: #F2F4F7">
+        <span style="color: {{accent}}">/called-it</span> "Your Name" 2026 https://your-predictions<br>
+        <span style="color: #A3ABB8">free · runs in Claude Code and Codex · every run is replayable · it drafts your thread</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; justify-content: space-between; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #A3ABB8"><span>github.com/rickmanelius/called-it</span><span>Sample B · scoreboard: dark ground, amber accent, tabular numerals, Space Grotesk</span></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#FFB020","options":["#FFB020","#C6F432","#5CC8FF","#FF6B4A"]},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#FFB020' };
+  }
+}
+</script>
+</body>
+</html>

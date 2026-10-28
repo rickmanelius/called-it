@@ -1,0 +1,11 @@
+# gitleaks configuration. Extends the default rules; allowlists public identifiers that cached page text may carry.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Public CAPTCHA site keys and similar non-secret identifiers embedded in fetched third-party pages"
+regexes = [
+  '''data-sitekey=''',
+  '''recaptcha''',
+  '''hcaptcha''',
+]

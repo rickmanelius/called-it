@@ -1,0 +1,104 @@
+{
+ "hash": "3af1a97a4035d7d3f8c5f3c29b5036763476d3144cbc2d0023714fa295608643",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Bob Doll",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Stocks fail to advance by a double-digit percentage for only the third time in 10 years.",
+   "author": "Bob Doll",
+   "date": "2025-12-31",
+   "context": "Prediction 5 of 10. The S&P 500 gains less than 10% in calendar 2026 (price or total return; the bars say which)."
+  },
+  "bar": "standard",
+  "criterion": "Stocks fail to advance by a double-digit percentage in 2026.",
+  "measure": "S&P 500 calendar-2026 price return through the latest close below 10%, per S&P Dow Jones Indices or a major outlet; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-10-23",
+    "source": "Yahoo Finance, S&P 500 (^GSPC) historical closes",
+    "direction": "contradicts",
+    "quote": "Oct 23, 2026: 7,623.68; Oct 22, 2026: 7,663.43; Oct 21, 2026: 7,757.17 [price return 2026 year to date from the 2025-12-31 close of 6,845.50: 11.37% at the Oct 23 close]",
+    "url": "https://finance.yahoo.com/quote/%5EGSPC/history/"
+   },
+   {
+    "tier": 4,
+    "tier_meaning": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+    "date": "2026-10-05",
+    "source": "Bob Doll, Crossmark (4Q26 commentary)",
+    "direction": "contradicts",
+    "quote": "The S&P 500 has advanced a bit over 10% so far this year. ... another double-digit stock market return is possible.",
+    "url": "https://www.crossmarkglobal.com/quarterly-investment-commentary-4q26/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.04
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.91
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.26,
+   "confidence": 0.59,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.73,
+    "2": 0.27
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1324,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T20:16:43Z"
+}

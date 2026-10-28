@@ -1,0 +1,104 @@
+{
+ "hash": "1a699c1dab31cb0b47bc40605d09808f80da931b0c64291c2ce371bfe0d6a13d",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Mike Ippolito",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Despite the loud fanfare, equity perps will have a slow start in 2026 but will do better on CEX venues than DEXes. Expect <5% of perp volume by EOY.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "context": "Post 11. Tokenized-equity perpetuals are under 5% of total perp volume at end of 2026, with CEXes ahead of DEXes."
+  },
+  "bar": "strict",
+  "criterion": "Equity perps had a slow 2026: under 5% of perp volume at year end, with centralized venues ahead of decentralized ones.",
+  "measure": "Tokenized-stock perpetual volume as a share of total crypto perpetual volume at the latest 2026 reading per The Block, Dune or venue reports, and CEX equity-perp volume above DEX equity-perp volume; provisional.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-05-20",
+    "source": "CoinMarketCap Academy research, RWA Perpetuals State of the Market May 2026",
+    "direction": "supports",
+    "quote": "overall split is 72% CEX and 28% DEX across all RWA perps [...] Binance leads stocks-perp volume cumulatively at 32% of category [...] HIP-3 is the largest DEX at 18%. [...] Only 4.1% of RWA-perp volume in this dataset settles on tokenized contracts.",
+    "url": "https://coinmarketcap.com/academy/de/article/rwa-perpetuals-state-of-the-market-%E2%80%94-may-2026"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-05-20",
+    "source": "CoinMarketCap Academy research",
+    "direction": "neutral",
+    "quote": "stocks-perp volume has gone from $2.7B/week in late January to $15.6B in the week of May 11 [...] Stock RWA perps have risen from ~5% to ~28% of weekly volume in four months [share of RWA-perp volume, not of total crypto perp volume]. The dataset spans December 29, 2025 through May 20, 2026",
+    "url": "https://coinmarketcap.com/academy/de/article/rwa-perpetuals-state-of-the-market-%E2%80%94-may-2026"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.06
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.1
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.05,
+   "confidence": 0.9,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.01,
+    "1": 0.93,
+    "2": 0.06
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1442,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:05:57Z"
+}

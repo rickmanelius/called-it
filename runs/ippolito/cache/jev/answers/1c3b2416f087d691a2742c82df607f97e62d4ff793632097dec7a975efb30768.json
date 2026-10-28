@@ -1,0 +1,122 @@
+{
+ "hash": "1c3b2416f087d691a2742c82df607f97e62d4ff793632097dec7a975efb30768",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Mike Ippolito",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "It’s another bad year for onchain infrastructure. Most general purpose L2s or alt L1s completely fail to attract any new users or apps. Expect big pivots or changes in the business model from several large protocols by EOY.",
+   "author": "Mike Ippolito",
+   "date": "2026-01-01",
+   "context": "Post 22. Several large infrastructure protocols announce pivots or business-model changes during 2026."
+  },
+  "bar": "strict",
+  "criterion": "2026 was another bad year for onchain infrastructure: at least three large protocols announced major pivots, and general-purpose chains broadly failed to grow their users.",
+  "measure": "Three or more general-purpose L2 or alt-L1 protocols with a peak market cap of $1B or more announcing a major pivot or business-model change in 2026, per announcements or major outlets; Artemis or Token Terminal showing median daily active addresses across the top 20 such chains lower at the latest reading than on 2026-01-01.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-02-03",
+    "source": "The Block",
+    "direction": "neutral",
+    "quote": "the original vision of L2s and their role in Ethereum no longer makes sense [Vitalik Buterin] [...] We should stop thinking about L2s as literally being 'branded shards' of Ethereum [...] identify a value add other than 'scaling'",
+    "url": "https://www.theblock.co/post/388285/vitalik-buterin-reevaluates-rollup-centric-roadmap-arguing-l2s-decentralized-far-slower-while-ethereum-base-layer-advanced"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-03-12",
+    "source": "The Block",
+    "direction": "supports",
+    "quote": "[OP Labs laid off 20 employees, roughly 19.6% of staff.] This is not about finances. [CEO Jing Wang:] doing fewer things well, making decisions faster, and reducing coordination overhead. [Base announced in February 2026 that it] is shifting to its own unified tech stack to pursue independent development.",
+    "url": "https://www.theblock.co/post/393339/optimism-op-labs-layoff"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-08-27",
+    "source": "Crypto Briefing",
+    "direction": "supports",
+    "quote": "The transition will come with the closure of the Lisk Chain on Oct. 31, 2026. [Lisk is moving to] a financial platform designed to help businesses manage fiat and stablecoin operations. [Proposal includes] burning 100 million LSK from its treasury [cutting supply from 400 million to 300 million; LSK stays as the platform's loyalty token; projects on the chain can migrate to Celo.]",
+    "url": "https://cryptobriefing.com/lisk-chain-shutdown-october-2026/"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-10-02",
+    "source": "CoinDesk",
+    "direction": "supports",
+    "quote": "Blast said it will shut down after concluding that its Ethereum layer-2 network no longer makes economic sense to operate. [...] the economics of operating the chain no longer make sense. [TVL peak over $2 billion in June 2024 per DeFiLlama; current $32 million; withdrawals through the standard interface close October 26.]",
+    "url": "https://www.coindesk.com/tech/2026/10/02/once-a-usd2-billion-ethereum-layer-2-blast-is-shutting-down-after-assets-plunge-98"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.27
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.07
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.98,
+   "confidence": 0.97,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.02,
+    "2": 0.98
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1797,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:05:58Z"
+}

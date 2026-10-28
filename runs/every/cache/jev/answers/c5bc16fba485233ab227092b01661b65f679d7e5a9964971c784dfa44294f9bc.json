@@ -1,0 +1,122 @@
+{
+ "hash": "c5bc16fba485233ab227092b01661b65f679d7e5a9964971c784dfa44294f9bc",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Every",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "There’s a whole class of highly creative, highly visual people who have been held back from making full experiences because they can’t code. Now they’re going to be able to code.",
+   "author": "Dan Shipper",
+   "date": "2025-12-23",
+   "context": "Prediction 3 of 3, 'Designers become superheroes'. Designers and other non-coders ship working software with AI tools in 2026."
+  },
+  "bar": "standard",
+  "criterion": "In 2026 designers shipped working apps with AI tools at scale.",
+  "measure": "A major design or AI-coding tool reporting millions of designer-built apps or a large rise in non-engineer builders in 2026, or a reputable survey showing a substantial increase, per company data or major outlets.",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-06-24",
+    "source": "Figma",
+    "direction": "supports",
+    "quote": "the number of designers participating in development doubled to 41% (from 21%; 8,403 survey responses)",
+    "url": "https://www.figma.com/blog/2026-ai-report/"
+   },
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-10-06",
+    "source": "AI in Design Report (Designer Fund / Foundation Capital)",
+    "direction": "supports",
+    "quote": "Half of respondents have pushed AI-generated code to production. (over 900 designers surveyed)",
+    "url": "https://www.stateofaidesign.com/"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-03-12",
+    "source": "CFOtech",
+    "direction": "supports",
+    "quote": "Zillow has around 600 Replit seats, and employees created more than 7,000 apps over the past year",
+    "url": "https://cfotech.co.uk/story/replit-raises-usd-400m-hits-usd-9bn-ai-valuation"
+   },
+   {
+    "tier": 2,
+    "tier_meaning": "reputable reporting: a major outlet or a domain-leading trade publication",
+    "date": "2026-08-13",
+    "source": "TechNode",
+    "direction": "supports",
+    "quote": "users have created more than 60 million projects since its launch in November 2024 ... Lovable-built applications receive more than 900 million visits each month.",
+    "url": "https://technode.com/2026/08/13/tencent-backs-lovable-in-400-million-series-c-at-13-3-billion-valuation/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.78
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.02
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.96,
+   "confidence": 0.95,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.03,
+    "2": 0.97
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1515,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:09:38Z"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "called-it",
+  "owner": {
+    "name": "Rick Manelius",
+    "url": "https://github.com/rickmanelius"
+  },
+  "metadata": {
+    "description": "Marketplace hosting the called-it prediction-grading skill."
+  },
+  "plugins": [
+    {
+      "name": "called-it",
+      "description": "Grade any pundit's annual predictions at three bars against the year's public evidence, with receipts.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Rick Manelius",
+        "url": "https://github.com/rickmanelius"
+      },
+      "source": "./",
+      "category": "research",
+      "homepage": "https://github.com/rickmanelius/called-it"
+    }
+  ]
+}

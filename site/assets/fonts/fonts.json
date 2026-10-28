@@ -1,0 +1,26 @@
+{
+ "css": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@500;600&display=swap",
+ "files": {
+  "space-grotesk.woff2": {
+   "family": "Space Grotesk",
+   "css_weight": "300 700",
+   "requested_weight": 400,
+   "subset": "latin",
+   "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4C_k3HqU.woff2"
+  },
+  "ibm-plex-mono-500.woff2": {
+   "family": "IBM Plex Mono",
+   "css_weight": "500",
+   "requested_weight": 500,
+   "subset": "latin",
+   "source": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwlBFgsAXHNk.woff2"
+  },
+  "ibm-plex-mono-600.woff2": {
+   "family": "IBM Plex Mono",
+   "css_weight": "600",
+   "requested_weight": 600,
+   "subset": "latin",
+   "source": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3vAOwlBFgsAXHNk.woff2"
+  }
+ }
+}

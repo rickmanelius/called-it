@@ -1,0 +1,46 @@
+claim_id,bar,verdict,provisional,met_p,contradicted_p,strength,reason,evidence_ids,grader_model
+c14,strict,unresolved,True,,,,no evidence gathered,,
+c1,strict,not_met,True,0.12,0.97,1.88,evidence shows the criterion was not met,e11 e12 e8 e9 e13,jev-1.14.0
+c1,standard,not_met,True,0.24,0.9,1.9,evidence shows the criterion was not met,e10 e6 e7 e9 e13,jev-1.14.0
+c1,lenient,unresolved,True,0.67,0.02,1.04,grader is uncertain,e6 e13,jev-1.14.0
+c2,strict,not_met,True,0.03,0.76,1.65,evidence shows the criterion was not met,e3,jev-1.14.0
+c2,standard,not_met,True,0.04,0.47,1.67,implied: the lenient bar is not met,e3,jev-1.14.0
+c2,lenient,not_met,True,0.03,0.96,1.99,evidence shows the criterion was not met,e3 e4 e5,jev-1.14.0
+c3,strict,unresolved,True,0.08,0.54,1.51,grader is uncertain,e20 e15 e16,jev-1.14.0
+c3,standard,met,True,0.84,0.37,1.95,criterion met on evidence with standing,e14 e18 e16 e19 e17,jev-1.14.0
+c3,lenient,met,True,0.9,0.02,1.04,criterion met on evidence with standing,e17,jev-1.14.0
+c4,strict,unresolved,True,0.29,0.27,1.61,evidence is silent,e21 e22 e23,jev-1.14.0
+c4,standard,unresolved,True,0.53,0.12,1.86,grader is uncertain,e24 e21 e22 e23,jev-1.14.0
+c4,lenient,met,True,0.94,0.01,1.97,criterion met on evidence with standing,e24 e21 e22 e25,jev-1.14.0
+c5,strict,not_met,True,0.02,0.98,1.88,evidence shows the criterion was not met,e29 e26,jev-1.14.0
+c5,standard,not_met,True,0.01,0.98,1.9,evidence shows the criterion was not met,e28 e26 e27,jev-1.14.0
+c5,lenient,not_met,True,0.03,0.98,1.86,evidence shows the criterion was not met,e28 e26 e27,jev-1.14.0
+c6,strict,unresolved,True,0.62,0.03,1.93,grader is uncertain,e30 e31 e33,jev-1.14.0
+c6,standard,unresolved,True,0.67,0.01,1.82,grader is uncertain,e30 e31 e33,jev-1.14.0
+c6,lenient,met,True,0.98,0.01,1.96,criterion met on evidence with standing,e30 e31 e32,jev-1.14.0
+c7,strict,not_met,True,0.01,0.95,1.86,evidence shows the criterion was not met,e35 e36,jev-1.14.0
+c7,standard,not_met,True,0.02,0.95,1.85,evidence shows the criterion was not met,e35 e36,jev-1.14.0
+c7,lenient,unresolved,True,0.06,0.12,1.05,evidence is silent,e34,jev-1.14.0
+c8,strict,not_met,True,0.02,0.95,1.94,evidence shows the criterion was not met,e37 e40 e38,jev-1.14.0
+c8,standard,unresolved,True,0.02,0.22,1.0,evidence is silent,e40,jev-1.14.0
+c8,lenient,met,True,0.96,0.02,1.03,criterion met on evidence with standing,e39,jev-1.14.0
+c9,strict,unresolved,True,0.02,0.28,1.19,evidence is silent,e42 e41,jev-1.14.0
+c9,standard,unresolved,True,0.02,0.28,1.23,evidence is silent,e42 e41,jev-1.14.0
+c9,lenient,unresolved,True,0.02,0.29,1.24,evidence is silent,e42 e41,jev-1.14.0
+c10,strict,unresolved,True,0.21,0.28,1.78,evidence is silent,e43 e46 e45,jev-1.14.0
+c10,standard,unresolved,True,0.11,0.09,1.78,evidence is silent,e43 e45,jev-1.14.0
+c10,lenient,unresolved,True,0.24,0.03,1.75,evidence is silent,e44 e46,jev-1.14.0
+c11,strict,not_met,True,0.05,0.95,1.03,evidence shows the criterion was not met,e48,jev-1.14.0
+c11,standard,unresolved,True,0.51,0.39,1.02,grader is uncertain,e47,jev-1.14.0
+c11,lenient,unresolved,True,0.21,0.3,1.02,evidence is silent,e47,jev-1.14.0
+c12,strict,unresolved,True,0.35,0.32,1.94,grader is uncertain,e50 e49 e54 e52 e53,jev-1.14.0
+c12,standard,met,True,0.91,0.02,1.92,criterion met on evidence with standing,e50 e49 e51 e52,jev-1.14.0
+c12,lenient,met,True,0.71,0.04,1.94,criterion met on evidence with standing,e49 e51 e52,jev-1.14.0
+c13,strict,unresolved,True,0.27,0.1,1.63,evidence is silent,e55 e57,jev-1.14.0
+c13,standard,met,True,0.95,0.01,1.96,criterion met on evidence with standing,e56 e55,jev-1.14.0
+c13,lenient,met,True,0.18,0.1,1.04,implied: the standard bar is met,e56,jev-1.14.0
+c14,standard,met,True,0.98,0.01,1.99,criterion met on evidence with standing,e58 e59,jev-1.14.0
+c14,lenient,met,True,0.98,0.01,1.99,criterion met on evidence with standing,e58 e59,jev-1.14.0
+c15,strict,not_met,False,0.02,0.99,1.96,evidence shows the criterion was not met,e1 e2,jev-1.14.0
+c15,standard,not_met,False,0.02,0.99,1.96,evidence shows the criterion was not met,e1 e2,jev-1.14.0
+c15,lenient,not_met,False,0.01,0.99,1.95,evidence shows the criterion was not met,e1 e2,jev-1.14.0

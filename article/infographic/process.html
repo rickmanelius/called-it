@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>called-it process</title>
+<style>
+  /* Render at 1600x900 for X and Substack (both scale a 16:9 image). Brand tokens: sample B (lib/brand.py), dark only. */
+  @font-face { font-family: 'Space Grotesk'; font-style: normal; font-weight: 300 700; font-display: block; src: url('../../site/assets/fonts/space-grotesk.woff2') format('woff2'); }
+  @font-face { font-family: 'IBM Plex Mono'; font-style: normal; font-weight: 500; font-display: block; src: url('../../site/assets/fonts/ibm-plex-mono-500.woff2') format('woff2'); }
+  @font-face { font-family: 'IBM Plex Mono'; font-style: normal; font-weight: 600; font-display: block; src: url('../../site/assets/fonts/ibm-plex-mono-600.woff2') format('woff2'); }
+  :root { --page:#0F1218; --surface:#171C25; --surface-2:#1E2430; --border:#2A313D; --ink:#F2F4F7; --ink-2:#C9D0DA; --muted:#A3ABB8; --grid:#2A313D; --axis:#2A313D;
+          --accent:#FFB020; --on-accent:#0F1218; --bar-strict:#8B93A1; --bar-standard:#D7DCE3; --bar-lenient:#FFB020; --good:#4FD1A1; --critical:#FF5C5C; --open:#A3ABB8;
+          --font-text:'Space Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif; --font-mono:'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; background: var(--page); color: var(--ink); font: 16px/1.4 var(--font-text); }
+  .card { width: 1600px; height: 900px; padding: 56px 64px; display: grid; grid-template-rows: auto 1fr auto; gap: 28px; background: var(--page); }
+  h1 { margin: 0; font-size: 44px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; }
+  h1 small { display:block; font-size: 22px; color: var(--ink-2); font-weight: 400; margin-top: 8px; letter-spacing: 0; }
+  h1 small strong { color: var(--accent); font-weight: 700; }
+  .flow { display: grid; grid-template-columns: repeat(7, 1fr); gap: 14px; align-items: stretch; }
+  .step { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 18px 18px 16px; position: relative; display: flex; flex-direction: column; }
+  .step .n { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: var(--on-accent); font-family: var(--font-mono); font-weight: 600; display: grid; place-items: center; font-size: 15px; margin-bottom: 12px; }
+  .step h2 { margin: 0 0 6px; font-size: 20px; font-weight: 700; letter-spacing: -0.01em; }
+  .step p { margin: 0; color: var(--ink-2); font-size: 15px; line-height: 1.35; }
+  .step .who { margin-top: auto; padding-top: 12px; font-family: var(--font-mono); font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+  .step::after { content: ""; position: absolute; right: -9px; top: 50%; width: 14px; height: 14px; background: var(--page); border-right: 2px solid var(--muted); border-top: 2px solid var(--muted); transform: translateY(-50%) rotate(45deg); }
+  .step:last-child::after { display: none; }
+  .step.human { border-color: var(--accent); border-width: 2px; }
+  .step.human .n { background: var(--ink); color: var(--page); }
+  .bottom { display: grid; grid-template-columns: 1.15fr 1fr 0.9fr; gap: 28px; align-items: start; }
+  .panel { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 18px 20px; }
+  .panel h3 { margin: 0 0 10px; font-size: 14px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 700; }
+  .bars { display: grid; grid-template-columns: 90px 1fr; gap: 8px 14px; align-items: center; font-size: 15px; }
+  .bars .lbl { font-weight: 700; }
+  .bars .bar { height: 22px; border-radius: 4px; position: relative; }
+  .bars .bar span { position: absolute; left: 100%; margin-left: 10px; top: 50%; transform: translateY(-50%); white-space: nowrap; color: var(--ink-2); font-size: 14px; }
+  .tiers { font-size: 14px; color: var(--ink-2); margin: 0; padding: 0; list-style: none; }
+  .tiers li { display: grid; grid-template-columns: 34px 1fr; gap: 10px; padding: 4px 0; border-top: 1px solid var(--grid); }
+  .tiers li:first-child { border-top: 0; }
+  .tiers b { color: var(--ink); font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+  .verdicts { display: grid; gap: 10px; font-size: 15px; }
+  .v { display: grid; grid-template-columns: 12px 112px 1fr; align-items: center; gap: 10px; }
+  .v b { white-space: nowrap; }
+  .v span:last-child { color: var(--ink-2); font-size: 14px; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .v.met .dot { background: var(--good); } .v.met b { color: var(--good); }
+  .v.not .dot { background: var(--critical); } .v.not b { color: var(--critical); }
+  .v.un .dot { background: var(--open); } .v.un b { color: var(--ink-2); }
+  .foot { display: flex; justify-content: space-between; align-items: baseline; color: var(--ink-2); font-size: 15px; }
+  .foot code { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 2px 8px; font-family: var(--font-mono); font-size: 14px; color: var(--ink); }
+  .foot span:last-child { font-family: var(--font-mono); color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>Did they actually call it?
+    <small>How <strong>called-it</strong> grades a year of predictions at three bars, with every receipt attached.</small>
+  </h1>
+
+  <div class="flow">
+    <div class="step"><div class="n">1</div><h2>Point it at them</h2><p>A person or company, the year, and the post where the predictions were made.</p><div class="who">you</div></div>
+    <div class="step"><div class="n">2</div><h2>Find every prediction</h2><p>Posts, threads, podcasts, decks from October to January. Threads hydrated, episodes transcribed.</p><div class="who">model + scripts</div></div>
+    <div class="step"><div class="n">3</div><h2>Extract the claims</h2><p>Verbatim quotes, one checkable outcome each. A decision classifier scores specificity and boldness; the top 20 go on.</p><div class="who">model + Jev</div></div>
+    <div class="step human"><div class="n">4</div><h2>Write three bars</h2><p>Strict, standard, lenient. Written before any evidence is seen, checked for fairness, then reviewed by a human.</p><div class="who">model + Jev + you</div></div>
+    <div class="step"><div class="n">5</div><h2>Gather the evidence</h2><p>Official data, reputable reporting, resolved markets, the author's own later words. Every item dated, tiered, quoted.</p><div class="who">model + scripts</div></div>
+    <div class="step"><div class="n">6</div><h2>Grade each bar</h2><p>The classifier answers over exactly the evidence gathered: met, not met, or unresolved, with a probability.</p><div class="who">Jev</div></div>
+    <div class="step"><div class="n">7</div><h2>Publish with receipts</h2><p>A scorecard anyone can replay offline and get the same numbers. Hit rate at each bar, and the gap between them.</p><div class="who">scripts</div></div>
+  </div>
+
+  <div class="bottom">
+    <div class="panel">
+      <h3>Three bars, one claim: "a mass-market robotic pet succeeds by the end of 2026"</h3>
+      <div class="bars">
+        <div class="lbl">Strict</div><div class="bar" style="width:20%; background: var(--bar-strict)"><span>100,000 units sold in 2026</span></div>
+        <div class="lbl">Standard</div><div class="bar" style="width:34%; background: var(--bar-standard)"><span>mass-market retail, strong sales reported</span></div>
+        <div class="lbl">Lenient</div><div class="bar" style="width:48%; background: var(--bar-lenient)"><span>widely covered as a hit</span></div>
+      </div>
+      <p style="margin:14px 0 0; color: var(--ink-2); font-size: 14px;">Lenient is lenient about the claim's scope, never about the evidence. Social chatter alone meets no bar.</p>
+    </div>
+    <div class="panel">
+      <h3>Evidence tiers</h3>
+      <ul class="tiers">
+        <li><b>T1</b><span>primary: filings, releases, official statistics, price data</span></li>
+        <li><b>T2</b><span>reputable reporting</span></li>
+        <li><b>T3</b><span>a resolved Polymarket or Kalshi market</span></li>
+        <li><b>T4</b><span>the author's own later words: an admission is strong, a victory lap is weak</span></li>
+        <li><b>T5</b><span>social chatter: never sufficient alone</span></li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3>What a cell can say</h3>
+      <div class="verdicts">
+        <div class="v met"><span class="dot"></span><b>✓ met</b><span>P(met) ≥ 0.70 and the evidence has standing</span></div>
+        <div class="v not"><span class="dot"></span><b>✗ not met</b><span>P(contradicted) ≥ 0.70</span></div>
+        <div class="v un"><span class="dot"></span><b>○ unresolved</b><span>silent, thin, conflicting, or the year is not over</span></div>
+      </div>
+      <p style="margin:14px 0 0; color: var(--ink-2); font-size: 14px;">The headline number is the <strong>generosity gap</strong>: lenient hit rate minus strict.</p>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span><code>/called-it Every 2026 https://every.to/…</code> &nbsp; works in Claude Code and Codex, no keys required</span>
+    <span>github.com/rickmanelius/called-it</span>
+  </div>
+</div>
+</body>
+</html>

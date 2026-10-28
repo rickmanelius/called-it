@@ -1,0 +1,95 @@
+{
+ "hash": "dade5b532ea14ff23c63c37e623df2f81930a0bca732a78d8a2bee05eefbe67e",
+ "requested_model": "jev-1.14.0",
+ "answered_model": "jev-1.14.0",
+ "grader": "jev",
+ "state": {
+  "subject": "Every",
+  "target_year": 2026,
+  "as_of": "2026-10-24",
+  "claim": {
+   "quote": "Dan predicts a third kind of engineer: agentic engineers who fully delegate implementation to AI and move up a level to managing and orchestrating agents.",
+   "author": "Dan Shipper",
+   "date": "2025-12-23",
+   "context": "Prediction 2 of 3, 'New roles are emerging'. Editor's paraphrase. A recognised job category of engineers who direct agents rather than write code emerges in 2026."
+  },
+  "bar": "strict",
+  "criterion": "In 2026 the agentic engineer, who delegates implementation to AI and manages agents instead of writing code, became a recognised third kind of engineering role.",
+  "measure": "Job postings using 'agentic engineer', 'AI engineer (agent orchestration)' or an equivalent title at three or more well-known companies in 2026, plus recognition as a distinct role by a major outlet or an industry survey (Stack Overflow, LinkedIn).",
+  "evidence_tiers": {
+   "1": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+   "2": "reputable reporting: a major outlet or a domain-leading trade publication",
+   "3": "market resolution: a Polymarket or Kalshi market on the question that resolved",
+   "4": "author's own later statement: an admission of a miss is strong, a claim of a hit is weak",
+   "5": "social chatter: posts or comments from people without standing; never sufficient alone"
+  },
+  "evidence": [
+   {
+    "tier": 1,
+    "tier_meaning": "primary: official announcement, filing, shipped product, on-chain or price data, government statistics",
+    "date": "2026-10-06",
+    "source": "Stack Overflow",
+    "direction": "neutral",
+    "quote": "73% of respondents who indicate using AI coding assistants/agents use them daily ... The agents of choice are Claude Code (66%) and GitHub Copilot (59%).",
+    "url": "https://stackoverflow.blog/2026/10/06/the-results-of-the-2026-developer-survey-are-here/"
+   }
+  ]
+ },
+ "questions": {
+  "met": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, and measuring the way `measure` says, is the `criterion` met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item that supports the criterion comes from a source with standing (tier 1, 2 or 3, or a tier 4 admission by the author) and directly establishes what the criterion requires.",
+    "false": "No evidence item with standing establishes the criterion. Items that are only about the same topic, that only predict, or that come from people without standing do not count."
+   }
+  },
+  "contradicted": {
+   "type": "noul",
+   "instructions": "Given only the evidence listed in `evidence`, does the evidence show that the `criterion` was NOT met as of `as_of`?",
+   "criteria": {
+    "true": "At least one evidence item with standing reports the opposite of what the criterion requires, or reports that the required thing did not happen within the window.",
+    "false": "Nothing in the evidence shows the criterion failed; the evidence may simply be silent or insufficient."
+   }
+  },
+  "strength": {
+   "type": "score",
+   "instructions": "How strong is the best evidence bearing on the `criterion`, considering source standing and directness?",
+   "criteria": [
+    "Only anecdotes or social posts from people without standing",
+    "A single reputable report, an indirect official statement, or the author's own later admission",
+    "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   ]
+  }
+ },
+ "answers": {
+  "met": {
+   "type": "noul",
+   "noul": 0.02
+  },
+  "contradicted": {
+   "type": "noul",
+   "noul": 0.07
+  },
+  "strength": {
+   "type": "score",
+   "score": 1.0,
+   "confidence": 0.94,
+   "legend": {
+    "0": "Only anecdotes or social posts from people without standing",
+    "1": "A single reputable report, an indirect official statement, or the author's own later admission",
+    "2": "Multiple independent reputable reports, a direct primary source, or a resolved prediction market"
+   },
+   "probabilities": {
+    "0": 0.02,
+    "1": 0.96,
+    "2": 0.02
+   }
+  }
+ },
+ "usage": {
+  "input_tokens": 1145,
+  "output_tokens": 52
+ },
+ "at": "2026-10-24T21:09:37Z"
+}
